@@ -1,0 +1,1393 @@
+[
+  {
+    "id": "fontenot",
+    "name": "Kimpton Hotel Fontenot",
+    "category": "stay",
+    "area": "CBD",
+    "address": "501 Tchoupitoulas Street, New Orleans, LA 70130",
+    "lat": 29.948513,
+    "lng": -90.06718,
+    "url": "https://www.hotelfontenot.com/",
+    "hours": "Your home base for October 14–19. Confirm check-in and checkout against your booking.",
+    "bestTime": "Your base for the trip and afternoon breaks.",
+    "order": "Peacock Room for an easy hotel cocktail; hotel dining is a low-effort fallback.",
+    "tip": "Hotel: (504) 571-1818. Save the address on every phone.",
+    "status": "open",
+    "statusNote": "Hotel confirmed by your group.",
+    "schedule": "Arrival/departure times not supplied; first and last days stay flexible.",
+    "originalNote": "Added as your confirmed accommodation.",
+    "sources": [
+      {
+        "title": "Hotel maps & directions",
+        "url": "https://www.hotelfontenot.com/new-orleans/maps-and-directions/"
+      },
+      {
+        "title": "Peacock Room",
+        "url": "https://hotelfontenot.com/new-orleans-restaurant/peacock-room/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "501 Tchoupitoulas Street, New Orleans, LA 70130"
+  },
+  {
+    "id": "bacchanal",
+    "name": "Bacchanal",
+    "category": "food",
+    "area": "Bywater",
+    "address": "600 Poland Avenue, New Orleans, LA 70117",
+    "lat": 29.9598,
+    "lng": -90.0333,
+    "url": "https://www.bacchanalwine.com/",
+    "hours": "Posted new hours: Sun–Thu 5–10pm; Fri–Sat 5–11pm. Reconfirm October hours; other official page sections contain older/conflicting hours.",
+    "bestTime": "Arrive around the posted 5pm opening, claim a table for four, and leave the evening unhurried.",
+    "order": "Ask the shop team for a bottle to match your taste and choose cheeses to share; check the current food menu and plating charges.",
+    "tip": "21+ with valid ID; seating is first come, first served, with no reservations. A taxi or rideshare is a convenient return after a long evening. Map pin is approximate; use the street address for navigation.",
+    "status": "check",
+    "statusNote": "Operating, but official hours and FAQ conflict. The original $3 cheese-plating price is not verified. The original blanket neighborhood safety claim is an old personal opinion, not current guidance.",
+    "schedule": "Live music is advertised; October 14–19, 2026 artists and set times were not confirmed. Check the official music calendar before choosing the night.",
+    "originalNote": "BACCHANAL: a wine + cheese shop, with a HUGE backyard with live music. You buy wine, you buy cheese, then you pay the $3 for them to plate the cheese and sit in the backyard and just hang. It gets PACKED on the weekends, so go early if you want to get a spot. www.bacchanalwine.com (BYWATER) (take a cab… it’s at the end of the levy, and walking back at night can be sketch until you’re solidly back in the Marigny). Archived personal recommendation; price and neighborhood characterization are not verified current facts.",
+    "sources": [
+      {
+        "title": "Bacchanal — official directions and new hours",
+        "url": "https://www.bacchanalwine.com/locations-marquee"
+      },
+      {
+        "title": "Bacchanal — official music calendar",
+        "url": "https://www.bacchanalwine.com/music"
+      },
+      {
+        "title": "Bacchanal — official FAQ",
+        "url": "https://www.bacchanalwine.com/faq"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "600 Poland Avenue, New Orleans, LA 70117"
+  },
+  {
+    "id": "brothers-food-mart",
+    "name": "Brother’s Food Mart",
+    "category": "food",
+    "area": "CBD / multiple locations",
+    "address": "148 Carondelet Street, New Orleans, LA 70130 — candidate location; confirm operation",
+    "lat": 29.9527,
+    "lng": -90.0707,
+    "url": "https://brothersfriedchicken.com/",
+    "hours": "Check official hours with the specific store; current operator hours could not be verified.",
+    "bestTime": "An opportunistic snack when passing an operating branch, rather than a special cross-city trip.",
+    "order": "Original pick: a piece of fried chicken. Ask what is freshly prepared and available at that branch.",
+    "tip": "Confirm the shop and hot-food counter are operating before detouring. The map pin identifies an approximate candidate location, not all branches.",
+    "status": "check",
+    "statusNote": "The original store-list URL and later brand website were unavailable during verification. Branch availability is unresolved; keep this optional. Dooky Chase is a separately verified fried-chicken alternative with reservations.",
+    "schedule": "No date-specific service verified for October 14–19, 2026. Do not assume all locations or chicken counters run 24 hours.",
+    "originalNote": "Brother’s Food Mart: This is a gas station, but if you see one, get a piece of fried chicken there. http://brothersxpress.com/storelist.html (EVERYWHERE). Archived recommendation; the chain-wide availability claim is unverified.",
+    "sources": [
+      {
+        "title": "Original Brother’s store list — unavailable when checked",
+        "url": "http://brothersxpress.com/storelist.html"
+      },
+      {
+        "title": "Brother’s brand website — unavailable when checked",
+        "url": "https://brothersfriedchicken.com/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "148 Carondelet Street, New Orleans, LA 70130"
+  },
+  {
+    "id": "cafe-du-monde",
+    "name": "Café du Monde · French Market",
+    "category": "food",
+    "area": "French Quarter",
+    "address": "800 Decatur Street, New Orleans, LA 70116",
+    "lat": 29.9578,
+    "lng": -90.062,
+    "url": "https://shop.cafedumonde.com/locations/",
+    "hours": "French Market: Sun–Thu 7:15am–11pm; Fri–Sat 7:15am–midnight.",
+    "bestTime": "7:30–8:30am for a gentle start, or an evening dessert stop if morning lines are long.",
+    "order": "Beignets and chicory café au lait; the official menu also includes iced coffee, milk and orange juice.",
+    "tip": "Take the original suggestion: get beignets to go, then enjoy a relaxed riverside pause. Powdered sugar travels! Map pin is approximate; navigate to the address.",
+    "status": "open",
+    "statusNote": "Current official hours are verified; the French Market café is not advertised as 24 hours. Weather can affect operation.",
+    "schedule": "For October 14–19, 2026 the posted pattern means midnight closing Fri 16/Sat 17; 11pm on the other trip nights. Reconfirm near departure.",
+    "originalNote": "Cafe Du Monde: Beignets! So touristy but it's such a classic experience. My recommendation, get them to go and then go walk around the levy. www.cafedumonde.com (FRENCH QUARTER)",
+    "sources": [
+      {
+        "title": "Café du Monde — official locations and hours",
+        "url": "https://shop.cafedumonde.com/locations/"
+      },
+      {
+        "title": "Café du Monde — official café menu and history",
+        "url": "https://shop.cafedumonde.com/history/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "800 Decatur Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "cake-cafe",
+    "name": "Cake Café & Bakery",
+    "category": "food",
+    "area": "Marigny",
+    "address": "Formerly 2440 Chartres Street, New Orleans, LA 70117",
+    "lat": 29.9637,
+    "lng": -90.0529,
+    "url": "https://nolacakes.com/",
+    "hours": "Permanently closed.",
+    "bestTime": "Archive only — do not plan a meal here.",
+    "order": "The original shrimp-and-grits recommendation is preserved as a memory; no current menu.",
+    "tip": "Choose Elizabeth’s for a separately verified Bywater brunch. Map pin is the approximate former premises, not an operating restaurant.",
+    "status": "closed",
+    "statusNote": "Owners’ announcement gives June 28, 2020 as the final day. Preserved from the original list; replace with Elizabeth’s in the itinerary.",
+    "schedule": "Unavailable throughout the October 14–19, 2026 trip.",
+    "originalNote": "Cake Cafe: Really great brunch here too, casual, local place - shrimp/grits are perfect: http://nolacakes.com/ (MARIGNY). Historical recommendation; the business permanently closed in 2020.",
+    "sources": [
+      {
+        "title": "Cake Café — owners’ permanent closure announcement",
+        "url": "https://nolacakes.com/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "Formerly 2440 Chartres Street, New Orleans, LA 70117"
+  },
+  {
+    "id": "central-grocery",
+    "name": "Central Grocery & Deli",
+    "category": "food",
+    "area": "French Quarter",
+    "address": "923 Decatur Street, New Orleans, LA 70116",
+    "lat": 29.9589,
+    "lng": -90.061,
+    "url": "https://centralgrocery.com/",
+    "hours": "Daily 9am–5pm.",
+    "bestTime": "An early lunch around 11am, then a leisurely French Market or riverfront stroll.",
+    "order": "The original muffuletta. For four, ask staff about current sizes, start with one whole cut for sharing, and add more if needed.",
+    "tip": "A useful picnic-style option between Quarter sights. The official recipe uses meats, cheeses and olive salad; confirm dietary needs. Map pin is approximate.",
+    "status": "open",
+    "statusNote": "The official site lists the original Decatur shop and daily hours. The old ‘lunch only’ note is better understood as daytime service, not evening dining.",
+    "schedule": "Posted daily service fits all trip dates, October 14–19, 2026; reconfirm close to travel.",
+    "originalNote": "Central Grocery: The home of the Muffuletta! It's amazing, also a lunch only place, get a half to go and walk around it's delicious: www.centralgrocerynola.com (FRENCH QUARTER). Current official hours are 9am–5pm.",
+    "sources": [
+      {
+        "title": "Central Grocery — official shop and sandwich information",
+        "url": "https://centralgrocery.com/"
+      },
+      {
+        "title": "Central Grocery — official contact and hours",
+        "url": "https://centralgrocery.com/contact-us/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "923 Decatur Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "coops-place",
+    "name": "Coop’s Place",
+    "category": "food",
+    "area": "French Quarter",
+    "address": "1109 Decatur Street, New Orleans, LA 70116",
+    "lat": 29.9602,
+    "lng": -90.0599,
+    "url": "https://www.coopsplace.net/",
+    "hours": "Mon–Tue and Thu 11am–10pm; Fri–Sun 11am–11pm; Wednesday closed.",
+    "bestTime": "Early lunch or a late-afternoon meal before Frenchmen Street; allow flexible queue time for four.",
+    "order": "Consider rabbit-and-sausage jambalaya, seafood gumbo or Cajun fried chicken; these are highlighted in the restaurant’s official recipe collection. Confirm the current menu.",
+    "tip": "21+ only and no reservations. Plan a relaxed backup if the queue feels too long. Map pin is approximate.",
+    "status": "open",
+    "statusNote": "Official weekly hours verified. The original ‘open late’ note does not mean service after 11pm.",
+    "schedule": "Closed Wednesday October 14, 2026. Posted hours cover Thu 15–Mon 19, subject to changes.",
+    "originalNote": "Coops: Some touristy cajun food stuff but open late and pretty good! https://www.coopsplace.net/",
+    "sources": [
+      {
+        "title": "Coop’s Place — official hours and admission",
+        "url": "https://www.coopsplace.net/"
+      },
+      {
+        "title": "Coop’s Place — official location",
+        "url": "https://www.coopsplace.net/Location/"
+      },
+      {
+        "title": "Coop’s Place — official signature-recipe collection",
+        "url": "https://www.coopsplace.net/Store/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "1109 Decatur Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "dooky-chase",
+    "name": "Dooky Chase’s Restaurant",
+    "category": "food",
+    "area": "Tremé",
+    "address": "2301 Orleans Avenue, New Orleans, LA 70119",
+    "lat": 29.9681,
+    "lng": -90.0785,
+    "url": "https://www.dookychaserestaurants.com/",
+    "hours": "Lunch Tue–Fri 11am–3pm; dinner Fri–Sat 5:30–9pm. Closed Sunday and Monday.",
+    "bestTime": "Reserve an 11–11:30am lunch for four on Wednesday, Thursday or Friday and give it 90 minutes.",
+    "order": "Consider gumbo and fried chicken, or shrimp Creole; confirm the lunch menu for your date. Dinner also lists shrimp Clemenceau and stuffed shrimp.",
+    "tip": "The restaurant strongly recommends reservations and warns walk-in seating may be unavailable. Read its dress code before visiting. Map pin is approximate.",
+    "status": "open",
+    "statusNote": "The old $20 all-you-can-eat buffet claim is not supported by the current official menu; do not budget or book around it.",
+    "schedule": "Trip windows: lunch Oct 14–16; dinner Oct 16–17. No posted lunch Saturday Oct 17; closed Oct 18–19. Availability is not a reservation.",
+    "originalNote": "Dooky Chase: This is where OBAMA gets fried chicken: www.dookychaserestaurant.com go for the all you can eat lunch buffet, it's $20 but it's worth it. (TREME). Archived personal note: the buffet format and price are unverified/outdated, and the celebrity reference is not a current event.",
+    "sources": [
+      {
+        "title": "Dooky Chase’s — official menu, hours and reservations",
+        "url": "https://www.dookychaserestaurants.com/our-menu"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "2301 Orleans Avenue, New Orleans, LA 70119"
+  },
+  {
+    "id": "elizabeths",
+    "name": "Elizabeth’s Restaurant",
+    "category": "food",
+    "area": "Bywater",
+    "address": "601 Gallier Street, New Orleans, LA 70117",
+    "lat": 29.9616,
+    "lng": -90.041,
+    "url": "https://elizabethsrestaurantnola.com/",
+    "hours": "Daily 8am–2:30pm. Weekend brunch Sat–Sun 8am–2:30pm.",
+    "bestTime": "Arrive near 8–9am on the weekend, or choose a weekday for a less hurried brunch.",
+    "order": "For weekend brunch, consider praline bacon to share, callas with cane syrup, the duck waffle, or the Bayou Breakfast with catfish and eggs.",
+    "tip": "Weekend brunch is first come, first served; four-person reservations are not offered. Leave an hour or more plus queue time. Map pin is approximate.",
+    "status": "open",
+    "statusNote": "Official brunch menu and daily hours verified. A useful replacement for the closed Cake Café recommendation.",
+    "schedule": "Weekend brunch falls on October 17–18, 2026; daily morning service is posted for the other trip days. Reconfirm before the visit.",
+    "originalNote": "Elizabeth’s: Great cajun brunch, get there early: www.elizabethsrestaurantnola.com (BYWATER)",
+    "sources": [
+      {
+        "title": "Elizabeth’s — official weekend brunch menu and hours",
+        "url": "https://elizabethsrestaurantnola.com/menu/saturday-sunday-brunch/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "601 Gallier Street, New Orleans, LA 70117"
+  },
+  {
+    "id": "horns",
+    "name": "Horn’s Eatery",
+    "category": "food",
+    "area": "Marigny",
+    "address": "Formerly 2440 Chartres Street, New Orleans, LA 70117; older location 1940 Dauphine Street",
+    "lat": 29.9637,
+    "lng": -90.0529,
+    "url": "https://www.instagram.com/horns_eatery/",
+    "hours": "No current service verified; do not schedule.",
+    "bestTime": "Archive only until the operator confirms a current venue.",
+    "order": "The original brunch recommendation is preserved; no current menu verified.",
+    "tip": "Choose Elizabeth’s for a separately verified brunch. The map pin marks approximate former Chartres premises.",
+    "status": "check",
+    "statusNote": "Appears closed: the former premises were advertised for lease, and the old hornsnola.com domain now serves unrelated content. An operator closure announcement could not be accessed, so no opening or successor is promised.",
+    "schedule": "No service verified for October 14–19, 2026. Keep out of the active itinerary.",
+    "originalNote": "Horns: Neighborhood Restaurant with Cajun Vibe, really great brunch: http://www.hornsnola.com/ (MARIGNY). Archived recommendation; old website is no longer a reliable restaurant source.",
+    "sources": [
+      {
+        "title": "Former Horn’s premises — property broker lease listing",
+        "url": "https://www.nhrep.com/property/90-2534106-2440-chartres-street-new-orleans-LA-70117"
+      },
+      {
+        "title": "Horn’s operator Instagram — inaccessible during verification",
+        "url": "https://www.instagram.com/horns_eatery/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "Formerly 2440 Chartres Street, New Orleans, LA 70117; older location 1940 Dauphine Street"
+  },
+  {
+    "id": "johnnys-po-boys",
+    "name": "Johnny’s Po-Boys",
+    "category": "food",
+    "area": "French Quarter",
+    "address": "511 St. Louis Street, New Orleans, LA 70130",
+    "lat": 29.9555,
+    "lng": -90.0645,
+    "url": "https://www.facebook.com/JohnnysPoboys/",
+    "hours": "Check official hours: current listings conflict, and the operator’s Facebook could not be read. Call 504-524-8129.",
+    "bestTime": "An early lunch around 11am on a confirmed service day; keep Central Grocery as a nearby daytime backup.",
+    "order": "Original pick: shrimp po-boy. Ask about dressing and portion sizes before the four of you order.",
+    "tip": "Bring cash as a precaution and check opening days before walking over. The owner-verified dining profile also advertises breakfast, so the original ‘lunch only’ statement is incomplete. Map pin is approximate.",
+    "status": "check",
+    "statusNote": "Current weekly hours need confirmation. The owner-verified profile still contains a 2020 anniversary message, so its daily hours are not treated as fresh verification.",
+    "schedule": "No guaranteed October 14–19, 2026 schedule. Aim for a confirmed Thu–Sun lunch; do not rely on Monday or Wednesday opening.",
+    "originalNote": "Johnny's Po-Boys: My favorite Po-Boys. Only open for lunch. SHRIMP all the way. www.yelp.com/biz/johnnys-po-boys-new-orleans (FRENCH QUARTER). Personal preference retained; current hours require confirmation.",
+    "sources": [
+      {
+        "title": "Johnny’s — operator Facebook, inaccessible during verification",
+        "url": "https://www.facebook.com/JohnnysPoboys/"
+      },
+      {
+        "title": "Johnny’s — owner-verified dining profile (older copy)",
+        "url": "https://www.americascuisine.com/louisiana/neworleans/johnnys-poboys.aspx"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "511 St. Louis Street, New Orleans, LA 70130"
+  },
+  {
+    "id": "jacques-imos",
+    "name": "Jacques-Imo’s",
+    "category": "food",
+    "area": "Uptown / Oak Street",
+    "address": "8324 Oak Street, New Orleans, LA 70118",
+    "lat": 29.949119,
+    "lng": -90.132157,
+    "url": "https://jacques-imos.com/",
+    "hours": "Wednesday–Friday 5–10pm; Saturday 4–10pm. Closed Sunday–Tuesday.",
+    "bestTime": "Arrive at opening, ideally Wednesday or Thursday, and leave a generous dinner window before nearby Maple Leaf music.",
+    "order": "Fried chicken and the current Creole specials; share starters across the four of you. Confirm that day’s menu before deciding.",
+    "tip": "The regular reservation policy is for parties of five or more only; four guests are first come, first served. The site’s summer all-party-size exception ends September 7. Allow 90–120 minutes plus any queue.",
+    "status": "open",
+    "statusNote": "Official website says menu and site updated June 2026. The smaller opening week matters when planning this trip.",
+    "schedule": "Published weekly hours support dinner October 14–17, 2026. Reconfirm closer to travel; Maple Leaf’s show schedule is separate.",
+    "originalNote": "Jacques-Imo's - Really solid Cajun Food. The real deal! (UPTOWN). https://jacques-imos.com/ Also listed under UPTOWN: Jacques Imo’s Cafe — A legit NOLA cajun/creole style restaurant.",
+    "sources": [
+      {
+        "title": "Jacques-Imo’s official hours and reservation policy",
+        "url": "https://jacques-imos.com/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "8324 Oak Street, New Orleans, LA 70118"
+  },
+  {
+    "id": "mimis",
+    "name": "Mimi’s in the Marigny",
+    "category": "food",
+    "area": "Marigny",
+    "address": "Former location: 2601 Royal Street, New Orleans, LA 70117 (now Anna’s)",
+    "lat": 29.9645,
+    "lng": -90.0506,
+    "url": "https://www.annasnola.com/",
+    "hours": "Mimi’s current operation unconfirmed. Alternative Anna’s downstairs: Monday–Friday 4pm–2am; Saturday–Sunday noon–2am. Food pop-up hours vary.",
+    "bestTime": "Use Anna’s for a relaxed early evening drink, after confirming its current food pop-up; do not rely on the old Mimi’s late-night kitchen recommendation.",
+    "order": "Ask Anna’s which food pop-up is operating. Verti Marte is the better documented late-food fallback on the supplied list.",
+    "tip": "The map pin is approximate and refers to the historical Royal Street premises. Anna’s officially lists this address; a current Mimi’s kitchen could not be verified.",
+    "status": "check",
+    "statusNote": "Historical recommendation retained. Anna’s occupies the old Royal Street location. Mimi’s proposed Chartres Street comeback is not confirmed by an accessible current official source; keep Mimi’s out of the committed itinerary.",
+    "schedule": "No verified Mimi’s schedule for October 14–19. Check Anna’s current pop-up calendar before treating it as a meal stop.",
+    "originalNote": "Mimi’s: If you find yourself out late, and need food, this is the spot. mimismarigny.com (MARIGNY). OUTDATED/UNVERIFIED: the original late-night kitchen recommendation is not confirmed for this trip.",
+    "sources": [
+      {
+        "title": "Anna’s official address and hours",
+        "url": "https://www.annasnola.com/contact"
+      },
+      {
+        "title": "Anna’s official food pop-up information",
+        "url": "https://www.annasnola.com/private-parties"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "Former location: 2601 Royal Street, New Orleans, LA 70117 (now Anna’s)"
+  },
+  {
+    "id": "napoleon-house",
+    "name": "Napoleon House",
+    "category": "food",
+    "area": "French Quarter",
+    "address": "500 Chartres Street, New Orleans, LA 70130",
+    "lat": 29.95586,
+    "lng": -90.06507,
+    "url": "https://www.napoleonhouse.com/",
+    "hours": "Sunday–Thursday 11am–9pm; Friday–Saturday 11am–10pm. Special early closings are posted separately.",
+    "bestTime": "11am lunch or a mid-afternoon 2:30–4pm pause, with room for a queue. Ask about courtyard seating.",
+    "order": "Share warm muffuletta, gumbo or red beans and rice; order a Pimm’s Cup if desired. The warm sandwich and Pimm’s are official house signatures.",
+    "tip": "No reservations. For four, share the substantial sandwich and one or two sides before ordering more; keep the afternoon flexible.",
+    "status": "open",
+    "statusNote": "Official hours verified; the special-hours page currently lists September dates, not confirmed October exceptions.",
+    "schedule": "Ordinary hours cover all six trip dates. Check the official special-hours list the week before visiting.",
+    "originalNote": "Napoleon House. It's touristy, it's right in the french quarter, but the food is pretty good cajun food, they have great bloody mary's and a really solid pimm's cup. www.napoleonhouse.com (FRENCH QUARTER)",
+    "sources": [
+      {
+        "title": "Napoleon House official hours and special closings",
+        "url": "https://www.napoleonhouse.com/about/"
+      },
+      {
+        "title": "Napoleon House official menu",
+        "url": "https://www.napoleonhouse.com/menus/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "500 Chartres Street, New Orleans, LA 70130"
+  },
+  {
+    "id": "pizza-delicious",
+    "name": "Pizza Delicious",
+    "category": "food",
+    "area": "Bywater",
+    "address": "617 Piety Street, New Orleans, LA 70117",
+    "lat": 29.96243,
+    "lng": -90.04288,
+    "url": "https://pizzadelicious.com/",
+    "hours": "Tuesday–Thursday and Sunday 11:30am–9pm; Friday–Saturday 11:30am–10pm. Closed Monday.",
+    "bestTime": "Late lunch around 2pm or an early patio dinner around 5pm while already exploring Bywater.",
+    "order": "Share an 18-inch NY-style pie, a salad and garlic knots; add slices if still hungry. Wednesday Grandma squares and Thursday pepperoni rolls are recurring published specials.",
+    "tip": "Indoor and patio seating available. A 12% automatic gratuity is added to all orders; extra checkout tips are additional. Online pickup is useful for a flexible evening.",
+    "status": "open",
+    "statusNote": "Official hours, menu and weekly specials verified. Closed on departure Monday October 19.",
+    "schedule": "Wednesday October 14 corresponds to the advertised Grandma-square special; Thursday October 15 to pepperoni rolls. Specials and availability can change.",
+    "originalNote": "Pizza Delicious: You wouldn't think to get pizza in New Orleans, but this is great for pizza outside of NY: www.pizzadelicious.com (BYWATER)",
+    "sources": [
+      {
+        "title": "Pizza Delicious official menu and hours",
+        "url": "https://pizzadelicious.com/"
+      },
+      {
+        "title": "Pizza Delicious official FAQ",
+        "url": "https://pizzadelicious.com/get-in-touch/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "617 Piety Street, New Orleans, LA 70117"
+  },
+  {
+    "id": "port-of-call",
+    "name": "Port of Call",
+    "category": "food",
+    "area": "French Quarter / Esplanade",
+    "address": "838 Esplanade Avenue, New Orleans, LA 70116",
+    "lat": 29.964404,
+    "lng": -90.061756,
+    "url": "https://portofcallnola.com/",
+    "hours": "Check official hours by phone: (504) 523-0120. The official website confirms address and menu but does not publish readable weekly hours.",
+    "bestTime": "An early lunch or late-afternoon burger break, after confirming opening time, before heading toward Frenchmen Street.",
+    "order": "Cheeseburger or mushroom cheeseburger with the included baked potato. Burgers are half-pound beef portions; the mushroom burger is not a vegetarian patty.",
+    "tip": "A filling casual meal for four. The potato is part of the burger order; toppings may be extra. Leave a flexible queue buffer.",
+    "status": "open",
+    "statusNote": "Official restaurant, address and menu verified; exact operating hours remain unconfirmed.",
+    "schedule": "Call before choosing a specific October meal slot. No date-specific schedule verified.",
+    "originalNote": "Port of Call - Burgers across the street from the Melrose Mansion www.portofcallnola.com",
+    "sources": [
+      {
+        "title": "Port of Call official address and contact",
+        "url": "https://portofcallnola.com/contact/"
+      },
+      {
+        "title": "Port of Call official menu",
+        "url": "https://portofcallnola.com/menu/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "838 Esplanade Avenue, New Orleans, LA 70116"
+  },
+  {
+    "id": "satsuma",
+    "name": "Satsuma Café",
+    "category": "food",
+    "area": "Bywater",
+    "address": "3218 Dauphine Street, New Orleans, LA 70117",
+    "lat": 29.96385,
+    "lng": -90.04292,
+    "url": "https://satsumacafe.com/",
+    "hours": "Daily 8am–3pm on the current home and Dauphine location pages. Some older pages retain different hours; use 8am–3pm and confirm.",
+    "bestTime": "A slow weekday breakfast around 9am before browsing Bywater, or coffee after a late start.",
+    "order": "Coffee or cold-pressed juice with a breakfast or lunch dish from the daily counter menu. Check the food board on arrival; old downloadable menus are not reliable for current dishes.",
+    "tip": "This is the Dauphine Street location from the original list. Allow an unhurried hour; it pairs naturally with Euclid Records and nearby Bywater stops.",
+    "status": "open",
+    "statusNote": "Current official home and location pages agree on 8am–3pm; old contact/PDF pages conflict, so current hours need a final check.",
+    "schedule": "Published daily operation covers the trip. No special October schedule verified.",
+    "originalNote": "Satsuma’s: Really good brunch, chill, but low key atmosphere, nice to hang out outside. http://satsumacafe.com/ (BYWATER)",
+    "sources": [
+      {
+        "title": "Satsuma official Dauphine location",
+        "url": "https://satsumacafe.com/locations/dauphine-street/"
+      },
+      {
+        "title": "Satsuma official drinks board",
+        "url": "https://satsumacafe.com/menus/dauphine-left/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "3218 Dauphine Street, New Orleans, LA 70117"
+  },
+  {
+    "id": "st-roch-market",
+    "name": "St. Roch Market",
+    "category": "food",
+    "area": "St. Roch / Marigny",
+    "address": "2381 St. Claude Avenue, New Orleans, LA 70117",
+    "lat": 29.9691,
+    "lng": -90.0506,
+    "url": "https://www.strochmarket.com/",
+    "hours": "Sunday–Thursday 7am–9pm; Friday–Saturday 7am–10pm. Coffee 7am–7pm; food generally from 11am; earlier breakfast varies by vendor.",
+    "bestTime": "Weekday lunch for an easy group meal, or Monday–Friday 3–5pm for the published happy hour. The market identifies weekend noon–2pm as busy.",
+    "order": "Let each person choose a different vendor, then share tastes. Current options include Gulf oysters, laksa, Egyptian dishes, poke and Creole food. Ask what seafood is available; do not assume boiled crawfish in October.",
+    "tip": "Counter service and communal seating; no reservations. Good for four different appetites and a rain break. Vendor hours and menus can differ.",
+    "status": "open",
+    "statusNote": "Official hours and current vendor list verified. Original list’s seafood suggestion is seasonal, not a promise of October crawfish.",
+    "schedule": "Recurring listings: weekday happy hour 3–5pm, Thursday wine tasting 5–7pm, Monday trivia 6:30pm. These are weekly patterns, not confirmed October 15/19 events; reconfirm.",
+    "originalNote": "St. Roch Market: Kind of a ‘chelsea market’ vibe, lots of different vendors, modern food, good cocktail place, good oysters and crawfish if in season! www.strochmarket.com (ST ROCH)",
+    "sources": [
+      {
+        "title": "St. Roch Market official vendors, hours and happenings",
+        "url": "https://www.strochmarket.com/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "2381 St. Claude Avenue, New Orleans, LA 70117"
+  },
+  {
+    "id": "turkey-and-the-wolf",
+    "name": "Turkey and the Wolf",
+    "category": "food",
+    "area": "Lower Garden District / Irish Channel edge",
+    "address": "739 Jackson Avenue, New Orleans, LA 70130",
+    "lat": 29.9272,
+    "lng": -90.0746,
+    "url": "https://www.turkeyandthewolf.com/",
+    "hours": "Wednesday–Monday 11am–4pm; closed Tuesday.",
+    "bestTime": "Aim for opening on your Uptown/Garden District day and allow an hour plus any line.",
+    "order": "Get fried bologna and a collard green melt to share, then add other sandwiches to appetite. Both are on the official sample menu; the vegan chik’n sandwich is another listed option.",
+    "tip": "Counter service, with no reservations of any size. This is a lunch stop, not a traditional early-morning brunch. Confirm dietary needs with staff.",
+    "status": "open",
+    "statusNote": "Official hours and reservation policy verified; the downloadable menu is explicitly a sample and may change.",
+    "schedule": "Weekly hours cover October 14–19. No special October closure verified.",
+    "originalNote": "Turkey and the Wolf: Fried bologna sandwiches! And other good stuff. Good for brunch/lunch. www.turkeyandthewolf.com",
+    "sources": [
+      {
+        "title": "Turkey and the Wolf official hours and contact",
+        "url": "https://www.turkeyandthewolf.com/"
+      },
+      {
+        "title": "Turkey and the Wolf official sample menu",
+        "url": "https://cdn.shopify.com/s/files/1/0839/9971/9716/files/TURKEY_AND_THE_WOLF_ONLINE_MENU2025.pdf?v=1750800941"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "739 Jackson Avenue, New Orleans, LA 70130"
+  },
+  {
+    "id": "verti-marte",
+    "name": "Verti Marte",
+    "category": "food",
+    "area": "French Quarter",
+    "address": "1201 Royal Street, New Orleans, LA 70116",
+    "lat": 29.96213,
+    "lng": -90.06118,
+    "url": "https://vertimartenola.com/",
+    "hours": "Advertised 24/7; the restaurant specifically asks late-night customers to call ahead because the kitchen needs cleaning breaks. (504) 525-4767.",
+    "bestTime": "Keep this as the flexible late-food fallback after music, calling before the group heads over.",
+    "order": "Share an All That Jazz sandwich — ham, turkey, shrimp, cheese, mushrooms, tomatoes and house sauce — or a shrimp po’boy. The Green Giant is a vegetable-and-cheese sandwich alternative.",
+    "tip": "Think deli takeaway and ask about preparation time. Check allergens directly: the signature sandwich combines shellfish, meat and dairy.",
+    "status": "open",
+    "statusNote": "Official menu, address and advertised around-the-clock operation verified; overnight service is not guaranteed during cleaning.",
+    "schedule": "No fixed October exception verified; call each late night before making it the meal plan.",
+    "originalNote": "Verti Mart - A bodega style po boy place (open late) in the Quarter. https://vertimartenola.com/",
+    "sources": [
+      {
+        "title": "Verti Marte official hours and late-night caveat",
+        "url": "https://vertimartenola.com/"
+      },
+      {
+        "title": "Verti Marte official menu",
+        "url": "https://vertimartenola.com/new-orleans-verti-marte-food-menu"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "1201 Royal Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "willie-maes",
+    "name": "Willie Mae’s Scotch House / Willie Mae’s NOLA",
+    "category": "food",
+    "area": "Central Business District",
+    "address": "Current official location: 898 Baronne Street, New Orleans, LA 70113",
+    "lat": 29.945,
+    "lng": -90.0754,
+    "url": "https://williemaesnola.com/",
+    "hours": "Current CBD location: Monday and Wednesday–Friday 11am–9pm; Saturday–Sunday 10am–9pm, brunch 10am–3pm. Closed Tuesday.",
+    "bestTime": "Weekday lunch around 11am, or an early dinner on a CBD day. Call to arrange a table for four.",
+    "order": "Fried chicken with a selection of the day’s sides for the table; the chicken is the restaurant’s signature. Ask staff about current portions and available sides.",
+    "tip": "Use the Baronne Street address. The original Scotch House near Dooky Chase is a different site and its reopening was not verified. The map pin is approximate; external directions should use the street address.",
+    "status": "open",
+    "statusNote": "The official website directs guests to Willie Mae’s NOLA at 898 Baronne Street. Do not use the original list’s Treme adjacency for routing or assume the historic St. Ann dining room has reopened.",
+    "schedule": "CBD weekly hours cover October 14–19. Reconfirm a table and current opening hours before travel.",
+    "originalNote": "Willie Mae’s Scotch House: Pretty much right next door to Dooky Chase is another famous fried chicken spot. www.williemaesnola.com (TREME). OUTDATED FOR ROUTING: the current official operating address is in the CBD; the historic Treme site is not a confirmed stop.",
+    "sources": [
+      {
+        "title": "Willie Mae’s NOLA official current location and hours",
+        "url": "https://williemaesnola.com/"
+      },
+      {
+        "title": "Willie Mae’s official history and downtown opening",
+        "url": "https://williemaesnola.com/about"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "898 Baronne Street, New Orleans, LA 70113"
+  },
+  {
+    "id": "spotted-cat",
+    "name": "The Spotted Cat Music Club",
+    "category": "music",
+    "area": "Marigny / Frenchmen Street",
+    "address": "623 Frenchmen Street, New Orleans, LA 70116",
+    "lat": 29.9633,
+    "lng": -90.0574,
+    "url": "https://www.spottedcatmusicclub.com/",
+    "hours": "Daily 2pm–2am; opening and band times can change.",
+    "bestTime": "An afternoon or early-evening set; arrive 10–15 minutes before the listed start.",
+    "order": "Settle in for one complete jazz set, buy a drink, and tip the musicians. Leave room for another set only if everyone feels like staying.",
+    "tip": "21+ with physical valid ID or foreign passport; one-drink minimum. No reservations or advance tickets. Mostly standing room with very limited tables, so four seats together are not guaranteed.",
+    "status": "open",
+    "statusNote": "Current official site confirms operation. Do not assume old cash-only or free-entry advice still applies; confirm any door charge on arrival.",
+    "schedule": "Oct 14–19, 2026 performers and start times not confirmed in accessible official calendar. Live music runs daily; check the weekly calendar close to the visit.",
+    "originalNote": "One of the recommended Frenchmen Street clubs; follow the music and see what sounds good.",
+    "sources": [
+      {
+        "title": "Spotted Cat official site and hours",
+        "url": "https://www.spottedcatmusicclub.com/"
+      },
+      {
+        "title": "Spotted Cat admission FAQ",
+        "url": "https://www.spottedcatmusicclub.com/contact/"
+      },
+      {
+        "title": "Spotted Cat weekly calendar",
+        "url": "https://www.spottedcatmusicclub.com/calendar"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
+    "routeAddress": "623 Frenchmen Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "three-muses",
+    "name": "Three Muses",
+    "category": "music",
+    "area": "Marigny / Frenchmen Street",
+    "address": "536 Frenchmen Street, New Orleans, LA 70116",
+    "lat": 29.963,
+    "lng": -90.0578,
+    "url": "https://www.3musesnola.com/",
+    "hours": "Mon–Fri 7–11pm; Sat 6pm–midnight; Sun 4:30pm–midnight. Special events can alter hours.",
+    "bestTime": "Arrive at opening for the best chance of seating four.",
+    "order": "Share Ms. Moon’s eggrolls and tots, then try beef bulgogi or the Korean fried chicken sandwich. The current menu also offers mocktails and nonalcoholic beer.",
+    "tip": "Walk-in only; no separate checks. Current dine-in music fee is $3 per person, so budget $12 for four before food and drink. Menu is explicitly a sample and can change.",
+    "status": "open",
+    "statusNote": "Current official address and website verified; the old thethreemuses.com URL is obsolete.",
+    "schedule": "Oct 14–19, 2026 lineup unconfirmed. Official site advertises local music but does not expose a dated October lineup.",
+    "originalNote": "One of the recommended Frenchmen Street live-music stops.",
+    "sources": [
+      {
+        "title": "Three Muses official menu, hours and policies",
+        "url": "https://www.3musesnola.com/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
+    "routeAddress": "536 Frenchmen Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "dba",
+    "name": "d.b.a.",
+    "category": "music",
+    "area": "Marigny / Frenchmen Street",
+    "address": "618 Frenchmen Street, New Orleans, LA 70116",
+    "lat": 29.9631,
+    "lng": -90.0575,
+    "url": "https://www.dbaneworleans.com/",
+    "hours": "Daily 6pm–1am; Saturday opens at 2pm.",
+    "bestTime": "Choose an early set from the live calendar, with time for the art market before or after.",
+    "order": "Ask the bartender for a Louisiana beer or a favorite spirit, then give a full set your attention.",
+    "tip": "Use the specific show listing for ticket, cover and age rules. Do not rely on old standing-residency or walk-up-only advice.",
+    "status": "open",
+    "statusNote": "Official site confirms current hours and continued operation after the 2023 ownership change.",
+    "schedule": "Oct 14–19, 2026 lineup not confirmed in accessible official calendar. Check the venue’s Shows page shortly before travel.",
+    "originalNote": "Recommended Frenchmen Street music venue, listed as DBA.",
+    "sources": [
+      {
+        "title": "d.b.a. official site",
+        "url": "https://www.dbaneworleans.com/"
+      },
+      {
+        "title": "d.b.a. current shows",
+        "url": "https://www.dbaneworleans.com/shows"
+      },
+      {
+        "title": "d.b.a. ownership and venue information",
+        "url": "https://www.dbaneworleans.com/about"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
+    "routeAddress": "618 Frenchmen Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "maison",
+    "name": "The Maison",
+    "category": "music",
+    "area": "Marigny / Frenchmen Street",
+    "address": "508 Frenchmen Street, New Orleans, LA 70116",
+    "lat": 29.9627,
+    "lng": -90.058,
+    "url": "https://maisonfrenchmen.com/",
+    "hours": "Official FAQ: Mon–Fri from 4pm; Sat from 1pm; Sun from 10am. Kitchen until 10pm. Closing varies with the crowd.",
+    "bestTime": "Early dinner and jazz; arrive by 6:30pm for walk-in seating, or reserve a dinner package.",
+    "order": "A seated dinner-and-jazz package makes this the easiest Frenchmen anchor for four. Book one table with two additional guests, following the venue’s instructions.",
+    "tip": "Reservations last 90 minutes and require pre-purchase; one table supports up to four guests. Most shows have no cover with a one-drink-or-food-item minimum per set. All ages before 10pm, then normally 21+; individual ticketed shows can differ.",
+    "status": "open",
+    "statusNote": "Official FAQ confirms daily live music. Official pages disagree on upstairs drag-show start time (8 vs 8:30pm), so confirm before planning around it.",
+    "schedule": "Oct 14–19, 2026 artists unconfirmed. Verified general pattern: jazz/swing until about 10pm, then funk/brass; Friday/Saturday upstairs drag shows recur but October details need confirmation.",
+    "originalNote": "Recommended Frenchmen Street music venue.",
+    "sources": [
+      {
+        "title": "The Maison FAQ",
+        "url": "https://maisonfrenchmen.com/f-a-q-s/"
+      },
+      {
+        "title": "The Maison table reservations",
+        "url": "https://maisonfrenchmen.com/reservations/"
+      },
+      {
+        "title": "The Maison drag shows",
+        "url": "https://maisonfrenchmen.com/drag-shows/"
+      },
+      {
+        "title": "The Maison official site",
+        "url": "https://maisonfrenchmen.com/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
+    "routeAddress": "508 Frenchmen Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "dragons-den",
+    "name": "Dragon’s Den — now Stellar Lounge",
+    "category": "music",
+    "area": "Marigny / Esplanade",
+    "address": "435 Esplanade Avenue, New Orleans, LA 70116",
+    "lat": 29.962,
+    "lng": -90.0578,
+    "url": "https://www.neworleans.com/listing/stellar-lounge/54417/",
+    "hours": "The former Dragon’s Den schedule no longer applies. Confirm Stellar’s opening and event hours directly.",
+    "bestTime": "Only choose this as a late-night optional stop after verifying a Stellar event that suits the group.",
+    "order": "For dependable jazz on the original list, use Spotted Cat, d.b.a. or Maison. Treat Stellar as a separate dance-night option.",
+    "tip": "Search and navigate using Stellar Lounge. Do not expect the old Dragon’s Den jazz, Latin or DJ residencies to continue.",
+    "status": "closed",
+    "statusNote": "Dragon’s Den has been replaced by Stellar Lounge at the same address. The official tourism listing confirms Stellar, and WWOZ explicitly identifies it as previously The Dragon’s Den.",
+    "schedule": "No verified Oct 14–19, 2026 Stellar events. The original Dragon’s Den schedule is retired.",
+    "originalNote": "Original list included Dragon’s Den among Frenchmen Street clubs.",
+    "sources": [
+      {
+        "title": "New Orleans & Company: Stellar Lounge",
+        "url": "https://www.neworleans.com/listing/stellar-lounge/54417/"
+      },
+      {
+        "title": "WWOZ: Stellar, previously The Dragon’s Den",
+        "url": "https://www.wwoz.org/events/1321596"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate pin for the former venue/current Stellar address.",
+    "routeAddress": "435 Esplanade Avenue, New Orleans, LA 70116"
+  },
+  {
+    "id": "royal-street",
+    "name": "Royal Street · busking",
+    "category": "music",
+    "area": "French Quarter",
+    "address": "Royal Street near St. Peter Street, New Orleans, LA 70116",
+    "lat": 29.9588,
+    "lng": -90.065,
+    "url": "https://tubaskinny.com/",
+    "hours": "A public-street wander; performers choose their own locations and times.",
+    "bestTime": "A flexible late-morning or afternoon stroll during the French Quarter day.",
+    "order": "Follow a sound you love, stop for a few songs, leave a tip, and browse the surrounding galleries. Tuba Skinny is a wonderful bonus if they happen to be playing.",
+    "tip": "No guaranteed Royal Street performance by Tuba Skinny. Use the band’s official schedule for announced shows; keep doorways and pedestrian paths clear.",
+    "status": "open",
+    "statusNote": "Royal Street is an open-ended experience, not a booked event. Current tourism guidance notes construction along parts of Royal Street, while local businesses remain open.",
+    "schedule": "No verified Oct 14–19, 2026 Royal Street/Tuba Skinny appearance. Busking is spontaneous and weather-dependent; never build the day around a promised sighting.",
+    "originalNote": "Walk Royal Street during the day and look for Tuba Skinny; the original recommender loved the band.",
+    "sources": [
+      {
+        "title": "Tuba Skinny official site",
+        "url": "https://tubaskinny.com/"
+      },
+      {
+        "title": "Tuba Skinny schedule",
+        "url": "https://tubaskinny.com/new-page"
+      },
+      {
+        "title": "Royal Street visitor information",
+        "url": "https://www.neworleans.com/plan/streets/royal-street/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate walking-area pin, not a performance location.",
+    "routeAddress": "Royal Street near St. Peter Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "preservation-hall",
+    "name": "Preservation Hall",
+    "category": "music",
+    "area": "French Quarter",
+    "address": "730 Saint Peter Street check-in; historic hall at 726 Saint Peter Street, New Orleans, LA 70116",
+    "lat": 29.9583,
+    "lng": -90.0652,
+    "url": "https://www.preservationhall.com/",
+    "hours": "Nightly performances; use the calendar for current showtimes. Each ticket covers one 45-minute performance.",
+    "bestTime": "An early-evening performance between a hotel rest and a relaxed dinner. Arrive at least 15 minutes before the show.",
+    "order": "Buy four tickets for the same show and seating section. For a longer outing, arrive at least 45 minutes early for refreshments at Le Spectacle next door.",
+    "tip": "Online booking required; cash is not accepted for tickets or merchandise. All ages. No outside food/drink, photos or recordings. Accessible seating is available; contact the hall ahead if needed.",
+    "status": "open",
+    "statusNote": "Important update: check in at 730 St. Peter, not the historic doorway. Advance tickets are nonrefundable and nontransferable.",
+    "schedule": "Oct 14–19, 2026 performers/showtimes unconfirmed in the accessible calendar. The hall says schedules are typically released about two weeks before the performance month; check again in mid/late September.",
+    "originalNote": "Do not skip Preservation Hall if you have not been.",
+    "sources": [
+      {
+        "title": "Preservation Hall current visitor FAQ",
+        "url": "https://www.preservationhall.com/faq/"
+      },
+      {
+        "title": "Preservation Hall performance calendar",
+        "url": "https://www.preservationhall.com/calendar/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate venue pin; navigate to the verified 730 St. Peter check-in address.",
+    "routeAddress": "730 Saint Peter Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "maple-leaf",
+    "name": "Maple Leaf Bar",
+    "category": "music",
+    "area": "Uptown / Carrollton",
+    "address": "8316 Oak Street, New Orleans, LA 70118",
+    "lat": 29.9492,
+    "lng": -90.1326,
+    "url": "https://www.mapleleafbar.com/",
+    "hours": "Evening concerts; doors and showtimes vary by event. Official site advertises music seven nights a week.",
+    "bestTime": "Pair one confirmed early show with an unhurried Jacques-Imo’s dinner nearby; arrange a rideshare for the return.",
+    "order": "Pick one full show and let it be the evening’s anchor. Buy four tickets together after the October lineup is confirmed.",
+    "tip": "All shows are 21+ and require valid ID. Tickets are final and nontransferable. It is on Oak Street, distinct from nearby Maple Street.",
+    "status": "open",
+    "statusNote": "Official venue and current calendar verified. Original list repeated this venue; consolidated into one entry.",
+    "schedule": "Oct 14–19, 2026 lineup not yet verified from the venue. September’s official calendar shows Monday George Porter Jr. Trio and Wednesday organ shows, but those patterns are not promises for October.",
+    "originalNote": "Recommended if going Uptown, alongside Jacques-Imo’s and Snake & Jake’s.",
+    "sources": [
+      {
+        "title": "Maple Leaf official site",
+        "url": "https://www.mapleleafbar.com/"
+      },
+      {
+        "title": "Maple Leaf calendar and age/ticket policies",
+        "url": "https://www.mapleleafbar.com/calendar"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
+    "routeAddress": "8316 Oak Street, New Orleans, LA 70118"
+  },
+  {
+    "id": "witches-brew",
+    "name": "Witches Brew ghost tour",
+    "category": "sights",
+    "area": "French Quarter",
+    "address": "311 Exchange Place, New Orleans, LA 70130 — Witches Brew Gallery meeting point",
+    "lat": 29.9549,
+    "lng": -90.0661,
+    "url": "https://witchesbrewtours.com/",
+    "hours": "Scheduled departures by tour and date; advance reservation required. Arrive 30 minutes before departure.",
+    "bestTime": "A booked evening after an early dinner; allow 2.5 hours including check-in and an easy buffer afterward.",
+    "order": "Choose the 21+ adults-only ghost tour if all four want darker stories; it lasts roughly 1.5–2 hours and permits BYOB with a midway bar stop. A general ghost/voodoo/vampire option is also available.",
+    "tip": "The old tour URL and meeting-point advice are outdated. Ghost tours meet at 311 Exchange Place. Food, drinks and attraction entry are not included. Review the actual booked tour’s cancellation and mobility information.",
+    "status": "open",
+    "statusNote": "Official FAQ and current adults-only tour verified. The adult tour includes sensitive historical and graphic content; choose the group’s preferred tone.",
+    "schedule": "Oct 14–19, 2026 exact departures and remaining capacity must be selected in the operator’s booking calendar; no specific departure is reserved or confirmed here.",
+    "originalNote": "Original recommender called the ghost tour informative and fun and noted that drinks were allowed.",
+    "sources": [
+      {
+        "title": "Witches Brew tour FAQ and meeting locations",
+        "url": "https://witchesbrewtours.com/faqs/"
+      },
+      {
+        "title": "Witches Brew adults-only ghost tour",
+        "url": "https://witchesbrewtours.com/adults-only-tour/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate neighborhood-scale pin; use the verified meeting address for navigation.",
+    "routeAddress": "311 Exchange Place, New Orleans, LA 70130"
+  },
+  {
+    "id": "frenchmen-art-market",
+    "name": "Frenchmen Art Bazaar / night art market",
+    "category": "sights",
+    "area": "Marigny / Frenchmen Street",
+    "address": "619 Frenchmen Street, New Orleans, LA 70116, beside The Spotted Cat",
+    "lat": 29.9632,
+    "lng": -90.0574,
+    "url": "https://frenchmenartbazaar.com/",
+    "hours": "Frenchmen Art Bazaar’s current site: nightly 7pm–midnight. Palace Market listings advertise later Thursday–Saturday hours; use midnight as the conservative plan.",
+    "bestTime": "7–8pm between dinner and a music set, or a 30–45 minute breather between clubs.",
+    "order": "Browse local art and jewelry, talk to makers, and choose one small trip memento. This is a welcome change of pace from standing in music rooms.",
+    "tip": "The original frenchmenartmarket.com page still displays 2017 summer hours. Use the current Bazaar site and confirm weather-related changes on the day.",
+    "status": "open",
+    "statusNote": "Current tourism guidance uses Frenchmen Art Bazaar; Palace Market and original Frenchmen Art Market names persist in listings for 619 Frenchmen. Naming and closing-time listings are inconsistent.",
+    "schedule": "Regular nightly market, not a ticketed show. No special Oct 14–19, 2026 artist lineup confirmed.",
+    "originalNote": "Cool Frenchmen Street Art Market in the Marigny.",
+    "sources": [
+      {
+        "title": "Frenchmen Art Bazaar current hours",
+        "url": "https://frenchmenartbazaar.com/"
+      },
+      {
+        "title": "New Orleans & Company Frenchmen Street guide",
+        "url": "https://www.neworleans.com/plan/streets/frenchmen-street/"
+      },
+      {
+        "title": "Original market address",
+        "url": "https://www.frenchmenartmarket.com/art-locations/"
+      },
+      {
+        "title": "Palace Market official listing",
+        "url": "https://www.palacemarketnola.com/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
+    "routeAddress": "619 Frenchmen Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "french-market",
+    "name": "French Market",
+    "category": "sights",
+    "area": "French Quarter / riverfront",
+    "address": "French Market Place at Ursulines Avenue, New Orleans, LA 70116",
+    "lat": 29.9607,
+    "lng": -90.0598,
+    "url": "https://www.frenchmarket.org/",
+    "hours": "Official public-facing hours: farmers/flea market 10am–6pm; retail shops 10am–5pm. Individual stalls vary.",
+    "bestTime": "11am–2pm for a relaxed browse with more stalls operating, paired with the riverfront and Central Grocery.",
+    "order": "Browse souvenirs, local crafts and food stalls; leave meal-sized appetite for one of the nearby original-list restaurants.",
+    "tip": "Treat the market as a flexible walk, not a checklist. A district office at 1008 N. Peters is not the best destination for the open-air stalls; navigate to French Market Place.",
+    "status": "open",
+    "statusNote": "Official website confirms market operations. Some vendor-policy pages describe a narrower 11am–4pm core window, which supports a midday visit.",
+    "schedule": "Daily market. October 14–19 special performances or demonstrations are not confirmed here; check the district events calendar.",
+    "originalNote": "Street market for souvenirs, including fleur-de-lis items.",
+    "sources": [
+      {
+        "title": "French Market official market hours",
+        "url": "https://www.frenchmarket.org/farmers-market/"
+      },
+      {
+        "title": "French Market vendor operations",
+        "url": "https://www.frenchmarket.org/wp-content/uploads/2025/05/Attachment-J-Market-Policy-and-Operation-Manual-rev-2018.pdf"
+      },
+      {
+        "title": "French Market district events",
+        "url": "https://www.frenchmarket.org/events/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate open-air market-area pin; follow the street address to the stalls.",
+    "routeAddress": "French Market Place at Ursulines Avenue, New Orleans, LA 70116"
+  },
+  {
+    "id": "euclid-records",
+    "name": "Euclid Records",
+    "category": "sights",
+    "area": "Bywater",
+    "address": "3301 Chartres Street, New Orleans, LA 70117",
+    "lat": 29.9634,
+    "lng": -90.0409,
+    "url": "https://euclidrecords.com/",
+    "hours": "Daily 11am–6pm.",
+    "bestTime": "Early afternoon during the Bywater day; allow 30–60 minutes before heading to an early Bacchanal hang.",
+    "order": "Ask the staff for a New Orleans jazz, brass, rhythm-and-blues or local-release recommendation. Pick a record that sounds like the trip.",
+    "tip": "The website’s online inventory is primarily the St. Louis store. Browse the New Orleans shop in person instead of assuming online stock is on the shelf here.",
+    "status": "open",
+    "statusNote": "Current official New Orleans location and seven-day hours verified.",
+    "schedule": "Regular shop hours apply; no Oct 14–19, 2026 in-store event confirmed.",
+    "originalNote": "Cool record shop in the Bywater.",
+    "sources": [
+      {
+        "title": "Euclid Records official locations, hours and inventory note",
+        "url": "https://euclidrecords.com/about/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
+    "routeAddress": "3301 Chartres Street, New Orleans, LA 70117"
+  },
+  {
+    "id": "faulkner-house",
+    "name": "Faulkner House Books",
+    "category": "sights",
+    "area": "French Quarter / Jackson Square",
+    "address": "624 Pirate’s Alley, New Orleans, LA 70116",
+    "lat": 29.9581,
+    "lng": -90.0642,
+    "url": "https://faulknerhousebooks.com/",
+    "hours": "Daytime shop; exact current opening hours were not stated on the official website. Confirm at (504) 524-2940 before a special trip.",
+    "bestTime": "Late morning or early afternoon alongside Jackson Square and Royal Street; allow 20–30 quiet minutes.",
+    "order": "Ask for a novel or poetry collection that captures New Orleans. Browse Faulkner, Louisiana authors and rare editions.",
+    "tip": "The shop sits just off Jackson Square, behind the Cabildo and opposite the cathedral’s rear garden. Walk into Pirate’s Alley rather than trying to reach it by car.",
+    "status": "open",
+    "statusNote": "Official shop website and current tourism coverage confirm operation and location; exact hours need a same-day check.",
+    "schedule": "No Oct 14–19, 2026 reading or special event confirmed; this is a flexible bookstore stop.",
+    "originalNote": "Former home of William Faulkner and a nicely curated bookstore near Jackson Square.",
+    "sources": [
+      {
+        "title": "Faulkner House Books official site",
+        "url": "https://faulknerhousebooks.com/"
+      },
+      {
+        "title": "New Orleans & Company historic attractions and address",
+        "url": "https://www.neworleans.com/plan/neighborhoods/french-quarter/history/the-most-popular-historic-attractions-in-the-french-quarter/"
+      },
+      {
+        "title": "New Orleans & Company bookstore guide",
+        "url": "https://www.neworleans.com/blog/post/best-local-bookstores-in-new-orleans/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
+    "routeAddress": "624 Pirate’s Alley, New Orleans, LA 70116"
+  },
+  {
+    "id": "vaughans",
+    "name": "Vaughan’s Lounge",
+    "category": "bars",
+    "area": "Bywater",
+    "address": "4229 Dauphine Street, New Orleans, LA 70117 (corner of Lesseps)",
+    "lat": 29.961937,
+    "lng": -90.033756,
+    "url": "https://www.facebook.com/Vaughans-Lounge-472659709508376/",
+    "hours": "Opening hours not confirmed directly; call 504-947-5562 before a special trip.",
+    "bestTime": "Thursday Oct 15 for a late set, only if the group has energy; arrive around 10pm and stay for the music.",
+    "order": "Keep it simple: ask for a cold beer or your usual mixed drink, with water alongside.",
+    "tip": "Bring cash for cover, drinks and the musicians, as your original list suggests. Cash-only and age policy were not independently confirmed. Take a taxi or rideshare back to Hotel Fontenot after the set.",
+    "status": "check",
+    "statusNote": "WWOZ lists the venue as active. The operator’s Facebook page was inaccessible; confirm hours, cover and entry rules directly.",
+    "schedule": "Published WWOZ listing: Corey Henry & The Tremé Funktet, Thursday October 15, 2026 at 10:30pm. This is a community music-calendar listing; confirm with the venue on the day, not a purchased ticket or operator guarantee.",
+    "originalNote": "Vaughns: Super Divy, cash only, but a great hang with live music. (BYWATER)",
+    "sources": [
+      {
+        "title": "WWOZ Vaughan’s Lounge — active venue and October 15 listing",
+        "url": "https://www.wwoz.org/organizations/vaughans-lounge"
+      },
+      {
+        "title": "Vaughan’s Lounge — operator Facebook (direct verification unavailable)",
+        "url": "https://www.facebook.com/Vaughans-Lounge-472659709508376/"
+      },
+      {
+        "title": "Tuba Skinny — artist’s Vaughan’s venue address",
+        "url": "https://tubaskinny.squarespace.com/new-events/2026/1/19/vaughans-lounge-new-orleans-la"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "4229 Dauphine Street, New Orleans, LA 70117"
+  },
+  {
+    "id": "lafittes",
+    "name": "Lafitte’s Blacksmith Shop",
+    "category": "bars",
+    "area": "French Quarter",
+    "address": "941 Bourbon Street, New Orleans, LA 70116",
+    "lat": 29.961056,
+    "lng": -90.063581,
+    "url": "https://www.lafittesblacksmithshop.com/",
+    "hours": "Current operator site does not publish reliable opening hours; call 504-593-9761.",
+    "bestTime": "An early-evening pause during a Quarter wander; keep it to one relaxed stop before dinner or music.",
+    "order": "Ask the bartender for the current house drink, or choose a simple beer and enjoy the historic room.",
+    "tip": "The venue calls this one of the oldest structures used as a bar, not a verified claim to the country’s oldest continuously operating bar. Bring photo ID; payment and entry policies need a direct check.",
+    "status": "check",
+    "statusNote": "Official website still identifies the Bourbon Street venue; current hours and event calendar are not published there.",
+    "schedule": "No operator-published October 14–19, 2026 performance schedule verified. Treat any piano or live-music timing as unconfirmed.",
+    "originalNote": "Lafitte’s: Oldest bar, used to be a blacksmith shop (FRENCH QUARTER)",
+    "sources": [
+      {
+        "title": "Lafitte’s official location and telephone",
+        "url": "https://www.lafittesblacksmithshop.com/Location.html"
+      },
+      {
+        "title": "Lafitte’s official history",
+        "url": "https://www.lafittesblacksmithshop.com/AboutUs.html"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "941 Bourbon Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "old-absinthe-house",
+    "name": "Old Absinthe House",
+    "category": "bars",
+    "area": "French Quarter",
+    "address": "240 Bourbon Street, New Orleans, LA 70112",
+    "lat": 29.955363,
+    "lng": -90.068473,
+    "url": "https://www.ruebourbon.com/old-absinthe-house",
+    "hours": "Mon–Wed 9am–2am; Thu and Sun 9am–3am; Fri–Sat 9am–4am. These are current posted hours, subject to change.",
+    "bestTime": "Late afternoon, before Bourbon Street becomes busy; allow 30–45 minutes for one historic cocktail stop.",
+    "order": "Absinthe Frappé for the signature house experience, or a rye Sazerac. Ask the bartender to explain the absinthe choices.",
+    "tip": "This is the Bourbon and Bienville address, distinct from the absinthe café in Pirates Alley. Bring photo ID and confirm any entry policy directly.",
+    "status": "open",
+    "statusNote": "Operator publishes current location, hours and cocktail menu.",
+    "schedule": "Use as a flexible bar visit. No special October 14–19, 2026 entertainment schedule verified.",
+    "originalNote": "The Old Absinthe House: Touristy, but Absinthe, and historic! (FRENCH QUARTER)",
+    "sources": [
+      {
+        "title": "Rue Bourbon — Old Absinthe House hours, history and cocktails",
+        "url": "https://www.ruebourbon.com/old-absinthe-house"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "240 Bourbon Street, New Orleans, LA 70112"
+  },
+  {
+    "id": "cane-table",
+    "name": "Cane & Table",
+    "category": "bars",
+    "area": "French Quarter",
+    "address": "1113 Decatur Street, New Orleans, LA 70116",
+    "lat": 29.960273,
+    "lng": -90.059911,
+    "url": "https://www.caneandtablenola.com/",
+    "hours": "Open seven nights; 5pm–10pm last seating.",
+    "bestTime": "Reserve a table for four at 5:30–6pm for a leisurely early dinner or cocktails before a Frenchmen Street evening.",
+    "order": "Ask for a rum-focused house cocktail and the evening’s seasonal Cuban-Caribbean plates; share a few dishes so the table can explore the menu.",
+    "tip": "Request the tropical courtyard if weather suits. Book via the official Resy link; the kitchen is seasonal, so choose dishes from the current menu.",
+    "status": "open",
+    "statusNote": "Operator confirms the Decatur Street location, nightly hours and reservations for parties up to ten.",
+    "schedule": "Dinner service is currently nightly. No special October 14–19, 2026 event or guaranteed table availability verified.",
+    "originalNote": "Cane + Table: Fancy cocktails, really amazing curated cocktails, $$ but WORTH IT. (FRENCH QUARTER)",
+    "sources": [
+      {
+        "title": "Cane & Table — current hours and location",
+        "url": "https://www.caneandtablenola.com/locations"
+      },
+      {
+        "title": "Cane & Table — reservations",
+        "url": "https://www.caneandtablenola.com/reservations"
+      },
+      {
+        "title": "Cane & Table — kitchen and bar",
+        "url": "https://www.caneandtablenola.com/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "1113 Decatur Street, New Orleans, LA 70116"
+  },
+  {
+    "id": "country-club",
+    "name": "The Country Club",
+    "category": "bars",
+    "area": "Bywater",
+    "address": "634 Louisa Street, New Orleans, LA 70117",
+    "lat": 29.962931,
+    "lng": -90.043929,
+    "url": "https://thecountryclubneworleans.com/",
+    "hours": "Mon–Fri 10am–11pm; Sat–Sun 9:30am–11pm. Public pool entry closes at 9pm.",
+    "bestTime": "Weekday late morning or early afternoon for a slow pool break; Saturday drag brunch is an optional planned outing. Keep Sunday free for the group’s existing tour.",
+    "order": "Poolside snacks and a seasonal cocktail; the posted cocktail list includes a blood-orange spritz. Ask for the current nonalcoholic options too.",
+    "tip": "21+ with valid ID throughout the property. Pool and chairs are walk-in, first come; no pool reservations. Current day pass is $20 each ($80 for four), with special-event pricing possible. Bring swimsuits, towels and sunscreen; no outside food or drink except permitted non-glass water bottles.",
+    "status": "open",
+    "statusNote": "Operator confirms pool access rules and hours. Pool admission is separate from restaurant reservations; do not assume brunch secures a pool place.",
+    "schedule": "Recurring operator schedule: Saturday/Sunday drag brunch, reservations at 10am or 1pm. October 17 availability and performer lineup are unconfirmed; Sunday October 18 already belongs to the group’s plantation/swamp plans.",
+    "originalNote": "The Country Club: Hipsters. A pool with a cabana bar, but can be a fun hang! www.thecountryclubneworleans.com (BYWATER)",
+    "sources": [
+      {
+        "title": "The Country Club — pool hours, day pass and rules",
+        "url": "https://thecountryclubneworleans.com/pool/"
+      },
+      {
+        "title": "The Country Club — drag brunch",
+        "url": "https://thecountryclubneworleans.com/menus/drag-brunch/"
+      },
+      {
+        "title": "The Country Club — cocktails",
+        "url": "https://thecountryclubneworleans.com/barmenus/cocktails/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "634 Louisa Street, New Orleans, LA 70117"
+  },
+  {
+    "id": "bjs-lounge",
+    "name": "BJ’s Lounge",
+    "category": "bars",
+    "area": "Bywater",
+    "address": "4301 Burgundy Street, New Orleans, LA 70117",
+    "lat": 29.962827,
+    "lng": -90.033132,
+    "url": "https://www.instagram.com/bjslounge/",
+    "hours": "Current operator hours unavailable; check the venue’s Instagram or call 504-945-9256.",
+    "bestTime": "A spontaneous evening option after a Bywater meal, once that night’s music and cover are checked.",
+    "order": "Ask for a cold beer or a straightforward mixed drink; keep a little cash for the band.",
+    "tip": "Bring cash and photo ID. Cash-only and age rules were not independently confirmed from an accessible operator source. Save a taxi or rideshare home rather than extending the night with a long walk.",
+    "status": "check",
+    "statusNote": "WWOZ lists BJ’s as active with September/early October shows. The supplied operator Instagram could not be read; direct confirmation remains necessary.",
+    "schedule": "October 14–19, 2026 lineup is unconfirmed. The accessible WWOZ calendar lists shows through October 4 and a November event, not a show during the trip. Do not assume every night has music.",
+    "originalNote": "BJ’s https://www.instagram.com/bjslounge/ good music (BYWATER)",
+    "sources": [
+      {
+        "title": "BJ’s Lounge — operator Instagram (direct verification unavailable)",
+        "url": "https://www.instagram.com/bjslounge/"
+      },
+      {
+        "title": "WWOZ — BJ’s active venue, address and music calendar",
+        "url": "https://www.wwoz.org/organizations/bjs-lounge"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "4301 Burgundy Street, New Orleans, LA 70117"
+  },
+  {
+    "id": "snake-jakes",
+    "name": "Snake and Jake’s Christmas Club Lounge",
+    "category": "bars",
+    "area": "Uptown / Carrollton",
+    "address": "7612 Oak Street, New Orleans, LA 70118",
+    "lat": 29.944195,
+    "lng": -90.125999,
+    "url": "https://snakeandjakes.com/",
+    "hours": "Opens 7pm daily; Tuesday and Friday open 5pm. Official website does not promise a closing time.",
+    "bestTime": "A single optional nightcap after an Uptown evening; Friday’s 5pm opening also allows an earlier visit.",
+    "order": "Ask what’s cold and keep the order simple; this stop is about the small, festive neighborhood room and backyard.",
+    "tip": "The address is Oak Street, not Maple Street. Plan a taxi or rideshare back to Hotel Fontenot. Bring photo ID and some cash; payment and age rules were not independently confirmed.",
+    "status": "open",
+    "statusNote": "Operator confirms its Oak Street location and current opening times. Celebrity sightings in the original recommendation are not a trip promise.",
+    "schedule": "Recurring website listing: Tiki Tuesday and Friday happy hour, both opening at 5pm. Friday Oct 16 follows that weekly pattern, but any special event and exact end time remain unconfirmed.",
+    "originalNote": "UPTOWN: If you end up uptown, be sure to end up on Maple Street, then you can go to a really crazy bar in a garage in a residential neighborhood (Snake and Jake’s). Snake and Jake’s Christmas Club Lounge: This is where Keith Richards hangs out in NOLA.",
+    "sources": [
+      {
+        "title": "Snake and Jake’s — official address and opening hours",
+        "url": "https://snakeandjakes.com/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "7612 Oak Street, New Orleans, LA 70118"
+  },
+  {
+    "id": "city-park",
+    "name": "City Park & Besthoff Sculpture Garden",
+    "category": "sights",
+    "area": "City Park / Mid-City",
+    "address": "1 Collins C. Diboll Circle, New Orleans, LA 70124",
+    "lat": 29.98655,
+    "lng": -90.093461,
+    "url": "https://noma.org/besthoff-sculpture-garden/",
+    "hours": "Besthoff Sculpture Garden: daily 10am–5pm during October–March; free admission. Museum hours and admission are separate.",
+    "bestTime": "Optional weekday morning from 10am, with two unhurried hours for sculpture, lagoon views and live oaks. This is a spare-time alternative, not an addition to Sunday’s planned tour.",
+    "order": "Bring water; choose a café stop before or after wandering rather than scheduling another full meal.",
+    "tip": "The garden is barrier-free and wheelchairs are available on request. Start at the museum/garden entrance, then extend toward Bayou St. John only if everyone wants more walking. The much larger Couturie Forest lies farther north and needs its own transport/time allowance.",
+    "status": "open",
+    "statusNote": "Nature addition to the original list. Operator confirms the garden is free and open seven days; weather can alter access.",
+    "schedule": "Self-guided garden time fits published October opening hours. The official calendar also lists a free Sunday Oct 18 10:30am guided tour, but it conflicts with the group’s existing outing and is not part of the suggested trip plan.",
+    "originalNote": "Nature addition: a relaxed urban-oaks and sculpture option; not present in the original list. Optional only because Sunday’s plantation/swamp tour is already planned.",
+    "sources": [
+      {
+        "title": "NOMA — garden hours, free admission and accessibility",
+        "url": "https://noma.org/besthoff-sculpture-garden/"
+      },
+      {
+        "title": "NOMA — hours and admission",
+        "url": "https://noma.org/visit/visitor-information/"
+      },
+      {
+        "title": "City Park — Couturie Forest",
+        "url": "https://neworleanscitypark.org/visit-city-park/couturie-forest/"
+      },
+      {
+        "title": "NOMA — published October calendar",
+        "url": "https://noma.org/events/month/2026-10/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "1 Collins C. Diboll Circle, New Orleans, LA 70124"
+  },
+  {
+    "id": "bayou-st-john",
+    "name": "Bayou St. John",
+    "category": "sights",
+    "area": "Bayou St. John / Mid-City",
+    "address": "Suggested walking start: Esplanade Avenue at Moss Street, New Orleans, LA 70119",
+    "lat": 29.983421,
+    "lng": -90.089056,
+    "url": "https://www.bayoustjohn.org/",
+    "hours": "Self-guided outdoor stop; visit in daylight and follow posted access notices.",
+    "bestTime": "Optional late morning after City Park, or a brief weekday afternoon pause. Allow 45–60 minutes and turn back whenever the group has had enough.",
+    "order": "Pack water and a small snack; leave space for an unplanned café stop nearby.",
+    "tip": "Enjoy the banks and neighborhood views, respecting residents and taking all litter away. Do not swim. Guided paddling requires a separate operator booking; no kayak reservation is included here.",
+    "status": "open",
+    "statusNote": "Nature addition: an urban waterway stroll, distinct from a remote swamp excursion. Friends of Bayou St. John supports small gatherings on the banks.",
+    "schedule": "No ticket or fixed event assumed. Keep this as an optional alternative; Sunday’s existing plantation/swamp plans take priority.",
+    "originalNote": "Nature addition: a slow, self-guided bayou-bank walk; not present in the original list.",
+    "sources": [
+      {
+        "title": "Friends of Bayou St. John — visiting FAQ",
+        "url": "https://www.bayoustjohn.org/bayou-st-john-faq/"
+      },
+      {
+        "title": "Friends of Bayou St. John — history",
+        "url": "https://www.bayoustjohn.org/history-of-bayou-st-john/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "Esplanade Avenue at Moss Street, New Orleans, LA 70119"
+  },
+  {
+    "id": "honey-island-swamp",
+    "name": "Honey Island Swamp · Cajun Encounters",
+    "category": "sights",
+    "area": "Slidell / Honey Island Swamp",
+    "address": "Tour dock: 55345 US-90, Slidell, LA 70461; New Orleans pickup depends on booking",
+    "lat": 30.231103,
+    "lng": -89.66978,
+    "url": "https://www.cajunencounters.com/tours/swamp-tour-new-orleans",
+    "hours": "Daily departures advertised; exact October departure, price and pickup must be selected and confirmed with the operator.",
+    "bestTime": "Alternative provider only if the group’s existing Sunday swamp arrangement changes. Allow 4–5 hours including transport and preserve a rest break afterwards.",
+    "order": "Choose the covered Original Swamp Tour with round-trip New Orleans transport if needed; the small-boat VIP option is a separate upgrade.",
+    "tip": "Operator describes about two hours on the water. Select transportation explicitly; it costs extra and uses designated pickup points, not every hotel. Hotel Fontenot pickup is not verified. Confirm the assigned pickup 48 hours ahead. Wildlife sightings are never guaranteed.",
+    "status": "open",
+    "statusNote": "Nature addition and backup only. No tour has been booked or priced for the four travelers; their existing Sunday plantation/swamp plan is retained.",
+    "schedule": "The website advertises daily departures; October 14–19, 2026 inventory and precise pickup times are unconfirmed. Current advertised starting prices exclude optional transportation and do not establish a trip quote.",
+    "originalNote": "Nature addition: covered-boat swamp option with transport available; not present in the original list and not a competing Sunday activity.",
+    "sources": [
+      {
+        "title": "Cajun Encounters — covered swamp boats and transportation",
+        "url": "https://www.cajunencounters.com/tours/swamp-tour-new-orleans"
+      },
+      {
+        "title": "Cajun Encounters — designated pickup points and reconfirmation",
+        "url": "https://www.cms.cajunencounters.com/support/pick-up-locations/"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "55345 US-90, Slidell, LA 70461"
+  },
+  {
+    "id": "funk-fest",
+    "name": "NOLA Funk Fest",
+    "category": "music",
+    "area": "Riverfront / CBD",
+    "address": "Audubon Aquarium Riverfront Park, 1 Canal Street, New Orleans, LA",
+    "lat": 29.9498,
+    "lng": -90.0623,
+    "url": "https://www.nolafunkfest.com/",
+    "hours": "October 16–18, 2026. Consult the official day schedule for gates and set times.",
+    "bestTime": "A Friday or Saturday alternative near the hotel; replace an outing rather than stacking another commitment.",
+    "order": "Choose a day ticket only after comparing the current lineup with your other plans.",
+    "tip": "Sunday remains reserved for your plantation and swamp outing. Festival tickets are not booked.",
+    "status": "open",
+    "statusNote": "2026 dates and riverfront location published by the organizer.",
+    "schedule": "Confirmed festival dates: Fri Oct 16–Sun Oct 18. Individual set times must be checked on the official lineup.",
+    "originalNote": "Added after checking events during your dates.",
+    "sources": [
+      {
+        "title": "2026 festival",
+        "url": "https://www.nolafunkfest.com/"
+      },
+      {
+        "title": "2026 dates and venue",
+        "url": "https://www.nolafunkfest.com/funk-for-all"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "Audubon Aquarium Riverfront Park, 1 Canal Street, New Orleans, LA"
+  }
+]

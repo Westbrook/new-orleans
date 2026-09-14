@@ -1,0 +1,25 @@
+{
+  "version": "de6259c78386",
+  "cacheName": "nola-de6259c78386",
+  "files": [
+    "./",
+    "./app.js",
+    "./assets/icon.svg",
+    "./assets/jackson-square.jpg",
+    "./data/map.json",
+    "./data/original-list.txt",
+    "./data/venues.json",
+    "./index.html",
+    "./itinerary.js",
+    "./manifest.webmanifest",
+    "./styles.css",
+    "./vendor/EN-REVE-LICENSE",
+    "./vendor/LIT-LICENSE",
+    "./vendor/NOTICE.txt",
+    "./vendor/SIGNAL-POLYFILL-LICENSE",
+    "./vendor/SIGNAL-UTILS-LICENSE",
+    "./vendor/en-reve.js",
+    "./vendor/tokens.css",
+    "./offline-manifest.json"
+  ]
+}
