@@ -428,7 +428,8 @@ en-toolbar.map-zoom::part(base) { gap: 6px; }
   .day-sidebar { margin-top: 30px; }
   .place-filters { gap: 12px; }
   .place-filters en-select { flex: 1 1 calc(50% - 12px); min-width: 0; }
-  .place-filters #saved-filter { flex: 1 0 100%; }
+  .place-filters #place-sort { flex: 1 1 calc(65% - 12px); }
+  .place-filters #saved-filter { flex: 0 0 auto; }
   .place-filters en-select::part(control) { font-size: .84rem; }
   .results-toolbar { gap: 6px 16px; }
   en-dialog { --en-overlay-padding: 16px; }
@@ -459,3 +460,5 @@ en-dialog::part(close) { margin: 0; }
 .detail-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); inline-size: 100%; }
 .detail-actions en-link.button-link::part(control), .detail-actions en-button::part(control) { inline-size: 100%; }
 @media (max-width: 360px) { .detail-actions .ui-icon { display: none; } }
+
+.sort-note { margin: -4px 0 20px; color: var(--muted); font-size: .85rem; }
