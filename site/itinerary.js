@@ -21,7 +21,7 @@ export const days = [
         "text": "Drop your bags and meet downstairs once everyone has arrived.",
         "venue": "fontenot",
         "tag": "A flexible start",
-        "travel": "MSY → hotel: allow roughly 35–60 minutes by car, plus baggage time. This is a planning allowance, not a traffic prediction.",
+        "travel": "MSY to hotel: allow roughly 35–60 minutes by car, plus baggage time. This is a planning allowance, not a traffic prediction.",
         "originId": "",
         "mode": "driving"
       },
@@ -31,7 +31,7 @@ export const days = [
         "text": "Share a warm muffuletta and sides. Try a Pimm’s Cup if you like.",
         "venue": "napoleon-house",
         "tag": "Your first good meal",
-        "travel": "Hotel → Napoleon House: roughly 20–25 minutes on foot. Cross Canal at a signal and continue through the Quarter toward Chartres and St. Louis.",
+        "travel": "Hotel to Napoleon House: roughly 20–25 minutes on foot. Cross Canal at a signal and continue through the Quarter toward Chartres and St. Louis.",
         "originId": "fontenot",
         "mode": "walking"
       },
@@ -73,7 +73,7 @@ export const days = [
         "title": "Beignets at Café du Monde",
         "text": "Start with two orders of beignets for four; add more as needed. Café au lait is the classic pairing.",
         "venue": "cafe-du-monde",
-        "travel": "Hotel → Café du Monde: allow 25–30 minutes walking through the Quarter, or a short taxi ride.",
+        "travel": "Hotel to Café du Monde: allow 25–30 minutes walking through the Quarter, or a short taxi ride.",
         "originId": "fontenot",
         "mode": "walking"
       },
@@ -96,7 +96,7 @@ export const days = [
         "text": "Share a whole muffuletta, cut into quarters, as a light lunch. Return to Fontenot for a 2–3 hour break.",
         "venue": "central-grocery",
         "tag": "Protect the afternoon",
-        "travel": "Central Grocery → hotel: allow 25–30 minutes walking or take a car.",
+        "travel": "Central Grocery to hotel: allow 25–30 minutes walking or take a car.",
         "originId": "royal-street",
         "mode": "walking"
       },
@@ -124,7 +124,7 @@ export const days = [
           "maison",
           "frenchmen-art-market"
         ],
-        "travel": "Preservation Hall → Frenchmen: roughly 20 minutes on foot through the Quarter and across Esplanade. Taxi/rideshare back to Fontenot when done.",
+        "travel": "Preservation Hall to Frenchmen: roughly 20 minutes on foot through the Quarter and across Esplanade. Taxi/rideshare back to Fontenot when done.",
         "originId": "preservation-hall",
         "mode": "walking"
       }
@@ -160,7 +160,7 @@ export const days = [
         "text": "Reserve for four. Try the fried chicken and ask about the current lunch menu; the old buffet price is unverified.",
         "venue": "dooky-chase",
         "tag": "Reserve for four",
-        "travel": "Fontenot → Dooky Chase: plan about 15–25 minutes by car. Check the booking confirmation for arrival time.",
+        "travel": "Fontenot to Dooky Chase: plan about 15–25 minutes by car. Check the booking confirmation for arrival time.",
         "originId": "fontenot",
         "mode": "driving"
       },
@@ -178,7 +178,7 @@ export const days = [
         "title": "Browse Euclid Records",
         "text": "Browse before the posted 6pm closing, then head toward Bacchanal.",
         "venue": "euclid-records",
-        "travel": "Hotel → Euclid: plan 15–25 minutes by car. Euclid → Bacchanal is roughly a 20-minute neighborhood walk; take a short car ride if preferred.",
+        "travel": "Hotel to Euclid: plan 15–25 minutes by car. Euclid to Bacchanal is roughly a 20-minute neighborhood walk; take a short car ride if preferred.",
         "originId": "fontenot",
         "mode": "driving"
       },
@@ -224,7 +224,7 @@ export const days = [
         "title": "Lunch at Turkey and the Wolf",
         "text": "Arrive near opening. Split the fried bologna and another sandwich; leave room for an early dinner.",
         "venue": "turkey-and-the-wolf",
-        "travel": "Hotel → Turkey and the Wolf: roughly 10–20 minutes by car, or around 30–40 minutes walking. Times are estimates.",
+        "travel": "Hotel to Turkey and the Wolf: roughly 10–20 minutes by car, or around 30–40 minutes walking. Times are estimates.",
         "originId": "fontenot",
         "mode": "driving"
       },
@@ -243,7 +243,7 @@ export const days = [
         "text": "Arrive at Saturday’s 4pm opening. Four-person parties generally walk in; ask about the evening specials.",
         "venue": "jacques-imos",
         "tag": "Walk-in for four",
-        "travel": "Hotel → Oak Street: allow 25–40 minutes by car. A St. Charles/Carrollton transit trip needs substantially more time and a same-day service check.",
+        "travel": "Hotel to Oak Street: allow 25–40 minutes by car. A St. Charles/Carrollton transit trip needs substantially more time and a same-day service check.",
         "originId": "fontenot",
         "mode": "driving"
       },
@@ -255,7 +255,7 @@ export const days = [
         "extra": [
           "snake-jakes"
         ],
-        "travel": "Jacques-Imo’s → Maple Leaf: next door on Oak Street. Return to Fontenot by taxi/rideshare when you are ready.",
+        "travel": "Jacques-Imo’s to Maple Leaf: next door on Oak Street. Return to Fontenot by taxi/rideshare when you are ready.",
         "originId": "jacques-imos",
         "mode": "walking"
       }
@@ -274,7 +274,7 @@ export const days = [
     "short": "The bayou",
     "mood": "One day, one big adventure",
     "intro": "Your booked tour, with a lunch stop. Keep the evening easy.",
-    "walking": "Hotel → meeting point: allow 25–30 minutes walking, or take a taxi. Tour travel is by coach and boat.",
+    "walking": "Hotel to meeting point: allow 25–30 minutes walking, or take a taxi. Tour travel is by coach and boat.",
     "reserve": "Save your barcoded voucher. Check in by 8:45am at Gray Line, 400 Toulouse St, for the 9am departure.",
     "rain": "Follow the operator’s weather and cancellation guidance; use the hotel as your flexible fallback.",
     "route": [
@@ -316,7 +316,7 @@ export const days = [
         "text": "After a rest, try Willie Mae’s at 898 Baronne if the kitchen is serving. Dinner at the hotel is the easy fallback.",
         "venue": "willie-maes",
         "tag": "An easy landing",
-        "travel": "Fontenot → Willie Mae’s CBD at 898 Baronne: roughly 15–20 minutes walking or a short car ride. The original Tremé address is not the current dinner destination.",
+        "travel": "Fontenot to Willie Mae’s CBD at 898 Baronne: roughly 15–20 minutes walking or a short car ride. The original Tremé address is not the current dinner destination.",
         "originId": "fontenot",
         "mode": "walking"
       }
@@ -363,7 +363,7 @@ export const days = [
         "title": "Airport transfer",
         "text": "Confirm space for four people and luggage. Leave enough time for traffic and your airline’s recommended airport arrival.",
         "tag": "Head home unhurried",
-        "travel": "Fontenot → MSY: plan roughly 35–60 minutes by car and add a traffic buffer. This is not a live route estimate."
+        "travel": "Fontenot to MSY: plan roughly 35–60 minutes by car and add a traffic buffer. This is not a live route estimate."
       }
     ],
     "alternatives": [
