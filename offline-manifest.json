@@ -1,6 +1,6 @@
 {
-  "version": "690a55a89fa2",
-  "cacheName": "nola-690a55a89fa2",
+  "version": "fd81120cd46f",
+  "cacheName": "nola-fd81120cd46f",
   "files": [
     "./",
     "./app.js",
@@ -10,6 +10,7 @@
     "./data/map.json",
     "./data/original-list.txt",
     "./data/venues.json",
+    "./guide-utils.js",
     "./index.html",
     "./itinerary.js",
     "./manifest.webmanifest",
