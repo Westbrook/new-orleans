@@ -9,6 +9,7 @@ Requires Node 22+. No package installation is needed; the actual En Rêve contro
 ```sh
 npm run build
 npm run check
+npm test
 npm run preview
 ```
 
@@ -41,6 +42,14 @@ External directions, reservations, tickets, ride requests, weather and updated c
 
 On an updated build, reconnect, open **Saved offline → Check saved guide**, then close all tabs for this site and reopen to activate a waiting version. Versioned, path-specific caches prevent a partial update from mixing guide versions.
 
+## Finding things quickly
+
+The phone navigation remains available at the bottom of every page. Itinerary shortcuts open the hotel, Sunday tour and saved places. Each day puts booking notes before the stops and links to its places and map.
+
+Places can be filtered by day, neighborhood, category and saved state. Search accepts accents, apostrophes and multiple words. Map numbers match the list; saved places have their own map view. Exact showtimes and practical notes remain in each venue's disclosures. The checklist progress reflects only boxes checked on this device.
+
+See [the visual review](docs/visual-review.md) for the design decisions and validation coverage.
+
 ## Content and sources
 
 - `site/data/venues.json`: 40 distinct original places, the hotel, Sunday’s tour meeting point and four additional options. Each entry has source URLs, a checked date, operating status, hours, advice, address and original note.
@@ -54,7 +63,7 @@ Sunday, October 18 follows the supplied booking: Gray Line at 400 Toulouse St, 9
 
 ## Design System and licenses
 
-The UI uses the actual En Rêve components and tokens from the local Design System repository (source commit `fa8c4b1`). Navigation, buttons, links, cards, day and category selectors, dropdowns, saved-place and checklist checkboxes, accordions, badges, alerts, dialogs, search and icons use the bundled components. `site/vendor/en-reve.js` is a self-contained selected-component build; the normal production build does not depend on a sibling checkout. Build `@en-reve/elements` in the Design System checkout, then run `node scripts/vendor.mjs /absolute/path/to/design-system` to refresh it. `site/components.css` applies the trip theme through public tokens and CSS parts. Source MIT and dependency licenses are in `site/vendor/`.
+The UI uses the actual En Rêve components and tokens from the local Design System repository (source commit `7299c35`). Navigation, buttons, links, cards, day and category selectors, dropdowns, saved-place and checklist checkboxes, accordions, badges, alerts, dialogs, search, map toolbar, checklist progress and icons use the bundled components. `site/vendor/en-reve.js` is a self-contained selected-component build; the normal production build does not depend on a sibling checkout. Build `@en-reve/elements` in the Design System checkout, then run `node scripts/vendor.mjs /absolute/path/to/design-system` to refresh it. `site/components.css` applies the trip theme through public tokens and CSS parts. Source MIT and dependency licenses are in `site/vendor/`.
 
 Native anchors remain inside `en-navigation`, as its API requires, and for the brand/skip link. The SVG street map and its pins remain geographic graphics. Print content keeps simple document markup. Selectors use accepted `en-change` state after dispatch; rebuilding a control waits for `updateComplete` before restoring focus. No app-side CSS reaches into component shadow internals. All content uses uniform borders on all four sides, or no border, and no box shadows. This includes cards, alerts, dialogs, controls and the Developer UI return link. Selection uses fill, text and checkmarks; keyboard focus keeps a visible outline.
 
