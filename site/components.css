@@ -333,6 +333,16 @@ en-button#clear-filters{padding:0;border:0;background:transparent}
 .hero-link { margin-top: 14px; }
 .trip-strip { padding-block: 16px; }
 .trip-shortcuts { display: flex; flex-wrap: wrap; gap: 10px; max-width: 1130px; margin: 20px auto 0; padding-inline: 20px; }
+.trip-shortcuts en-button::part(control),
+.trip-shortcuts en-link::part(control) {
+  box-sizing: border-box;
+  min-block-size: max(44px, var(--en-size-target-min));
+  block-size: 100%;
+  padding: 10px 17px;
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
 .subpage .trip-shortcuts { display: none; }
 #view { padding-top: 32px; }
 .section-heading { margin-bottom: 22px; }
