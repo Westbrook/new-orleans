@@ -3,6 +3,10 @@
   --en-color-link: #234ba0;
   --en-surface-radius: 3px;
   --en-control-radius: 3px;
+  --en-shadow-dialog: none;
+  --en-shadow-overlay: none;
+  --en-option-list-shadow: none;
+  --en-input-focus-accent-width: 0px;
 }
 
 en-button, en-link, en-checkbox, en-select, en-segmented-control {
@@ -53,7 +57,7 @@ en-card.field-note, en-card.home-card {
   --en-surface-color: var(--ink);
   --en-surface-padding: 24px;
 }
-en-card.timeline-card::part(base) { border-inline-start: 3px solid #ac7b38; }
+en-card::part(base) { border: 1px solid var(--en-surface-border-color, var(--line)); box-shadow: none; }
 en-card.venue-card { --en-surface-padding: 19px 21px; height: 100%; }
 en-card.venue-card::part(base) { height: 100%; }
 en-card.venue-card::part(body) { display: flex; flex-direction: column; flex: 1; }
@@ -65,10 +69,10 @@ en-card.field-note {
   --en-surface-border-color: #182b48;
 }
 en-card.home-card {
-  --en-surface-padding: 23px 0 0;
+  --en-surface-padding: 23px;
   --en-surface-background: transparent;
 }
-en-card.home-card::part(base) { border: 0; border-block-start: 1px solid var(--line); border-radius: 0; }
+en-card.home-card::part(base) { border: 1px solid var(--line); border-radius: 3px; }
 .home-card en-link { display: block; margin-block-start: 12px; font-size: .9rem; }
 
 /* Action buttons retain the system's keyboard, target and focus behavior. */
@@ -116,7 +120,7 @@ en-button.map-place::part(control) {
   inline-size: 100%;
   padding: 15px 0;
   border: 0;
-  border-block-end: 1px solid var(--line);
+
   border-radius: 0;
   text-align: start;
   justify-content: flex-start;
@@ -163,7 +167,7 @@ en-link.button-link.secondary:hover::part(control) { background: #e6e9ee; color:
 en-link.text-button::part(control) { display: inline-flex; align-items: center; gap: .4em; min-block-size: 44px; font-weight: 600; color: var(--ink); text-decoration: none; }
 en-link.text-button:hover::part(control) { text-decoration: underline; }
 en-link.hero-link { --en-color-link: #fff; }
-en-link.hero-link::part(control) { display: inline-flex; align-items: center; gap: 28px; padding-block-end: 5px; border-block-end: 1px solid #ffffff70; color: white; text-decoration: none; }
+en-link.hero-link::part(control) { display: inline-flex; align-items: center; gap: 28px; padding-block-end: 5px;  color: white; text-decoration: none; }
 en-link.trip-hotel { font-size: inherit; --en-color-link: var(--ink); }
 en-link.trip-hotel::part(control) { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px; text-decoration: none; }
 footer en-link { --en-color-link: var(--muted); }
@@ -263,7 +267,7 @@ en-alert::part(base) { border-width: 1px; box-shadow: none; }
 
 /* Disclosures keep native system triggers, with its SVG icon in the label. */
 en-accordion-item.disclosure, en-accordion-item.travel-detail { display: block; border: 0; padding: 0; background: transparent; }
-en-accordion-item.disclosure::part(base), en-accordion-item.travel-detail::part(base) { border: 0; border-block-start: 1px solid var(--line); }
+en-accordion-item.disclosure::part(base), en-accordion-item.travel-detail::part(base) { border: 0;  }
 en-accordion-item.disclosure::part(trigger), en-accordion-item.travel-detail::part(trigger) { padding: 13px 0; background: transparent; font-size: .92rem; }
 en-accordion-item.disclosure::part(panel), en-accordion-item.travel-detail::part(panel) { padding: 0 0 16px; }
 en-accordion-item.travel-detail::part(trigger) { font-size: .87rem; }
@@ -313,3 +317,8 @@ en-accordion-item[open] .disclosure-chevron { transform: rotate(180deg); }
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 en-alert.detail-warning[variant="info"]{--en-alert-background:#e7ebe8;--en-alert-border-color:#527061}
 en-button#clear-filters{padding:0;border:0;background:transparent}
+
+/* Every surface stays flat. Keyboard focus uses the system outline. */
+*, *::before, *::after { box-shadow: none !important; }
+*::part(base), *::part(surface), *::part(control), *::part(trigger), *::part(option),
+*::part(close), *::part(focus-frame) { box-shadow: none !important; }
