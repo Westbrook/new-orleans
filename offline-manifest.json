@@ -1,11 +1,12 @@
 {
-  "version": "eabc250b091f",
-  "cacheName": "nola-eabc250b091f",
+  "version": "94831445e43b",
+  "cacheName": "nola-94831445e43b",
   "files": [
     "./",
     "./app.js",
     "./assets/icon.svg",
     "./assets/jackson-square.jpg",
+    "./components.css",
     "./data/map.json",
     "./data/original-list.txt",
     "./data/venues.json",
