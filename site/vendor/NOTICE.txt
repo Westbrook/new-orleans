@@ -1,9 +1,10 @@
 En Rêve Design System
-Source: local Design System repository, commit 9643c3b, package version 0.1.0.
+Source: local Design System repository, commit fa8c4b1, package version 0.1.0.
 MIT license: see EN-REVE-LICENSE.
 
 This checked-in bundle contains actual En Rêve button, icon, badge, dialog,
-segmented-control and search-input components and their shared token/styles/
+segmented-control/item, search-input, link, navigation, card, select/option,
+checkbox, accordion-item and alert components and their shared token/styles/
 interaction primitives. The source and bundling recipe are in scripts/vendor.mjs.
 The static site requires no runtime CDN or package registry.
 

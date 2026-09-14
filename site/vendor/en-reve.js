@@ -254,34 +254,34 @@ var g = class extends HTMLElement {
 g.elementStyles = [], g.shadowRootOptions = { mode: "open" }, g[h("elementProperties")] = /* @__PURE__ */ new Map(), g[h("finalized")] = /* @__PURE__ */ new Map(), re?.({ ReactiveElement: g }), (ee.reactiveElementVersions ??= []).push("2.1.2");
 //#endregion
 //#region ../design-system/node_modules/lit-html/lit-html.js
-var se = globalThis, ce = (e) => e, le = se.trustedTypes, ue = le ? le.createPolicy("lit-html", { createHTML: (e) => e }) : void 0, de = "$lit$", _ = `lit$${Math.random().toFixed(9).slice(2)}$`, fe = "?" + _, pe = `<${fe}>`, v = document, y = () => v.createComment(""), b = (e) => e === null || typeof e != "object" && typeof e != "function", me = Array.isArray, he = (e) => me(e) || typeof e?.[Symbol.iterator] == "function", ge = "[ 	\n\f\r]", x = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, _e = /-->/g, ve = />/g, S = RegExp(`>|${ge}(?:([^\\s"'>=/]+)(${ge}*=${ge}*(?:[^ \t\n\f\r"'\`<>=]|("|')|))|$)`, "g"), ye = /'/g, be = /"/g, xe = /^(?:script|style|textarea|title)$/i, Se = (e) => (t, ...n) => ({
+var se = globalThis, ce = (e) => e, le = se.trustedTypes, ue = le ? le.createPolicy("lit-html", { createHTML: (e) => e }) : void 0, de = "$lit$", _ = `lit$${Math.random().toFixed(9).slice(2)}$`, fe = "?" + _, pe = `<${fe}>`, v = document, me = () => v.createComment(""), y = (e) => e === null || typeof e != "object" && typeof e != "function", he = Array.isArray, ge = (e) => he(e) || typeof e?.[Symbol.iterator] == "function", _e = "[ 	\n\f\r]", b = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g, ve = /-->/g, ye = />/g, x = RegExp(`>|${_e}(?:([^\\s"'>=/]+)(${_e}*=${_e}*(?:[^ \t\n\f\r"'\`<>=]|("|')|))|$)`, "g"), be = /'/g, xe = /"/g, Se = /^(?:script|style|textarea|title)$/i, Ce = (e) => (t, ...n) => ({
 	_$litType$: e,
 	strings: t,
 	values: n
-}), C = Se(1), w = Se(2), T = Symbol.for("lit-noChange"), E = Symbol.for("lit-nothing"), Ce = /* @__PURE__ */ new WeakMap(), D = v.createTreeWalker(v, 129);
-function we(e, t) {
-	if (!me(e) || !e.hasOwnProperty("raw")) throw Error("invalid template strings array");
+}), S = Ce(1), C = Ce(2), w = Symbol.for("lit-noChange"), T = Symbol.for("lit-nothing"), we = /* @__PURE__ */ new WeakMap(), E = v.createTreeWalker(v, 129);
+function Te(e, t) {
+	if (!he(e) || !e.hasOwnProperty("raw")) throw Error("invalid template strings array");
 	return ue === void 0 ? t : ue.createHTML(t);
 }
-var Te = (e, t) => {
-	let n = e.length - 1, r = [], i, a = t === 2 ? "<svg>" : t === 3 ? "<math>" : "", o = x;
+var Ee = (e, t) => {
+	let n = e.length - 1, r = [], i, a = t === 2 ? "<svg>" : t === 3 ? "<math>" : "", o = b;
 	for (let t = 0; t < n; t++) {
 		let n = e[t], s, c, l = -1, u = 0;
-		for (; u < n.length && (o.lastIndex = u, c = o.exec(n), c !== null);) u = o.lastIndex, o === x ? c[1] === "!--" ? o = _e : c[1] === void 0 ? c[2] === void 0 ? c[3] !== void 0 && (o = S) : (xe.test(c[2]) && (i = RegExp("</" + c[2], "g")), o = S) : o = ve : o === S ? c[0] === ">" ? (o = i ?? x, l = -1) : c[1] === void 0 ? l = -2 : (l = o.lastIndex - c[2].length, s = c[1], o = c[3] === void 0 ? S : c[3] === "\"" ? be : ye) : o === be || o === ye ? o = S : o === _e || o === ve ? o = x : (o = S, i = void 0);
-		let d = o === S && e[t + 1].startsWith("/>") ? " " : "";
-		a += o === x ? n + pe : l >= 0 ? (r.push(s), n.slice(0, l) + de + n.slice(l) + _ + d) : n + _ + (l === -2 ? t : d);
+		for (; u < n.length && (o.lastIndex = u, c = o.exec(n), c !== null);) u = o.lastIndex, o === b ? c[1] === "!--" ? o = ve : c[1] === void 0 ? c[2] === void 0 ? c[3] !== void 0 && (o = x) : (Se.test(c[2]) && (i = RegExp("</" + c[2], "g")), o = x) : o = ye : o === x ? c[0] === ">" ? (o = i ?? b, l = -1) : c[1] === void 0 ? l = -2 : (l = o.lastIndex - c[2].length, s = c[1], o = c[3] === void 0 ? x : c[3] === "\"" ? xe : be) : o === xe || o === be ? o = x : o === ve || o === ye ? o = b : (o = x, i = void 0);
+		let d = o === x && e[t + 1].startsWith("/>") ? " " : "";
+		a += o === b ? n + pe : l >= 0 ? (r.push(s), n.slice(0, l) + de + n.slice(l) + _ + d) : n + _ + (l === -2 ? t : d);
 	}
-	return [we(e, a + (e[n] || "<?>") + (t === 2 ? "</svg>" : t === 3 ? "</math>" : "")), r];
-}, Ee = class e {
+	return [Te(e, a + (e[n] || "<?>") + (t === 2 ? "</svg>" : t === 3 ? "</math>" : "")), r];
+}, De = class e {
 	constructor({ strings: t, _$litType$: n }, r) {
 		let i;
 		this.parts = [];
-		let a = 0, o = 0, s = t.length - 1, c = this.parts, [l, u] = Te(t, n);
-		if (this.el = e.createElement(l, r), D.currentNode = this.el.content, n === 2 || n === 3) {
+		let a = 0, o = 0, s = t.length - 1, c = this.parts, [l, u] = Ee(t, n);
+		if (this.el = e.createElement(l, r), E.currentNode = this.el.content, n === 2 || n === 3) {
 			let e = this.el.content.firstChild;
 			e.replaceWith(...e.childNodes);
 		}
-		for (; (i = D.nextNode()) !== null && c.length < s;) {
+		for (; (i = E.nextNode()) !== null && c.length < s;) {
 			if (i.nodeType === 1) {
 				if (i.hasAttributes()) for (let e of i.getAttributeNames()) if (e.endsWith(de)) {
 					let t = u[o++], n = i.getAttribute(e).split(_), r = /([.?@])?(.*)/.exec(t);
@@ -290,21 +290,21 @@ var Te = (e, t) => {
 						index: a,
 						name: r[2],
 						strings: n,
-						ctor: r[1] === "." ? ke : r[1] === "?" ? Ae : r[1] === "@" ? je : k
+						ctor: r[1] === "." ? Ae : r[1] === "?" ? je : r[1] === "@" ? Me : O
 					}), i.removeAttribute(e);
 				} else e.startsWith(_) && (c.push({
 					type: 6,
 					index: a
 				}), i.removeAttribute(e));
-				if (xe.test(i.tagName)) {
+				if (Se.test(i.tagName)) {
 					let e = i.textContent.split(_), t = e.length - 1;
 					if (t > 0) {
 						i.textContent = le ? le.emptyScript : "";
-						for (let n = 0; n < t; n++) i.append(e[n], y()), D.nextNode(), c.push({
+						for (let n = 0; n < t; n++) i.append(e[n], me()), E.nextNode(), c.push({
 							type: 2,
 							index: ++a
 						});
-						i.append(e[t], y());
+						i.append(e[t], me());
 					}
 				}
 			} else if (i.nodeType === 8) {
@@ -328,12 +328,12 @@ var Te = (e, t) => {
 		return n.innerHTML = e, n;
 	}
 };
-function O(e, t, n = e, r) {
-	if (t === T) return t;
-	let i = r === void 0 ? n._$Cl : n._$Co?.[r], a = b(t) ? void 0 : t._$litDirective$;
-	return i?.constructor !== a && (i?._$AO?.(!1), a === void 0 ? i = void 0 : (i = new a(e), i._$AT(e, n, r)), r === void 0 ? n._$Cl = i : (n._$Co ??= [])[r] = i), i !== void 0 && (t = O(e, i._$AS(e, t.values), i, r)), t;
+function D(e, t, n = e, r) {
+	if (t === w) return t;
+	let i = r === void 0 ? n._$Cl : n._$Co?.[r], a = y(t) ? void 0 : t._$litDirective$;
+	return i?.constructor !== a && (i?._$AO?.(!1), a === void 0 ? i = void 0 : (i = new a(e), i._$AT(e, n, r)), r === void 0 ? n._$Cl = i : (n._$Co ??= [])[r] = i), i !== void 0 && (t = D(e, i._$AS(e, t.values), i, r)), t;
 }
-var De = class {
+var Oe = class {
 	constructor(e, t) {
 		this._$AV = [], this._$AN = void 0, this._$AD = e, this._$AM = t;
 	}
@@ -345,27 +345,27 @@ var De = class {
 	}
 	u(e) {
 		let { el: { content: t }, parts: n } = this._$AD, r = (e?.creationScope ?? v).importNode(t, !0);
-		D.currentNode = r;
-		let i = D.nextNode(), a = 0, o = 0, s = n[0];
+		E.currentNode = r;
+		let i = E.nextNode(), a = 0, o = 0, s = n[0];
 		for (; s !== void 0;) {
 			if (a === s.index) {
 				let t;
-				s.type === 2 ? t = new Oe(i, i.nextSibling, this, e) : s.type === 1 ? t = new s.ctor(i, s.name, s.strings, this, e) : s.type === 6 && (t = new Me(i, this, e)), this._$AV.push(t), s = n[++o];
+				s.type === 2 ? t = new ke(i, i.nextSibling, this, e) : s.type === 1 ? t = new s.ctor(i, s.name, s.strings, this, e) : s.type === 6 && (t = new Ne(i, this, e)), this._$AV.push(t), s = n[++o];
 			}
-			a !== s?.index && (i = D.nextNode(), a++);
+			a !== s?.index && (i = E.nextNode(), a++);
 		}
-		return D.currentNode = v, r;
+		return E.currentNode = v, r;
 	}
 	p(e) {
 		let t = 0;
 		for (let n of this._$AV) n !== void 0 && (n.strings === void 0 ? n._$AI(e[t]) : (n._$AI(e, n, t), t += n.strings.length - 2)), t++;
 	}
-}, Oe = class e {
+}, ke = class e {
 	get _$AU() {
 		return this._$AM?._$AU ?? this._$Cv;
 	}
 	constructor(e, t, n, r) {
-		this.type = 2, this._$AH = E, this._$AN = void 0, this._$AA = e, this._$AB = t, this._$AM = n, this.options = r, this._$Cv = r?.isConnected ?? !0;
+		this.type = 2, this._$AH = T, this._$AN = void 0, this._$AA = e, this._$AB = t, this._$AM = n, this.options = r, this._$Cv = r?.isConnected ?? !0;
 	}
 	get parentNode() {
 		let e = this._$AA.parentNode, t = this._$AM;
@@ -378,7 +378,7 @@ var De = class {
 		return this._$AB;
 	}
 	_$AI(e, t = this) {
-		e = O(this, e, t), b(e) ? e === E || e == null || e === "" ? (this._$AH !== E && this._$AR(), this._$AH = E) : e !== this._$AH && e !== T && this._(e) : e._$litType$ === void 0 ? e.nodeType === void 0 ? he(e) ? this.k(e) : this._(e) : this.T(e) : this.$(e);
+		e = D(this, e, t), y(e) ? e === T || e == null || e === "" ? (this._$AH !== T && this._$AR(), this._$AH = T) : e !== this._$AH && e !== w && this._(e) : e._$litType$ === void 0 ? e.nodeType === void 0 ? ge(e) ? this.k(e) : this._(e) : this.T(e) : this.$(e);
 	}
 	O(e) {
 		return this._$AA.parentNode.insertBefore(e, this._$AB);
@@ -387,24 +387,24 @@ var De = class {
 		this._$AH !== e && (this._$AR(), this._$AH = this.O(e));
 	}
 	_(e) {
-		this._$AH !== E && b(this._$AH) ? this._$AA.nextSibling.data = e : this.T(v.createTextNode(e)), this._$AH = e;
+		this._$AH !== T && y(this._$AH) ? this._$AA.nextSibling.data = e : this.T(v.createTextNode(e)), this._$AH = e;
 	}
 	$(e) {
-		let { values: t, _$litType$: n } = e, r = typeof n == "number" ? this._$AC(e) : (n.el === void 0 && (n.el = Ee.createElement(we(n.h, n.h[0]), this.options)), n);
+		let { values: t, _$litType$: n } = e, r = typeof n == "number" ? this._$AC(e) : (n.el === void 0 && (n.el = De.createElement(Te(n.h, n.h[0]), this.options)), n);
 		if (this._$AH?._$AD === r) this._$AH.p(t);
 		else {
-			let e = new De(r, this), n = e.u(this.options);
+			let e = new Oe(r, this), n = e.u(this.options);
 			e.p(t), this.T(n), this._$AH = e;
 		}
 	}
 	_$AC(e) {
-		let t = Ce.get(e.strings);
-		return t === void 0 && Ce.set(e.strings, t = new Ee(e)), t;
+		let t = we.get(e.strings);
+		return t === void 0 && we.set(e.strings, t = new De(e)), t;
 	}
 	k(t) {
-		me(this._$AH) || (this._$AH = [], this._$AR());
+		he(this._$AH) || (this._$AH = [], this._$AR());
 		let n = this._$AH, r, i = 0;
-		for (let a of t) i === n.length ? n.push(r = new e(this.O(y()), this.O(y()), this, this.options)) : r = n[i], r._$AI(a), i++;
+		for (let a of t) i === n.length ? n.push(r = new e(this.O(me()), this.O(me()), this, this.options)) : r = n[i], r._$AI(a), i++;
 		i < n.length && (this._$AR(r && r._$AB.nextSibling, i), n.length = i);
 	}
 	_$AR(e = this._$AA.nextSibling, t) {
@@ -416,7 +416,7 @@ var De = class {
 	setConnected(e) {
 		this._$AM === void 0 && (this._$Cv = e, this._$AP?.(e));
 	}
-}, k = class {
+}, O = class {
 	get tagName() {
 		return this.element.tagName;
 	}
@@ -424,47 +424,47 @@ var De = class {
 		return this._$AM._$AU;
 	}
 	constructor(e, t, n, r, i) {
-		this.type = 1, this._$AH = E, this._$AN = void 0, this.element = e, this.name = t, this._$AM = r, this.options = i, n.length > 2 || n[0] !== "" || n[1] !== "" ? (this._$AH = Array(n.length - 1).fill(/* @__PURE__ */ new String()), this.strings = n) : this._$AH = E;
+		this.type = 1, this._$AH = T, this._$AN = void 0, this.element = e, this.name = t, this._$AM = r, this.options = i, n.length > 2 || n[0] !== "" || n[1] !== "" ? (this._$AH = Array(n.length - 1).fill(/* @__PURE__ */ new String()), this.strings = n) : this._$AH = T;
 	}
 	_$AI(e, t = this, n, r) {
 		let i = this.strings, a = !1;
-		if (i === void 0) e = O(this, e, t, 0), a = !b(e) || e !== this._$AH && e !== T, a && (this._$AH = e);
+		if (i === void 0) e = D(this, e, t, 0), a = !y(e) || e !== this._$AH && e !== w, a && (this._$AH = e);
 		else {
 			let r = e, o, s;
-			for (e = i[0], o = 0; o < i.length - 1; o++) s = O(this, r[n + o], t, o), s === T && (s = this._$AH[o]), a ||= !b(s) || s !== this._$AH[o], s === E ? e = E : e !== E && (e += (s ?? "") + i[o + 1]), this._$AH[o] = s;
+			for (e = i[0], o = 0; o < i.length - 1; o++) s = D(this, r[n + o], t, o), s === w && (s = this._$AH[o]), a ||= !y(s) || s !== this._$AH[o], s === T ? e = T : e !== T && (e += (s ?? "") + i[o + 1]), this._$AH[o] = s;
 		}
 		a && !r && this.j(e);
 	}
 	j(e) {
-		e === E ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, e ?? "");
+		e === T ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, e ?? "");
 	}
-}, ke = class extends k {
+}, Ae = class extends O {
 	constructor() {
 		super(...arguments), this.type = 3;
 	}
 	j(e) {
-		this.element[this.name] = e === E ? void 0 : e;
+		this.element[this.name] = e === T ? void 0 : e;
 	}
-}, Ae = class extends k {
+}, je = class extends O {
 	constructor() {
 		super(...arguments), this.type = 4;
 	}
 	j(e) {
-		this.element.toggleAttribute(this.name, !!e && e !== E);
+		this.element.toggleAttribute(this.name, !!e && e !== T);
 	}
-}, je = class extends k {
+}, Me = class extends O {
 	constructor(e, t, n, r, i) {
 		super(e, t, n, r, i), this.type = 5;
 	}
 	_$AI(e, t = this) {
-		if ((e = O(this, e, t, 0) ?? E) === T) return;
-		let n = this._$AH, r = e === E && n !== E || e.capture !== n.capture || e.once !== n.once || e.passive !== n.passive, i = e !== E && (n === E || r);
+		if ((e = D(this, e, t, 0) ?? T) === w) return;
+		let n = this._$AH, r = e === T && n !== T || e.capture !== n.capture || e.once !== n.once || e.passive !== n.passive, i = e !== T && (n === T || r);
 		r && this.element.removeEventListener(this.name, this, n), i && this.element.addEventListener(this.name, this, e), this._$AH = e;
 	}
 	handleEvent(e) {
 		typeof this._$AH == "function" ? this._$AH.call(this.options?.host ?? this.element, e) : this._$AH.handleEvent(e);
 	}
-}, Me = class {
+}, Ne = class {
 	constructor(e, t, n) {
 		this.element = e, this.type = 6, this._$AN = void 0, this._$AM = t, this.options = n;
 	}
@@ -472,33 +472,33 @@ var De = class {
 		return this._$AM._$AU;
 	}
 	_$AI(e) {
-		O(this, e);
+		D(this, e);
 	}
-}, Ne = {
+}, Pe = {
 	M: de,
 	P: _,
 	A: fe,
 	C: 1,
-	L: Te,
-	R: De,
-	D: he,
-	V: O,
-	I: Oe,
-	H: k,
-	N: Ae,
-	U: je,
-	B: ke,
-	F: Me
-}, Pe = se.litHtmlPolyfillSupport;
-Pe?.(Ee, Oe), (se.litHtmlVersions ??= []).push("3.3.3");
-var Fe = (e, t, n) => {
+	L: Ee,
+	R: Oe,
+	D: ge,
+	V: D,
+	I: ke,
+	H: O,
+	N: je,
+	U: Me,
+	B: Ae,
+	F: Ne
+}, Fe = se.litHtmlPolyfillSupport;
+Fe?.(De, ke), (se.litHtmlVersions ??= []).push("3.3.3");
+var Ie = (e, t, n) => {
 	let r = n?.renderBefore ?? t, i = r._$litPart$;
 	if (i === void 0) {
 		let e = n?.renderBefore ?? null;
-		r._$litPart$ = i = new Oe(t.insertBefore(y(), e), e, void 0, n ?? {});
+		r._$litPart$ = i = new ke(t.insertBefore(me(), e), e, void 0, n ?? {});
 	}
 	return i._$AI(e), i;
-}, Ie = globalThis, A = class extends g {
+}, Le = globalThis, k = class extends g {
 	constructor() {
 		super(...arguments), this.renderOptions = { host: this }, this._$Do = void 0;
 	}
@@ -508,7 +508,7 @@ var Fe = (e, t, n) => {
 	}
 	update(e) {
 		let t = this.render();
-		this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(e), this._$Do = Fe(t, this.renderRoot, this.renderOptions);
+		this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(e), this._$Do = Ie(t, this.renderRoot, this.renderOptions);
 	}
 	connectedCallback() {
 		super.connectedCallback(), this._$Do?.setConnected(!0);
@@ -517,22 +517,22 @@ var Fe = (e, t, n) => {
 		super.disconnectedCallback(), this._$Do?.setConnected(!1);
 	}
 	render() {
-		return T;
+		return w;
 	}
 };
-A._$litElement$ = !0, A.finalized = !0, Ie.litElementHydrateSupport?.({ LitElement: A });
-var Le = Ie.litElementPolyfillSupport;
-Le?.({ LitElement: A }), (Ie.litElementVersions ??= []).push("4.2.2");
+k._$litElement$ = !0, k.finalized = !0, Le.litElementHydrateSupport?.({ LitElement: k });
+var Re = Le.litElementPolyfillSupport;
+Re?.({ LitElement: k }), (Le.litElementVersions ??= []).push("4.2.2");
 //#endregion
 //#region ../design-system/packages/primitives/dist/interactions/static-styles.js
-var Re = "data-en-static-styles", ze = /* @__PURE__ */ new WeakMap(), Be = /* @__PURE__ */ new WeakMap();
-function Ve(e) {
+var ze = "data-en-static-styles", Be = /* @__PURE__ */ new WeakMap(), Ve = /* @__PURE__ */ new WeakMap();
+function He(e) {
 	let t = e.constructor;
-	if (ze.has(t)) return ze.get(t);
+	if (Be.has(t)) return Be.get(t);
 	let n = t.elementStyles, r = n.length > 0 && n.every((e) => "cssText" in e && typeof e.cssText == "string" && !/@(?:import|namespace)\b/i.test(e.cssText)) ? n : null;
-	return ze.set(t, r), r;
+	return Be.set(t, r), r;
 }
-var He = class {
+var Ue = class {
 	#e;
 	#t = !1;
 	#n;
@@ -561,7 +561,7 @@ var He = class {
 	#c() {
 		let e = this.#r, n = this.#n;
 		if (this.#n = void 0, !t || !e || e !== this.#e.shadowRoot || !n || n.parentNode !== e || n.getAttribute("data-en-static-styles") !== "v1" || !("adoptedStyleSheets" in e) || [...e.querySelectorAll("style, link[rel~=\"stylesheet\" i]")].some((e) => e !== n) || n.getAttributeNames().some((e) => e !== "data-en-static-styles" && e !== "nonce") || !n.sheet || n.sheet.disabled) return;
-		let r = Ve(this.#e);
+		let r = He(this.#e);
 		if (!r) return;
 		let i = [...e.adoptedStyleSheets];
 		try {
@@ -580,10 +580,10 @@ var He = class {
 	#l() {
 		let e = this.#r, t = this.#a;
 		if (!e || e !== this.#e.shadowRoot || !t) return;
-		let n = Be.get(t);
-		n === void 0 && (n = t.map((e) => e.cssText).join(""), Be.set(t, n));
+		let n = Ve.get(t);
+		n === void 0 && (n = t.map((e) => e.cssText).join(""), Ve.set(t, n));
 		let r = this.#e.ownerDocument.createElement("style");
-		r.setAttribute(Re, "v1"), this.#s && (r.nonce = this.#s), r.textContent = n, e.insertBefore(r, e.firstChild);
+		r.setAttribute(ze, "v1"), this.#s && (r.nonce = this.#s), r.textContent = n, e.insertBefore(r, e.firstChild);
 		try {
 			e.adoptedStyleSheets = e.adoptedStyleSheets.filter((e) => !this.#o.includes(e));
 		} catch {}
@@ -592,18 +592,18 @@ var He = class {
 };
 //#endregion
 //#region ../design-system/packages/elements/dist/internal/en-element.js
-function Ue(e) {
+function We(e) {
 	return e === "inherit" || e === "small" || e === "large" ? e : "medium";
 }
-var j = class extends A {
-	staticStyles = new He(this);
+var A = class extends k {
+	staticStyles = new Ue(this);
 	static properties = { size: {
 		reflect: !0,
 		useDefault: !0,
 		noAccessor: !0,
 		converter: {
-			fromAttribute: Ue,
-			toAttribute: Ue
+			fromAttribute: We,
+			toAttribute: We
 		}
 	} };
 	#e = "medium";
@@ -611,12 +611,12 @@ var j = class extends A {
 		return this.#e;
 	}
 	set size(e) {
-		let t = this.#e, n = Ue(e);
+		let t = this.#e, n = We(e);
 		this.#e = n;
 		let r = this.getAttribute("size") === n ? void 0 : Object.assign(Object.create(this.constructor.getPropertyOptions("size")), { hasChanged: () => !0 });
 		this.requestUpdate("size", t, r);
 	}
-}, We = Object.freeze({
+}, Ge = Object.freeze({
 	"--en-border-invalid-width": "2px",
 	"--en-border-width": "1px",
 	"--en-calendar-hover-opacity": "0.1",
@@ -920,13 +920,13 @@ var j = class extends A {
 	"--en-space-switch-inset-medium": "0.1875rem",
 	"--en-space-switch-inset-small": "0.1640625rem"
 });
-function Ge(e) {
-	if (!Object.hasOwn(We, e)) throw RangeError("Unknown token " + e);
-	return We[e];
+function Ke(e) {
+	if (!Object.hasOwn(Ge, e)) throw RangeError("Unknown token " + e);
+	return Ge[e];
 }
 //#endregion
 //#region ../design-system/packages/tokens/dist/sizing.js
-var Ke = Object.freeze([
+var qe = Object.freeze([
 	"small",
 	"medium",
 	"large"
@@ -940,7 +940,7 @@ Object.freeze({
 	medium: 1,
 	large: 1.125
 });
-var qe = Object.freeze({
+var Je = Object.freeze({
 	"size.control": "size.control-min",
 	"size.icon": "size.icon",
 	"size.avatar": "size.avatar",
@@ -983,74 +983,74 @@ var qe = Object.freeze({
 	"font.heading-small.size": "font.heading-small.size",
 	"font.heading-medium.size": "font.heading-medium.size",
 	"font.heading-large.size": "font.heading-large.size"
-}), Je = Object.freeze(Object.entries(qe).map(([e, t]) => Object.freeze({
+}), Ye = Object.freeze(Object.entries(Je).map(([e, t]) => Object.freeze({
 	role: `--en-${e.replaceAll(".", "-")}`,
 	base: `--en-${t.replaceAll(".", "-")}`,
-	variants: Object.freeze(Object.fromEntries(Ke.map((t) => [t, `--en-${e.replaceAll(".", "-")}-${t}`])))
+	variants: Object.freeze(Object.fromEntries(qe.map((t) => [t, `--en-${e.replaceAll(".", "-")}-${t}`])))
 })));
 //#endregion
 //#region ../design-system/packages/styles/dist/internal/values.js
-function Ye(e) {
-	let t = Ge(e);
+function Xe(e) {
+	let t = Ke(e);
 	if (!t) throw Error(`Missing stylesheet token default: ${e}`);
 	return o`var(${a(e)}, ${a(t)})`;
 }
-var Xe = new Map(Je.map(({ base: e, role: t }) => [e, `--_en-sized-${t.slice(5)}`]));
-function M(e) {
-	let t = Ye(e), n = Xe.get(e);
+var Ze = new Map(Ye.map(({ base: e, role: t }) => [e, `--_en-sized-${t.slice(5)}`]));
+function j(e) {
+	let t = Xe(e), n = Ze.get(e);
 	return n ? o`var(${a(n)}, ${t})` : t;
 }
-function N(e, t) {
+function M(e, t) {
 	return o`var(${a(e)}, ${t})`;
 }
 //#endregion
 //#region ../design-system/packages/styles/dist/internal/focus-core.js
-function P(e, t, n) {
-	return e ? N(`--en-${e}-focus-${t}`, n) : n;
+function N(e, t, n) {
+	return e ? M(`--en-${e}-focus-${t}`, n) : n;
 }
-function Ze(e) {
-	let t = P(e.family, "width", M("--en-focus-width"));
+function Qe(e) {
+	let t = N(e.family, "width", j("--en-focus-width"));
 	return {
 		width: t,
-		offset: P(e.family, "offset", e.inset ? o`calc(0px - ${t})` : M("--en-focus-offset")),
-		color: P(e.family, "color", M("--en-color-focus")),
-		haloWidth: e.halo === !1 ? o`0px` : P(e.family, "halo-width", M("--en-focus-halo-width")),
-		haloColor: P(e.family, "halo-color", M("--en-color-focus-halo"))
+		offset: N(e.family, "offset", e.inset ? o`calc(0px - ${t})` : j("--en-focus-offset")),
+		color: N(e.family, "color", j("--en-color-focus")),
+		haloWidth: e.halo === !1 ? o`0px` : N(e.family, "halo-width", j("--en-focus-halo-width")),
+		haloColor: N(e.family, "halo-color", j("--en-color-focus-halo"))
 	};
 }
-function F(e = {}) {
-	let t = Ze(e);
+function P(e = {}) {
+	let t = Qe(e);
 	return o`max(0px, calc(${t.width} + ${t.offset}), ${t.haloWidth})`;
 }
-var Qe = o`max(${F()}, ${F({ family: "button" })}, ${F({ family: "input" })}, ${F({
+var $e = o`max(${P()}, ${P({ family: "button" })}, ${P({ family: "input" })}, ${P({
 	family: "option",
 	inset: !0
-})}, ${F({ family: "overlay" })})`;
-function $e(e, t = {}) {
+})}, ${P({ family: "overlay" })})`;
+function et(e, t = {}) {
 	return o`${e} {
-    scroll-margin-block: max(${M("--en-focus-scroll-margin-block")}, ${F(t)});
-    scroll-margin-inline: max(${M("--en-focus-scroll-margin-inline")}, ${F(t)});
+    scroll-margin-block: max(${j("--en-focus-scroll-margin-block")}, ${P(t)});
+    scroll-margin-inline: max(${j("--en-focus-scroll-margin-inline")}, ${P(t)});
   }`;
 }
-function I(e, t = {}) {
-	return et(o`${e}:focus-visible`, {
+function F(e, t = {}) {
+	return I(o`${e}:focus-visible`, {
 		...t,
 		restSelector: t.restSelector ?? e
 	});
 }
-function et(e, t = {}) {
-	let n = Ze(t), r = t.restSelector, i = r && t.halo !== !1, a = t.baseShadow ?? o`0 0 0 0 transparent`, s = t.baseTransitions ? o`${t.baseTransitions},` : o``;
+function I(e, t = {}) {
+	let n = Qe(t), r = t.restSelector, i = r && t.halo !== !1, a = t.baseShadow ?? o`0 0 0 0 transparent`, s = t.baseTransitions ? o`${t.baseTransitions},` : o``;
 	return o`
-    ${r ? $e(r, t) : o``}
+    ${r ? et(r, t) : o``}
     ${i ? o`${r} {
       box-shadow: 0 0 0 0 ${n.haloColor}, ${a};
-      transition: ${s} box-shadow ${M("--en-duration-focus-exit")} ${M("--en-ease-focus-exit")};
+      transition: ${s} box-shadow ${j("--en-duration-focus-exit")} ${j("--en-ease-focus-exit")};
     }` : o``}
     ${e} {
       outline: ${n.width} solid ${n.color};
       outline-offset: ${n.offset};
       box-shadow: 0 0 0 ${n.haloWidth} ${n.haloColor}, ${a};
-      ${i ? o`transition: ${s} box-shadow ${M("--en-duration-focus-enter")} ${M("--en-ease-focus-enter")};` : o``}
+      ${i ? o`transition: ${s} box-shadow ${j("--en-duration-focus-enter")} ${j("--en-ease-focus-enter")};` : o``}
     }
     ${i ? o`@media (prefers-reduced-motion: reduce) {
       ${r}, ${e} { transition: none; }
@@ -1064,7 +1064,7 @@ function et(e, t = {}) {
 //#endregion
 //#region ../design-system/packages/styles/dist/internal/sizing.js
 function L(e) {
-	let t = Je.filter(({ role: t }) => e.cssText.includes(`var(--_en-sized-${t.slice(5)},`)).map(({ role: e, variants: t }) => `--_en-sized-${e.slice(5)}: calc(${Ye(t.small).cssText} * var(--_en-size-small, 0) + ${Ye(t.medium).cssText} * var(--_en-size-medium, 1) + ${Ye(t.large).cssText} * var(--_en-size-large, 0));`).join("\n");
+	let t = Ye.filter(({ role: t }) => e.cssText.includes(`var(--_en-sized-${t.slice(5)},`)).map(({ role: e, variants: t }) => `--_en-sized-${e.slice(5)}: calc(${Xe(t.small).cssText} * var(--_en-size-small, 0) + ${Xe(t.medium).cssText} * var(--_en-size-medium, 1) + ${Xe(t.large).cssText} * var(--_en-size-large, 0));`).join("\n");
 	return t ? o`:host, .en-foundation { ${a(t)} } ${e}` : e;
 }
 //#endregion
@@ -1075,32 +1075,32 @@ var tt = L(o`
     overflow-wrap: break-word;
   }
   .en-body, .en-prose {
-    color: ${M("--en-color-text")};
-    font: ${M("--en-font-body-weight")} ${M("--en-font-body-size")} / ${M("--en-font-body-line-height")} ${M("--en-font-body-family")};
+    color: ${j("--en-color-text")};
+    font: ${j("--en-font-body-weight")} ${j("--en-font-body-size")} / ${j("--en-font-body-line-height")} ${j("--en-font-body-family")};
   }
   .en-prose {
-    max-inline-size: ${N("--en-prose-max-inline-size", M("--en-layout-prose-max"))};
+    max-inline-size: ${M("--en-prose-max-inline-size", j("--en-layout-prose-max"))};
   }
-  .en-prose :where(p, ul, ol, dl, blockquote) { margin-block: 0 ${M("--en-space-4")}; }
-  .en-prose :where(ul, ol) { padding-inline-start: ${M("--en-space-6")}; }
+  .en-prose :where(p, ul, ol, dl, blockquote) { margin-block: 0 ${j("--en-space-4")}; }
+  .en-prose :where(ul, ol) { padding-inline-start: ${j("--en-space-6")}; }
   .en-heading-small {
-    font: ${M("--en-font-heading-small-weight")} ${M("--en-font-heading-small-size")} / ${M("--en-font-heading-small-line-height")} ${M("--en-font-heading-small-family")};
+    font: ${j("--en-font-heading-small-weight")} ${j("--en-font-heading-small-size")} / ${j("--en-font-heading-small-line-height")} ${j("--en-font-heading-small-family")};
   }
   .en-heading-medium {
-    font: ${M("--en-font-heading-medium-weight")} ${M("--en-font-heading-medium-size")} / ${M("--en-font-heading-medium-line-height")} ${M("--en-font-heading-medium-family")};
+    font: ${j("--en-font-heading-medium-weight")} ${j("--en-font-heading-medium-size")} / ${j("--en-font-heading-medium-line-height")} ${j("--en-font-heading-medium-family")};
   }
   .en-heading-large {
-    font: ${M("--en-font-heading-large-weight")} ${M("--en-font-heading-large-size")} / ${M("--en-font-heading-large-line-height")} ${M("--en-font-heading-large-family")};
+    font: ${j("--en-font-heading-large-weight")} ${j("--en-font-heading-large-size")} / ${j("--en-font-heading-large-line-height")} ${j("--en-font-heading-large-family")};
   }
   .en-metadata {
-    color: ${M("--en-color-text-muted")};
-    font: ${M("--en-font-metadata-weight")} ${M("--en-font-metadata-size")} / ${M("--en-font-metadata-line-height")} ${M("--en-font-metadata-family")};
+    color: ${j("--en-color-text-muted")};
+    font: ${j("--en-font-metadata-weight")} ${j("--en-font-metadata-size")} / ${j("--en-font-metadata-line-height")} ${j("--en-font-metadata-family")};
   }
   .en-data {
-    font: ${M("--en-font-data-weight")} ${M("--en-font-data-size")} / ${M("--en-font-data-line-height")} ${M("--en-font-data-family")};
+    font: ${j("--en-font-data-weight")} ${j("--en-font-data-size")} / ${j("--en-font-data-line-height")} ${j("--en-font-data-family")};
     font-variant-numeric: tabular-nums;
   }
-`), nt = o`:host { display: block; min-inline-size: 0; }`, rt = o`:host { display: inline-block; vertical-align: middle; max-inline-size: 100%; }`, it = o`:host { display: inline-flex; align-items: center; justify-content: center; color: inherit; line-height: 0; vertical-align: middle; }`, R = L(o`
+`), R = o`:host { display: block; min-inline-size: 0; }`, nt = o`:host { display: inline-block; vertical-align: middle; max-inline-size: 100%; }`, rt = o`:host { display: inline-flex; align-items: center; justify-content: center; color: inherit; line-height: 0; vertical-align: middle; }`, z = L(o`
   ${o`
   :host, .en-foundation { --_en-size-small: 0; --_en-size-medium: 1; --_en-size-large: 0; }
   :host([size='inherit']), .en-foundation[data-size='inherit'] { --_en-size-small: inherit; --_en-size-medium: inherit; --_en-size-large: inherit; }
@@ -1110,11 +1110,11 @@ var tt = L(o`
 `}
   :host, .en-foundation {
     box-sizing: border-box;
-    color: ${M("--en-color-text")};
-    font-family: ${M("--en-font-ui-family")};
-    font-size: ${M("--en-font-ui-size")};
-    font-weight: ${M("--en-font-ui-weight")};
-    line-height: ${M("--en-font-ui-line-height")};
+    color: ${j("--en-color-text")};
+    font-family: ${j("--en-font-ui-family")};
+    font-size: ${j("--en-font-ui-size")};
+    font-weight: ${j("--en-font-ui-weight")};
+    line-height: ${j("--en-font-ui-line-height")};
     text-align: start;
   }
   :host *, :host *::before, :host *::after,
@@ -1125,11 +1125,11 @@ var tt = L(o`
     letter-spacing: inherit;
     word-spacing: inherit;
   }
-  ${$e(o`:where(:host([tabindex]), .en-foundation[tabindex]),
+  ${et(o`:where(:host([tabindex]), .en-foundation[tabindex]),
     :where(:host, .en-foundation) :where(button, input, textarea, select, a[href], [tabindex])`)}
   :host(:focus-visible), .en-foundation:focus-visible {
-    outline: ${M("--en-focus-width")} solid ${M("--en-color-focus")};
-    outline-offset: ${M("--en-focus-offset")};
+    outline: ${j("--en-focus-width")} solid ${j("--en-color-focus")};
+    outline-offset: ${j("--en-focus-offset")};
   }
   .en-sr-only {
     position: absolute;
@@ -1147,61 +1147,61 @@ var tt = L(o`
     :host, .en-foundation { color: CanvasText; }
     :host(:focus-visible), .en-foundation:focus-visible { outline-color: Highlight; }
   }
-`), at = o`
+`), it = o`
   .en-button {
-    padding-inline: ${N("--en-control-inline-padding", N("--en-button-inline-padding", M("--en-space-control-inline")))};
+    padding-inline: ${M("--en-control-inline-padding", M("--en-button-inline-padding", j("--en-space-control-inline")))};
     display: inline-flex;
-    min-inline-size: ${M("--en-size-target-min")};
+    min-inline-size: ${j("--en-size-target-min")};
     align-items: center;
     justify-content: center;
-    gap: ${M("--en-space-icon-label")};
-    border-color: ${N("--en-button-border-color", M("--en-color-action"))};
-    border-radius: ${N("--en-button-radius", M("--en-radius-control"))};
-    background: ${N("--en-button-background", M("--en-color-action"))};
-    color: ${N("--en-button-color", M("--en-color-on-action"))};
-    font-weight: ${M("--en-font-label-strong-weight")};
+    gap: ${j("--en-space-icon-label")};
+    border-color: ${M("--en-button-border-color", j("--en-color-action"))};
+    border-radius: ${M("--en-button-radius", j("--en-radius-control"))};
+    background: ${M("--en-button-background", j("--en-color-action"))};
+    color: ${M("--en-button-color", j("--en-color-on-action"))};
+    font-weight: ${j("--en-font-label-strong-weight")};
     text-align: center;
     text-decoration: none;
     white-space: normal;
     overflow-wrap: break-word;
     cursor: pointer;
-    transition: background-color ${M("--en-duration-fast")} ${M("--en-ease-standard")},
-      border-color ${M("--en-duration-fast")} ${M("--en-ease-standard")};
+    transition: background-color ${j("--en-duration-fast")} ${j("--en-ease-standard")},
+      border-color ${j("--en-duration-fast")} ${j("--en-ease-standard")};
   }
-  @media (hover: hover) { .en-button:where(:not(:disabled):not([aria-disabled='true']):hover) { background: ${N("--en-button-background", M("--en-color-action-hover"))}; } }
-  .en-button:where(:not(:disabled):not([aria-disabled='true']):active) { background: ${N("--en-button-background", M("--en-color-action-pressed"))}; }
+  @media (hover: hover) { .en-button:where(:not(:disabled):not([aria-disabled='true']):hover) { background: ${M("--en-button-background", j("--en-color-action-hover"))}; } }
+  .en-button:where(:not(:disabled):not([aria-disabled='true']):active) { background: ${M("--en-button-background", j("--en-color-action-pressed"))}; }
   .en-button--secondary, .en-button[data-variant='secondary'] {
-    background: ${N("--en-button-background", M("--en-color-surface-subtle"))};
-    color: ${N("--en-button-color", M("--en-color-text"))};
-    border-color: ${N("--en-button-border-color", M("--en-color-boundary"))};
+    background: ${M("--en-button-background", j("--en-color-surface-subtle"))};
+    color: ${M("--en-button-color", j("--en-color-text"))};
+    border-color: ${M("--en-button-border-color", j("--en-color-boundary"))};
   }
   .en-button--quiet, .en-button[data-variant='ghost'] {
     background: none;
-    color: ${N("--en-button-color", M("--en-color-action-text"))};
-    border-color: ${N("--en-button-border-color", M("--en-color-line"))};
+    color: ${M("--en-button-color", j("--en-color-action-text"))};
+    border-color: ${M("--en-button-border-color", j("--en-color-line"))};
   }
   @media (hover: hover) { :is(.en-button--secondary, .en-button--quiet, .en-button[data-variant='secondary'], .en-button[data-variant='ghost']):not(:disabled):not([aria-disabled='true']):hover {
-    background: ${N("--en-button-background", M("--en-color-selected"))};
+    background: ${M("--en-button-background", j("--en-color-selected"))};
   } }
   .en-button--danger, .en-button[data-variant='danger'] {
-    background: ${N("--en-button-background", M("--en-color-surface"))};
-    color: ${N("--en-button-color", M("--en-color-danger-text"))};
-    border-color: ${N("--en-button-border-color", M("--en-color-danger-text"))};
+    background: ${M("--en-button-background", j("--en-color-surface"))};
+    color: ${M("--en-button-color", j("--en-color-danger-text"))};
+    border-color: ${M("--en-button-border-color", j("--en-color-danger-text"))};
   }
   @media (hover: hover) { :is(.en-button--danger, .en-button[data-variant='danger']):not(:disabled):not([aria-disabled='true']):hover {
-    background: ${N("--en-button-background", M("--en-color-surface-subtle"))};
+    background: ${M("--en-button-background", j("--en-color-surface-subtle"))};
   } }
   .en-button__prefix, .en-button__suffix { display: contents; }
   .en-button__label { min-inline-size: 0; }
-  .en-icon-button { padding-inline: ${M("--en-space-2")}; min-inline-size: max(${N("--en-control-min-size", M("--en-size-control-min"))}, ${M("--en-size-target-min")}); }
+  .en-icon-button { padding-inline: ${j("--en-space-2")}; min-inline-size: max(${M("--en-control-min-size", j("--en-size-control-min"))}, ${j("--en-size-target-min")}); }
   /* Explicit button mode; existing stepper/overlay icon recipes retain their layout. */
   .en-button[data-icon-only] {
-    --_en-icon-button-side: max(var(--_en-text-control-block-size), calc(max(${N("--en-icon-size", M("--en-size-icon"))}, ${M("--en-size-spinner")}) + 2 * ${M("--en-space-control-block")} + 2 * ${M("--en-border-width")}));
+    --_en-icon-button-side: max(var(--_en-text-control-block-size), calc(max(${M("--en-icon-size", j("--en-size-icon"))}, ${j("--en-size-spinner")}) + 2 * ${j("--en-space-control-block")} + 2 * ${j("--en-border-width")}));
     min-inline-size: var(--_en-icon-button-side);
     min-block-size: var(--_en-icon-button-side);
     inline-size: max-content;
     aspect-ratio: 1;
-    padding: ${M("--en-space-control-block")};
+    padding: ${j("--en-space-control-block")};
     gap: 0;
     flex-shrink: 0;
   }
@@ -1219,105 +1219,105 @@ var tt = L(o`
   /* Keep one visual glyph while busy. The label and slotted nodes remain intact. */
   .en-button[data-icon-only][aria-busy='true'] > :is(.en-button__prefix, .en-button__suffix) { display: none; }
 
-`, ot = o`background-color ${M("--en-duration-fast")} ${M("--en-ease-standard")}, border-color ${M("--en-duration-fast")} ${M("--en-ease-standard")}`, st = I(o`.en-button`, {
+`, at = o`background-color ${j("--en-duration-fast")} ${j("--en-ease-standard")}, border-color ${j("--en-duration-fast")} ${j("--en-ease-standard")}`, ot = F(o`.en-button`, {
 	family: "button",
-	baseTransitions: ot
-}), ct = o`@media (hover: hover) { .en-button:not(:disabled):not([aria-disabled='true']):hover { background: Highlight !important; color: HighlightText !important; } }`, lt = o`max(0px, ${N("--en-segmented-control-frame-inset", M("--en-space-1"))})`, z = o`calc(${lt} + ${M("--en-border-width")})`;
-function ut(e = !1) {
-	let t = M(e ? "--en-size-target-touch" : "--en-size-target-min"), n = M("--en-space-control-block"), r = M("--en-border-width"), i = o`max(calc(${M("--en-space-1")} + ${r}), ${z})`;
+	baseTransitions: at
+}), st = o`@media (hover: hover) { .en-button:not(:disabled):not([aria-disabled='true']):hover { background: Highlight !important; color: HighlightText !important; } }`, ct = o`max(0px, ${M("--en-segmented-control-frame-inset", j("--en-space-1"))})`, B = o`calc(${ct} + ${j("--en-border-width")})`;
+function lt(e = !1) {
+	let t = j(e ? "--en-size-target-touch" : "--en-size-target-min"), n = j("--en-space-control-block"), r = j("--en-border-width"), i = o`max(calc(${j("--en-space-1")} + ${r}), ${B})`;
 	return o`max(
-    ${N("--en-control-min-size", M("--en-size-control-min"))},
+    ${M("--en-control-min-size", j("--en-size-control-min"))},
     calc(${t} + 2 * ${i}),
-    calc(${M("--en-font-input-size")} * ${M("--en-font-input-line-height")} + 2 * ${n} + 2 * ${r}),
-    calc(${M("--en-font-ui-size")} * ${M("--en-font-ui-line-height")} + 2 * max(${n}, ${i}) + 2 * ${r})
+    calc(${j("--en-font-input-size")} * ${j("--en-font-input-line-height")} + 2 * ${n} + 2 * ${r}),
+    calc(${j("--en-font-ui-size")} * ${j("--en-font-ui-line-height")} + 2 * max(${n}, ${i}) + 2 * ${r})
   )`;
 }
 //#endregion
 //#region ../design-system/packages/styles/dist/internal/control-shared.js
-function dt(e, t = !1) {
-	return o`${e} { --_en-text-control-block-size: ${ut(t)}; }`;
+function ut(e, t = !1) {
+	return o`${e} { --_en-text-control-block-size: ${lt(t)}; }`;
 }
-function ft(e) {
+function dt(e) {
 	return o`${e} {
     box-sizing: border-box;
     min-inline-size: 0;
-    min-block-size: max(${N("--en-control-min-size", M("--en-size-control-min"))}, ${M("--en-size-target-min")});
+    min-block-size: max(${M("--en-control-min-size", j("--en-size-control-min"))}, ${j("--en-size-target-min")});
     max-inline-size: 100%;
-    padding-block: ${M("--en-space-control-block")};
-    padding-inline: ${N("--en-control-inline-padding", M("--en-space-control-inline"))};
-    border: ${M("--en-border-width")} solid ${N("--en-control-border-color", M("--en-color-boundary"))};
-    border-radius: ${N("--en-control-radius", M("--en-radius-control"))};
-    background: ${N("--en-control-background", M("--en-color-surface"))};
-    color: ${N("--en-control-color", M("--en-color-text"))};
+    padding-block: ${j("--en-space-control-block")};
+    padding-inline: ${M("--en-control-inline-padding", j("--en-space-control-inline"))};
+    border: ${j("--en-border-width")} solid ${M("--en-control-border-color", j("--en-color-boundary"))};
+    border-radius: ${M("--en-control-radius", j("--en-radius-control"))};
+    background: ${M("--en-control-background", j("--en-color-surface"))};
+    color: ${M("--en-control-color", j("--en-color-text"))};
     font: inherit;
     text-align: start;
   }`;
 }
-function pt(e) {
+function ft(e) {
 	return o`${e} { min-block-size: var(--_en-text-control-block-size); }`;
 }
-function mt(e) {
+function pt(e) {
 	return o`${e} {
-    color: ${M("--en-color-text-muted")};
-    background: ${M("--en-color-surface-subtle")};
-    border-color: ${M("--en-color-boundary")};
+    color: ${j("--en-color-text-muted")};
+    background: ${j("--en-color-surface-subtle")};
+    border-color: ${j("--en-color-boundary")};
     cursor: default;
   }`;
 }
+function mt(e) {
+	return o`${e} { min-block-size: max(${M("--en-control-min-size", j("--en-size-control-min"))}, ${j("--en-size-target-touch")}); }`;
+}
 function ht(e) {
-	return o`${e} { min-block-size: max(${N("--en-control-min-size", M("--en-size-control-min"))}, ${M("--en-size-target-touch")}); }`;
+	return o`${e} { min-inline-size: max(${M("--en-control-min-size", j("--en-size-control-min"))}, ${j("--en-size-target-touch")}); }`;
 }
 function gt(e) {
-	return o`${e} { min-inline-size: max(${N("--en-control-min-size", M("--en-size-control-min"))}, ${M("--en-size-target-touch")}); }`;
-}
-function _t(e) {
 	return o`${e} { transition: none; }`;
 }
-function vt(e) {
+function _t(e) {
 	return o`${e} { color: CanvasText !important; background: Canvas !important; border-color: ButtonText !important; }`;
 }
-function yt(e) {
+function vt(e) {
 	return o`${e} { color: GrayText !important; border-color: GrayText !important; }`;
 }
 //#endregion
 //#region ../design-system/packages/styles/dist/buttons.js
-var bt = L(o`
-  ${dt(o`.en-button:not(.en-icon-button), .en-button[data-icon-only]`)}
-  ${ft(o`.en-button`)}
-  ${pt(o`.en-button:not(.en-icon-button)`)}
-  ${at}
-  ${mt(o`:is(.en-button):is(:disabled, [aria-disabled='true'])`)}
-  ${st}
+var yt = L(o`
+  ${ut(o`.en-button:not(.en-icon-button), .en-button[data-icon-only]`)}
+  ${dt(o`.en-button`)}
+  ${ft(o`.en-button:not(.en-icon-button)`)}
+  ${it}
+  ${pt(o`:is(.en-button):is(:disabled, [aria-disabled='true'])`)}
+  ${ot}
   @media (any-pointer: coarse) {
-    ${dt(o`.en-button:not(.en-icon-button), .en-button[data-icon-only]`, !0)}
-    ${ht(o`.en-button`)}
-    ${pt(o`.en-button:not(.en-icon-button)`)}
-    ${gt(o`.en-icon-button`)}
+    ${ut(o`.en-button:not(.en-icon-button), .en-button[data-icon-only]`, !0)}
+    ${mt(o`.en-button`)}
+    ${ft(o`.en-button:not(.en-icon-button)`)}
+    ${ht(o`.en-icon-button`)}
   }
-  @media (prefers-reduced-motion: reduce) { ${_t(o`.en-button`)} }
+  @media (prefers-reduced-motion: reduce) { ${gt(o`.en-button`)} }
   @media (forced-colors: active) {
-    ${vt(o`.en-button`)}
-    ${yt(o`:is(.en-button):is(:disabled, [aria-disabled='true'])`)}
-    ${ct}
+    ${_t(o`.en-button`)}
+    ${vt(o`:is(.en-button):is(:disabled, [aria-disabled='true'])`)}
+    ${st}
   }
-`), xt = L(o`
+`), bt = L(o`
   .en-spinner {
     display: inline-block;
     flex: none;
-    inline-size: ${M("--en-size-spinner")};
-    block-size: ${M("--en-size-spinner")};
-    border: ${M("--en-size-spinner-stroke")} solid currentColor;
-    border-inline-end-color: ${M("--en-color-line")};
-    border-radius: ${M("--en-radius-pill")};
-    animation: en-style-spin ${M("--en-duration-spin")} linear infinite;
+    inline-size: ${j("--en-size-spinner")};
+    block-size: ${j("--en-size-spinner")};
+    border: ${j("--en-size-spinner-stroke")} solid currentColor;
+    border-inline-end-color: ${j("--en-color-line")};
+    border-radius: ${j("--en-radius-pill")};
+    animation: en-style-spin ${j("--en-duration-spin")} linear infinite;
   }
   @keyframes en-style-spin { to { transform: rotate(1turn); } }
-  .en-skeleton { display: block; inline-size: 100%; block-size: ${N("--en-skeleton-size", M("--en-size-skeleton-line"))}; background: ${N("--en-skeleton-color", M("--en-color-surface-subtle"))}; border-radius: ${M("--en-radius-control")}; }
-  .en-skeleton[data-shape='circle'] { inline-size: ${N("--en-skeleton-size", M("--en-size-avatar"))}; block-size: ${N("--en-skeleton-size", M("--en-size-avatar"))}; border-radius: ${M("--en-radius-pill")}; }
-  .en-skeleton[data-shape='rectangle'] { block-size: ${N("--en-skeleton-size", M("--en-space-16"))}; }
+  .en-skeleton { display: block; inline-size: 100%; block-size: ${M("--en-skeleton-size", j("--en-size-skeleton-line"))}; background: ${M("--en-skeleton-color", j("--en-color-surface-subtle"))}; border-radius: ${j("--en-radius-control")}; }
+  .en-skeleton[data-shape='circle'] { inline-size: ${M("--en-skeleton-size", j("--en-size-avatar"))}; block-size: ${M("--en-skeleton-size", j("--en-size-avatar"))}; border-radius: ${j("--en-radius-pill")}; }
+  .en-skeleton[data-shape='rectangle'] { block-size: ${M("--en-skeleton-size", j("--en-space-16"))}; }
   @media (prefers-reduced-motion: reduce) { .en-spinner { animation: none; } }
-  @media (forced-colors: active) { .en-spinner { border-color: CanvasText; border-inline-end-color: GrayText; } .en-skeleton { background: Canvas; border: ${M("--en-border-width")} solid GrayText; } }
-`), St = (e) => e ?? E, Ct = (e) => C`
+  @media (forced-colors: active) { .en-spinner { border-color: CanvasText; border-inline-end-color: GrayText; } .en-skeleton { background: Canvas; border: ${j("--en-border-width")} solid GrayText; } }
+`), V = (e) => e ?? T, xt = (e) => S`
   <button
     class=${e.iconOnly ? "en-button en-icon-button" : "en-button"}
     ?data-icon-only=${e.iconOnly}
@@ -1328,22 +1328,22 @@ var bt = L(o`
     data-size=${e.size}
     ?disabled=${e.disabled || e.loading}
     aria-busy=${e.loading ? "true" : "false"}
-    aria-haspopup=${St(e.popupRole ?? void 0)}
-    aria-expanded=${St(e.popupExpanded ?? void 0)}
-    aria-disabled=${St(e.ariaDisabled ?? void 0)}
+    aria-haspopup=${V(e.popupRole ?? void 0)}
+    aria-expanded=${V(e.popupExpanded ?? void 0)}
+    aria-disabled=${V(e.ariaDisabled ?? void 0)}
   >
-    ${e.loading ? C`<span class="en-spinner" part="indicator" aria-hidden="true"></span>` : null}
+    ${e.loading ? S`<span class="en-spinner" part="indicator" aria-hidden="true"></span>` : null}
     <slot class="en-button__prefix" name="prefix"></slot>
     <span class="en-button__label" part="label"><slot name="label"><slot></slot></slot></span>
     <slot class="en-button__suffix" name="suffix"></slot>
   </button>
-`, wt = /* @__PURE__ */ new WeakMap();
-function Tt(e, t) {
-	wt.set(e, { write: t });
+`, St = /* @__PURE__ */ new WeakMap();
+function Ct(e, t) {
+	St.set(e, { write: t });
 }
 //#endregion
 //#region ../design-system/packages/elements/dist/button/element.js
-var Et = class extends j {
+var wt = class extends A {
 	static properties = {
 		variant: { reflect: !0 },
 		disabled: {
@@ -1368,16 +1368,16 @@ var Et = class extends j {
 		}
 	};
 	static styles = [
-		R,
-		rt,
-		bt,
-		xt
+		z,
+		nt,
+		yt,
+		bt
 	];
 	tabStop = 0;
 	constructor() {
 		super(), this.variant = "primary", this.disabled = !1, this.loading = !1, this.iconOnly = !1, this.popupRole = null, this.popupExpanded = null, this.disabledSemantics = null, this.addEventListener("click", (e) => {
 			this.getAttribute("aria-disabled") === "true" && (e.preventDefault(), e.stopImmediatePropagation());
-		}, { capture: !0 }), this.descriptionIds = null, Tt(this, (e) => {
+		}, { capture: !0 }), this.descriptionIds = null, Ct(this, (e) => {
 			if (this.tabStop === e) return;
 			this.tabStop = e;
 			let t = this.renderRoot?.querySelector("button");
@@ -1391,7 +1391,7 @@ var Et = class extends j {
 		this.renderRoot.querySelector("button")?.focus(e);
 	}
 	render() {
-		return Ct({
+		return xt({
 			variant: this.variant,
 			size: this.size,
 			disabled: this.disabled,
@@ -1418,7 +1418,7 @@ var Et = class extends j {
 };
 //#endregion
 //#region ../design-system/packages/primitives/dist/interactions/registration.js
-function Dt(e) {
+function Tt(e) {
 	let t = /* @__PURE__ */ new Map(), n = /* @__PURE__ */ new Map(), r = [], i = /* @__PURE__ */ new Set(), a = (e) => {
 		let r = t.get(e.tagName);
 		if (r && r.elementClass !== e.elementClass) throw Error(`Conflicting constructors for ${e.tagName}.`);
@@ -1439,8 +1439,8 @@ function Dt(e) {
 	for (let e of t.keys()) c(e);
 	return Object.freeze(r);
 }
-function Ot(e, t) {
-	let n = Dt(t), r = /* @__PURE__ */ new Map();
+function Et(e, t) {
+	let n = Tt(t), r = /* @__PURE__ */ new Map();
 	for (let t of n) {
 		let n = r.get(t.elementClass);
 		if (n && n !== t.tagName) throw Error(`One constructor cannot define both ${n} and ${t.tagName}.`);
@@ -1450,29 +1450,29 @@ function Ot(e, t) {
 	}
 	for (let t of n) e.get(t.tagName) || e.define(t.tagName, t.elementClass);
 }
-function B(e, t) {
-	Ot(e, [t]);
+function H(e, t) {
+	Et(e, [t]);
 }
 //#endregion
 //#region ../design-system/packages/elements/dist/define/button.js
-B(customElements, {
+H(customElements, {
 	tagName: "en-button",
-	elementClass: Et
+	elementClass: wt
 });
 //#endregion
 //#region ../design-system/packages/styles/dist/internal/focus.js
-var kt = o`
-  ${st}
-  ${I(o`.en-accordion-trigger`, { family: "button" })}
-  ${I(o`:where(.en-input, .en-textarea, .en-select, .en-color-control)`, { family: "input" })}
-  ${I(o`.en-option`, { family: "option" })}
-  ${I(o`:where(.en-link, .en-control:not(.en-color-control), .en-checkbox, .en-radio, .en-switch,
+var Dt = o`
+  ${ot}
+  ${F(o`.en-accordion-trigger`, { family: "button" })}
+  ${F(o`:where(.en-input, .en-textarea, .en-select, .en-color-control)`, { family: "input" })}
+  ${F(o`.en-option`, { family: "option" })}
+  ${F(o`:where(.en-link, .en-control:not(.en-color-control), .en-checkbox, .en-radio, .en-switch,
     .en-range, .en-tab, .en-split-separator, .en-rating-item)`)}
-`, At = Ze({ family: "input" }), jt = o`
+`, Ot = Qe({ family: "input" }), kt = o`
   .en-field-focus-frame {
     position: relative;
     min-inline-size: 0;
-    --_en-field-focus-accent-width: ${N("--en-input-focus-accent-width", M("--en-focus-accent-width"))};
+    --_en-field-focus-accent-width: ${M("--en-input-focus-accent-width", j("--en-focus-accent-width"))};
   }
   .en-field-focus-frame:not(.en-number-group) { display: grid; }
   .en-field-focus-frame > :is(input, textarea) { display: block; }
@@ -1483,28 +1483,28 @@ var kt = o`
     inset-inline: 0;
     inset-block-end: 0;
     box-sizing: border-box;
-    block-size: max(var(--_en-field-focus-accent-width), ${N("--en-control-radius", M("--en-radius-control"))});
-    border-end-start-radius: ${N("--en-control-radius", M("--en-radius-control"))};
-    border-end-end-radius: ${N("--en-control-radius", M("--en-radius-control"))};
-    border-block-end: var(--_en-field-focus-accent-width) solid ${N("--en-input-focus-accent-color", M("--en-color-focus"))};
+    block-size: max(var(--_en-field-focus-accent-width), ${M("--en-control-radius", j("--en-radius-control"))});
+    border-end-start-radius: ${M("--en-control-radius", j("--en-radius-control"))};
+    border-end-end-radius: ${M("--en-control-radius", j("--en-radius-control"))};
+    border-block-end: var(--_en-field-focus-accent-width) solid ${M("--en-input-focus-accent-color", j("--en-color-focus"))};
     clip-path: inset(calc(100% - var(--_en-field-focus-accent-width)) 0 0 0);
     transform: scaleX(0);
     transform-origin: center;
-    transition: transform ${M("--en-duration-focus-exit")} ${M("--en-ease-focus-exit")};
+    transition: transform ${j("--en-duration-focus-exit")} ${j("--en-ease-focus-exit")};
   }
   .en-number-group.en-field-focus-frame {
-    box-shadow: 0 0 0 0 ${At.haloColor};
-    transition: box-shadow ${M("--en-duration-focus-exit")} ${M("--en-ease-focus-exit")};
+    box-shadow: 0 0 0 0 ${Ot.haloColor};
+    transition: box-shadow ${j("--en-duration-focus-exit")} ${j("--en-ease-focus-exit")};
   }
   .en-number-group.en-field-focus-frame:focus-within {
-    box-shadow: 0 0 0 ${At.haloWidth} ${At.haloColor};
-    transition-duration: ${M("--en-duration-focus-enter")};
-    transition-timing-function: ${M("--en-ease-focus-enter")};
+    box-shadow: 0 0 0 ${Ot.haloWidth} ${Ot.haloColor};
+    transition-duration: ${j("--en-duration-focus-enter")};
+    transition-timing-function: ${j("--en-ease-focus-enter")};
   }
   .en-field-focus-frame:focus-within::after {
     transform: scaleX(1);
-    transition-duration: ${M("--en-duration-focus-enter")};
-    transition-timing-function: ${M("--en-ease-focus-enter")};
+    transition-duration: ${j("--en-duration-focus-enter")};
+    transition-timing-function: ${j("--en-ease-focus-enter")};
   }
   @media (prefers-reduced-motion: reduce) {
     .en-field-focus-frame::after, .en-field-focus-frame:focus-within::after,
@@ -1514,57 +1514,57 @@ var kt = o`
     .en-field-focus-frame::after, .en-field-focus-frame:focus-within::after { border-block-end-color: Highlight; transition: none; }
     .en-number-group.en-field-focus-frame, .en-number-group.en-field-focus-frame:focus-within { box-shadow: none; transition: none; }
   }
-`, Mt = L(o`
-  .en-alert { display: flex; align-items: flex-start; gap: ${M("--en-space-3")}; min-inline-size: 0; padding: ${M("--en-space-4")}; border: ${M("--en-border-width")} solid ${N("--en-alert-border-color", M("--en-color-accent-border"))}; border-radius: ${M("--en-radius-container")}; background: ${N("--en-alert-background", M("--en-color-surface"))}; color: ${N("--en-alert-color", M("--en-color-text"))}; }
-  .en-alert__icon { flex: none; color: ${M("--en-color-action")}; }
+`, At = L(o`
+  .en-alert { display: flex; align-items: flex-start; gap: ${j("--en-space-3")}; min-inline-size: 0; padding: ${j("--en-space-4")}; border: ${j("--en-border-width")} solid ${M("--en-alert-border-color", j("--en-color-accent-border"))}; border-radius: ${j("--en-radius-container")}; background: ${M("--en-alert-background", j("--en-color-surface"))}; color: ${M("--en-alert-color", j("--en-color-text"))}; }
+  .en-alert__icon { flex: none; color: ${j("--en-color-action")}; }
   .en-alert__content { min-inline-size: 0; flex: 1 1 auto; overflow-wrap: break-word; }
   .en-alert__close { flex: none; margin-inline-start: auto; }
-  .en-alert[data-variant='success'] { border-color: ${N("--en-alert-border-color", M("--en-color-success-text"))}; }
-  .en-alert[data-variant='warning'] { border-color: ${N("--en-alert-border-color", M("--en-color-warning-text"))}; }
-  .en-alert[data-variant='danger'] { border-color: ${N("--en-alert-border-color", M("--en-color-danger-text"))}; }
-  .en-alert[data-variant='success'] .en-alert__icon { color: ${M("--en-color-success-text")}; }
-  .en-alert[data-variant='warning'] .en-alert__icon { color: ${M("--en-color-warning-text")}; }
-  .en-alert[data-variant='danger'] .en-alert__icon { color: ${M("--en-color-danger-text")}; }
-  .en-badge { display: inline-flex; align-items: center; gap: ${M("--en-space-icon-label")}; max-inline-size: 100%; padding-block: ${M("--en-space-badge-block")}; padding-inline: ${M("--en-space-badge-inline")}; border: ${M("--en-border-width")} solid ${M("--en-color-line")}; border-radius: ${N("--en-badge-radius", M("--en-radius-control"))}; background: ${N("--en-badge-background", M("--en-color-surface-subtle"))}; color: ${N("--en-badge-color", M("--en-color-text"))}; font-size: ${M("--en-font-metadata-size")}; line-height: ${M("--en-font-metadata-line-height")}; overflow-wrap: break-word; }
+  .en-alert[data-variant='success'] { border-color: ${M("--en-alert-border-color", j("--en-color-success-text"))}; }
+  .en-alert[data-variant='warning'] { border-color: ${M("--en-alert-border-color", j("--en-color-warning-text"))}; }
+  .en-alert[data-variant='danger'] { border-color: ${M("--en-alert-border-color", j("--en-color-danger-text"))}; }
+  .en-alert[data-variant='success'] .en-alert__icon { color: ${j("--en-color-success-text")}; }
+  .en-alert[data-variant='warning'] .en-alert__icon { color: ${j("--en-color-warning-text")}; }
+  .en-alert[data-variant='danger'] .en-alert__icon { color: ${j("--en-color-danger-text")}; }
+  .en-badge { display: inline-flex; align-items: center; gap: ${j("--en-space-icon-label")}; max-inline-size: 100%; padding-block: ${j("--en-space-badge-block")}; padding-inline: ${j("--en-space-badge-inline")}; border: ${j("--en-border-width")} solid ${j("--en-color-line")}; border-radius: ${M("--en-badge-radius", j("--en-radius-control"))}; background: ${M("--en-badge-background", j("--en-color-surface-subtle"))}; color: ${M("--en-badge-color", j("--en-color-text"))}; font-size: ${j("--en-font-metadata-size")}; line-height: ${j("--en-font-metadata-line-height")}; overflow-wrap: break-word; }
   .en-badge__prefix { display: contents; }
   .en-badge__label { min-inline-size: 0; }
-  .en-badge[data-variant='accent'] { background: ${N("--en-badge-background", M("--en-color-accent-subtle"))}; color: ${N("--en-badge-color", M("--en-color-action-text"))}; }
-  .en-badge[data-variant='success'] { color: ${N("--en-badge-color", M("--en-color-success-text"))}; }
-  .en-badge[data-variant='warning'] { color: ${N("--en-badge-color", M("--en-color-warning-text"))}; }
-  .en-badge[data-variant='danger'] { color: ${N("--en-badge-color", M("--en-color-danger-text"))}; }
-  .en-progress, .en-progress-track { display: block; inline-size: 100%; block-size: ${N("--en-progress-size", M("--en-size-progress"))}; overflow: hidden; border: 0; border-radius: ${M("--en-radius-pill")}; background: ${N("--en-progress-track-color", M("--en-color-surface-subtle"))}; }
-  .en-progress { appearance: none; accent-color: ${N("--en-progress-color", M("--en-color-action"))}; }
-  .en-progress-fill { display: block; inline-size: clamp(0%, var(--en-progress-value, 0%), 100%); block-size: 100%; border-radius: inherit; background: ${N("--en-progress-color", M("--en-color-action"))}; }
-  .en-progress::-webkit-progress-bar { background: ${N("--en-progress-track-color", M("--en-color-surface-subtle"))}; border-radius: inherit; }
-  .en-progress::-webkit-progress-value { background: ${N("--en-progress-color", M("--en-color-action"))}; border-radius: inherit; }
-  .en-progress::-moz-progress-bar { background: ${N("--en-progress-color", M("--en-color-action"))}; border-radius: inherit; }
-  ${xt}
+  .en-badge[data-variant='accent'] { background: ${M("--en-badge-background", j("--en-color-accent-subtle"))}; color: ${M("--en-badge-color", j("--en-color-action-text"))}; }
+  .en-badge[data-variant='success'] { color: ${M("--en-badge-color", j("--en-color-success-text"))}; }
+  .en-badge[data-variant='warning'] { color: ${M("--en-badge-color", j("--en-color-warning-text"))}; }
+  .en-badge[data-variant='danger'] { color: ${M("--en-badge-color", j("--en-color-danger-text"))}; }
+  .en-progress, .en-progress-track { display: block; inline-size: 100%; block-size: ${M("--en-progress-size", j("--en-size-progress"))}; overflow: hidden; border: 0; border-radius: ${j("--en-radius-pill")}; background: ${M("--en-progress-track-color", j("--en-color-surface-subtle"))}; }
+  .en-progress { appearance: none; accent-color: ${M("--en-progress-color", j("--en-color-action"))}; }
+  .en-progress-fill { display: block; inline-size: clamp(0%, var(--en-progress-value, 0%), 100%); block-size: 100%; border-radius: inherit; background: ${M("--en-progress-color", j("--en-color-action"))}; }
+  .en-progress::-webkit-progress-bar { background: ${M("--en-progress-track-color", j("--en-color-surface-subtle"))}; border-radius: inherit; }
+  .en-progress::-webkit-progress-value { background: ${M("--en-progress-color", j("--en-color-action"))}; border-radius: inherit; }
+  .en-progress::-moz-progress-bar { background: ${M("--en-progress-color", j("--en-color-action"))}; border-radius: inherit; }
+  ${bt}
   @media (forced-colors: active) {
     .en-alert, .en-alert[data-variant], .en-badge, .en-badge[data-variant] { color: CanvasText; background: Canvas; border-color: CanvasText; }
     .en-alert__icon, .en-alert[data-variant] .en-alert__icon { color: CanvasText; }
-    .en-progress, .en-progress-track { background: Canvas; border: ${M("--en-border-width")} solid CanvasText; }
+    .en-progress, .en-progress-track { background: Canvas; border: ${j("--en-border-width")} solid CanvasText; }
     .en-progress-fill { background: Highlight; }
     .en-progress::-webkit-progress-bar { background: Canvas; }
     .en-progress::-webkit-progress-value { background: Highlight; }
     .en-progress::-moz-progress-bar { background: Highlight; }
   }
-`), Nt = L(o`
-  .en-icon { display: inline-flex; align-items: center; justify-content: center; flex: none; inline-size: ${N("--en-icon-size", M("--en-size-icon"))}; block-size: ${N("--en-icon-size", M("--en-size-icon"))}; vertical-align: middle; color: inherit; }
+`), jt = L(o`
+  .en-icon { display: inline-flex; align-items: center; justify-content: center; flex: none; inline-size: ${M("--en-icon-size", j("--en-size-icon"))}; block-size: ${M("--en-icon-size", j("--en-size-icon"))}; vertical-align: middle; color: inherit; }
   .en-icon > :where(svg, img), .en-icon ::slotted(svg), .en-icon ::slotted(img) { display: block; inline-size: 100%; block-size: 100%; }
-  svg.en-icon, .en-icon > svg, .en-icon ::slotted(svg) { display: block; stroke-width: ${M("--en-size-icon-stroke")}; }
-  .en-avatar { display: inline-grid; place-items: center; vertical-align: middle; flex: none; inline-size: ${N("--en-avatar-size", M("--en-size-avatar"))}; block-size: ${N("--en-avatar-size", M("--en-size-avatar"))}; overflow: hidden; border-radius: ${N("--en-avatar-radius", M("--en-radius-pill"))}; background: ${M("--en-color-surface-subtle")}; color: ${M("--en-color-text")}; }
+  svg.en-icon, .en-icon > svg, .en-icon ::slotted(svg) { display: block; stroke-width: ${j("--en-size-icon-stroke")}; }
+  .en-avatar { display: inline-grid; place-items: center; vertical-align: middle; flex: none; inline-size: ${M("--en-avatar-size", j("--en-size-avatar"))}; block-size: ${M("--en-avatar-size", j("--en-size-avatar"))}; overflow: hidden; border-radius: ${M("--en-avatar-radius", j("--en-radius-pill"))}; background: ${j("--en-color-surface-subtle")}; color: ${j("--en-color-text")}; }
   .en-avatar__image { display: block; inline-size: 100%; block-size: 100%; object-fit: cover; }
-  .en-avatar__fallback { font-weight: ${M("--en-font-label-strong-weight")}; }
-  .en-media { display: block; max-inline-size: 100%; block-size: auto; border-radius: ${N("--en-media-radius", M("--en-radius-container"))}; aspect-ratio: ${N("--en-media-aspect-ratio", o`auto`)}; }
-  @media (forced-colors: active) { .en-avatar { color: CanvasText; background: Canvas; border: ${M("--en-border-width")} solid CanvasText; } }
+  .en-avatar__fallback { font-weight: ${j("--en-font-label-strong-weight")}; }
+  .en-media { display: block; max-inline-size: 100%; block-size: auto; border-radius: ${M("--en-media-radius", j("--en-radius-container"))}; aspect-ratio: ${M("--en-media-aspect-ratio", o`auto`)}; }
+  @media (forced-colors: active) { .en-avatar { color: CanvasText; background: Canvas; border: ${j("--en-border-width")} solid CanvasText; } }
 `);
 L(o`
-  :host { inline-size: max(${N("--en-swatch-size", M("--en-size-swatch"))}, ${M("--en-size-target-min")}); min-inline-size: ${M("--en-size-target-min")}; }
-  .en-swatch__sample { position: relative; display: block; appearance: none; inline-size: 100%; block-size: max(${N("--en-swatch-size", M("--en-size-swatch"))}, ${M("--en-size-target-min")}); min-inline-size: ${M("--en-size-target-min")}; padding: 0; margin: 0; overflow: hidden; border: ${M("--en-border-width")} solid ${M("--en-color-boundary")}; border-radius: ${M("--en-radius-control")}; background: transparent; color: inherit; cursor: pointer; }
-  @media (hover: hover) { .en-swatch__sample:not(:disabled):hover { border-color: ${M("--en-color-action")}; } }
+  :host { inline-size: max(${M("--en-swatch-size", j("--en-size-swatch"))}, ${j("--en-size-target-min")}); min-inline-size: ${j("--en-size-target-min")}; }
+  .en-swatch__sample { position: relative; display: block; appearance: none; inline-size: 100%; block-size: max(${M("--en-swatch-size", j("--en-size-swatch"))}, ${j("--en-size-target-min")}); min-inline-size: ${j("--en-size-target-min")}; padding: 0; margin: 0; overflow: hidden; border: ${j("--en-border-width")} solid ${j("--en-color-boundary")}; border-radius: ${j("--en-radius-control")}; background: transparent; color: inherit; cursor: pointer; }
+  @media (hover: hover) { .en-swatch__sample:not(:disabled):hover { border-color: ${j("--en-color-action")}; } }
   .en-swatch__sample:disabled { cursor: default; }
   .en-swatch__color { display: block; inline-size: 100%; block-size: 100%; }
-  ${kt}
+  ${Dt}
   @media (forced-colors: active) {
     .en-swatch__sample { border-color: ButtonText; background: Canvas; }
   @media (hover: hover) { .en-swatch__sample:not(:disabled):hover { border-color: ButtonText; background: Canvas; } }
@@ -1574,20 +1574,20 @@ L(o`
 `);
 //#endregion
 //#region ../design-system/packages/elements/dist/icon/template.js
-var Pt = {
-	calendar: w`<rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M7 3v4m10-4v4M3 11h18"></path>`,
-	check: w`<path d="m5 12 4 4L19 6" />`,
-	plus: w`<path d="M12 5v14M5 12h14" />`,
-	close: w`<path d="m6 6 12 12M18 6 6 18" />`,
-	"chevron-left": w`<path d="m15 6-6 6 6 6" />`,
-	"chevron-right": w`<path d="m9 6 6 6-6 6" />`,
-	"chevron-down": w`<path d="m6 9 6 6 6-6" />`,
-	"arrow-right": w`<path d="M4 12h16m-6-6 6 6-6 6" />`,
-	search: w`<circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 4 4" />`,
-	info: w`<circle cx="12" cy="12" r="9" /><path d="M12 11v6m0-10v1" />`,
-	warning: w`<path d="m12 3 10 18H2L12 3Zm0 6v5m0 3v1" />`,
-	sparkles: w`<path d="m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6L12 3ZM20 2v4m-2-2h4" />`
-}, Ft = (e, t) => C`
+var Mt = {
+	calendar: C`<rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M7 3v4m10-4v4M3 11h18"></path>`,
+	check: C`<path d="m5 12 4 4L19 6" />`,
+	plus: C`<path d="M12 5v14M5 12h14" />`,
+	close: C`<path d="m6 6 12 12M18 6 6 18" />`,
+	"chevron-left": C`<path d="m15 6-6 6 6 6" />`,
+	"chevron-right": C`<path d="m9 6 6 6-6 6" />`,
+	"chevron-down": C`<path d="m6 9 6 6 6-6" />`,
+	"arrow-right": C`<path d="M4 12h16m-6-6 6 6-6 6" />`,
+	search: C`<circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 4 4" />`,
+	info: C`<circle cx="12" cy="12" r="9" /><path d="M12 11v6m0-10v1" />`,
+	warning: C`<path d="m12 3 10 18H2L12 3Zm0 6v5m0 3v1" />`,
+	sparkles: C`<path d="m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6L12 3ZM20 2v4m-2-2h4" />`
+}, Nt = (e, t) => S`
   <svg
     class="en-icon"
     part="base"
@@ -1597,76 +1597,76 @@ var Pt = {
     stroke-linecap="round"
     stroke-linejoin="round"
     focusable="false"
-    role=${t ? "img" : E}
-    aria-label=${t || E}
-    aria-hidden=${t ? E : "true"}
-  >${Pt[e] ?? E}</svg>
-`, It = class extends j {
+    role=${t ? "img" : T}
+    aria-label=${t || T}
+    aria-hidden=${t ? T : "true"}
+  >${Mt[e] ?? T}</svg>
+`, Pt = class extends A {
 	static properties = {
 		name: { type: String },
 		label: { type: String }
 	};
 	static styles = [
-		R,
-		it,
-		Nt
+		z,
+		rt,
+		jt
 	];
 	constructor() {
 		super(), this.name = "info", this.label = "";
 	}
 	render() {
-		return Ft(this.name, this.label);
+		return Nt(this.name, this.label);
 	}
 };
 //#endregion
 //#region ../design-system/packages/elements/dist/define/icon.js
-B(customElements, {
+H(customElements, {
 	tagName: "en-icon",
-	elementClass: It
+	elementClass: Pt
 });
 //#endregion
 //#region ../design-system/packages/elements/dist/badge/template.js
-var Lt = (e) => C`
+var Ft = (e) => S`
   <span class="en-badge" part="base" data-variant=${e}>
     <slot class="en-badge__prefix" name="prefix"></slot><span class="en-badge__label" part="label"><slot name="label"><slot></slot></slot></span>
   </span>
 `;
 //#endregion
 //#region ../design-system/packages/elements/dist/define/badge.js
-B(customElements, {
+H(customElements, {
 	tagName: "en-badge",
-	elementClass: class extends j {
+	elementClass: class extends A {
 		static properties = { variant: { reflect: !0 } };
 		static styles = [
-			R,
-			rt,
-			Mt
+			z,
+			nt,
+			At
 		];
 		constructor() {
 			super(), this.variant = "neutral";
 		}
 		render() {
-			return Lt(this.variant);
+			return Ft(this.variant);
 		}
 	}
 });
 //#endregion
 //#region ../design-system/packages/elements/dist/internal/native-surface.js
-function V(e, t) {
+function U(e, t) {
 	e.inert === t && (e.inert = !t);
 }
-function Rt(e) {
+function It(e) {
 	let t = e.currentTarget;
-	e.target === t && (e.newState === "open" && V(t, !0), queueMicrotask(() => {
+	e.target === t && (e.newState === "open" && U(t, !0), queueMicrotask(() => {
 		if (!t.isConnected) return;
 		let e = t.localName === "dialog" ? t.open : t.matches(":popover-open");
-		V(t, e);
+		U(t, e);
 	}));
 }
 //#endregion
 //#region ../design-system/packages/primitives/dist/interactions/events.js
-var zt = /* @__PURE__ */ new WeakMap();
-function Bt(e, t, n, r) {
+var Lt = /* @__PURE__ */ new WeakMap();
+function Rt(e, t, n, r) {
 	return new ((e.ownerDocument?.defaultView?.CustomEvent) ?? globalThis.CustomEvent)(t, {
 		detail: n,
 		bubbles: !0,
@@ -1674,20 +1674,20 @@ function Bt(e, t, n, r) {
 		cancelable: r
 	});
 }
-function Vt(e, t) {
+function W(e, t) {
 	if (Object.is(t.previous, t.proposed)) return "unchanged";
-	let n = Bt(e, "en-change", Object.freeze({
+	let n = Rt(e, "en-change", Object.freeze({
 		previous: t.previous,
 		proposed: t.proposed,
 		reason: t.reason
 	}), !0), r = {
 		authorRevision: t.getRevision(),
-		acceptedEpoch: zt.get(e)?.acceptedEpoch ?? 0
-	}, i = zt.get(e);
+		acceptedEpoch: Lt.get(e)?.acceptedEpoch ?? 0
+	}, i = Lt.get(e);
 	i || (i = {
 		acceptedEpoch: 0,
 		frames: []
-	}, zt.set(e, i));
+	}, Lt.set(e, i));
 	let a = i;
 	a.frames.push(r);
 	let o = !1, s = () => a.frames[a.frames.length - 1] === r && t.getRevision() === r.authorRevision && a.acceptedEpoch === r.acceptedEpoch, c = () => {
@@ -1712,32 +1712,32 @@ function Vt(e, t) {
 		}
 		throw e;
 	} finally {
-		a.frames.pop(), a.frames.length === 0 && zt.delete(e);
+		a.frames.pop(), a.frames.length === 0 && Lt.delete(e);
 	}
 }
-function Ht(e, t) {
-	e.dispatchEvent(Bt(e, "en-input", Object.freeze({ ...t }), !1));
+function zt(e, t) {
+	e.dispatchEvent(Rt(e, "en-input", Object.freeze({ ...t }), !1));
 }
 //#endregion
 //#region ../design-system/packages/styles/dist/internal/surface-motion.js
-var H = o`clamp(0ms, ${M("--en-duration-enter")}, 500ms)`, U = o`clamp(0ms, ${M("--en-duration-exit")}, 500ms)`, W = o`clamp(0px, ${M("--en-motion-surface-offset")}, 8px)`, Ut = o`clamp(.95, ${M("--en-motion-surface-scale")}, 1)`, Wt = o`var(--_en-surface-duration, 0ms) var(--_en-surface-ease, linear)`, Gt = o`opacity var(--_en-surface-opacity-duration, 0ms) var(--_en-surface-ease, linear), translate ${Wt}, scale ${Wt}, display ${Wt} allow-discrete, overlay ${Wt} allow-discrete`;
-function Kt(e, t, n, r, i = o``) {
+var G = o`clamp(0ms, ${j("--en-duration-enter")}, 500ms)`, Bt = o`clamp(0ms, ${j("--en-duration-exit")}, 500ms)`, K = o`clamp(0px, ${j("--en-motion-surface-offset")}, 8px)`, Vt = o`clamp(.95, ${j("--en-motion-surface-scale")}, 1)`, Ht = o`var(--_en-surface-duration, 0ms) var(--_en-surface-ease, linear)`, Ut = o`opacity var(--_en-surface-opacity-duration, 0ms) var(--_en-surface-ease, linear), translate ${Ht}, scale ${Ht}, display ${Ht} allow-discrete, overlay ${Ht} allow-discrete`;
+function Wt(e, t, n, r, i = o``) {
 	let a = o`:where(${e})${i}`, s = o`${t}${i}`, c = o`${n}${i}`;
 	return o`
     @supports (transition-behavior: allow-discrete) and (overlay: auto) {
       ${a} {
-        --_en-surface-duration: ${U};
-        --_en-surface-opacity-duration: ${U};
-        --_en-surface-ease: ${M("--en-ease-exit")};
+        --_en-surface-duration: ${Bt};
+        --_en-surface-opacity-duration: ${Bt};
+        --_en-surface-ease: ${j("--en-ease-exit")};
         opacity: 0;
-        transition: ${Gt};
+        transition: ${Ut};
       }
       ${s} {
-        --_en-surface-duration: ${H};
+        --_en-surface-duration: ${G};
         /* Modal and menu entry keep content opaque. Fade surfaces reverse
            from their current opacity when reopened during exit. */
-        --_en-surface-opacity-duration: ${r === "fade" ? H : o`0ms`};
-        --_en-surface-ease: ${M("--en-ease-enter")};
+        --_en-surface-opacity-duration: ${r === "fade" ? G : o`0ms`};
+        --_en-surface-ease: ${j("--en-ease-enter")};
         opacity: 1;
       }
       ${c} { pointer-events: none; }
@@ -1745,7 +1745,7 @@ function Kt(e, t, n, r, i = o``) {
         /* Opaque command content and its primary focus contour are immediate.
            Elevation adds entry paint without corrupting measured iPhone geometry. */
         @keyframes en-surface-elevation { from { box-shadow: none; } }
-        ${s} { animation: en-surface-elevation ${H} ${M("--en-ease-enter")}; }
+        ${s} { animation: en-surface-elevation ${G} ${j("--en-ease-enter")}; }
       ` : o``}
       @starting-style { ${s} { opacity: ${r === "fade" ? 0 : 1}; } }
     }
@@ -1757,38 +1757,38 @@ function Kt(e, t, n, r, i = o``) {
     }
   `;
 }
-var qt = o`
-  ${Kt(o`dialog:is(.en-dialog, .en-drawer)`, o`dialog:is(.en-dialog, .en-drawer)[open]`, o`dialog:is(.en-dialog, .en-drawer):not([open])`, "move")}
+var Gt = o`
+  ${Wt(o`dialog:is(.en-dialog, .en-drawer)`, o`dialog:is(.en-dialog, .en-drawer)[open]`, o`dialog:is(.en-dialog, .en-drawer):not([open])`, "move")}
   @supports (transition-behavior: allow-discrete) and (overlay: auto) {
     dialog:is(.en-dialog, .en-drawer) {
       --_en-surface-x: 0px;
-      --_en-surface-y: ${W};
+      --_en-surface-y: ${K};
       translate: var(--_en-surface-x) var(--_en-surface-y);
-      scale: ${Ut};
+      scale: ${Vt};
     }
     /* Share modal travel distance; attachment selects its axis and sign.
        Keep the drawer unscaled so its attached edge stays flush. */
-    dialog.en-drawer { --_en-surface-x: ${W}; --_en-surface-y: 0px; scale: 1; }
-    dialog.en-drawer:is([data-placement='start'], [data-placement='left']) { --_en-surface-x: calc(-1 * ${W}); }
-    dialog.en-drawer[data-placement='end']:dir(rtl) { --_en-surface-x: calc(-1 * ${W}); }
-    dialog.en-drawer[data-placement='start']:dir(rtl) { --_en-surface-x: ${W}; }
-    dialog.en-drawer:is([data-placement='top'], [data-placement='bottom']) { --_en-surface-x: 0px; --_en-surface-y: ${W}; }
-    dialog.en-drawer[data-placement='top'] { --_en-surface-y: calc(-1 * ${W}); }
+    dialog.en-drawer { --_en-surface-x: ${K}; --_en-surface-y: 0px; scale: 1; }
+    dialog.en-drawer:is([data-placement='start'], [data-placement='left']) { --_en-surface-x: calc(-1 * ${K}); }
+    dialog.en-drawer[data-placement='end']:dir(rtl) { --_en-surface-x: calc(-1 * ${K}); }
+    dialog.en-drawer[data-placement='start']:dir(rtl) { --_en-surface-x: ${K}; }
+    dialog.en-drawer:is([data-placement='top'], [data-placement='bottom']) { --_en-surface-x: 0px; --_en-surface-y: ${K}; }
+    dialog.en-drawer[data-placement='top'] { --_en-surface-y: calc(-1 * ${K}); }
     dialog:is(.en-dialog, .en-drawer)[open] { translate: 0px 0px; scale: 1; }
     @starting-style {
       dialog:is(.en-dialog, .en-drawer)[open] {
         translate: var(--_en-surface-x) var(--_en-surface-y);
-        scale: ${Ut};
+        scale: ${Vt};
       }
       dialog.en-drawer[open] { scale: 1; }
     }
     dialog:is(.en-dialog, .en-drawer)::backdrop {
       opacity: 0;
-      transition: opacity ${U} ${M("--en-ease-exit")}, display ${U} allow-discrete, overlay ${U} allow-discrete;
+      transition: opacity ${Bt} ${j("--en-ease-exit")}, display ${Bt} allow-discrete, overlay ${Bt} allow-discrete;
     }
     dialog:is(.en-dialog, .en-drawer)[open]::backdrop {
       opacity: 1;
-      transition: opacity ${H} ${M("--en-ease-enter")}, display ${H} allow-discrete, overlay ${H} allow-discrete;
+      transition: opacity ${G} ${j("--en-ease-enter")}, display ${G} allow-discrete, overlay ${G} allow-discrete;
     }
     dialog:is(.en-dialog, .en-drawer):not([open])::backdrop { pointer-events: none; }
     @starting-style { dialog:is(.en-dialog, .en-drawer)[open]::backdrop { opacity: 0; } }
@@ -1797,28 +1797,28 @@ var qt = o`
     dialog:is(.en-dialog, .en-drawer) { translate: none !important; scale: none !important; }
     dialog:is(.en-dialog, .en-drawer)::backdrop { transition: none !important; }
   }
-`, Jt = o`
+`, Kt = o`
   .en-radio {
     flex: none;
-    inline-size: ${M("--en-size-icon")};
-    block-size: ${M("--en-size-icon")};
+    inline-size: ${j("--en-size-icon")};
+    block-size: ${j("--en-size-icon")};
     margin: 0;
-    accent-color: ${M("--en-color-action")};
+    accent-color: ${j("--en-color-action")};
     appearance: none;
     display: inline-grid;
     /* Keep the inline baseline independent of the checked-state grid dot. */
     vertical-align: middle;
     place-items: center;
     box-sizing: border-box;
-    border: ${M("--en-border-width")} solid ${M("--en-color-boundary")};
-    border-radius: ${M("--en-radius-pill")};
-    background: ${M("--en-color-surface")};
+    border: ${j("--en-border-width")} solid ${j("--en-color-boundary")};
+    border-radius: ${j("--en-radius-pill")};
+    background: ${j("--en-color-surface")};
     cursor: pointer;
   }
-  .en-radio:checked { border-color: ${N("--en-radio-selected-color", M("--en-color-action"))}; }
-  .en-radio:checked::before { content: ''; inline-size: ${M("--en-size-choice-dot")}; block-size: ${M("--en-size-choice-dot")}; border-radius: ${M("--en-radius-pill")}; background: ${N("--en-radio-selected-color", M("--en-color-action"))}; }
-  .en-radio:disabled { cursor: default; background: ${M("--en-color-surface-subtle")}; border-color: ${M("--en-color-boundary")}; }
-  .en-radio:disabled::before { background: ${M("--en-color-text-muted")}; }
+  .en-radio:checked { border-color: ${M("--en-radio-selected-color", j("--en-color-action"))}; }
+  .en-radio:checked::before { content: ''; inline-size: ${j("--en-size-choice-dot")}; block-size: ${j("--en-size-choice-dot")}; border-radius: ${j("--en-radius-pill")}; background: ${M("--en-radio-selected-color", j("--en-color-action"))}; }
+  .en-radio:disabled { cursor: default; background: ${j("--en-color-surface-subtle")}; border-color: ${j("--en-color-boundary")}; }
+  .en-radio:disabled::before { background: ${j("--en-color-text-muted")}; }
   @media (forced-colors: active) {
     .en-radio { accent-color: auto; background: Canvas; border-color: CanvasText; }
     .en-radio:checked { background: Canvas; border-color: CanvasText; }
@@ -1830,7 +1830,7 @@ var qt = o`
 `;
 //#endregion
 //#region ../design-system/packages/styles/dist/internal/option-paint.js
-function Yt(e) {
+function qt(e) {
 	return o`
     ${e.base} {
       /* Reset each row's state slots: a nested option must not inherit its parent's state. */
@@ -1848,21 +1848,21 @@ function Yt(e) {
       --_en-option-rest-color: var(--en-option-rest-color, var(--en-option-color));
       background: var(--_en-option-disabled-background, var(--_en-option-pressed-background, var(--_en-option-hover-background, var(--_en-option-active-background, var(--_en-option-selected-background, var(--_en-option-rest-background, ${e.restBackground}))))));
       color: var(--_en-option-disabled-color, var(--_en-option-pressed-color, var(--_en-option-hover-color, var(--_en-option-active-color, var(--_en-option-selected-color, var(--_en-option-rest-color, ${e.restColor}))))));
-      font-weight: ${N("--en-option-font-weight", o`inherit`)};
+      font-weight: ${M("--en-option-font-weight", o`inherit`)};
     }
     ${e.selected ? o`${e.selected} {
-      --_en-option-selected-background: ${N("--en-option-selected-background", N("--en-option-background", M("--en-color-selected")))};
-      --_en-option-selected-color: ${N("--en-option-selected-color", N("--en-option-color", e.selectedColor ?? e.restColor))};
-      font-weight: ${N("--en-option-selected-font-weight", N("--en-option-font-weight", M("--en-font-label-strong-weight")))};
+      --_en-option-selected-background: ${M("--en-option-selected-background", M("--en-option-background", j("--en-color-selected")))};
+      --_en-option-selected-color: ${M("--en-option-selected-color", M("--en-option-color", e.selectedColor ?? e.restColor))};
+      font-weight: ${M("--en-option-selected-font-weight", M("--en-option-font-weight", j("--en-font-label-strong-weight")))};
     }` : o``}
     @media (hover: hover) { ${e.hover} {
-      --_en-option-hover-background: ${N("--en-option-hover-background", N("--en-option-background", e.hoverBackground))};
+      --_en-option-hover-background: ${M("--en-option-hover-background", M("--en-option-background", e.hoverBackground))};
       /* With neither override set, the state slot is invalid and falls through
          to active/selected/rest paint, rather than resetting it. */
       --_en-option-hover-color: var(--en-option-hover-color, var(--en-option-color));
     } }
     ${e.focus ? o`${e.focus} {
-      --_en-option-hover-background: ${N("--en-option-hover-background", N("--en-option-background", e.hoverBackground))};
+      --_en-option-hover-background: ${M("--en-option-hover-background", M("--en-option-background", e.hoverBackground))};
       --_en-option-hover-color: var(--en-option-hover-color, var(--en-option-color));
     }` : o``}
     ${e.active ? o`${e.active} {
@@ -1875,35 +1875,35 @@ function Yt(e) {
     }
     ${e.disabled} {
       --_en-option-disabled-background: var(--en-option-disabled-background, var(--en-option-background));
-      --_en-option-disabled-color: ${N("--en-option-disabled-color", N("--en-option-color", M("--en-color-text-muted")))};
+      --_en-option-disabled-color: ${M("--en-option-disabled-color", M("--en-option-color", j("--en-color-text-muted")))};
     }
   `;
 }
 //#endregion
 //#region ../design-system/packages/styles/dist/internal/range.js
-var Xt = o`
-  block-size: ${M("--en-size-range-track")};
+var Jt = o`
+  block-size: ${j("--en-size-range-track")};
   border: 0;
-  border-radius: ${M("--en-radius-pill")};
-  background: ${M("--en-color-boundary")};
-`, Zt = o`
+  border-radius: ${j("--en-radius-pill")};
+  background: ${j("--en-color-boundary")};
+`, Yt = o`
   box-sizing: border-box;
-  inline-size: ${M("--en-size-icon")};
-  block-size: ${M("--en-size-icon")};
-  border: ${M("--en-border-width")} solid ${M("--en-color-action")};
-  border-radius: ${M("--en-radius-pill")};
-  background: ${M("--en-color-action")};
-`, Qt = o`outline: ${M("--en-focus-width")} solid ${M("--en-color-focus")}; outline-offset: ${M("--en-focus-offset")};`, $t = o`
+  inline-size: ${j("--en-size-icon")};
+  block-size: ${j("--en-size-icon")};
+  border: ${j("--en-border-width")} solid ${j("--en-color-action")};
+  border-radius: ${j("--en-radius-pill")};
+  background: ${j("--en-color-action")};
+`, Xt = o`outline: ${j("--en-focus-width")} solid ${j("--en-color-focus")}; outline-offset: ${j("--en-focus-offset")};`, Zt = o`
   @supports selector(input::-webkit-slider-thumb) {
     .en-range { appearance: none; background: none; cursor: pointer; }
-    .en-range::-webkit-slider-runnable-track { ${Xt} }
-    .en-range::-webkit-slider-thumb { appearance: none; ${Zt} margin-block-start: calc((${M("--en-size-range-track")} - ${M("--en-size-icon")}) / 2); }
+    .en-range::-webkit-slider-runnable-track { ${Jt} }
+    .en-range::-webkit-slider-thumb { appearance: none; ${Yt} margin-block-start: calc((${j("--en-size-range-track")} - ${j("--en-size-icon")}) / 2); }
     /* Exposed native thumbs own focus. A global halo must not reintroduce a
        rectangular range-host ring; native unsupported fallbacks keep that route. */
     .en-range, .en-range:focus-visible { box-shadow: none; }
     .en-range:focus-visible { outline: none; }
-    .en-range:focus-visible::-webkit-slider-thumb { ${Qt} }
-    .en-range:disabled::-webkit-slider-thumb { background: ${M("--en-color-text-muted")}; border-color: ${M("--en-color-text-muted")}; }
+    .en-range:focus-visible::-webkit-slider-thumb { ${Xt} }
+    .en-range:disabled::-webkit-slider-thumb { background: ${j("--en-color-text-muted")}; border-color: ${j("--en-color-text-muted")}; }
     @media (forced-colors: active) {
       .en-range::-webkit-slider-runnable-track { background: ButtonText; }
       .en-range::-webkit-slider-thumb { background: Highlight; border-color: Highlight; }
@@ -1913,14 +1913,14 @@ var Xt = o`
   }
   @supports selector(input::-moz-range-thumb) {
     .en-range { appearance: none; background: none; cursor: pointer; }
-    .en-range::-moz-range-track { ${Xt} }
-    .en-range::-moz-range-thumb { ${Zt} }
+    .en-range::-moz-range-track { ${Jt} }
+    .en-range::-moz-range-thumb { ${Yt} }
     /* Exposed native thumbs own focus. A global halo must not reintroduce a
        rectangular range-host ring; native unsupported fallbacks keep that route. */
     .en-range, .en-range:focus-visible { box-shadow: none; }
     .en-range:focus-visible { outline: none; }
-    .en-range:focus-visible::-moz-range-thumb { ${Qt} }
-    .en-range:disabled::-moz-range-thumb { background: ${M("--en-color-text-muted")}; border-color: ${M("--en-color-text-muted")}; }
+    .en-range:focus-visible::-moz-range-thumb { ${Xt} }
+    .en-range:disabled::-moz-range-thumb { background: ${j("--en-color-text-muted")}; border-color: ${j("--en-color-text-muted")}; }
     @media (forced-colors: active) {
       .en-range::-moz-range-track { background: ButtonText; }
       .en-range::-moz-range-thumb { background: Highlight; border-color: Highlight; }
@@ -1929,43 +1929,43 @@ var Xt = o`
     }
   }
   .en-range:disabled { cursor: default; }
-`, en = o`
+`, Qt = o`
   .en-link {
-    color: ${M("--en-color-link")};
+    color: ${j("--en-color-link")};
     text-decoration: underline;
-    text-underline-offset: ${M("--en-space-0-5")};
+    text-underline-offset: ${j("--en-space-0-5")};
     overflow-wrap: break-word;
   }
-  .en-link:visited { color: ${M("--en-color-link")}; }
-`, tn = o`.en-link[aria-disabled='true'] { color: ${M("--en-color-text-muted")}; cursor: default; }`, nn = o`.en-link, .en-link:visited { color: LinkText; }`, rn = N("--en-control-inline-padding", N("--en-input-inline-padding", M("--en-space-control-inline"))), an = N("--en-control-radius", M("--en-radius-control")), on = o`max(0px, ${an} - ${M("--en-border-width")})`, sn = o`max(
-  ${M("--en-space-control-block")},
-  calc((var(--_en-text-control-block-size) - ${M("--en-font-input-size")} * ${M("--en-font-input-line-height")}) / 2 - ${M("--en-border-width")})
-)`, cn = L(o`
+  .en-link:visited { color: ${j("--en-color-link")}; }
+`, $t = o`.en-link[aria-disabled='true'] { color: ${j("--en-color-text-muted")}; cursor: default; }`, en = o`.en-link, .en-link:visited { color: LinkText; }`, tn = M("--en-control-inline-padding", M("--en-input-inline-padding", j("--en-space-control-inline"))), nn = M("--en-control-radius", j("--en-radius-control")), rn = o`max(0px, ${nn} - ${j("--en-border-width")})`, an = o`max(
+  ${j("--en-space-control-block")},
+  calc((var(--_en-text-control-block-size) - ${j("--en-font-input-size")} * ${j("--en-font-input-line-height")}) / 2 - ${j("--en-border-width")})
+)`, on = L(o`
   /* Compute on each consumer so local token/part overrides retain their scope. */
-  ${dt(o`.en-button:not(.en-icon-button), .en-button[data-icon-only], .en-input, .en-textarea, .en-select, .en-number-input, .en-number-step, .en-color-control`)}
-  ${ft(o`.en-control, .en-button, .en-input, .en-textarea, .en-select`)}
-  ${pt(o`.en-button:not(.en-icon-button), .en-input, .en-textarea, .en-select`)}
+  ${ut(o`.en-button:not(.en-icon-button), .en-button[data-icon-only], .en-input, .en-textarea, .en-select, .en-number-input, .en-number-step, .en-color-control`)}
+  ${dt(o`.en-control, .en-button, .en-input, .en-textarea, .en-select`)}
+  ${ft(o`.en-button:not(.en-icon-button), .en-input, .en-textarea, .en-select`)}
   /* Field tokens customize inputs without changing action and choice surfaces.
      Existing direct control overrides retain their higher precedence. */
   .en-input, .en-textarea, .en-select {
-    padding-inline: ${rn};
-    background: ${N("--en-control-background", N("--en-input-background", M("--en-color-surface")))};
-    color: ${N("--en-control-color", N("--en-input-color", M("--en-color-text")))};
+    padding-inline: ${tn};
+    background: ${M("--en-control-background", M("--en-input-background", j("--en-color-surface")))};
+    color: ${M("--en-control-color", M("--en-input-color", j("--en-color-text")))};
   }
-  ${at}
-  ${en}
-  ${mt(o`:is(.en-button, .en-input, .en-textarea, .en-select, .en-control):is(:disabled, [aria-disabled='true'])`)}
-  ${tn}
+  ${it}
+  ${Qt}
+  ${pt(o`:is(.en-button, .en-input, .en-textarea, .en-select, .en-control):is(:disabled, [aria-disabled='true'])`)}
+  ${$t}
   .en-input, .en-textarea, .en-select {
     inline-size: 100%;
-    font: ${M("--en-font-input-weight")} ${M("--en-font-input-size")} / ${M("--en-font-input-line-height")} ${M("--en-font-input-family")};
+    font: ${j("--en-font-input-weight")} ${j("--en-font-input-size")} / ${j("--en-font-input-line-height")} ${j("--en-font-input-family")};
   }
   /* Use the shared text-field surface and target envelope around the native
      date editor. Keep its fields, separators and calendar-picker activation. */
   .en-input[type='date'] {
     -webkit-appearance: none;
     appearance: none;
-    padding-block: ${sn};
+    padding-block: ${an};
   }
   .en-input[type='date']::-webkit-datetime-edit { padding: 0; }
   .en-input[type='date']::-webkit-datetime-edit-fields-wrapper { padding-block: 0; }
@@ -1976,118 +1976,118 @@ var Xt = o`
     margin-block: 0;
     text-align: inherit;
   }
-  .en-input::placeholder, .en-textarea::placeholder { color: ${M("--en-color-text-muted")}; opacity: 1; }
-  .en-text-input, .en-textarea { padding-block: ${sn}; }
+  .en-input::placeholder, .en-textarea::placeholder { color: ${j("--en-color-text-muted")}; opacity: 1; }
+  .en-text-input, .en-textarea { padding-block: ${an}; }
   .en-textarea { resize: block; }
   .en-input[aria-invalid='true'], .en-textarea[aria-invalid='true'], .en-select[aria-invalid='true'], .en-control[data-invalid] {
-    border-color: ${M("--en-color-danger-text")};
+    border-color: ${j("--en-color-danger-text")};
   }
-  .en-input:user-invalid, .en-textarea:user-invalid, .en-select:user-invalid { border-color: ${M("--en-color-danger-text")}; }
+  .en-input:user-invalid, .en-textarea:user-invalid, .en-select:user-invalid { border-color: ${j("--en-color-danger-text")}; }
   /* The text-field marker keeps stronger invalid geometry out of other native controls.
      Preserve border + padding on each edge, including scoped padding/base-border tokens. */
   .en-text-input:is([aria-invalid='true'], :user-invalid) {
-    border-width: ${M("--en-border-invalid-width")};
-    padding-block: max(0px, calc(${sn} + ${M("--en-border-width")} - ${M("--en-border-invalid-width")}));
-    padding-inline: max(0px, calc(${rn} + ${M("--en-border-width")} - ${M("--en-border-invalid-width")}));
+    border-width: ${j("--en-border-invalid-width")};
+    padding-block: max(0px, calc(${an} + ${j("--en-border-width")} - ${j("--en-border-invalid-width")}));
+    padding-inline: max(0px, calc(${tn} + ${j("--en-border-width")} - ${j("--en-border-invalid-width")}));
   }
-  .en-input-group { display: flex; align-items: stretch; gap: ${M("--en-space-1")}; min-inline-size: 0; }
+  .en-input-group { display: flex; align-items: stretch; gap: ${j("--en-space-1")}; min-inline-size: 0; }
   .en-input-group > .en-input { flex: 1 1 auto; inline-size: 0; min-inline-size: 0; }
   .en-number-group {
     gap: 0;
     padding: 0;
-    border: ${M("--en-border-width")} solid ${N("--en-control-border-color", M("--en-color-boundary"))};
-    border-radius: ${an};
-    background: ${N("--en-control-background", N("--en-input-background", M("--en-color-surface")))};
+    border: ${j("--en-border-width")} solid ${M("--en-control-border-color", j("--en-color-boundary"))};
+    border-radius: ${nn};
+    background: ${M("--en-control-background", M("--en-input-background", j("--en-color-surface")))};
   }
-  .en-number-group[data-invalid] { border-color: ${M("--en-color-danger-text")}; }
-  .en-number-group > :is(.en-number-input, .en-number-step) { min-block-size: max(calc(var(--_en-text-control-block-size) - 2 * ${M("--en-border-width")}), ${M("--en-size-target-min")}); }
+  .en-number-group[data-invalid] { border-color: ${j("--en-color-danger-text")}; }
+  .en-number-group > :is(.en-number-input, .en-number-step) { min-block-size: max(calc(var(--_en-text-control-block-size) - 2 * ${j("--en-border-width")}), ${j("--en-size-target-min")}); }
   .en-number-group > .en-number-input { border: 0; border-radius: 0; background: none; appearance: textfield; }
   .en-number-input::-webkit-inner-spin-button, .en-number-input::-webkit-outer-spin-button { appearance: none; margin: 0; }
   .en-number-step {
     flex: none;
-    min-inline-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-min")});
-    padding-inline: ${M("--en-space-control-block")};
+    min-inline-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")});
+    padding-inline: ${j("--en-space-control-block")};
     border: 0;
-    border-inline-start: ${M("--en-border-width")} solid ${M("--en-color-line")};
+    border-inline-start: ${j("--en-border-width")} solid ${j("--en-color-line")};
     border-radius: 0;
-    background: ${M("--en-color-surface-subtle")};
-    color: ${M("--en-color-text")};
+    background: ${j("--en-color-surface-subtle")};
+    color: ${j("--en-color-text")};
   }
   /* Match the frame's override as well as its token. Keep overflow visible so
      consumer-defined outward focus contours remain intact. */
-  .en-number-step:last-child { border-start-end-radius: ${on}; border-end-end-radius: ${on}; }
-  .en-number-step:first-child { border-inline-start: 0; border-inline-end: ${M("--en-border-width")} solid ${M("--en-color-line")}; border-start-start-radius: ${on}; border-end-start-radius: ${on}; }
+  .en-number-step:last-child { border-start-end-radius: ${rn}; border-end-end-radius: ${rn}; }
+  .en-number-step:first-child { border-inline-start: 0; border-inline-end: ${j("--en-border-width")} solid ${j("--en-color-line")}; border-start-start-radius: ${rn}; border-end-start-radius: ${rn}; }
 
-  .en-color-control { cursor: pointer; padding: ${M("--en-space-control-block")}; block-size: var(--_en-text-control-block-size); }
+  .en-color-control { cursor: pointer; padding: ${j("--en-space-control-block")}; block-size: var(--_en-text-control-block-size); }
   .en-color-control::-webkit-color-swatch-wrapper { padding: 0; }
-  .en-color-control::-webkit-color-swatch { border: ${M("--en-border-width")} solid ${M("--en-color-boundary")}; border-radius: max(0px, ${M("--en-radius-control")} - ${M("--en-space-control-block")}); }
-  .en-color-control::-moz-color-swatch { border: ${M("--en-border-width")} solid ${M("--en-color-boundary")}; border-radius: max(0px, ${M("--en-radius-control")} - ${M("--en-space-control-block")}); }
-  ${Jt}
+  .en-color-control::-webkit-color-swatch { border: ${j("--en-border-width")} solid ${j("--en-color-boundary")}; border-radius: max(0px, ${j("--en-radius-control")} - ${j("--en-space-control-block")}); }
+  .en-color-control::-moz-color-swatch { border: ${j("--en-border-width")} solid ${j("--en-color-boundary")}; border-radius: max(0px, ${j("--en-radius-control")} - ${j("--en-space-control-block")}); }
+  ${Kt}
   .en-checkbox, .en-switch {
     flex: none;
-    inline-size: ${M("--en-size-icon")};
-    block-size: ${M("--en-size-icon")};
+    inline-size: ${j("--en-size-icon")};
+    block-size: ${j("--en-size-icon")};
     margin: 0;
-    accent-color: ${M("--en-color-action")};
+    accent-color: ${j("--en-color-action")};
   }
   .en-checkbox {
     appearance: none;
     display: inline-grid;
     place-items: center;
     box-sizing: border-box;
-    border: ${M("--en-border-width")} solid ${M("--en-color-boundary")};
-    background: ${M("--en-color-surface")};
+    border: ${j("--en-border-width")} solid ${j("--en-color-boundary")};
+    background: ${j("--en-color-surface")};
     cursor: pointer;
   }
-  .en-checkbox { border-radius: ${M("--en-radius-choice")}; }
-  .en-checkbox:checked, .en-checkbox:indeterminate { background: ${M("--en-color-action")}; border-color: ${M("--en-color-action")}; }
+  .en-checkbox { border-radius: ${j("--en-radius-choice")}; }
+  .en-checkbox:checked, .en-checkbox:indeterminate { background: ${j("--en-color-action")}; border-color: ${j("--en-color-action")}; }
   .en-checkbox:checked::before {
     content: '';
     box-sizing: border-box;
-    inline-size: ${M("--en-size-choice-mark-inline")};
-    block-size: ${M("--en-size-choice-mark-block")};
+    inline-size: ${j("--en-size-choice-mark-inline")};
+    block-size: ${j("--en-size-choice-mark-block")};
     /* The check is directional artwork, not an inline-layout edge; never mirror it in RTL. */
-    border-right: ${M("--en-size-choice-mark-stroke")} solid ${M("--en-color-on-action")};
-    border-bottom: ${M("--en-size-choice-mark-stroke")} solid ${M("--en-color-on-action")};
+    border-right: ${j("--en-size-choice-mark-stroke")} solid ${j("--en-color-on-action")};
+    border-bottom: ${j("--en-size-choice-mark-stroke")} solid ${j("--en-color-on-action")};
     transform: rotate(45deg);
   }
-  .en-checkbox:indeterminate::before { content: ''; inline-size: ${M("--en-size-choice-mark-block")}; block-size: 0; border: 0; border-block-end: ${M("--en-size-choice-mark-stroke")} solid ${M("--en-color-on-action")}; transform: none; }
-  .en-checkbox:disabled { cursor: default; background: ${M("--en-color-surface-subtle")}; border-color: ${M("--en-color-boundary")}; }
-  .en-checkbox:disabled::before { border-color: ${M("--en-color-text-muted")}; }
+  .en-checkbox:indeterminate::before { content: ''; inline-size: ${j("--en-size-choice-mark-block")}; block-size: 0; border: 0; border-block-end: ${j("--en-size-choice-mark-stroke")} solid ${j("--en-color-on-action")}; transform: none; }
+  .en-checkbox:disabled { cursor: default; background: ${j("--en-color-surface-subtle")}; border-color: ${j("--en-color-boundary")}; }
+  .en-checkbox:disabled::before { border-color: ${j("--en-color-text-muted")}; }
   .en-switch {
     position: relative;
     appearance: none;
     box-sizing: border-box;
-    inline-size: ${M("--en-size-switch-inline")};
-    block-size: ${M("--en-size-switch-block")};
-    border: ${M("--en-border-width")} solid ${M("--en-color-boundary")};
-    border-radius: ${M("--en-radius-pill")};
-    background: ${M("--en-color-surface-subtle")};
+    inline-size: ${j("--en-size-switch-inline")};
+    block-size: ${j("--en-size-switch-block")};
+    border: ${j("--en-border-width")} solid ${j("--en-color-boundary")};
+    border-radius: ${j("--en-radius-pill")};
+    background: ${j("--en-color-surface-subtle")};
     cursor: pointer;
   }
   .en-switch::before {
     content: '';
     position: absolute;
-    inset-block-start: ${M("--en-space-switch-inset")};
-    inset-inline-start: ${M("--en-space-switch-inset")};
-    inline-size: ${M("--en-size-switch-thumb")};
-    block-size: ${M("--en-size-switch-thumb")};
-    border-radius: ${M("--en-radius-pill")};
-    background: ${M("--en-color-text-muted")};
-    transition: inset-inline-start ${M("--en-duration-fast")} ${M("--en-ease-standard")};
+    inset-block-start: ${j("--en-space-switch-inset")};
+    inset-inline-start: ${j("--en-space-switch-inset")};
+    inline-size: ${j("--en-size-switch-thumb")};
+    block-size: ${j("--en-size-switch-thumb")};
+    border-radius: ${j("--en-radius-pill")};
+    background: ${j("--en-color-text-muted")};
+    transition: inset-inline-start ${j("--en-duration-fast")} ${j("--en-ease-standard")};
   }
-  .en-switch:checked { background: ${M("--en-color-action")}; border-color: ${M("--en-color-action")}; }
-  .en-switch:checked::before { inset-inline-start: calc(100% - ${M("--en-size-switch-thumb")} - ${M("--en-space-switch-inset")}); background: ${M("--en-color-on-action")}; }
-  .en-switch:disabled { cursor: default; border-color: ${M("--en-color-boundary")}; background: ${M("--en-color-surface-subtle")}; }
-  .en-switch:disabled::before { background: ${M("--en-color-text-muted")}; }
-  .en-range { inline-size: 100%; min-inline-size: ${M("--en-size-target-min")}; min-block-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-min")}); margin: 0; accent-color: ${M("--en-color-action")}; }
-  .en-range-row { display: flex; align-items: center; gap: ${M("--en-space-3")}; min-inline-size: 0; }
+  .en-switch:checked { background: ${j("--en-color-action")}; border-color: ${j("--en-color-action")}; }
+  .en-switch:checked::before { inset-inline-start: calc(100% - ${j("--en-size-switch-thumb")} - ${j("--en-space-switch-inset")}); background: ${j("--en-color-on-action")}; }
+  .en-switch:disabled { cursor: default; border-color: ${j("--en-color-boundary")}; background: ${j("--en-color-surface-subtle")}; }
+  .en-switch:disabled::before { background: ${j("--en-color-text-muted")}; }
+  .en-range { inline-size: 100%; min-inline-size: ${j("--en-size-target-min")}; min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")}); margin: 0; accent-color: ${j("--en-color-action")}; }
+  .en-range-row { display: flex; align-items: center; gap: ${j("--en-space-3")}; min-inline-size: 0; }
   .en-range-row > .en-range { flex: 1 1 auto; inline-size: 0; }
   .en-range-row[data-editable] { flex-wrap: wrap; }
   .en-range-row > .en-range-editor {
-    flex: 0 1 calc(3 * ${M("--en-size-control-min")});
-    inline-size: calc(3 * ${M("--en-size-control-min")});
-    min-inline-size: min(100%, ${M("--en-size-target-min")});
+    flex: 0 1 calc(3 * ${j("--en-size-control-min")});
+    inline-size: calc(3 * ${j("--en-size-control-min")});
+    min-inline-size: min(100%, ${j("--en-size-target-min")});
     font-variant-numeric: tabular-nums;
   }
   /* The value axis alone becomes vertical. Labels, output and number editing
@@ -2097,44 +2097,44 @@ var Xt = o`
     writing-mode: vertical-lr;
     direction: rtl;
     flex: none;
-    inline-size: ${N("--en-slider-length", M("--en-size-range-length"))};
-    min-inline-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-min")});
-    block-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-min")});
+    inline-size: ${M("--en-slider-length", j("--en-size-range-length"))};
+    min-inline-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")});
+    block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")});
   }
   .en-range-row[data-orientation='vertical'] > .en-range-editor {
     flex: none;
-    inline-size: min(100%, calc(3 * ${M("--en-size-control-min")}));
+    inline-size: min(100%, calc(3 * ${j("--en-size-control-min")}));
   }
   .en-range-error[data-pending] { visibility: hidden; }
-  .en-range-row > output { flex: none; font-variant-numeric: tabular-nums; color: ${M("--en-color-text")}; }
+  .en-range-row > output { flex: none; font-variant-numeric: tabular-nums; color: ${j("--en-color-text")}; }
+  ${Dt}
   ${kt}
-  ${jt}
-  ${I(o`.en-number-group > .en-number-input`, {
+  ${F(o`.en-number-group > .en-number-input`, {
 	family: "input",
 	inset: !0,
 	halo: !1
 })}
-  ${I(o`.en-number-group > .en-number-step`, {
+  ${F(o`.en-number-group > .en-number-step`, {
 	family: "button",
 	inset: !0,
 	halo: !1
 })}
-  ${$t}
+  ${Zt}
   @media (any-pointer: coarse) {
-    ${dt(o`.en-button:not(.en-icon-button), .en-button[data-icon-only], .en-input, .en-textarea, .en-select, .en-number-input, .en-number-step, .en-color-control`, !0)}
-    ${ht(o`.en-button, .en-control, .en-input, .en-textarea, .en-select, .en-range`)}
-    .en-range-row[data-orientation='vertical'] > .en-range { min-inline-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-touch")}); }
-    ${pt(o`.en-button:not(.en-icon-button), .en-input, .en-textarea, .en-select`)}
+    ${ut(o`.en-button:not(.en-icon-button), .en-button[data-icon-only], .en-input, .en-textarea, .en-select, .en-number-input, .en-number-step, .en-color-control`, !0)}
+    ${mt(o`.en-button, .en-control, .en-input, .en-textarea, .en-select, .en-range`)}
+    .en-range-row[data-orientation='vertical'] > .en-range { min-inline-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-touch")}); }
+    ${ft(o`.en-button:not(.en-icon-button), .en-input, .en-textarea, .en-select`)}
     .en-color-control { block-size: var(--_en-text-control-block-size); }
-    ${gt(o`.en-icon-button, .en-number-step`)}
-    .en-number-group > :is(.en-number-input, .en-number-step) { min-block-size: max(calc(var(--_en-text-control-block-size) - 2 * ${M("--en-border-width")}), ${M("--en-size-target-touch")}); }
+    ${ht(o`.en-icon-button, .en-number-step`)}
+    .en-number-group > :is(.en-number-input, .en-number-step) { min-block-size: max(calc(var(--_en-text-control-block-size) - 2 * ${j("--en-border-width")}), ${j("--en-size-target-touch")}); }
   }
-  @media (prefers-reduced-motion: reduce) { ${_t(o`.en-button, .en-switch::before`)} }
+  @media (prefers-reduced-motion: reduce) { ${gt(o`.en-button, .en-switch::before`)} }
   @media (forced-colors: active) {
-    ${vt(o`.en-button, .en-control, .en-input, .en-textarea, .en-select, .en-number-group`)}
-    ${nn}
-    ${yt(o`:is(.en-button, .en-control, .en-input, .en-textarea, .en-select):is(:disabled, [aria-disabled='true']), .en-link[aria-disabled='true']`)}
-    ${ct}
+    ${_t(o`.en-button, .en-control, .en-input, .en-textarea, .en-select, .en-number-group`)}
+    ${en}
+    ${vt(o`:is(.en-button, .en-control, .en-input, .en-textarea, .en-select):is(:disabled, [aria-disabled='true']), .en-link[aria-disabled='true']`)}
+    ${st}
     .en-checkbox, .en-switch, .en-range { accent-color: auto; }
     .en-checkbox { background: Canvas; border-color: CanvasText; }
     .en-checkbox:checked, .en-checkbox:indeterminate { background: Canvas; border-color: CanvasText; }
@@ -2149,11 +2149,10 @@ var Xt = o`
     .en-switch:disabled { background: Canvas; border-color: GrayText; }
     .en-switch:disabled::before { background: GrayText; }
   }
-`), ln = N("--en-option-list-radius", N("--en-overlay-radius", M("--en-radius-container"))), un = o`max(${N("--en-option-list-padding", N("--en-overlay-padding", M("--en-space-1")))}, ${F({
+`), sn = M("--en-option-list-radius", M("--en-overlay-radius", j("--en-radius-container"))), cn = o`max(${M("--en-option-list-padding", M("--en-overlay-padding", j("--en-space-1")))}, ${P({
 	family: "option",
 	inset: !0
-})})`, dn = o`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`;
-L(o`
+})})`, ln = o`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`, un = L(o`
   /* Styling the closed control does not replace its OS picker. Keep this
      fallback outside base-select; ordinary select pseudos are not portable. */
   @supports selector(:has(> .en-select)) {
@@ -2161,21 +2160,21 @@ L(o`
       .en-select {
         -webkit-appearance: none;
         appearance: none;
-        padding-inline-end: calc(${rn} + ${M("--en-size-icon")} + ${M("--en-space-icon-label")});
-        min-block-size: max(var(--_en-text-control-block-size), calc(${M("--en-size-icon")} + 2 * ${M("--en-space-control-block")} + 2 * ${M("--en-border-width")}));
+        padding-inline-end: calc(${tn} + ${j("--en-size-icon")} + ${j("--en-space-icon-label")});
+        min-block-size: max(var(--_en-text-control-block-size), calc(${j("--en-size-icon")} + 2 * ${j("--en-space-control-block")} + 2 * ${j("--en-border-width")}));
       }
       .en-field-focus-frame:has(> .en-select)::before {
         content: '';
         position: absolute;
         z-index: 1;
-        inset-inline-end: calc(${rn} + ${M("--en-border-width")});
+        inset-inline-end: calc(${tn} + ${j("--en-border-width")});
         inset-block-start: 50%;
         translate: 0 -50%;
-        inline-size: ${M("--en-size-icon")};
-        block-size: ${M("--en-size-icon")};
-        color: ${M("--en-color-text-muted")};
+        inline-size: ${j("--en-size-icon")};
+        block-size: ${j("--en-size-icon")};
+        color: ${j("--en-color-text-muted")};
         background-color: currentColor;
-        mask: ${dn} center / contain no-repeat;
+        mask: ${ln} center / contain no-repeat;
         pointer-events: none;
       }
       @media (forced-colors: active) {
@@ -2185,27 +2184,27 @@ L(o`
     }
   }
   @supports (appearance: base-select) and selector(::picker(select)) {
-    .en-select, .en-select::picker(select) { appearance: ${N("--en-select-appearance", o`base-select`)}; }
-    .en-select { align-items: center; gap: ${M("--en-space-icon-label")}; }
+    .en-select, .en-select::picker(select) { appearance: ${M("--en-select-appearance", o`base-select`)}; }
+    .en-select { align-items: center; gap: ${j("--en-space-icon-label")}; }
     .en-select::picker(select) {
-      padding: ${un};
-      border: ${M("--en-border-width")} solid ${N("--en-option-list-border-color", N("--en-overlay-border-color", M("--en-color-boundary")))};
-      border-radius: ${ln};
-      background: ${N("--en-option-list-background", N("--en-overlay-background", M("--en-color-surface-raised")))};
-      color: ${N("--en-option-list-color", N("--en-overlay-color", M("--en-color-text")))};
-      box-shadow: ${N("--en-option-list-shadow", M("--en-shadow-overlay"))};
-      max-block-size: min(${N("--en-option-list-max-block-size", N("--en-overlay-max-block-size", M("--en-layout-panel-preferred")))}, calc(100dvh - ${M("--en-space-8")}));
+      padding: ${cn};
+      border: ${j("--en-border-width")} solid ${M("--en-option-list-border-color", M("--en-overlay-border-color", j("--en-color-boundary")))};
+      border-radius: ${sn};
+      background: ${M("--en-option-list-background", M("--en-overlay-background", j("--en-color-surface-raised")))};
+      color: ${M("--en-option-list-color", M("--en-overlay-color", j("--en-color-text")))};
+      box-shadow: ${M("--en-option-list-shadow", j("--en-shadow-overlay"))};
+      max-block-size: min(${M("--en-option-list-max-block-size", M("--en-overlay-max-block-size", j("--en-layout-panel-preferred")))}, calc(100dvh - ${j("--en-space-8")}));
       overflow: auto;
     }
-    ${Kt(o`.en-select`, o`.en-select:open`, o`.en-select:not(:open)`, "fade", o`::picker(select)`)}
+    ${Wt(o`.en-select`, o`.en-select:open`, o`.en-select:not(:open)`, "fade", o`::picker(select)`)}
     .en-select option {
       position: relative;
-      min-block-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-min")});
-      padding: ${N("--en-option-block-padding", M("--en-space-control-block"))} ${N("--en-option-inline-padding", M("--en-space-control-inline"))};
-      border-radius: ${N("--en-option-radius", o`max(0px, ${ln} - ${un} - ${M("--en-border-width")})`)};
+      min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")});
+      padding: ${M("--en-option-block-padding", j("--en-space-control-block"))} ${M("--en-option-inline-padding", j("--en-space-control-inline"))};
+      border-radius: ${M("--en-option-radius", o`max(0px, ${sn} - ${cn} - ${j("--en-border-width")})`)};
     }
-    .en-select option + option { margin-block-start: ${N("--en-option-list-gap", o`0px`)}; }
-    ${Yt({
+    .en-select option + option { margin-block-start: ${M("--en-option-list-gap", o`0px`)}; }
+    ${qt({
 	base: o`.en-select option`,
 	selected: o`.en-select option:checked`,
 	hover: o`.en-select option:not(:disabled):hover`,
@@ -2213,33 +2212,33 @@ L(o`
 	pressed: o`.en-select option:not(:disabled):active`,
 	disabled: o`.en-select option:disabled`,
 	restBackground: o`transparent`,
-	restColor: N("--en-option-list-color", N("--en-overlay-color", o`inherit`)),
-	selectedColor: N("--en-option-list-color", N("--en-overlay-color", M("--en-color-action-text"))),
-	hoverBackground: M("--en-color-selected")
+	restColor: M("--en-option-list-color", M("--en-overlay-color", o`inherit`)),
+	selectedColor: M("--en-option-list-color", M("--en-overlay-color", j("--en-color-action-text"))),
+	hoverBackground: j("--en-color-selected")
 })}
     .en-select option:not(:disabled):focus-visible { z-index: 1; }
     @media (hover: hover) { .en-select option:not(:disabled):hover { z-index: 1; } }
     /* Native :active is pressed activation, not the combobox's keyboard candidate. */
-    ${et(o`.en-select option:not(:disabled):focus-visible`, {
+    ${I(o`.en-select option:not(:disabled):focus-visible`, {
 	family: "option",
 	inset: !0,
 	restSelector: o`.en-select option`
 })}
-    @media (hover: hover) { ${et(o`.en-select option:not(:disabled):hover`, {
+    @media (hover: hover) { ${I(o`.en-select option:not(:disabled):hover`, {
 	family: "option",
 	inset: !0,
 	restSelector: o`.en-select option`
 })} }
     .en-select::picker-icon {
       content: '';
-      inline-size: ${M("--en-size-icon")};
-      block-size: ${M("--en-size-icon")};
+      inline-size: ${j("--en-size-icon")};
+      block-size: ${j("--en-size-icon")};
       flex: none;
-      color: ${M("--en-color-text-muted")};
+      color: ${j("--en-color-text-muted")};
       background-color: currentColor;
-      mask: ${dn} center / contain no-repeat;
+      mask: ${ln} center / contain no-repeat;
     }
-    @media (any-pointer: coarse) { .en-select option { min-block-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-touch")}); } }
+    @media (any-pointer: coarse) { .en-select option { min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-touch")}); } }
     @media (forced-colors: active) {
       .en-select::picker(select) { background: Canvas; color: CanvasText; border-color: ButtonText; box-shadow: none; }
       .en-select option { background: Canvas; color: CanvasText; }
@@ -2251,63 +2250,62 @@ L(o`
       .en-select:disabled::picker-icon { color: GrayText; }
     }
   }
-`);
-var fn = L(o`
-  .en-field, .en-rating-field { --_en-field-gap: ${N("--en-field-gap", M("--en-space-label-control"))}; }
+`), dn = L(o`
+  .en-field, .en-rating-field { --_en-field-gap: ${M("--en-field-gap", j("--en-space-label-control"))}; }
   .en-field { display: flex; flex-direction: column; min-inline-size: 0; gap: 0; }
   .en-field > :not(:first-child):not(.en-description),
   .en-choice-content > :not(:first-child):not(.en-description) { margin-block-start: var(--_en-field-gap); }
   /* A fieldset legend already separates its first content through its margin. */
   .en-field > .en-legend + :not(.en-description) { margin-block-start: 0; }
-  .en-label { display: block; color: ${M("--en-color-text")}; font-weight: ${M("--en-font-label-strong-weight")}; overflow-wrap: break-word; }
-  .en-description, .en-error { margin: 0; font-size: ${M("--en-font-ui-size")}; line-height: ${M("--en-font-body-line-height")}; overflow-wrap: break-word; }
+  .en-label { display: block; color: ${j("--en-color-text")}; font-weight: ${j("--en-font-label-strong-weight")}; overflow-wrap: break-word; }
+  .en-description, .en-error { margin: 0; font-size: ${j("--en-font-ui-size")}; line-height: ${j("--en-font-body-line-height")}; overflow-wrap: break-word; }
   /* No box or gap is created by the empty fallback. An assigned root remains
      present even when its light DOM is empty: it may render its own shadow. */
-  .en-description { display: flow-root; color: ${M("--en-color-text-muted")}; }
+  .en-description { display: flow-root; color: ${j("--en-color-text-muted")}; }
   .en-description-fallback,
   .en-description > slot::slotted(:not([hidden])) { display: block; margin-block-start: var(--_en-field-gap); }
   .en-description-fallback:empty { display: none; }
-  .en-error { color: ${M("--en-color-danger-text")}; }
-  .en-choice { display: flex; align-items: center; gap: ${M("--en-space-icon-label")}; min-block-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-min")}); min-inline-size: ${M("--en-size-target-min")}; cursor: pointer; }
+  .en-error { color: ${j("--en-color-danger-text")}; }
+  .en-choice { display: flex; align-items: center; gap: ${j("--en-space-icon-label")}; min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")}); min-inline-size: ${j("--en-size-target-min")}; cursor: pointer; }
   .en-choice > :where(.en-label, .en-choice-content) { min-inline-size: 0; }
-  .en-choice-content { --_en-field-gap: ${N("--en-field-gap", M("--en-space-control-description"))}; display: flex; flex-direction: column; gap: 0; }
+  .en-choice-content { --_en-field-gap: ${M("--en-field-gap", j("--en-space-control-description"))}; display: flex; flex-direction: column; gap: 0; }
   .en-fieldset { margin: 0; padding: 0; min-inline-size: 0; border: 0; }
-  .en-legend { padding: 0; margin-block-end: ${M("--en-space-label-control")}; font-weight: ${M("--en-font-label-strong-weight")}; }
-  .en-form-stack { display: flex; flex-direction: column; gap: ${M("--en-space-fields")}; }
-  .en-validation-summary { padding: ${M("--en-space-panel")}; border: ${M("--en-border-width")} solid ${M("--en-color-danger-text")}; border-radius: ${M("--en-radius-container")}; }
-  .en-validation-summary :where(ul, ol) { padding-inline-start: ${M("--en-space-6")}; }
-  @media (any-pointer: coarse) { .en-choice { min-block-size: ${M("--en-size-target-touch")}; } }
+  .en-legend { padding: 0; margin-block-end: ${j("--en-space-label-control")}; font-weight: ${j("--en-font-label-strong-weight")}; }
+  .en-form-stack { display: flex; flex-direction: column; gap: ${j("--en-space-fields")}; }
+  .en-validation-summary { padding: ${j("--en-space-panel")}; border: ${j("--en-border-width")} solid ${j("--en-color-danger-text")}; border-radius: ${j("--en-radius-container")}; }
+  .en-validation-summary :where(ul, ol) { padding-inline-start: ${j("--en-space-6")}; }
+  @media (any-pointer: coarse) { .en-choice { min-block-size: ${j("--en-size-target-touch")}; } }
   @media (forced-colors: active) { .en-label, .en-description, .en-error { color: CanvasText; } .en-validation-summary { border-color: CanvasText; } }
-`), pn = `(width < ${Ge("--en-layout-dialog-collapse")})`, mn = L(o`
+`), fn = `(width < ${Ke("--en-layout-dialog-collapse")})`, pn = L(o`
   .en-dialog, .en-drawer, .en-popover, .en-tooltip {
     box-sizing: border-box;
     min-inline-size: 0;
-    max-inline-size: min(${N("--en-overlay-max-inline-size", M("--en-layout-form-max"))}, calc(100% - ${M("--en-space-8")}));
-    max-block-size: ${N("--en-overlay-max-block-size", o`calc(100dvh - ${M("--en-space-8")})`)};
-    padding: ${N("--en-overlay-padding", M("--en-space-panel"))};
-    border: ${M("--en-border-width")} solid ${N("--en-overlay-border-color", M("--en-color-boundary"))};
-    border-radius: ${N("--en-overlay-radius", M("--en-radius-dialog"))};
-    background: ${N("--en-overlay-background", M("--en-color-surface-raised"))};
-    color: ${N("--en-overlay-color", M("--en-color-text"))};
+    max-inline-size: min(${M("--en-overlay-max-inline-size", j("--en-layout-form-max"))}, calc(100% - ${j("--en-space-8")}));
+    max-block-size: ${M("--en-overlay-max-block-size", o`calc(100dvh - ${j("--en-space-8")})`)};
+    padding: ${M("--en-overlay-padding", j("--en-space-panel"))};
+    border: ${j("--en-border-width")} solid ${M("--en-overlay-border-color", j("--en-color-boundary"))};
+    border-radius: ${M("--en-overlay-radius", j("--en-radius-dialog"))};
+    background: ${M("--en-overlay-background", j("--en-color-surface-raised"))};
+    color: ${M("--en-overlay-color", j("--en-color-text"))};
     font: inherit;
     text-align: start;
     overflow: auto;
-    box-shadow: ${M("--en-shadow-overlay")};
+    box-shadow: ${j("--en-shadow-overlay")};
   }
-  ${Kt(o`.en-popover[popover]`, o`.en-popover:popover-open`, o`.en-popover[popover]:not(:popover-open)`, "fade")}
-  ${Kt(o`.en-tooltip[popover]`, o`.en-tooltip:popover-open`, o`.en-tooltip[popover]:not(:popover-open)`, "fade")}
-  ${qt}
-  .en-dialog { position: fixed; inset: 0; margin: auto; box-shadow: ${M("--en-shadow-dialog")}; }
-  dialog.en-dialog, dialog.en-drawer { flex-direction: column; gap: ${M("--en-space-4")}; }
+  ${Wt(o`.en-popover[popover]`, o`.en-popover:popover-open`, o`.en-popover[popover]:not(:popover-open)`, "fade")}
+  ${Wt(o`.en-tooltip[popover]`, o`.en-tooltip:popover-open`, o`.en-tooltip[popover]:not(:popover-open)`, "fade")}
+  ${Gt}
+  .en-dialog { position: fixed; inset: 0; margin: auto; box-shadow: ${j("--en-shadow-dialog")}; }
+  dialog.en-dialog, dialog.en-drawer { flex-direction: column; gap: ${j("--en-space-4")}; }
   dialog.en-dialog[open], dialog.en-drawer[open] { display: flex; }
   dialog.en-dialog:not([open]), dialog.en-drawer:not([open]) { display: none; }
-  .en-dialog::backdrop, .en-drawer::backdrop { background: ${M("--en-color-scrim")}; }
-  .en-overlay-header, .en-overlay-footer { display: flex; align-items: center; flex-wrap: wrap; gap: ${M("--en-space-3")}; min-inline-size: 0; }
+  .en-dialog::backdrop, .en-drawer::backdrop { background: ${j("--en-color-scrim")}; }
+  .en-overlay-header, .en-overlay-footer { display: flex; align-items: center; flex-wrap: wrap; gap: ${j("--en-space-3")}; min-inline-size: 0; }
   .en-overlay-header { justify-content: space-between; }
-  .en-overlay-footer { justify-content: flex-end; gap: ${M("--en-space-actions")}; }
+  .en-overlay-footer { justify-content: flex-end; gap: ${j("--en-space-actions")}; }
   .en-overlay-header > slot, .en-overlay-footer > slot { display: contents; }
   .en-overlay-body {
-    --_en-overlay-focus-clearance: ${Qe};
+    --_en-overlay-focus-clearance: ${$e};
     min-inline-size: 0;
     min-block-size: 0;
     /* Expand the scrollport without moving content or changing the surrounding gaps. */
@@ -2317,21 +2315,21 @@ var fn = L(o`
     overflow: auto;
   }
   .en-overlay-close { margin-inline-start: auto; }
-  .en-popover { position: fixed; display: flex; flex-direction: column; margin: 0; row-gap: ${M("--en-space-4")}; border-radius: ${N("--en-overlay-radius", M("--en-radius-container"))}; }
+  .en-popover { position: fixed; display: flex; flex-direction: column; margin: 0; row-gap: ${j("--en-space-4")}; border-radius: ${M("--en-overlay-radius", j("--en-radius-container"))}; }
   [popover].en-popover:not(:popover-open), [popover].en-tooltip:not(:popover-open) { display: none; }
-  .en-tooltip { position: fixed; margin: 0; row-gap: ${M("--en-space-2")}; padding: ${N("--en-overlay-padding", M("--en-space-2"))}; border-radius: ${N("--en-overlay-radius", M("--en-radius-control"))}; overflow-wrap: break-word; }
+  .en-tooltip { position: fixed; margin: 0; row-gap: ${j("--en-space-2")}; padding: ${M("--en-overlay-padding", j("--en-space-2"))}; border-radius: ${M("--en-overlay-radius", j("--en-radius-control"))}; overflow-wrap: break-word; }
   /* An outside separator is clipped at viewport-flush edges, even for a drawer
      that fills the whole viewport. Keep it separate from the immediate focus cue. */
-  :where(.en-drawer) { outline: ${M("--en-border-width")} solid ${N("--en-overlay-border-color", M("--en-color-boundary"))}; outline-offset: 0; }
-  ${I(o`:where(.en-dialog, .en-drawer)`, {
+  :where(.en-drawer) { outline: ${j("--en-border-width")} solid ${M("--en-overlay-border-color", j("--en-color-boundary"))}; outline-offset: 0; }
+  ${F(o`:where(.en-dialog, .en-drawer)`, {
 	family: "overlay",
-	baseShadow: M("--en-shadow-dialog"),
-	baseTransitions: Gt
+	baseShadow: j("--en-shadow-dialog"),
+	baseTransitions: Ut
 })}
-  ${I(o`.en-popover`, {
+  ${F(o`.en-popover`, {
 	family: "overlay",
-	baseShadow: M("--en-shadow-overlay"),
-	baseTransitions: Gt
+	baseShadow: j("--en-shadow-overlay"),
+	baseTransitions: Ut
 })}
   .en-drawer {
     position: fixed;
@@ -2339,18 +2337,18 @@ var fn = L(o`
     inset: auto;
     inset-block: 0;
     inset-inline-end: 0;
-    inline-size: min(${N("--en-overlay-max-inline-size", M("--en-layout-form-max"))}, 100%);
+    inline-size: min(${M("--en-overlay-max-inline-size", j("--en-layout-form-max"))}, 100%);
     max-inline-size: 100%;
     block-size: 100%;
     max-block-size: 100%;
     border-radius: 0;
     border-width: 0;
-    box-shadow: ${M("--en-shadow-dialog")};
+    box-shadow: ${j("--en-shadow-dialog")};
   }
   .en-drawer[data-placement='start'] { inset-inline-end: auto; inset-inline-start: 0; }
   .en-drawer[data-placement='left'] { inset-inline: auto; left: 0; right: auto; }
   .en-drawer[data-placement='right'] { inset-inline: auto; left: auto; right: 0; }
-  .en-drawer[data-placement='top'], .en-drawer[data-placement='bottom'] { inset-inline: 0; inline-size: 100%; block-size: auto; max-block-size: ${N("--en-overlay-max-block-size", o`calc(100dvh - ${M("--en-space-8")})`)}; }
+  .en-drawer[data-placement='top'], .en-drawer[data-placement='bottom'] { inset-inline: 0; inline-size: 100%; block-size: auto; max-block-size: ${M("--en-overlay-max-block-size", o`calc(100dvh - ${j("--en-space-8")})`)}; }
   .en-drawer[data-placement='top'] { inset-block-start: 0; inset-block-end: auto; }
   .en-drawer[data-placement='bottom'] { inset-block-start: auto; inset-block-end: 0; }
   @media (forced-colors: active) {
@@ -2361,16 +2359,16 @@ var fn = L(o`
 `);
 //#endregion
 //#region ../design-system/packages/elements/dist/dialog/template.js
-function hn(e) {
-	return C`
+function mn(e) {
+	return S`
     <dialog class=${e.surfaceClass} part=${e.surfacePart ?? "surface"} data-placement=${e.placement}
       aria-labelledby="en-overlay-heading" closedby=${e.closedBy}
-      inert @beforetoggle=${Rt} @cancel=${e.cancel} @close=${e.close}
+      inert @beforetoggle=${It} @cancel=${e.cancel} @close=${e.close}
       @pointerdown=${e.pointerDown} @pointerup=${e.pointerUp}
       @pointercancel=${e.pointerCancel} @keydown=${e.keyDown}>
       <div class="en-overlay-header" part="header">
         <h2 class="en-heading-small" id="en-overlay-heading" part="heading"><slot name="label">${e.label}</slot></h2>
-        ${e.dismissible ? C`
+        ${e.dismissible ? S`
           <en-button class="en-overlay-close" variant="ghost" icon-only size="inherit"
             exportparts="control:close" @click=${e.dismiss}>
             <en-icon slot="prefix" name="close" size="inherit"></en-icon>
@@ -2378,17 +2376,17 @@ function hn(e) {
           </en-button>
         ` : null}
       </div>
-      <div class="en-overlay-body" part="body">${e.body ?? C`<slot></slot>`}</div>
-      ${e.footer === E ? E : C`<div class="en-overlay-footer" part="footer">${e.footer ?? C`<slot name="footer"></slot>`}</div>`}
+      <div class="en-overlay-body" part="body">${e.body ?? S`<slot></slot>`}</div>
+      ${e.footer === T ? T : S`<div class="en-overlay-footer" part="footer">${e.footer ?? S`<slot name="footer"></slot>`}</div>`}
     </dialog>`;
 }
 //#endregion
 //#region ../design-system/packages/elements/dist/internal/id-reference.js
-function gn(e) {
+function hn(e) {
 	let t = e.getRootNode();
 	return (t.nodeType === 9 || t.nodeType === 11 && "host" in t) && "getElementById" in t ? t : null;
 }
-var _n = /* @__PURE__ */ new WeakMap(), vn = class {
+var gn = /* @__PURE__ */ new WeakMap(), _n = class {
 	root;
 	subscribers = /* @__PURE__ */ new Map();
 	resolved = /* @__PURE__ */ new Map();
@@ -2436,19 +2434,19 @@ var _n = /* @__PURE__ */ new WeakMap(), vn = class {
 		} else t(r);
 		let i = !1;
 		return () => {
-			i || (i = !0, n.delete(t), !n.size && this.subscribers.get(e) === n && (this.subscribers.delete(e), this.resolved.delete(e)), this.subscribers.size || (this.observer?.disconnect(), _n.get(this.root) === this && _n.delete(this.root)));
+			i || (i = !0, n.delete(t), !n.size && this.subscribers.get(e) === n && (this.subscribers.delete(e), this.resolved.delete(e)), this.subscribers.size || (this.observer?.disconnect(), gn.get(this.root) === this && gn.delete(this.root)));
 		};
 	}
 };
-function yn(e, t, n) {
+function vn(e, t, n) {
 	if (!e || !t) return n(null), () => {};
 	if (!(e.nodeType === 9 ? e : e.ownerDocument)?.defaultView?.MutationObserver) return n(e.getElementById(t)), () => {};
-	let r = _n.get(e);
-	return r || _n.set(e, r = new vn(e)), r.subscribe(t, n);
+	let r = gn.get(e);
+	return r || gn.set(e, r = new _n(e)), r.subscribe(t, n);
 }
 //#endregion
 //#region ../design-system/packages/elements/dist/dialog/trigger-controller.js
-var bn = class {
+var yn = class {
 	host;
 	options;
 	#e = null;
@@ -2465,8 +2463,8 @@ var bn = class {
 	}
 	hostUpdated() {
 		if (!this.host.isConnected) return;
-		let e = gn(this.host), t = typeof this.options.id() == "string" ? this.options.id() : "";
-		(!this.#n || e !== this.#e || t !== this.#t) && (this.#n?.(), this.#n = void 0, this.#e = e, this.#t = t, this.#n = yn(e, t, this.accept)), this.sync();
+		let e = hn(this.host), t = typeof this.options.id() == "string" ? this.options.id() : "";
+		(!this.#n || e !== this.#e || t !== this.#t) && (this.#n?.(), this.#n = void 0, this.#e = e, this.#t = t, this.#n = vn(e, t, this.accept)), this.sync();
 	}
 	hostDisconnected() {
 		this.#n?.(), this.#n = void 0, this.#e = null, this.#t = "", this.detach();
@@ -2476,7 +2474,7 @@ var bn = class {
 		t !== this.#r && (this.detach(), this.#r = t, t && (this.#i = Object.fromEntries(["aria-haspopup", "aria-expanded"].map((e) => [e, t.getAttribute(e)])), t.addEventListener("click", this.click), this.sync()));
 	};
 	click = (e) => {
-		let t = this.#r, n = () => !(!this.host.isConnected || !t?.isConnected || t !== this.#r || this.options.id() !== this.#t || gn(this.host) !== this.#e || this.#e?.getElementById(this.#t) !== t || t.disabled || t.loading || t.matches(":disabled,[aria-disabled=\"true\"]"));
+		let t = this.#r, n = () => !(!this.host.isConnected || !t?.isConnected || t !== this.#r || this.options.id() !== this.#t || hn(this.host) !== this.#e || this.#e?.getElementById(this.#t) !== t || t.disabled || t.loading || t.matches(":disabled,[aria-disabled=\"true\"]"));
 		!e.defaultPrevented && t && n() && (e.preventDefault(), this.options.activate(t, n));
 	};
 	sync() {
@@ -2496,12 +2494,12 @@ var bn = class {
 };
 //#endregion
 //#region ../design-system/packages/elements/dist/dialog/focus.js
-function xn(e) {
+function bn(e) {
 	let t = e.activeElement;
 	for (; t?.shadowRoot?.activeElement;) t = t.shadowRoot.activeElement;
 	return t;
 }
-function Sn(e) {
+function xn(e) {
 	if (!e?.isConnected || e.matches(":disabled, [hidden], [aria-disabled=\"true\"]")) return;
 	let t = e;
 	for (; t;) {
@@ -2510,7 +2508,7 @@ function Sn(e) {
 	}
 	e.getClientRects().length && e.focus({ preventScroll: !0 });
 }
-function Cn(e, t) {
+function Sn(e, t) {
 	for (; t;) {
 		if (t === e) return !0;
 		t = "assignedSlot" in t && t.assignedSlot || t.parentNode || ("host" in t ? t.host : null);
@@ -2519,9 +2517,9 @@ function Cn(e, t) {
 }
 //#endregion
 //#region ../design-system/packages/elements/dist/define/dialog.js
-B(customElements, {
+H(customElements, {
 	tagName: "en-dialog",
-	elementClass: class extends j {
+	elementClass: class extends A {
 		static properties = {
 			for: {
 				type: String,
@@ -2559,10 +2557,10 @@ B(customElements, {
 			}
 		};
 		static styles = [
-			R,
+			z,
 			tt,
-			cn,
-			mn
+			on,
+			pn
 		];
 		#e = !1;
 		#t = 0;
@@ -2572,7 +2570,7 @@ B(customElements, {
 		#a = null;
 		#o = null;
 		#s = null;
-		#c = new bn(this, {
+		#c = new yn(this, {
 			id: () => this.for,
 			open: () => this.#r ? this.#i : this.open,
 			activate: (e, t) => {
@@ -2610,7 +2608,7 @@ B(customElements, {
 			this.closedBy = e ? "any" : "closerequest";
 		}
 		constructor() {
-			super(), this.for = "", this.label = "", this.closeLabel = "Close", this.dismissible = !0, this.presentation = "dialog", this.responsiveQuery = pn;
+			super(), this.for = "", this.label = "", this.closeLabel = "Close", this.dismissible = !0, this.presentation = "dialog", this.responsiveQuery = fn;
 		}
 		show(e = "programmatic") {
 			return this.requestOpen(!0, e);
@@ -2623,7 +2621,7 @@ B(customElements, {
 			let r = this.open, i = this.#i;
 			this.#r++;
 			try {
-				return Vt(this, {
+				return W(this, {
 					previous: r,
 					proposed: e,
 					reason: t,
@@ -2683,7 +2681,7 @@ B(customElements, {
 				this.stopObservingPresentation(), this.setCompactPresentation(!1);
 				return;
 			}
-			let t = this.responsiveQuery.trim() || pn;
+			let t = this.responsiveQuery.trim() || fn;
 			this.#f && this.#p === t || (this.stopObservingPresentation(), this.#p = t, this.#f = e.matchMedia(t), this.#f.addEventListener("change", this.#h), this.setCompactPresentation(this.#f.matches));
 		}
 		stopObservingPresentation() {
@@ -2704,13 +2702,13 @@ B(customElements, {
 					return;
 				}
 				if (this.open && !e.open) {
-					let t = xn(this.ownerDocument);
+					let t = bn(this.ownerDocument);
 					this.#o = t && "focus" in t ? t : null;
 					let n = this.#s;
-					this.#s = null, this.#a = n?.revision === this.#n && n.element.isConnected ? n.element : this.#o, V(e, !0), e.showModal(), this.#i = !0;
+					this.#s = null, this.#a = n?.revision === this.#n && n.element.isConnected ? n.element : this.#o, U(e, !0), e.showModal(), this.#i = !0;
 				} else if (!this.open && e.open) {
-					let t = xn(this.ownerDocument), n = t === this || Cn(e, t);
-					this.#i = !1, e.close(), V(e, !1), n && Sn(this.#a), this.#a = null, this.#o = null;
+					let t = bn(this.ownerDocument), n = t === this || Sn(e, t);
+					this.#i = !1, e.close(), U(e, !1), n && xn(this.#a), this.#a = null, this.#o = null;
 				}
 			}
 		}
@@ -2723,9 +2721,9 @@ B(customElements, {
 			this.isConnected && this.#i && !this.dialog?.open && this.reconcileNativeClose();
 		};
 		reconcileNativeClose() {
-			this.#i = !1, this.dialog && V(this.dialog, !1), this.open = !1;
-			let e = xn(this.ownerDocument);
-			(e === this.#o || e === this.ownerDocument.body || e === this.dialog) && Sn(this.#a), this.#a = null, this.#o = null;
+			this.#i = !1, this.dialog && U(this.dialog, !1), this.open = !1;
+			let e = bn(this.ownerDocument);
+			(e === this.#o || e === this.ownerDocument.body || e === this.dialog) && xn(this.#a), this.#a = null, this.#o = null;
 		}
 		#v(e) {
 			let t = this.dialog;
@@ -2767,49 +2765,49 @@ B(customElements, {
 			};
 		}
 		render() {
-			return hn(this.dialogView);
+			return mn(this.dialogView);
 		}
 	},
 	dependencies: [{
 		tagName: "en-button",
-		elementClass: Et
+		elementClass: wt
 	}, {
 		tagName: "en-icon",
-		elementClass: It
+		elementClass: Pt
 	}]
 });
 //#endregion
 //#region ../design-system/packages/primitives/dist/interactions/selection-children.js
-var wn = "data-en-selection-children", Tn = "en-selection-", En = {
+var Cn = "data-en-selection-children", wn = "en-selection-", Tn = {
 	select: "en-select-option",
 	segmented: "en-segmented-item"
-}, Dn = (e) => e.replace(/[\t\n\f\r ]+/g, " ").replace(/^ | $/g, "");
-function On(e) {
+}, En = (e) => e.replace(/[\t\n\f\r ]+/g, " ").replace(/^ | $/g, "");
+function Dn(e) {
 	return /^en-selection-(?:ssr|client)-(?:0|[1-9]\d*)$/.test(e);
 }
-function kn(e, t) {
+function On(e, t) {
 	let n = /* @__PURE__ */ new Set(), r = /* @__PURE__ */ new Set();
 	return Object.freeze(t.map((t) => {
 		let i = t.attributes, a = (e) => Object.prototype.hasOwnProperty.call(i, e);
-		if (t.tagName !== En[e]) throw TypeError(`Expected direct ${En[e]} children.`);
+		if (t.tagName !== Tn[e]) throw TypeError(`Expected direct ${Tn[e]} children.`);
 		if (!t.key || r.has(t.key)) throw TypeError("Repeated or missing selection child key.");
-		if (r.add(t.key), !a("value") || e === "segmented" && i.value === "") throw TypeError(`${En[e]} requires an explicit ${e === "segmented" ? "nonempty " : ""}value.`);
+		if (r.add(t.key), !a("value") || e === "segmented" && i.value === "") throw TypeError(`${Tn[e]} requires an explicit ${e === "segmented" ? "nonempty " : ""}value.`);
 		if (n.has(i.value)) throw TypeError("Selection child values must be unique.");
 		if (n.add(i.value), a("selected") || a("checked")) throw TypeError("Selection children do not own selected or checked state; set the parent value instead.");
-		if (a("slot") && !(e === "segmented" && On(i.slot))) throw TypeError("Selection child slot attributes are reserved for internal label projection.");
+		if (a("slot") && !(e === "segmented" && Dn(i.slot))) throw TypeError("Selection child slot attributes are reserved for internal label projection.");
 		if (i.hidden?.toLowerCase() === "until-found") throw TypeError("Selection children do not support hidden=until-found.");
-		if (e === "segmented" && (t.interactive || An(t.tagName, i))) throw TypeError("Segmented labels must contain noninteractive content only.");
+		if (e === "segmented" && (t.interactive || kn(t.tagName, i))) throw TypeError("Segmented labels must contain noninteractive content only.");
 		if (e === "segmented" && (a("inert") || i["aria-hidden"]?.toLowerCase() === "true")) throw TypeError("Segmented label roots must not be inert or aria-hidden; use hidden to make a choice unavailable.");
 		return Object.freeze({
 			key: t.key,
 			value: i.value,
-			label: e === "select" ? Dn(t.text) || Dn(i.label ?? "") : "",
+			label: e === "select" ? En(t.text) || En(i.label ?? "") : "",
 			disabled: a("disabled"),
 			hidden: a("hidden")
 		});
 	}));
 }
-function An(e, t) {
+function kn(e, t) {
 	let n = (e) => Object.prototype.hasOwnProperty.call(t, e);
 	return [
 		"button",
@@ -2822,7 +2820,7 @@ function An(e, t) {
 		"object"
 	].includes(e) || (e === "a" || e === "area") && n("href") || (e === "audio" || e === "video") && n("controls") || n("tabindex") || n("contenteditable") && t.contenteditable !== "false";
 }
-var jn = /* @__PURE__ */ new WeakMap(), Mn = /* @__PURE__ */ new WeakMap(), Nn = class {
+var An = /* @__PURE__ */ new WeakMap(), jn = /* @__PURE__ */ new WeakMap(), Mn = class {
 	#e;
 	#t;
 	#n = /* @__PURE__ */ new WeakMap();
@@ -2838,8 +2836,8 @@ var jn = /* @__PURE__ */ new WeakMap(), Mn = /* @__PURE__ */ new WeakMap(), Nn =
 	#c = !1;
 	#l;
 	constructor(e, t) {
-		if (this.#e = e, this.#t = t, jn.has(e)) throw TypeError("Only one selection child controller can own a host.");
-		jn.set(e, this), e.addController(this);
+		if (this.#e = e, this.#t = t, An.has(e)) throw TypeError("Only one selection child controller can own a host.");
+		An.set(e, this), e.addController(this);
 	}
 	get view() {
 		return this.#o;
@@ -2861,7 +2859,7 @@ var jn = /* @__PURE__ */ new WeakMap(), Mn = /* @__PURE__ */ new WeakMap(), Nn =
 		}, this.#s = !0, this.#c = !0, this.#l = e.value, this.#e.requestUpdate();
 	}
 	hostConnected() {
-		let e = this.#e.getAttribute(wn);
+		let e = this.#e.getAttribute(Cn);
 		if (e !== null && !this.#s) {
 			this.prepare(JSON.parse(e)), this.#c = !1;
 			let t = this.#f();
@@ -2898,20 +2896,20 @@ var jn = /* @__PURE__ */ new WeakMap(), Mn = /* @__PURE__ */ new WeakMap(), Nn =
 		}));
 	}
 	hostUpdated() {
-		this.#s && (this.#s = !1, this.#e.removeAttribute(wn)), this.refresh();
+		this.#s && (this.#s = !1, this.#e.removeAttribute(Cn)), this.refresh();
 	}
 	hostDisconnected() {
 		this.#a?.disconnect();
 		for (let [e, t] of this.#r) this.#d(e, t);
 	}
 	#u(e, t) {
-		Mn.set(e, this), this.#r.set(e, t), e.getAttribute("slot") !== t && e.setAttribute("slot", t);
+		jn.set(e, this), this.#r.set(e, t), e.getAttribute("slot") !== t && e.setAttribute("slot", t);
 	}
 	#d(e, t) {
-		Mn.get(e) === this && (e.getAttribute("slot") === t && e.removeAttribute("slot"), Mn.delete(e)), this.#r.delete(e);
+		jn.get(e) === this && (e.getAttribute("slot") === t && e.removeAttribute("slot"), jn.delete(e)), this.#r.delete(e);
 	}
 	#f() {
-		return [...this.#e.children ?? []].filter((e) => e.localName === En[this.#t]);
+		return [...this.#e.children ?? []].filter((e) => e.localName === Tn[this.#t]);
 	}
 	current() {
 		if (this.#c) return this.#o;
@@ -2926,11 +2924,11 @@ var jn = /* @__PURE__ */ new WeakMap(), Mn = /* @__PURE__ */ new WeakMap(), Nn =
 				let t = this.#n.get(e);
 				t || (t = `client-${++this.#i}`, this.#n.set(e, t));
 				let n = Object.fromEntries([...e.attributes].map((e) => [e.name, e.value])), r = this.#r.get(e);
-				if (r !== void 0 && Mn.get(e) === this) {
+				if (r !== void 0 && jn.get(e) === this) {
 					if (n.slot !== r) throw TypeError("Do not replace or remove an internally owned selection child slot.");
 					delete n.slot;
 				}
-				let i = this.#t === "segmented" && [...e.querySelectorAll("*")].some((e) => An(e.localName, Object.fromEntries([...e.attributes].map((e) => [e.name, e.value]))));
+				let i = this.#t === "segmented" && [...e.querySelectorAll("*")].some((e) => kn(e.localName, Object.fromEntries([...e.attributes].map((e) => [e.name, e.value]))));
 				return {
 					key: t,
 					tagName: e.localName,
@@ -2941,7 +2939,7 @@ var jn = /* @__PURE__ */ new WeakMap(), Mn = /* @__PURE__ */ new WeakMap(), Nn =
 			});
 			return {
 				active: !0,
-				items: kn(this.#t, t),
+				items: On(this.#t, t),
 				error: ""
 			};
 		} catch (e) {
@@ -2957,37 +2955,37 @@ var jn = /* @__PURE__ */ new WeakMap(), Mn = /* @__PURE__ */ new WeakMap(), Nn =
 		let e = this.current(), t = this.#f();
 		for (let [e, n] of this.#r) t.includes(e) || this.#d(e, n);
 		!e.error && this.#t === "segmented" && t.forEach((t, n) => {
-			let r = `${Tn}${e.items[n].key}`;
+			let r = `${wn}${e.items[n].key}`;
 			this.#u(t, r);
 		}), JSON.stringify(e) !== JSON.stringify(this.#o) && (this.#o = e, this.#e.requestUpdate());
 	}
-}, Pn = Object.defineProperty, Fn = (e, t, n) => t in e ? Pn(e, t, {
+}, Nn = Object.defineProperty, Pn = (e, t, n) => t in e ? Nn(e, t, {
 	enumerable: !0,
 	configurable: !0,
 	writable: !0,
 	value: n
-}) : e[t] = n, In = (e, t, n) => (Fn(e, typeof t == "symbol" ? t : t + "", n), n), Ln = (e, t, n) => {
+}) : e[t] = n, Fn = (e, t, n) => (Pn(e, typeof t == "symbol" ? t : t + "", n), n), In = (e, t, n) => {
 	if (!t.has(e)) throw TypeError("Cannot " + n);
-}, Rn = (e, t) => {
+}, Ln = (e, t) => {
 	if (Object(t) !== t) throw TypeError("Cannot use the \"in\" operator on this value");
 	return e.has(t);
-}, zn = (e, t, n) => {
+}, Rn = (e, t, n) => {
 	if (t.has(e)) throw TypeError("Cannot add the same private member more than once");
 	t instanceof WeakSet ? t.add(e) : t.set(e, n);
-}, Bn = (e, t, n) => (Ln(e, t, "access private method"), n);
-function Vn(e, t) {
+}, zn = (e, t, n) => (In(e, t, "access private method"), n);
+function Bn(e, t) {
 	return Object.is(e, t);
 }
-var G = null, K = !1, Hn = 1, q = /* @__PURE__ */ Symbol("SIGNAL");
-function J(e) {
-	let t = G;
-	return G = e, t;
+var q = null, J = !1, Vn = 1, Hn = /* @__PURE__ */ Symbol("SIGNAL");
+function Y(e) {
+	let t = q;
+	return q = e, t;
 }
 function Un() {
-	return G;
+	return q;
 }
 function Wn() {
-	return K;
+	return J;
 }
 var Gn = {
 	version: 0,
@@ -3007,56 +3005,56 @@ var Gn = {
 	consumerOnSignalRead: () => {}
 };
 function Kn(e) {
-	if (K) throw Error(typeof ngDevMode < "u" && ngDevMode ? "Assertion error: signal read during notification phase" : "");
-	if (G === null) return;
-	G.consumerOnSignalRead(e);
-	let t = G.nextProducerIndex++;
-	if (Y(G), t < G.producerNode.length && G.producerNode[t] !== e && rr(G)) {
-		let e = G.producerNode[t];
-		nr(e, G.producerIndexOfThis[t]);
+	if (J) throw Error(typeof ngDevMode < "u" && ngDevMode ? "Assertion error: signal read during notification phase" : "");
+	if (q === null) return;
+	q.consumerOnSignalRead(e);
+	let t = q.nextProducerIndex++;
+	if (X(q), t < q.producerNode.length && q.producerNode[t] !== e && rr(q)) {
+		let e = q.producerNode[t];
+		nr(e, q.producerIndexOfThis[t]);
 	}
-	G.producerNode[t] !== e && (G.producerNode[t] = e, G.producerIndexOfThis[t] = rr(G) ? tr(e, G, t) : 0), G.producerLastReadVersion[t] = e.version;
+	q.producerNode[t] !== e && (q.producerNode[t] = e, q.producerIndexOfThis[t] = rr(q) ? tr(e, q, t) : 0), q.producerLastReadVersion[t] = e.version;
 }
 function qn() {
-	Hn++;
+	Vn++;
 }
 function Jn(e) {
-	if (e.dirty || e.lastCleanEpoch !== Hn) {
+	if (e.dirty || e.lastCleanEpoch !== Vn) {
 		if (!e.producerMustRecompute(e) && !er(e)) {
-			e.dirty = !1, e.lastCleanEpoch = Hn;
+			e.dirty = !1, e.lastCleanEpoch = Vn;
 			return;
 		}
-		e.producerRecomputeValue(e), e.dirty = !1, e.lastCleanEpoch = Hn;
+		e.producerRecomputeValue(e), e.dirty = !1, e.lastCleanEpoch = Vn;
 	}
 }
 function Yn(e) {
 	if (e.liveConsumerNode === void 0) return;
-	let t = K;
-	K = !0;
+	let t = J;
+	J = !0;
 	try {
 		for (let t of e.liveConsumerNode) t.dirty || Zn(t);
 	} finally {
-		K = t;
+		J = t;
 	}
 }
 function Xn() {
-	return G?.consumerAllowSignalWrites !== !1;
+	return q?.consumerAllowSignalWrites !== !1;
 }
 function Zn(e) {
 	var t;
 	e.dirty = !0, Yn(e), (t = e.consumerMarkedDirty) == null || t.call(e.wrapper ?? e);
 }
 function Qn(e) {
-	return e && (e.nextProducerIndex = 0), J(e);
+	return e && (e.nextProducerIndex = 0), Y(e);
 }
 function $n(e, t) {
-	if (J(t), e && e.producerNode !== void 0 && e.producerIndexOfThis !== void 0 && e.producerLastReadVersion !== void 0) {
+	if (Y(t), e && e.producerNode !== void 0 && e.producerIndexOfThis !== void 0 && e.producerLastReadVersion !== void 0) {
 		if (rr(e)) for (let t = e.nextProducerIndex; t < e.producerNode.length; t++) nr(e.producerNode[t], e.producerIndexOfThis[t]);
 		for (; e.producerNode.length > e.nextProducerIndex;) e.producerNode.pop(), e.producerLastReadVersion.pop(), e.producerIndexOfThis.pop();
 	}
 }
 function er(e) {
-	Y(e);
+	X(e);
 	for (let t = 0; t < e.producerNode.length; t++) {
 		let n = e.producerNode[t], r = e.producerLastReadVersion[t];
 		if (r !== n.version || (Jn(n), r !== n.version)) return !0;
@@ -3065,7 +3063,7 @@ function er(e) {
 }
 function tr(e, t, n) {
 	var r;
-	if (ir(e), Y(e), e.liveConsumerNode.length === 0) {
+	if (ir(e), X(e), e.liveConsumerNode.length === 0) {
 		(r = e.watched) == null || r.call(e.wrapper);
 		for (let t = 0; t < e.producerNode.length; t++) e.producerIndexOfThis[t] = tr(e.producerNode[t], e, t);
 	}
@@ -3073,7 +3071,7 @@ function tr(e, t, n) {
 }
 function nr(e, t) {
 	var n;
-	if (ir(e), Y(e), typeof ngDevMode < "u" && ngDevMode && t >= e.liveConsumerNode.length) throw Error(`Assertion error: active consumer index ${t} is out of bounds of ${e.liveConsumerNode.length} consumers)`);
+	if (ir(e), X(e), typeof ngDevMode < "u" && ngDevMode && t >= e.liveConsumerNode.length) throw Error(`Assertion error: active consumer index ${t} is out of bounds of ${e.liveConsumerNode.length} consumers)`);
 	if (e.liveConsumerNode.length === 1) {
 		(n = e.unwatched) == null || n.call(e.wrapper);
 		for (let t = 0; t < e.producerNode.length; t++) nr(e.producerNode[t], e.producerIndexOfThis[t]);
@@ -3081,13 +3079,13 @@ function nr(e, t) {
 	let r = e.liveConsumerNode.length - 1;
 	if (e.liveConsumerNode[t] = e.liveConsumerNode[r], e.liveConsumerIndexOfThis[t] = e.liveConsumerIndexOfThis[r], e.liveConsumerNode.length--, e.liveConsumerIndexOfThis.length--, t < e.liveConsumerNode.length) {
 		let n = e.liveConsumerIndexOfThis[t], r = e.liveConsumerNode[t];
-		Y(r), r.producerIndexOfThis[n] = t;
+		X(r), r.producerIndexOfThis[n] = t;
 	}
 }
 function rr(e) {
 	return e.consumerIsAlwaysLive || (e?.liveConsumerNode?.length ?? 0) > 0;
 }
-function Y(e) {
+function X(e) {
 	e.producerNode ??= [], e.producerIndexOfThis ??= [], e.producerLastReadVersion ??= [];
 }
 function ir(e) {
@@ -3101,14 +3099,14 @@ function or(e) {
 	let t = Object.create(ur);
 	t.computation = e;
 	let n = () => ar(t);
-	return n[q] = t, n;
+	return n[Hn] = t, n;
 }
 var sr = /* @__PURE__ */ Symbol("UNSET"), cr = /* @__PURE__ */ Symbol("COMPUTING"), lr = /* @__PURE__ */ Symbol("ERRORED"), ur = {
 	...Gn,
 	value: sr,
 	dirty: !0,
 	error: null,
-	equal: Vn,
+	equal: Bn,
 	producerMustRecompute(e) {
 		return e.value === sr || e.value === cr;
 	},
@@ -3142,7 +3140,7 @@ function mr(e) {
 	let t = Object.create(_r);
 	t.value = e;
 	let n = () => (Kn(t), t.value);
-	return n[q] = t, n;
+	return n[Hn] = t, n;
 }
 function hr() {
 	return Kn(this), this.value;
@@ -3152,104 +3150,104 @@ function gr(e, t) {
 }
 var _r = {
 	...Gn,
-	equal: Vn,
+	equal: Bn,
 	value: void 0
 };
 function vr(e) {
 	e.version++, qn(), Yn(e);
 }
-var X = Symbol("node"), Z;
+var Z = Symbol("node"), Q;
 ((e) => {
 	var t, n, r, i;
 	class a {
 		constructor(r, i = {}) {
-			zn(this, n), In(this, t);
-			let a = mr(r)[q];
-			if (this[X] = a, a.wrapper = this, i) {
+			Rn(this, n), Fn(this, t);
+			let a = mr(r)[Hn];
+			if (this[Z] = a, a.wrapper = this, i) {
 				let t = i.equals;
 				t && (a.equal = t), a.watched = i[e.subtle.watched], a.unwatched = i[e.subtle.unwatched];
 			}
 		}
 		get() {
 			if (!(0, e.isState)(this)) throw TypeError("Wrong receiver type for Signal.State.prototype.get");
-			return hr.call(this[X]);
+			return hr.call(this[Z]);
 		}
 		set(t) {
 			if (!(0, e.isState)(this)) throw TypeError("Wrong receiver type for Signal.State.prototype.set");
 			if (Wn()) throw Error("Writes to signals not permitted during Watcher callback");
-			let n = this[X];
+			let n = this[Z];
 			gr(n, t);
 		}
 	}
-	t = X, n = /* @__PURE__ */ new WeakSet(), e.isState = (e) => typeof e == "object" && Rn(n, e), e.State = a;
+	t = Z, n = /* @__PURE__ */ new WeakSet(), e.isState = (e) => typeof e == "object" && Ln(n, e), e.State = a;
 	class o {
 		constructor(t, n) {
-			zn(this, i), In(this, r);
-			let a = or(t)[q];
-			if (a.consumerAllowSignalWrites = !0, this[X] = a, a.wrapper = this, n) {
+			Rn(this, i), Fn(this, r);
+			let a = or(t)[Hn];
+			if (a.consumerAllowSignalWrites = !0, this[Z] = a, a.wrapper = this, n) {
 				let t = n.equals;
 				t && (a.equal = t), a.watched = n[e.subtle.watched], a.unwatched = n[e.subtle.unwatched];
 			}
 		}
 		get() {
 			if (!(0, e.isComputed)(this)) throw TypeError("Wrong receiver type for Signal.Computed.prototype.get");
-			return ar(this[X]);
+			return ar(this[Z]);
 		}
 	}
-	r = X, i = /* @__PURE__ */ new WeakSet(), e.isComputed = (e) => typeof e == "object" && Rn(i, e), e.Computed = o, ((t) => {
+	r = Z, i = /* @__PURE__ */ new WeakSet(), e.isComputed = (e) => typeof e == "object" && Ln(i, e), e.Computed = o, ((t) => {
 		var n, r, i, a;
 		function o(e) {
 			let t, n = null;
 			try {
-				n = J(null), t = e();
+				n = Y(null), t = e();
 			} finally {
-				J(n);
+				Y(n);
 			}
 			return t;
 		}
 		t.untrack = o;
 		function s(t) {
 			if (!(0, e.isComputed)(t) && !(0, e.isWatcher)(t)) throw TypeError("Called introspectSources without a Computed or Watcher argument");
-			return t[X].producerNode?.map((e) => e.wrapper) ?? [];
+			return t[Z].producerNode?.map((e) => e.wrapper) ?? [];
 		}
 		t.introspectSources = s;
 		function c(t) {
 			if (!(0, e.isComputed)(t) && !(0, e.isState)(t)) throw TypeError("Called introspectSinks without a Signal argument");
-			return t[X].liveConsumerNode?.map((e) => e.wrapper) ?? [];
+			return t[Z].liveConsumerNode?.map((e) => e.wrapper) ?? [];
 		}
 		t.introspectSinks = c;
 		function l(t) {
 			if (!(0, e.isComputed)(t) && !(0, e.isState)(t)) throw TypeError("Called hasSinks without a Signal argument");
-			let n = t[X].liveConsumerNode;
+			let n = t[Z].liveConsumerNode;
 			return n ? n.length > 0 : !1;
 		}
 		t.hasSinks = l;
 		function u(t) {
 			if (!(0, e.isComputed)(t) && !(0, e.isWatcher)(t)) throw TypeError("Called hasSources without a Computed or Watcher argument");
-			let n = t[X].producerNode;
+			let n = t[Z].producerNode;
 			return n ? n.length > 0 : !1;
 		}
 		t.hasSources = u;
 		class d {
 			constructor(e) {
-				zn(this, r), zn(this, i), In(this, n);
+				Rn(this, r), Rn(this, i), Fn(this, n);
 				let t = Object.create(Gn);
-				t.wrapper = this, t.consumerMarkedDirty = e, t.consumerIsAlwaysLive = !0, t.consumerAllowSignalWrites = !1, t.producerNode = [], this[X] = t;
+				t.wrapper = this, t.consumerMarkedDirty = e, t.consumerIsAlwaysLive = !0, t.consumerAllowSignalWrites = !1, t.producerNode = [], this[Z] = t;
 			}
 			watch(...t) {
 				if (!(0, e.isWatcher)(this)) throw TypeError("Called unwatch without Watcher receiver");
-				Bn(this, i, a).call(this, t);
-				let n = this[X];
+				zn(this, i, a).call(this, t);
+				let n = this[Z];
 				n.dirty = !1;
-				let r = J(n);
-				for (let e of t) Kn(e[X]);
-				J(r);
+				let r = Y(n);
+				for (let e of t) Kn(e[Z]);
+				Y(r);
 			}
 			unwatch(...t) {
 				if (!(0, e.isWatcher)(this)) throw TypeError("Called unwatch without Watcher receiver");
-				Bn(this, i, a).call(this, t);
-				let n = this[X];
-				Y(n);
+				zn(this, i, a).call(this, t);
+				let n = this[Z];
+				X(n);
 				for (let e = n.producerNode.length - 1; e >= 0; e--) if (t.includes(n.producerNode[e].wrapper)) {
 					nr(n.producerNode[e], n.producerIndexOfThis[e]);
 					let t = n.producerNode.length - 1;
@@ -3261,22 +3259,22 @@ var X = Symbol("node"), Z;
 			}
 			getPending() {
 				if (!(0, e.isWatcher)(this)) throw TypeError("Called getPending without Watcher receiver");
-				return this[X].producerNode.filter((e) => e.dirty).map((e) => e.wrapper);
+				return this[Z].producerNode.filter((e) => e.dirty).map((e) => e.wrapper);
 			}
 		}
-		n = X, r = /* @__PURE__ */ new WeakSet(), i = /* @__PURE__ */ new WeakSet(), a = function(t) {
+		n = Z, r = /* @__PURE__ */ new WeakSet(), i = /* @__PURE__ */ new WeakSet(), a = function(t) {
 			for (let n of t) if (!(0, e.isComputed)(n) && !(0, e.isState)(n)) throw TypeError("Called watch/unwatch without a Computed or State argument");
-		}, e.isWatcher = (e) => Rn(r, e), t.Watcher = d;
+		}, e.isWatcher = (e) => Ln(r, e), t.Watcher = d;
 		function f() {
 			return Un()?.wrapper;
 		}
 		t.currentComputed = f, t.watched = Symbol("watched"), t.unwatched = Symbol("unwatched");
 	})(e.subtle ||= {});
-})(Z ||= {});
+})(Q ||= {});
 //#endregion
 //#region ../design-system/packages/primitives/dist/state/value.js
 function yr(e, t = {}) {
-	let n = t.normalize ?? ((e) => e), r = t.equals ?? Object.is, i = n(e), a = new Z.State(Object.freeze({
+	let n = t.normalize ?? ((e) => e), r = t.equals ?? Object.is, i = n(e), a = new Q.State(Object.freeze({
 		value: i,
 		revision: 0
 	})), o = (e) => {
@@ -3287,8 +3285,8 @@ function yr(e, t = {}) {
 		})), !0);
 	};
 	return {
-		value: new Z.Computed(() => a.get().value),
-		view: new Z.Computed(() => a.get()),
+		value: new Q.Computed(() => a.get().value),
+		view: new Q.Computed(() => a.get()),
 		set: o,
 		reset: () => o(i)
 	};
@@ -3305,7 +3303,7 @@ var br = {
 		this.original = e;
 	}
 }, Sr = (e, t, n = Object.is) => {
-	let r = new Z.Computed(e, { equals: n }), i = r.get(), a = async () => {
+	let r = new Q.Computed(e, { equals: n }), i = r.get(), a = async () => {
 		if (await 0, a === void 0) return;
 		let e = r.get();
 		if (!n(e, i)) try {
@@ -3317,7 +3315,7 @@ var br = {
 			i = e;
 		}
 		o.watch();
-	}, o = new Z.subtle.Watcher(() => a?.());
+	}, o = new Q.subtle.Watcher(() => a?.());
 	return o.watch(r), () => {
 		o.unwatch(r), a = void 0;
 	};
@@ -3405,14 +3403,14 @@ var br = {
 }, Er = L(o`
   /* Recompute for both frame and item; descendant overrides stay effective. */
   .en-segmented-control, .en-segmented-item {
-    --_en-text-control-block-size: ${ut()};
+    --_en-text-control-block-size: ${lt()};
   }
   .en-option, .en-tab, .en-accordion-trigger {
-    min-inline-size: ${M("--en-size-target-min")};
-    min-block-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-min")});
-    padding-block: ${M("--en-space-control-block")};
-    padding-inline: ${M("--en-space-control-inline")};
-    color: ${N("--en-option-color", M("--en-color-text"))};
+    min-inline-size: ${j("--en-size-target-min")};
+    min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")});
+    padding-block: ${j("--en-space-control-block")};
+    padding-inline: ${j("--en-space-control-inline")};
+    color: ${M("--en-option-color", j("--en-color-text"))};
     font: inherit;
     text-align: start;
     overflow-wrap: break-word;
@@ -3421,20 +3419,20 @@ var br = {
   .en-option {
     display: flex;
     align-items: center;
-    gap: ${M("--en-space-icon-label")};
-    border-radius: ${N("--en-option-radius", M("--en-radius-control"))};
-    background: ${N("--en-option-background", M("--en-color-surface"))};
+    gap: ${j("--en-space-icon-label")};
+    border-radius: ${M("--en-option-radius", j("--en-radius-control"))};
+    background: ${M("--en-option-background", j("--en-color-surface"))};
   }
-  .en-option[data-active] { background: ${N("--en-option-background", M("--en-color-surface-subtle"))}; }
-  @media (hover: hover) { .en-option:hover { background: ${N("--en-option-background", M("--en-color-surface-subtle"))}; } }
+  .en-option[data-active] { background: ${M("--en-option-background", j("--en-color-surface-subtle"))}; }
+  @media (hover: hover) { .en-option:hover { background: ${M("--en-option-background", j("--en-color-surface-subtle"))}; } }
   .en-option[aria-selected='true'], .en-option[aria-checked='true'], .en-option[data-selected] {
-    background: ${N("--en-option-background", M("--en-color-selected"))};
-    font-weight: ${M("--en-font-label-strong-weight")};
+    background: ${M("--en-option-background", j("--en-color-selected"))};
+    font-weight: ${j("--en-font-label-strong-weight")};
   }
-  .en-option[aria-disabled='true'] { color: ${M("--en-color-text-muted")}; cursor: default; }
-  .en-listbox, .en-tree { display: flex; flex-direction: column; gap: ${M("--en-space-1")}; min-inline-size: 0; }
-  .en-tree-group { padding-inline-start: ${M("--en-space-4")}; }
-  .en-choice-group, .en-rating, .en-toolbar, .en-segmented { display: flex; align-items: center; flex-wrap: wrap; gap: ${M("--en-space-actions")}; min-inline-size: 0; }
+  .en-option[aria-disabled='true'] { color: ${j("--en-color-text-muted")}; cursor: default; }
+  .en-listbox, .en-tree { display: flex; flex-direction: column; gap: ${j("--en-space-1")}; min-inline-size: 0; }
+  .en-tree-group { padding-inline-start: ${j("--en-space-4")}; }
+  .en-choice-group, .en-rating, .en-toolbar, .en-segmented { display: flex; align-items: center; flex-wrap: wrap; gap: ${j("--en-space-actions")}; min-inline-size: 0; }
   .en-choice-group[data-orientation='vertical'], .en-choice-group[aria-orientation='vertical'] { flex-direction: column; align-items: stretch; }
   .en-choice-group > slot, .en-rating > slot, .en-toolbar > slot, .en-segmented > slot { display: contents; }
   .en-rating-item, .en-rating-clear, .en-segmented-item {
@@ -3442,96 +3440,96 @@ var br = {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-inline-size: ${M("--en-size-target-min")};
-    min-block-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-min")});
-    border: ${M("--en-border-width")} solid transparent;
-    border-radius: ${M("--en-radius-control")};
-    color: ${M("--en-color-text")};
+    min-inline-size: ${j("--en-size-target-min")};
+    min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")});
+    border: ${j("--en-border-width")} solid transparent;
+    border-radius: ${j("--en-radius-control")};
+    color: ${j("--en-color-text")};
     cursor: pointer;
     overflow-wrap: break-word;
   }
   .en-rating-values {
     display: flex;
     flex-wrap: wrap;
-    gap: ${M("--en-space-0-5")};
+    gap: ${j("--en-space-0-5")};
     min-inline-size: 0;
     max-inline-size: 100%;
   }
   /* Preserve each target instead of squeezing stars to keep a row on one line. */
   .en-rating-item {
-    --_en-rating-target-min: ${M("--en-size-target-min")};
-    --_en-rating-target-size: max(${M("--en-size-control-min")}, var(--_en-rating-target-min), calc(${M("--en-size-icon")} + 2 * ${M("--en-space-control-block")} + 2 * ${M("--en-border-width")}));
+    --_en-rating-target-min: ${j("--en-size-target-min")};
+    --_en-rating-target-size: max(${j("--en-size-control-min")}, var(--_en-rating-target-min), calc(${j("--en-size-icon")} + 2 * ${j("--en-space-control-block")} + 2 * ${j("--en-border-width")}));
     flex: 0 0 auto;
     inline-size: var(--_en-rating-target-size);
     block-size: var(--_en-rating-target-size);
-    padding: ${M("--en-space-control-block")};
-    border-radius: ${N("--en-rating-star-radius", M("--en-radius-control"))};
+    padding: ${j("--en-space-control-block")};
+    border-radius: ${M("--en-rating-star-radius", j("--en-radius-control"))};
   }
   .en-rating-clear { max-inline-size: 100%; }
-  .en-rating-clear, .en-segmented-item { padding: ${M("--en-space-control-block")} ${M("--en-space-control-inline")}; }
-  .en-rating-clear { color: ${M("--en-color-text-muted")}; }
-  .en-rating-clear:has(:checked) { background: ${M("--en-color-selected")}; color: ${M("--en-color-action-text")}; border-color: ${M("--en-color-accent-border")}; }
-  .en-rating-star { font-size: ${M("--en-size-icon")}; line-height: 1; color: ${M("--en-color-text-muted")}; }
-  .en-rating-star[data-filled] { color: ${M("--en-color-action-text")}; }
-  .en-rating-item:has(:disabled), .en-rating-clear:has(:disabled), .en-segmented-item[data-disabled] { cursor: default; color: ${M("--en-color-text-muted")}; }
-  .en-rating-item:has(:disabled) .en-rating-star { color: ${M("--en-color-text-muted")}; }
-  ${et(o`.en-rating-item:has(:focus-visible), .en-rating-clear:has(:focus-visible), .en-segmented-item:has(:focus-visible)`)}
-  .en-segmented-control { display: flex; align-items: stretch; flex-wrap: wrap; gap: ${M("--en-space-0-5")}; min-inline-size: 0; min-block-size: var(--_en-text-control-block-size); padding: ${lt}; border: ${M("--en-border-width")} solid ${M("--en-color-line")}; border-radius: ${N("--en-control-radius", M("--en-radius-control"))}; background: ${M("--en-color-surface-subtle")}; }
+  .en-rating-clear, .en-segmented-item { padding: ${j("--en-space-control-block")} ${j("--en-space-control-inline")}; }
+  .en-rating-clear { color: ${j("--en-color-text-muted")}; }
+  .en-rating-clear:has(:checked) { background: ${j("--en-color-selected")}; color: ${j("--en-color-action-text")}; border-color: ${j("--en-color-accent-border")}; }
+  .en-rating-star { font-size: ${j("--en-size-icon")}; line-height: 1; color: ${j("--en-color-text-muted")}; }
+  .en-rating-star[data-filled] { color: ${j("--en-color-action-text")}; }
+  .en-rating-item:has(:disabled), .en-rating-clear:has(:disabled), .en-segmented-item[data-disabled] { cursor: default; color: ${j("--en-color-text-muted")}; }
+  .en-rating-item:has(:disabled) .en-rating-star { color: ${j("--en-color-text-muted")}; }
+  ${I(o`.en-rating-item:has(:focus-visible), .en-rating-clear:has(:focus-visible), .en-segmented-item:has(:focus-visible)`)}
+  .en-segmented-control { display: flex; align-items: stretch; flex-wrap: wrap; gap: ${j("--en-space-0-5")}; min-inline-size: 0; min-block-size: var(--_en-text-control-block-size); padding: ${ct}; border: ${j("--en-border-width")} solid ${j("--en-color-line")}; border-radius: ${M("--en-control-radius", j("--en-radius-control"))}; background: ${j("--en-color-surface-subtle")}; }
   .en-segmented-item {
     flex: 1 1 auto;
     /* The shared control height includes the frame; each label keeps its target floor. */
-    min-block-size: max(calc(var(--_en-text-control-block-size) - 2 * ${z}), ${M("--en-size-target-min")});
-    padding-block: max(0px, calc(${M("--en-space-control-block")} - ${z}));
-    border-radius: max(0px, ${N("--en-control-radius", M("--en-radius-control"))} - ${z});
+    min-block-size: max(calc(var(--_en-text-control-block-size) - 2 * ${B}), ${j("--en-size-target-min")});
+    padding-block: max(0px, calc(${j("--en-space-control-block")} - ${B}));
+    border-radius: max(0px, ${M("--en-control-radius", j("--en-radius-control"))} - ${B});
     text-align: center;
   }
-  .en-segmented-item[data-selected] { background: ${M("--en-color-surface")}; border-color: ${M("--en-color-boundary")}; color: ${M("--en-color-action-text")}; font-weight: ${M("--en-font-label-strong-weight")}; }
-  @media (hover: hover) { .en-segmented-item:not([data-disabled]):hover { background: ${M("--en-color-selected")}; } }
-  .en-segmented-item[data-disabled] { color: ${M("--en-color-text-muted")}; }
+  .en-segmented-item[data-selected] { background: ${j("--en-color-surface")}; border-color: ${j("--en-color-boundary")}; color: ${j("--en-color-action-text")}; font-weight: ${j("--en-font-label-strong-weight")}; }
+  @media (hover: hover) { .en-segmented-item:not([data-disabled]):hover { background: ${j("--en-color-selected")}; } }
+  .en-segmented-item[data-disabled] { color: ${j("--en-color-text-muted")}; }
   .en-segmented-label { min-inline-size: 0; }
   .en-tabs { min-inline-size: 0; isolation: isolate; }
-  .en-tab-list { position: relative; display: flex; flex-wrap: wrap; gap: ${M("--en-space-1")}; min-inline-size: 0; border-block-end: ${M("--en-border-width")} solid ${M("--en-color-line")}; }
+  .en-tab-list { position: relative; display: flex; flex-wrap: wrap; gap: ${j("--en-space-1")}; min-inline-size: 0; border-block-end: ${j("--en-border-width")} solid ${j("--en-color-line")}; }
   .en-tab-list > slot { display: contents; }
   /* Raise focus paint within the tabs, including over following rows and panels.
      Slotted hosts and native tabs are flex items; their z-index needs no positioning. */
   .en-tab-list:focus-within { z-index: 1; }
   .en-tab-list > slot::slotted(:focus-within), .en-tab-list > .en-tab:focus-within { z-index: 1; }
-  .en-tab-list[aria-orientation='vertical'], .en-tab-list[data-orientation='vertical'] { flex-direction: column; border-block-end: 0; border-inline-end: ${M("--en-border-width")} solid ${M("--en-color-line")}; }
+  .en-tab-list[aria-orientation='vertical'], .en-tab-list[data-orientation='vertical'] { flex-direction: column; border-block-end: 0; border-inline-end: ${j("--en-border-width")} solid ${j("--en-color-line")}; }
   .en-tab {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: ${M("--en-space-icon-label")};
+    gap: ${j("--en-space-icon-label")};
     border: 0;
-    border-block-end: ${M("--en-size-tab-indicator")} solid ${M("--en-color-line")};
-    background: ${N("--en-tab-background", M("--en-color-surface"))};
-    color: ${N("--en-tab-color", M("--en-color-text"))};
+    border-block-end: ${j("--en-size-tab-indicator")} solid ${j("--en-color-line")};
+    background: ${M("--en-tab-background", j("--en-color-surface"))};
+    color: ${M("--en-tab-color", j("--en-color-text"))};
   }
-  @media (hover: hover) { .en-tab:hover { background: ${N("--en-tab-background", M("--en-color-surface-subtle"))}; } }
+  @media (hover: hover) { .en-tab:hover { background: ${M("--en-tab-background", j("--en-color-surface-subtle"))}; } }
   .en-tab[aria-selected='true'], :host([role='tab'][aria-selected='true']) .en-tab {
-    color: ${N("--en-tab-color", M("--en-color-action-text"))};
-    border-block-end-color: ${M("--en-color-action")};
-    background: ${N("--en-tab-background", M("--en-color-selected"))};
-    font-weight: ${M("--en-font-label-strong-weight")};
+    color: ${M("--en-tab-color", j("--en-color-action-text"))};
+    border-block-end-color: ${j("--en-color-action")};
+    background: ${M("--en-tab-background", j("--en-color-selected"))};
+    font-weight: ${j("--en-font-label-strong-weight")};
   }
-  .en-tab[aria-disabled='true'], :host([role='tab'][aria-disabled='true']) .en-tab { color: ${M("--en-color-text-muted")}; cursor: default; }
-  .en-tab-panel { min-inline-size: 0; padding-block: ${M("--en-space-4")}; }
+  .en-tab[aria-disabled='true'], :host([role='tab'][aria-disabled='true']) .en-tab { color: ${j("--en-color-text-muted")}; cursor: default; }
+  .en-tab-panel { min-inline-size: 0; padding-block: ${j("--en-space-4")}; }
   .en-accordion { display: flex; flex-direction: column; min-inline-size: 0; isolation: isolate; }
   .en-accordion > slot { display: contents; }
   /* Keep the focused item's outline above adjacent surfaces within this group.
      Slotted hosts are flex items, so no positioned containing block is needed. */
   .en-accordion > slot::slotted(:focus-within) { z-index: 1; }
-  .en-accordion-item { border-block-end: ${M("--en-border-width")} solid ${M("--en-color-line")}; min-inline-size: 0; }
-  .en-accordion-trigger { display: flex; align-items: center; justify-content: space-between; gap: ${M("--en-space-icon-label")}; inline-size: 100%; border: 0; background: ${M("--en-color-surface")}; font-weight: ${M("--en-font-label-strong-weight")}; }
-  @media (hover: hover) { .en-accordion-trigger:hover { background: ${M("--en-color-surface-subtle")}; } }
-  .en-accordion-trigger[aria-disabled='true'], .en-accordion-trigger:disabled { color: ${M("--en-color-text-muted")}; cursor: default; }
-  .en-accordion-panel { padding-block: ${M("--en-space-3")} ${M("--en-space-4")}; padding-inline: ${M("--en-space-control-inline")}; }
-  ${kt}
+  .en-accordion-item { border-block-end: ${j("--en-border-width")} solid ${j("--en-color-line")}; min-inline-size: 0; }
+  .en-accordion-trigger { display: flex; align-items: center; justify-content: space-between; gap: ${j("--en-space-icon-label")}; inline-size: 100%; border: 0; background: ${j("--en-color-surface")}; font-weight: ${j("--en-font-label-strong-weight")}; }
+  @media (hover: hover) { .en-accordion-trigger:hover { background: ${j("--en-color-surface-subtle")}; } }
+  .en-accordion-trigger[aria-disabled='true'], .en-accordion-trigger:disabled { color: ${j("--en-color-text-muted")}; cursor: default; }
+  .en-accordion-panel { padding-block: ${j("--en-space-3")} ${j("--en-space-4")}; padding-inline: ${j("--en-space-control-inline")}; }
+  ${Dt}
   @media (any-pointer: coarse) {
-    .en-option, .en-tab, .en-accordion-trigger, .en-rating-item, .en-rating-clear { min-block-size: max(${M("--en-size-control-min")}, ${M("--en-size-target-touch")}); }
-    .en-segmented-control, .en-segmented-item { --_en-text-control-block-size: ${ut(!0)}; }
-    .en-segmented-item { min-block-size: max(calc(var(--_en-text-control-block-size) - 2 * ${z}), ${M("--en-size-target-touch")}); }
-    .en-rating-item { --_en-rating-target-min: ${M("--en-size-target-touch")}; min-inline-size: ${M("--en-size-target-touch")}; }
+    .en-option, .en-tab, .en-accordion-trigger, .en-rating-item, .en-rating-clear { min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-touch")}); }
+    .en-segmented-control, .en-segmented-item { --_en-text-control-block-size: ${lt(!0)}; }
+    .en-segmented-item { min-block-size: max(calc(var(--_en-text-control-block-size) - 2 * ${B}), ${j("--en-size-target-touch")}); }
+    .en-rating-item { --_en-rating-target-min: ${j("--en-size-target-touch")}; min-inline-size: ${j("--en-size-target-touch")}; }
   }
   @media (forced-colors: active) {
     .en-option, .en-tab, .en-accordion-trigger { background: Canvas; color: CanvasText; }
@@ -3584,7 +3582,7 @@ function Dr(e, t, n, r) {
 //#endregion
 //#region ../design-system/packages/primitives/dist/templates/description.js
 function Or(e) {
-	return C`<div id="description" part="description" class="en-description"><slot name="description"><span class="en-description-fallback">${e || E}</span></slot></div>`;
+	return S`<div id="description" part="description" class="en-description"><slot name="description"><span class="en-description-fallback">${e || T}</span></slot></div>`;
 }
 //#endregion
 //#region ../design-system/node_modules/lit-html/directive.js
@@ -3612,7 +3610,7 @@ var kr = {
 	update(e, t) {
 		return this.render(...t);
 	}
-}, { I: Mr } = Ne, Nr = (e) => e, Pr = () => document.createComment(""), Q = (e, t, n) => {
+}, { I: Mr } = Pe, Nr = (e) => e, Pr = () => document.createComment(""), Fr = (e, t, n) => {
 	let r = e._$AA.parentNode, i = t === void 0 ? e._$AB : t._$AA;
 	if (n === void 0) n = new Mr(r.insertBefore(Pr(), i), r.insertBefore(Pr(), i), e, e.options);
 	else {
@@ -3630,13 +3628,13 @@ var kr = {
 		}
 	}
 	return n;
-}, $ = (e, t, n = e) => (e._$AI(t, n), e), Fr = {}, Ir = (e, t = Fr) => e._$AH = t, Lr = (e) => e._$AH, Rr = (e) => {
+}, $ = (e, t, n = e) => (e._$AI(t, n), e), Ir = {}, Lr = (e, t = Ir) => e._$AH = t, Rr = (e) => e._$AH, zr = (e) => {
 	e._$AR(), e._$AA.remove();
-}, zr = (e, t, n) => {
+}, Br = (e, t, n) => {
 	let r = /* @__PURE__ */ new Map();
 	for (let i = t; i <= n; i++) r.set(e[i], i);
 	return r;
-}, Br = Ar(class extends jr {
+}, Vr = Ar(class extends jr {
 	constructor(e) {
 		if (super(e), e.type !== kr.CHILD) throw Error("repeat() can only be used in text expressions");
 	}
@@ -3654,60 +3652,60 @@ var kr = {
 		return this.dt(e, t, n).values;
 	}
 	update(e, [t, n, r]) {
-		let i = Lr(e), { values: a, keys: o } = this.dt(t, n, r);
+		let i = Rr(e), { values: a, keys: o } = this.dt(t, n, r);
 		if (!Array.isArray(i)) return this.ut = o, a;
 		let s = this.ut ??= [], c = [], l, u, d = 0, f = i.length - 1, p = 0, m = a.length - 1;
 		for (; d <= f && p <= m;) if (i[d] === null) d++;
 		else if (i[f] === null) f--;
 		else if (s[d] === o[p]) c[p] = $(i[d], a[p]), d++, p++;
 		else if (s[f] === o[m]) c[m] = $(i[f], a[m]), f--, m--;
-		else if (s[d] === o[m]) c[m] = $(i[d], a[m]), Q(e, c[m + 1], i[d]), d++, m--;
-		else if (s[f] === o[p]) c[p] = $(i[f], a[p]), Q(e, i[d], i[f]), f--, p++;
-		else if (l === void 0 && (l = zr(o, p, m), u = zr(s, d, f)), l.has(s[d])) {
+		else if (s[d] === o[m]) c[m] = $(i[d], a[m]), Fr(e, c[m + 1], i[d]), d++, m--;
+		else if (s[f] === o[p]) c[p] = $(i[f], a[p]), Fr(e, i[d], i[f]), f--, p++;
+		else if (l === void 0 && (l = Br(o, p, m), u = Br(s, d, f)), l.has(s[d])) {
 			if (l.has(s[f])) {
 				let t = u.get(o[p]), n = t === void 0 ? null : i[t];
 				if (n === null) {
-					let t = Q(e, i[d]);
+					let t = Fr(e, i[d]);
 					$(t, a[p]), c[p] = t;
-				} else c[p] = $(n, a[p]), Q(e, i[d], n), i[t] = null;
+				} else c[p] = $(n, a[p]), Fr(e, i[d], n), i[t] = null;
 				p++;
-			} else Rr(i[f]), f--;
-		} else Rr(i[d]), d++;
+			} else zr(i[f]), f--;
+		} else zr(i[d]), d++;
 		for (; p <= m;) {
-			let t = Q(e, c[m + 1]);
+			let t = Fr(e, c[m + 1]);
 			$(t, a[p]), c[p++] = t;
 		}
 		for (; d <= f;) {
 			let e = i[d++];
-			e !== null && Rr(e);
+			e !== null && zr(e);
 		}
-		return this.ut = o, Ir(e, c), T;
+		return this.ut = o, Lr(e, c), w;
 	}
 });
 //#endregion
 //#region ../design-system/packages/elements/dist/segmented-control/template.js
-function Vr(e, t, n, r, i, a) {
-	return C`<fieldset class="en-fieldset en-field" part="field" ?disabled=${e.disabled}
+function Hr(e, t, n, r, i, a) {
+	return S`<fieldset class="en-fieldset en-field" part="field" ?disabled=${e.disabled}
       aria-describedby=${e.error ? "description child-error" : "description"}>
     <legend class="en-legend en-label" part="label"><slot name="label">${e.label}</slot></legend>
     <div class="en-segmented-control" part="options" @click=${a} @keydown=${n} @focusin=${r} @focusout=${i}>
-      ${Br(e.items, (e) => e.key ?? e.value, (n) => C`
-        <label class="en-segmented-item" part="option" data-selected=${n.value === e.value ? "" : E}
-          data-disabled=${e.disabled || n.disabled ? "" : E} ?hidden=${n.hidden}>
-          <input class="en-segmented-input en-sr-only" part="control" type="radio" name=${n.disabled || n.hidden ? E : "choice"}
+      ${Vr(e.items, (e) => e.key ?? e.value, (n) => S`
+        <label class="en-segmented-item" part="option" data-selected=${n.value === e.value ? "" : T}
+          data-disabled=${e.disabled || n.disabled ? "" : T} ?hidden=${n.hidden}>
+          <input class="en-segmented-input en-sr-only" part="control" type="radio" name=${n.disabled || n.hidden ? T : "choice"}
             value=${n.value} ?checked=${n.value === e.value} ?disabled=${e.disabled || n.disabled || n.hidden}
             ?required=${e.required} tabindex=${!e.disabled && !n.disabled && !n.hidden && n.value === e.tabValue ? 0 : -1}
             @change=${t}>
-          <span class="en-segmented-label" part="option-label" ?data-rich=${n.projected}>${n.projected ? C`<slot name=${`${Tn}${n.key}`}></slot>` : n.label || E}</span>
+          <span class="en-segmented-label" part="option-label" ?data-rich=${n.projected}>${n.projected ? S`<slot name=${`${wn}${n.key}`}></slot>` : n.label || T}</span>
         </label>`)}
     </div>
     ${Or(e.description)}
-    ${e.error ? C`<p id="child-error" class="en-error" part="error" role="status">${e.error}</p>` : E}
+    ${e.error ? S`<p id="child-error" class="en-error" part="error" role="status">${e.error}</p>` : T}
   </fieldset>`;
 }
 //#endregion
 //#region ../design-system/packages/elements/dist/segmented-control/pointer.js
-function Hr(e, t, n) {
+function Ur(e, t, n) {
 	let r, i = Infinity;
 	for (let a = 0; a < n.length; a++) {
 		let o = n[a], s = Math.max(o.left - e, 0, e - o.right), c = Math.max(o.top - t, 0, t - o.bottom), l = s * s + c * c;
@@ -3717,7 +3715,7 @@ function Hr(e, t, n) {
 }
 //#endregion
 //#region ../design-system/packages/elements/dist/segmented-control/element.js
-var Ur = class extends j {
+var Wr = class extends A {
 	static properties = {
 		value: { noAccessor: !0 },
 		items: { attribute: !1 },
@@ -3732,14 +3730,14 @@ var Ur = class extends j {
 		validationText: { attribute: "validation-text" }
 	};
 	static styles = [
+		z,
 		R,
-		nt,
-		fn,
+		dn,
 		Er
 	];
 	static formAssociated = !0;
 	model = yr("");
-	childOptions = new Nn(this, "segmented");
+	childOptions = new Mn(this, "segmented");
 	hydrationChoice = this.captureHydrationChoice();
 	hydrationRevision = 0;
 	removedFocus;
@@ -3846,7 +3844,7 @@ var Ur = class extends j {
 	}
 	propose(e, t) {
 		let n = this.currentItems().find((t) => t.value === e);
-		!this.effectiveDisabled && n && !n.disabled && !n.hidden && Vt(this, {
+		!this.effectiveDisabled && n && !n.disabled && !n.hidden && W(this, {
 			previous: this.value,
 			proposed: e,
 			reason: t,
@@ -3866,7 +3864,7 @@ var Ur = class extends j {
 				control: e,
 				rect: n
 			}] : [];
-		}), n = Hr(e.clientX, e.clientY, t.map(({ rect: e }) => e)), r = n === void 0 ? void 0 : t[n]?.control;
+		}), n = Ur(e.clientX, e.clientY, t.map(({ rect: e }) => e)), r = n === void 0 ? void 0 : t[n]?.control;
 		r && !r.disabled && (r.focus(), r.click());
 	};
 	handleChange = (e) => {
@@ -3922,7 +3920,7 @@ var Ur = class extends j {
 		}
 	}
 	render() {
-		return Vr({
+		return Hr({
 			items: this.effectiveItems,
 			value: this.value,
 			tabValue: this.tabValue,
@@ -3933,8 +3931,8 @@ var Ur = class extends j {
 			error: this.childOptions.view.error
 		}, this.handleChange, this.handleKeyDown, this.handleFocusIn, this.handleFocusOut, this.handleClick);
 	}
-}, Wr = class extends A {
-	staticStyles = new He(this);
+}, Gr = class extends k {
+	staticStyles = new Ue(this);
 	static properties = {
 		value: {
 			noAccessor: !0,
@@ -3980,25 +3978,25 @@ var Ur = class extends j {
 		let t = this.#n;
 		this.#n = String(e ?? ""), this.getAttribute("label") !== this.#n && this.setAttribute("label", this.#n), this.requestUpdate("label", t);
 	}
-}, Gr = class extends Wr {
+}, Kr = class extends Gr {
 	static styles = o`:host { display: contents; } :host([hidden]) { display: none !important; }`;
 	render() {
-		return C`<slot>${this.label || E}</slot>`;
+		return S`<slot>${this.label || T}</slot>`;
 	}
 };
 //#endregion
 //#region ../design-system/packages/elements/dist/define/segmented-control.js
-B(customElements, {
+H(customElements, {
 	tagName: "en-segmented-control",
-	elementClass: Ur,
+	elementClass: Wr,
 	dependencies: [{
 		tagName: "en-segmented-item",
-		elementClass: Gr
+		elementClass: Kr
 	}]
 });
 //#endregion
 //#region ../design-system/packages/primitives/dist/interactions/editing-controller.js
-var Kr = class {
+var qr = class {
 	#e;
 	#t;
 	#n = null;
@@ -4030,7 +4028,7 @@ var Kr = class {
 			isComposing: t,
 			inputType: n
 		});
-		return Ht(this.#e, i), this.#t.onInput?.(i), this.#t.model.view.get().revision === r;
+		return zt(this.#e, i), this.#t.onInput?.(i), this.#t.model.view.get().revision === r;
 	}
 	#c() {
 		if (!this.#i) return;
@@ -4064,8 +4062,8 @@ var Kr = class {
 };
 //#endregion
 //#region ../design-system/packages/primitives/dist/state/draft.js
-function qr(e = "") {
-	let t = new Z.State(Object.freeze({
+function Jr(e = "") {
+	let t = new Q.State(Object.freeze({
 		value: e,
 		draft: e,
 		isComposing: !1,
@@ -4091,11 +4089,11 @@ function qr(e = "") {
 		deferredAuthorWrite: !1
 	});
 	return {
-		value: new Z.Computed(() => t.get().value),
-		draft: new Z.Computed(() => t.get().draft),
-		isComposing: new Z.Computed(() => t.get().isComposing),
-		hasDeferredValue: new Z.Computed(() => t.get().deferredAuthorWrite),
-		view: new Z.Computed(() => {
+		value: new Q.Computed(() => t.get().value),
+		draft: new Q.Computed(() => t.get().draft),
+		isComposing: new Q.Computed(() => t.get().isComposing),
+		hasDeferredValue: new Q.Computed(() => t.get().deferredAuthorWrite),
+		view: new Q.Computed(() => {
 			let { deferredAuthorWrite: e, ...n } = t.get();
 			return Object.freeze(n);
 		}),
@@ -4117,12 +4115,12 @@ function qr(e = "") {
 }
 //#endregion
 //#region ../design-system/packages/elements/dist/forms-private/form-field.js
-var Jr = class extends j {
+var Yr = class extends A {
 	static formAssociated = !0;
 	static styles = [
-		R,
-		fn,
-		cn,
+		z,
+		dn,
+		on,
 		o`:host { display: block; }`
 	];
 	static properties = {
@@ -4147,7 +4145,7 @@ var Jr = class extends j {
 		},
 		placeholder: { type: String }
 	};
-	model = qr();
+	model = Jr();
 	signal = new Cr(this, () => this.model.view.get());
 	internals;
 	formAdapter;
@@ -4238,10 +4236,10 @@ var Jr = class extends j {
 		return this.error || (this.showNativeError ? this.nativeErrorMessage : "");
 	}
 	get controlAriaInvalid() {
-		return this.visibleError ? "true" : E;
+		return this.visibleError ? "true" : T;
 	}
 	renderControlFrame() {
-		return C`<div class="en-field-focus-frame" part="focus-frame">${this.renderControl()}</div>`;
+		return S`<div class="en-field-focus-frame" part="focus-frame">${this.renderControl()}</div>`;
 	}
 	get valueRevision() {
 		return this.authorRevision;
@@ -4254,7 +4252,7 @@ var Jr = class extends j {
 		this.model.stageValue(e), this.syncForm(), this.requestUpdate("value", t);
 	}
 	requestValue(e, t) {
-		this.isDisabled || Vt(this, {
+		this.isDisabled || W(this, {
 			previous: this.value,
 			proposed: e,
 			reason: t,
@@ -4298,16 +4296,16 @@ var Jr = class extends j {
 		};
 	}
 	render() {
-		return C`<div class="en-field" part="field" data-invalid=${this.visibleError ? "" : E}>
+		return S`<div class="en-field" part="field" data-invalid=${this.visibleError ? "" : T}>
       <label class="en-label" part="label" for="control"><slot name="label">${this.label}</slot></label>
       ${this.renderControlFrame()}
       ${Or(this.description)}
-      ${this.visibleError ? C`<div class="en-error" part="error" id="error">${this.visibleError}</div>` : E}
+      ${this.visibleError ? S`<div class="en-error" part="error" id="error">${this.visibleError}</div>` : T}
     </div>`;
 	}
-}, Yr = class extends Jr {
+}, Xr = class extends Yr {
 	static properties = {
-		...Jr.properties,
+		...Yr.properties,
 		readOnly: {
 			type: Boolean,
 			attribute: "readonly",
@@ -4319,7 +4317,7 @@ var Jr = class extends j {
 			attribute: "inputmode"
 		}
 	};
-	editing = new Kr(this, {
+	editing = new qr(this, {
 		model: this.model,
 		control: () => this.controlNode,
 		onCommit: (e, t) => {
@@ -4338,15 +4336,1034 @@ var Jr = class extends j {
 };
 //#endregion
 //#region ../design-system/packages/elements/dist/define/search-input.js
-B(customElements, {
+H(customElements, {
 	tagName: "en-search-input",
-	elementClass: class extends Yr {
+	elementClass: class extends Xr {
 		renderControl() {
-			return C`<input id="control" class="en-input" part="control" type="search"
-      name=${this.name} value=${this.defaultControlValue} placeholder=${this.placeholder || E}
-      autocomplete=${this.autocomplete || E} inputmode=${this.inputMode || E}
+			return S`<input id="control" class="en-input" part="control" type="search"
+      name=${this.name} value=${this.defaultControlValue} placeholder=${this.placeholder || T}
+      autocomplete=${this.autocomplete || T} inputmode=${this.inputMode || T}
       ?disabled=${this.isDisabled} ?readonly=${this.readOnly} ?required=${this.required}
       aria-describedby=${this.describedBy} aria-invalid=${this.controlAriaInvalid}>`;
+		}
+	}
+});
+//#endregion
+//#region ../design-system/packages/styles/dist/links.js
+var Zr = L(o`
+  ${Qt}
+  ${$t}
+  ${F(o`:where(.en-link)`)}
+  @media (forced-colors: active) {
+    ${en}
+    ${vt(o`.en-link[aria-disabled='true']`)}
+  }
+`), Qr = (e) => S`
+  <a
+    class="en-link"
+    part="control"
+    href=${V(e.href)}
+    target=${V(e.target)}
+    rel=${V(e.rel || (e.target === "_blank" ? "noopener" : void 0))}
+    download=${V(e.download)}
+  ><slot name="prefix"></slot><slot></slot><slot name="suffix"></slot></a>
+`;
+//#endregion
+//#region ../design-system/packages/elements/dist/define/link.js
+H(customElements, {
+	tagName: "en-link",
+	elementClass: class extends A {
+		static properties = {
+			href: { type: String },
+			target: { type: String },
+			rel: { type: String },
+			download: { type: String }
+		};
+		static styles = [
+			z,
+			nt,
+			Zr
+		];
+		constructor() {
+			super(), this.href = void 0, this.target = void 0, this.rel = "", this.download = void 0;
+		}
+		focus(e) {
+			this.renderRoot.querySelector("a")?.focus(e);
+		}
+		render() {
+			return Qr(this);
+		}
+	}
+});
+//#endregion
+//#region ../design-system/packages/styles/dist/internal/breadcrumbs.js
+var $r = o`
+  .en-breadcrumbs__list, .en-recipe-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: ${j("--en-space-2")};
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .en-breadcrumbs__item, .en-recipe-breadcrumbs li {
+    display: inline-flex;
+    align-items: center;
+    gap: ${j("--en-space-2")};
+    min-inline-size: 0;
+  }
+`, ei = L(o`
+  .en-section-nav, .en-breadcrumbs, .en-navigation-link, .en-breadcrumbs__label, .en-skip-link {
+    box-sizing: border-box;
+    min-inline-size: 0;
+    max-inline-size: 100%;
+    font: ${j("--en-font-ui-weight")} ${j("--en-font-ui-size")} / ${j("--en-font-ui-line-height")} ${j("--en-font-ui-family")};
+    text-align: start;
+    overflow-wrap: anywhere;
+  }
+  .en-section-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: ${M("--en-navigation-gap", j("--en-space-1"))};
+    margin-block: ${j("--en-space-6")};
+    padding-block: ${j("--en-space-2")};
+    background: ${M("--en-navigation-background", j("--en-color-canvas"))};
+    border-block-end: ${j("--en-border-width")} solid ${M("--en-navigation-border-color", j("--en-color-line"))};
+  }
+  /* Stay in normal flow until a controller or author supplies measured sticky geometry. */
+  .en-section-nav--sticky {
+    position: var(--en-navigation-position, static);
+    inset-block-start: var(--en-navigation-offset, 0px);
+    z-index: var(--en-navigation-z-index, 20);
+  }
+  .en-navigation-link {
+    display: inline-flex;
+    align-items: center;
+    min-inline-size: ${j("--en-size-target-min")};
+    min-block-size: ${j("--en-size-target-min")};
+    color: ${M("--en-navigation-color", j("--en-color-text-muted"))};
+    text-decoration: underline;
+    text-underline-offset: ${j("--en-border-width")};
+  }
+  .en-navigation-link[aria-current]:not([aria-current='false']) {
+    color: ${M("--en-navigation-active-color", j("--en-color-text"))};
+  }
+  @media (hover: hover) { .en-navigation-link:hover {
+    color: ${M("--en-navigation-active-color", j("--en-color-text"))};
+  } }
+  .en-navigation-link[aria-current]:not([aria-current='false']), .en-breadcrumbs__label[aria-current]:not([aria-current='false']) {
+    font-weight: ${j("--en-font-label-strong-weight")};
+  }
+  .en-section-nav .en-navigation-link {
+    min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")});
+    padding-block: ${j("--en-space-2")};
+    padding-inline: ${j("--en-space-control-inline")};
+    border-radius: ${M("--en-navigation-link-radius", j("--en-radius-pill"))};
+    text-decoration: none;
+  }
+  .en-section-nav .en-navigation-link[aria-current]:not([aria-current='false']) {
+    background: ${M("--en-navigation-active-background", j("--en-color-surface-subtle"))};
+  }
+  @media (hover: hover) { .en-section-nav .en-navigation-link:hover {
+    background: ${M("--en-navigation-active-background", j("--en-color-surface-subtle"))};
+  } }
+  ${$r}
+  .en-breadcrumbs { color: ${M("--en-navigation-color", j("--en-color-text-muted"))}; }
+  .en-breadcrumbs__list { gap: ${M("--en-navigation-gap", j("--en-space-2"))}; }
+  .en-breadcrumbs__item { max-inline-size: 100%; gap: ${M("--en-navigation-gap", j("--en-space-2"))}; }
+  .en-breadcrumbs__label { color: ${M("--en-navigation-active-color", j("--en-color-text"))}; }
+  .en-breadcrumbs__separator { flex: none; color: ${j("--en-color-text-muted")}; }
+  .en-navigation-target {
+    scroll-margin-block-start: calc(var(--en-navigation-height, 0px) + var(--en-navigation-offset, 0px) + ${j("--en-space-6")});
+  }
+  .en-skip-link {
+    position: fixed;
+    inset-block-start: ${j("--en-space-3")};
+    inset-inline-start: ${j("--en-space-3")};
+    z-index: calc(var(--en-navigation-z-index, 20) + 1);
+    max-inline-size: calc(100% - 2 * ${j("--en-space-3")});
+    min-inline-size: ${j("--en-size-target-min")};
+    min-block-size: ${j("--en-size-target-min")};
+    padding: ${j("--en-space-3")};
+    border: ${j("--en-border-width")} solid ${j("--en-color-boundary")};
+    border-radius: ${j("--en-radius-control")};
+    background: ${j("--en-color-surface")};
+    color: ${j("--en-color-text")};
+    text-decoration: underline;
+    text-underline-offset: ${j("--en-border-width")};
+    transform: translateY(calc(-100% - 2 * ${j("--en-space-3")}));
+    transition: none;
+  }
+  .en-skip-link:focus { transform: none; }
+  ${F(o`:where(.en-navigation-link, .en-skip-link)`)}
+  @media (any-pointer: coarse) {
+    .en-navigation-link, .en-skip-link {
+      min-inline-size: ${j("--en-size-target-touch")};
+      min-block-size: ${j("--en-size-target-touch")};
+    }
+    .en-section-nav .en-navigation-link { min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-touch")}); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .en-skip-link { transition: none; animation: none; }
+  }
+  @media (forced-colors: active) {
+    .en-section-nav { background: Canvas; border-color: CanvasText; }
+    .en-navigation-link { color: LinkText; }
+    .en-navigation-link[aria-current]:not([aria-current='false']) { color: LinkText; }
+  @media (hover: hover) { .en-navigation-link:hover { color: LinkText; } }
+    .en-section-nav .en-navigation-link[aria-current]:not([aria-current='false']) { background: Highlight; color: HighlightText; }
+  @media (hover: hover) { .en-section-nav .en-navigation-link:hover { background: Highlight; color: HighlightText; } }
+    .en-breadcrumbs, .en-breadcrumbs__label, .en-breadcrumbs__separator { color: CanvasText; }
+    .en-skip-link { background: Canvas; color: LinkText; border-color: CanvasText; }
+  }
+`), ti = o`
+  :host { margin-block: ${j("--en-space-6")}; }
+  .en-section-nav { margin-block: 0; }
+  .en-section-nav > slot:not([hidden]) { display: contents; }
+  :host([sticky]) {
+    position: var(--en-navigation-position, static);
+    inset-block-start: var(--en-navigation-offset, 0px);
+    z-index: var(--en-navigation-z-index, 20);
+  }
+  ::slotted(a) {
+    box-sizing: border-box;
+    min-inline-size: 0;
+    max-inline-size: 100%;
+    font: inherit;
+    text-align: start;
+    overflow-wrap: anywhere;
+    color: ${M("--en-navigation-color", j("--en-color-text-muted"))};
+  }
+  ::slotted(a[href]:not([hidden])) {
+    /* Preserve authored inline phrasing and spaces while centering a single line. */
+    display: inline-block;
+    min-inline-size: ${j("--en-size-target-min")};
+    min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-min")});
+    padding-block: max(${j("--en-space-2")}, calc((max(${j("--en-size-control-min")}, ${j("--en-size-target-min")}) - 1lh) / 2));
+    padding-inline: ${j("--en-space-control-inline")};
+    border-radius: ${M("--en-navigation-link-radius", j("--en-radius-pill"))};
+    text-decoration: none;
+  }
+  ::slotted(a:not([href])), ::slotted(a[href][aria-current]:not([aria-current='false'])) {
+    color: ${M("--en-navigation-active-color", j("--en-color-text"))};
+  }
+  @media (hover: hover) { ::slotted(a[href]:hover) {
+    color: ${M("--en-navigation-active-color", j("--en-color-text"))};
+  } }
+  ::slotted(a[href][aria-current]:not([aria-current='false'])) {
+    background: ${M("--en-navigation-active-background", j("--en-color-surface-subtle"))};
+  }
+  @media (hover: hover) { ::slotted(a[href]:hover) {
+    background: ${M("--en-navigation-active-background", j("--en-color-surface-subtle"))};
+  } }
+  ::slotted(a[aria-current]:not([aria-current='false'])) {
+    font-weight: ${j("--en-font-label-strong-weight")};
+  }
+  ${et(o`::slotted(a[href])`)}
+  ${I(o`::slotted(a[href]:focus-visible)`)}
+  @media (any-pointer: coarse) {
+    ::slotted(a[href]:not([hidden])) {
+      min-inline-size: ${j("--en-size-target-touch")};
+      min-block-size: max(${j("--en-size-control-min")}, ${j("--en-size-target-touch")});
+      padding-block: max(${j("--en-space-2")}, calc((max(${j("--en-size-control-min")}, ${j("--en-size-target-touch")}) - 1lh) / 2));
+    }
+  }
+  @media (forced-colors: active) {
+    ::slotted(a[href]) { color: LinkText; }
+    ::slotted(a:not([href])) { color: CanvasText; }
+    ::slotted(a[href][aria-current]:not([aria-current='false'])) {
+      background: Highlight;
+      color: HighlightText;
+    }
+  @media (hover: hover) { ::slotted(a[href]:hover) {
+      background: Highlight;
+      color: HighlightText;
+    } }
+  }
+`;
+o`
+  ::slotted(a), ::slotted(span) {
+    box-sizing: border-box;
+    min-inline-size: 0;
+    max-inline-size: 100%;
+    font: inherit;
+    text-align: start;
+    overflow-wrap: anywhere;
+  }
+  ::slotted(a[href]:not([hidden])) {
+    /* Keep authored phrasing in an inline formatting context, including its spaces. */
+    display: inline-block;
+    min-inline-size: ${j("--en-size-target-min")};
+    min-block-size: ${j("--en-size-target-min")};
+    padding-block: max(0px, calc((${j("--en-size-target-min")} - 1lh) / 2));
+    color: ${M("--en-navigation-color", j("--en-color-text-muted"))};
+    text-decoration: underline;
+    text-underline-offset: ${j("--en-border-width")};
+  }
+  ::slotted(span), ::slotted(a:not([href])), ::slotted(a[href][aria-current]:not([aria-current='false'])) {
+    color: ${M("--en-navigation-active-color", j("--en-color-text"))};
+  }
+  @media (hover: hover) { ::slotted(a[href]:hover) {
+    color: ${M("--en-navigation-active-color", j("--en-color-text"))};
+  } }
+  ::slotted(a[aria-current]:not([aria-current='false'])),
+  ::slotted(span[aria-current]:not([aria-current='false'])) {
+    font-weight: ${j("--en-font-label-strong-weight")};
+  }
+  ::slotted([hidden]:not([hidden='until-found' i])),
+  .en-breadcrumbs__item[hidden], .en-breadcrumbs__diagnostic[hidden] {
+    display: none !important;
+  }
+  ${et(o`::slotted(a[href])`)}
+  ${I(o`::slotted(a[href]:focus-visible)`)}
+  @media (any-pointer: coarse) {
+    ::slotted(a[href]:not([hidden])) {
+      min-inline-size: ${j("--en-size-target-touch")};
+      min-block-size: ${j("--en-size-target-touch")};
+      padding-block: max(0px, calc((${j("--en-size-target-touch")} - 1lh) / 2));
+    }
+  }
+  @media (forced-colors: active) {
+    ::slotted(a[href]), ::slotted(a[href][aria-current]:not([aria-current='false'])) { color: LinkText; }
+  @media (hover: hover) { ::slotted(a[href]:hover) { color: LinkText; } }
+    ::slotted(span), ::slotted(a:not([href])) { color: CanvasText; }
+  }
+`;
+//#endregion
+//#region ../design-system/packages/primitives/dist/templates/slotted-navigation.js
+function ni({ label: e }) {
+	return S`
+		<nav class="en-section-nav" part="base" aria-label=${e}>
+			<slot></slot>
+		</nav>
+	`;
+}
+//#endregion
+//#region ../design-system/packages/elements/dist/define/navigation.js
+H(customElements, {
+	tagName: "en-navigation",
+	elementClass: class extends A {
+		static properties = {
+			label: {
+				type: String,
+				useDefault: !0
+			},
+			sticky: {
+				type: Boolean,
+				reflect: !0,
+				useDefault: !0
+			}
+		};
+		static styles = [
+			z,
+			R,
+			ei,
+			ti
+		];
+		constructor() {
+			super(), this.label = "Navigation", this.sticky = !1;
+		}
+		render() {
+			return ni({ label: this.label });
+		}
+	}
+});
+//#endregion
+//#region ../design-system/packages/styles/dist/surfaces.js
+var ri = L(o`
+  .en-panel, .en-card {
+    min-inline-size: 0;
+    padding: ${M("--en-surface-padding", j("--en-space-panel"))};
+    border: ${j("--en-border-width")} solid ${M("--en-surface-border-color", j("--en-color-line"))};
+    border-radius: ${M("--en-surface-radius", j("--en-radius-container"))};
+    background: ${M("--en-surface-background", j("--en-color-surface"))};
+    color: ${M("--en-surface-color", j("--en-color-text"))};
+  }
+  .en-card {
+    display: flex;
+    flex-direction: column;
+    gap: ${j("--en-space-4")};
+    background: ${M("--en-surface-background", M("--en-card-background", j("--en-color-surface")))};
+  }
+  .en-card__header, .en-card__body, .en-card__footer { min-inline-size: 0; }
+  .en-card__header { font-weight: ${j("--en-font-label-strong-weight")}; }
+  .en-card__footer { display: flex; align-items: center; flex-wrap: wrap; gap: ${j("--en-space-actions")}; }
+  .en-card__footer > slot { display: contents; }
+  .en-inset-surface {
+    border-radius: ${M("--en-inset-child-radius", o`max(0px, ${M("--en-inset-outer-radius", j("--en-radius-container"))} - ${M("--en-inset-distance", j("--en-space-2"))})`)};
+  }
+  .en-divider { margin: 0; border: 0; border-block-start: ${j("--en-border-width")} solid ${M("--en-divider-color", j("--en-color-line"))}; }
+  .en-divider[aria-orientation='vertical'] { align-self: stretch; border-block-start: 0; border-inline-start: ${j("--en-border-width")} solid ${M("--en-divider-color", j("--en-color-line"))}; }
+  @media (forced-colors: active) {
+    .en-panel, .en-card { color: CanvasText; background: Canvas; border-color: CanvasText; }
+    .en-divider { border-color: CanvasText; }
+  }
+`);
+L(o`
+  .en-stack { display: flex; flex-direction: column; gap: ${M("--en-stack-gap", j("--en-space-rows"))}; min-inline-size: 0; }
+  .en-stack[data-direction='horizontal'] { flex-direction: row; align-items: center; }
+  .en-stack[data-align='start'] { align-items: flex-start; }
+  .en-stack[data-align='center'] { align-items: center; }
+  .en-stack[data-align='end'] { align-items: flex-end; }
+  .en-stack[data-align='stretch'] { align-items: stretch; }
+  .en-stack[data-justify='start'] { justify-content: flex-start; }
+  .en-stack[data-justify='center'] { justify-content: center; }
+  .en-stack[data-justify='end'] { justify-content: flex-end; }
+  .en-stack[data-justify='between'] { justify-content: space-between; }
+  .en-stack[data-wrap], .en-stack[data-wrap='true'] { flex-wrap: wrap; }
+  .en-stack[data-wrap='false'] { flex-wrap: nowrap; }
+  .en-stack[data-gap='small'] { gap: ${M("--en-stack-gap", j("--en-space-2"))}; }
+  .en-stack[data-gap='medium'] { gap: ${M("--en-stack-gap", j("--en-space-4"))}; }
+  .en-stack[data-gap='large'] { gap: ${M("--en-stack-gap", j("--en-space-6"))}; }
+  .en-cluster { display: flex; align-items: center; flex-wrap: wrap; gap: ${M("--en-cluster-gap", j("--en-space-actions"))}; min-inline-size: 0; }
+  .en-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, ${M("--en-grid-item-min", j("--en-layout-form-max"))}), 1fr)); gap: ${M("--en-grid-gap", j("--en-space-4"))}; min-inline-size: 0; }
+  .en-stack > slot, .en-cluster > slot, .en-grid > slot { display: contents; }
+  .en-stack > *, .en-cluster > *, .en-grid > * { min-inline-size: 0; }
+  .en-scroll-region { min-inline-size: 0; min-block-size: 0; overflow: auto; scrollbar-gutter: stable; }
+  .en-query-region { container-type: inline-size; container-name: en-layout; }
+  .en-split-view {
+    display: grid;
+    isolation: isolate;
+    grid-template-columns: minmax(0, calc((100% - max(${j("--en-size-splitter")}, ${j("--en-size-target-min")})) * var(--en-split-ratio, 0.5))) max(${j("--en-size-splitter")}, ${j("--en-size-target-min")}) minmax(0, 1fr);
+    min-inline-size: 0;
+    min-block-size: 0;
+  }
+  .en-split-view[data-orientation='vertical'] { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, calc((100% - max(${j("--en-size-splitter")}, ${j("--en-size-target-min")})) * var(--en-split-ratio, 0.5))) max(${j("--en-size-splitter")}, ${j("--en-size-target-min")}) minmax(0, 1fr); }
+  .en-split-pane { min-inline-size: 0; min-block-size: 0; overflow: auto; }
+  .en-split-handle { display: block; min-inline-size: 0; min-block-size: 0; }
+  /* Raise only the focused grid item above adjacent pane surfaces, locally. */
+  .en-split-view > .en-split-handle:focus-visible { z-index: 1; }
+  .en-split-separator { display: grid; place-items: center; inline-size: 100%; block-size: 100%; min-inline-size: 0; min-block-size: 0; cursor: col-resize; }
+  .en-split-grip { inline-size: ${j("--en-border-width")}; block-size: 100%; background: ${j("--en-color-boundary")}; }
+  .en-split-separator[data-orientation='horizontal'], :host([role='separator'][aria-orientation='horizontal']) .en-split-separator { cursor: row-resize; }
+  .en-split-separator[data-orientation='horizontal'] .en-split-grip, :host([role='separator'][aria-orientation='horizontal']) .en-split-grip { inline-size: 100%; block-size: ${j("--en-border-width")}; }
+  ${Dt}
+  @media (forced-colors: active) { .en-split-grip { background: ButtonText; } }
+`);
+//#endregion
+//#region ../design-system/packages/primitives/dist/interactions/optional-slot-presence.js
+var ii = "data-en-optional-slots";
+function ai(e, t) {
+	let n = e.getAttribute(ii);
+	if (n === null) return;
+	let r;
+	try {
+		r = JSON.parse(n);
+	} catch {
+		throw TypeError("Invalid optional-slot SSR metadata.");
+	}
+	if (!r || typeof r != "object") throw TypeError("Invalid optional-slot SSR metadata.");
+	let i = r;
+	if (i.version !== 1 || !i.slots || typeof i.slots != "object" || Array.isArray(i.slots) || Object.keys(i.slots).length !== t.length || t.some((e) => typeof i.slots?.[e] != "boolean")) throw TypeError("Invalid optional-slot SSR metadata.");
+	return Object.freeze(Object.fromEntries(t.map((e) => [e, i.slots[e]])));
+}
+//#endregion
+//#region ../design-system/packages/elements/dist/card/template.js
+var oi = (e) => S`
+  <div class="en-card" part="base">
+    <div class="en-card__header" part="header" ?hidden=${!e.hasHeader}>
+      <slot name="header" @slotchange=${e.onSlotChange}></slot>
+    </div>
+    <div class="en-card__body" part="body"><slot></slot></div>
+    <div class="en-card__footer" part="footer" ?hidden=${!e.hasFooter}>
+      <slot name="footer" @slotchange=${e.onSlotChange}></slot>
+    </div>
+  </div>
+`;
+//#endregion
+//#region ../design-system/packages/elements/dist/define/card.js
+H(customElements, {
+	tagName: "en-card",
+	elementClass: class extends A {
+		static properties = {
+			hasHeader: { state: !0 },
+			hasFooter: { state: !0 }
+		};
+		static styles = [
+			z,
+			R,
+			ri
+		];
+		constructor() {
+			super(), this.hasHeader = !0, this.hasFooter = !0;
+		}
+		willUpdate() {
+			if (this.hasUpdated) return;
+			let e = ai(this, ["header", "footer"]);
+			e && (this.hasHeader = e.header, this.hasFooter = e.footer);
+		}
+		firstUpdated() {
+			this.removeAttribute(ii);
+			for (let e of this.renderRoot.querySelectorAll("slot[name]")) this.syncSlotPresence(e);
+		}
+		syncSlotPresence(e) {
+			let t = e.assignedNodes({ flatten: !0 }).some((e) => e.nodeType === 1 || !!e.textContent?.trim());
+			e.name === "header" && (this.hasHeader = t), e.name === "footer" && (this.hasFooter = t);
+		}
+		onSlotChange = (e) => {
+			this.syncSlotPresence(e.currentTarget);
+		};
+		render() {
+			return oi({
+				hasHeader: this.hasHeader,
+				hasFooter: this.hasFooter,
+				onSlotChange: this.onSlotChange
+			});
+		}
+	}
+});
+//#endregion
+//#region ../design-system/packages/elements/dist/select/element.js
+var si = class extends Yr {
+	static styles = [...Yr.styles, un];
+	static properties = {
+		...Yr.properties,
+		items: { attribute: !1 }
+	};
+	childOptions = new Mn(this, "select");
+	hydrationChoice = this.captureHydrationChoice();
+	hydrationRevision = 0;
+	constructor() {
+		super(), this.items = [];
+	}
+	connectedCallback() {
+		this.hydrationRevision = this.valueRevision, super.connectedCallback();
+	}
+	captureHydrationChoice() {
+		let e = this.shadowRoot?.querySelector("#control");
+		if (e && this.hasAttribute("data-en-selection-children")) return {
+			value: e.value,
+			baseline: [...e.options].find((e) => e.defaultSelected)?.value ?? [...e.options].find((e) => !e.disabled)?.value ?? ""
+		};
+	}
+	get effectiveItems() {
+		return this.childOptions.view.active ? this.childOptions.view.items : this.items;
+	}
+	currentItems() {
+		let e = this.childOptions.current();
+		return e.active ? e.items : this.items;
+	}
+	get visibleError() {
+		return this.childOptions?.view.error || super.visibleError;
+	}
+	get submissionValue() {
+		return this.value === "" && this.placeholder ? "" : this.currentItems().some((e) => e.value === this.value && !e.disabled && !e.hidden) ? this.value : null;
+	}
+	canCommitValue(e) {
+		return !this.isDisabled && (e === "" && !!this.placeholder || this.currentItems().some((t) => t.value === e && !t.disabled && !t.hidden));
+	}
+	validateAcceptedValue() {
+		let e = super.validateAcceptedValue(), t = this.childOptions?.current().error;
+		if (t) return {
+			...e,
+			flags: {
+				...e.flags,
+				customError: !0
+			},
+			message: t
+		};
+		if (this.required && this.submissionValue === null) {
+			let t = this.controlNode?.cloneNode(!0);
+			return t && (t.selectedIndex = -1, t.setCustomValidity("")), {
+				...e,
+				flags: {
+					...e.flags,
+					valueMissing: !0
+				},
+				message: this.error || t?.validationMessage || "Please select an option."
+			};
+		}
+		return e;
+	}
+	willUpdate(e) {
+		super.willUpdate(e);
+		let t = this.hydrationChoice;
+		t && (this.hydrationChoice = void 0, this.valueRevision === this.hydrationRevision && this.value === this.childOptions.initialValue && t.value !== t.baseline && this.requestValue(t.value, "hydrate"));
+	}
+	reconcile() {
+		let e = this.controlNode;
+		if (this.hydrationChoice && !this.hasUpdated) return;
+		let t = this.model.draft.get();
+		e && e.value !== t && (e.value = t);
+	}
+	onInput(e) {
+		let t = e.target.value;
+		this.model.setDraft(t), zt(this, {
+			value: t,
+			isComposing: !1,
+			inputType: "insertReplacementText"
+		});
+	}
+	onChange(e) {
+		let t = e.target.value;
+		this.model.setDraft(t), this.requestValue(t, "change"), this.model.setValue(this.value), this.reconcile(), this.syncForm();
+	}
+	renderControl() {
+		let e = this.effectiveItems, t = !this.hasUpdated && this.childOptions.initialValue !== void 0 ? this.childOptions.initialValue : this.defaultControlValue, n = !this.placeholder && e.length > 0 && !e.some((e) => e.value === t);
+		return S`<select id="control" class="en-select" part="control" name=${this.name}
+      ?disabled=${this.isDisabled} ?required=${this.required}
+      aria-describedby=${this.describedBy} aria-invalid=${this.controlAriaInvalid}
+      @input=${this.onInput} @change=${this.onChange}>
+      ${this.placeholder ? S`<option part="option" value="" ?selected=${t === ""}>${this.placeholder}</option>` : n ? S`<option value="" selected disabled hidden></option>` : T}
+      ${Vr(e, (e) => e.key ?? e.value, (e) => S`<option part="option" value=${e.value} ?selected=${e.value === t}
+        ?disabled=${e.disabled} ?hidden=${e.hidden}>${e.label || T}</option>`)}
+    </select>`;
+	}
+};
+//#endregion
+//#region ../design-system/packages/elements/dist/define/select.js
+H(customElements, {
+	tagName: "en-select",
+	elementClass: si,
+	dependencies: [{
+		tagName: "en-select-option",
+		elementClass: class extends Gr {
+			render() {
+				return T;
+			}
+		}
+	}]
+});
+//#endregion
+//#region ../design-system/packages/elements/dist/checkbox/template.js
+function ci(e, t) {
+	return S`<div part="field" class="en-field">
+    <label class="en-choice" part="label">
+      <input part="control" class=${`en-${e.kind}`} type=${e.kind === "radio" ? "radio" : "checkbox"}
+        role=${e.kind === "switch" ? "switch" : T}
+        ?checked=${e.checked} aria-checked=${e.kind === "checkbox" && e.indeterminate ? "mixed" : T}
+        .value=${e.value} ?disabled=${e.disabled} ?required=${e.required}
+        tabindex=${e.tabIndex} aria-labelledby="label-text" aria-describedby="description"
+        @change=${t}>
+      <span class="en-label" id="label-text" part="label-text"><slot name="label"><slot>${e.label}</slot></slot></span>
+    </label>
+    ${Or(e.description)}
+  </div>`;
+}
+//#endregion
+//#region ../design-system/packages/elements/dist/checkbox/choice-base.js
+var li = class extends A {
+	static properties = {
+		checked: {
+			type: Boolean,
+			noAccessor: !0
+		},
+		disabled: {
+			type: Boolean,
+			reflect: !0
+		},
+		required: { type: Boolean },
+		name: {},
+		value: {},
+		label: {},
+		description: {}
+	};
+	static styles = [
+		z,
+		R,
+		on,
+		dn,
+		Er
+	];
+	static formAssociated = !0;
+	checkedModel = yr(!1);
+	signalController = new Cr(this, () => this.checkedModel.view.get());
+	authorRevision = 0;
+	formDisabled = !1;
+	internals = typeof this.attachInternals == "function" ? this.attachInternals() : void 0;
+	formController = this.internals ? new Tr(this, {
+		internals: this.internals,
+		control: () => this.nativeControl,
+		value: () => this.formValue,
+		state: () => this.checked ? "checked" : "unchecked",
+		disabled: () => this.effectiveDisabled,
+		onReset: () => {
+			this.checked = this.hasAttribute("checked"), this.syncControl();
+		},
+		onRestore: (e) => {
+			typeof e == "string" && (this.checked = e === "checked"), this.syncControl();
+		},
+		validate: () => this.formValidation()
+	}) : void 0;
+	constructor() {
+		super(), this.disabled = !1, this.required = !1, this.name = "", this.value = "on", this.label = "", this.description = "";
+	}
+	get checked() {
+		return this.checkedModel.value.get();
+	}
+	set checked(e) {
+		++this.authorRevision, this.setChecked(!!e);
+	}
+	setChecked(e) {
+		let t = this.checked;
+		this.checkedModel.set(e), this.requestUpdate("checked", t), this.syncForm();
+	}
+	get mixed() {
+		return !1;
+	}
+	get effectiveDisabled() {
+		return this.disabled || this.formDisabled;
+	}
+	get controlTabIndex() {
+		return 0;
+	}
+	get nativeControl() {
+		return this.renderRoot?.querySelector("input") ?? null;
+	}
+	get formValue() {
+		return this.checked ? this.value : null;
+	}
+	focus(e) {
+		this.nativeControl?.focus(e);
+	}
+	get form() {
+		return this.internals?.form ?? null;
+	}
+	get validity() {
+		return this.internals?.validity;
+	}
+	get validationMessage() {
+		return this.internals?.validationMessage ?? "";
+	}
+	checkValidity() {
+		return this.internals?.checkValidity?.() ?? !0;
+	}
+	reportValidity() {
+		return this.internals?.reportValidity?.() ?? !0;
+	}
+	formDisabledCallback(e) {
+		this.formDisabled = e, this.requestUpdate(), this.formController?.formDisabled(e);
+	}
+	formResetCallback() {
+		this.formController?.formReset();
+	}
+	formStateRestoreCallback(e, t = "restore") {
+		this.formController?.formStateRestore(e, t);
+	}
+	formValidation() {
+		let e = this.required && !this.checked && !this.effectiveDisabled;
+		return {
+			flags: e ? { valueMissing: !0 } : {},
+			message: e ? this.nativeControl?.validationMessage || "Please select this option." : "",
+			anchor: this.nativeControl ?? void 0
+		};
+	}
+	syncForm() {
+		this.formController?.sync();
+	}
+	syncControl() {
+		this.nativeControl && (this.nativeControl.checked = this.checked, this.nativeControl.indeterminate = this.mixed);
+	}
+	handleChange(e) {
+		if (this.effectiveDisabled) {
+			this.syncControl();
+			return;
+		}
+		let t = this.nativeControl?.checked ?? !this.checked;
+		W(this, {
+			previous: this.checked,
+			proposed: t,
+			reason: "toggle",
+			getRevision: () => this.authorRevision,
+			stage: (e) => {
+				this.setChecked(e), this.syncControl();
+			},
+			rollback: (e) => {
+				this.setChecked(e), this.syncControl();
+			},
+			commit: () => {
+				this.didCommit(), this.syncForm();
+			}
+		}), this.syncControl();
+	}
+	didCommit() {}
+	updated(e) {
+		this.syncForm(), this.syncControl();
+	}
+	render() {
+		return ci({
+			kind: this.kind,
+			checked: this.checked,
+			indeterminate: this.mixed,
+			disabled: this.effectiveDisabled,
+			required: this.required,
+			value: this.value,
+			label: this.label,
+			description: this.description,
+			tabIndex: this.controlTabIndex
+		}, (e) => this.handleChange(e));
+	}
+}, ui = class extends li {
+	static properties = {
+		...li.properties,
+		indeterminate: {
+			type: Boolean,
+			noAccessor: !0
+		}
+	};
+	mixedState = !1;
+	get indeterminate() {
+		return this.mixedState;
+	}
+	set indeterminate(e) {
+		++this.authorRevision, this.setIndeterminate(!!e);
+	}
+	setIndeterminate(e) {
+		let t = this.mixedState;
+		this.mixedState = e, this.requestUpdate("indeterminate", t), this.syncControl();
+	}
+	get kind() {
+		return "checkbox";
+	}
+	get mixed() {
+		return this.indeterminate;
+	}
+	didCommit() {
+		this.setIndeterminate(!1);
+	}
+	formResetCallback() {
+		this.indeterminate = !1, super.formResetCallback();
+	}
+};
+//#endregion
+//#region ../design-system/packages/elements/dist/define/checkbox.js
+H(customElements, {
+	tagName: "en-checkbox",
+	elementClass: ui
+});
+//#endregion
+//#region ../design-system/packages/elements/dist/accordion-item/template.js
+function di(e, t) {
+	return S`
+    <section class="en-accordion-item" part="base">
+      <div part="heading" role="heading" aria-level=${e.headingLevel}>
+        <button id="trigger" class="en-accordion-trigger" part="trigger" type="button"
+          aria-expanded=${String(e.open)} aria-controls="panel" ?disabled=${e.disabled}
+          @click=${t}>
+          <slot name="label"><slot name="heading">${e.label}</slot></slot>
+          <span part="indicator" aria-hidden="true">${e.open ? "−" : "+"}</span>
+        </button>
+      </div>
+      <div id="panel" class="en-accordion-panel" part="panel" ?hidden=${!e.open}>
+        <slot></slot>
+      </div>
+    </section>`;
+}
+//#endregion
+//#region ../design-system/packages/primitives/dist/state/disclosure.js
+function fi(e = !1) {
+	let t = yr(e);
+	return {
+		open: t.value,
+		view: new Q.Computed(() => {
+			let { value: e, revision: n } = t.view.get();
+			return Object.freeze({
+				open: e,
+				revision: n
+			});
+		}),
+		setOpen: t.set,
+		toggle: () => t.set(!t.value.get()),
+		reset: t.reset
+	};
+}
+//#endregion
+//#region ../design-system/packages/elements/dist/define/accordion-item.js
+H(customElements, {
+	tagName: "en-accordion-item",
+	elementClass: class extends A {
+		static properties = {
+			value: {
+				type: String,
+				reflect: !0
+			},
+			label: { type: String },
+			open: {
+				type: Boolean,
+				reflect: !0,
+				noAccessor: !0
+			},
+			disabled: {
+				type: Boolean,
+				reflect: !0
+			},
+			headingLevel: {
+				type: Number,
+				attribute: "heading-level"
+			}
+		};
+		static styles = [
+			z,
+			R,
+			Er
+		];
+		model = fi(!1);
+		authorRevision = 0;
+		presentedOpen = !1;
+		owner;
+		constructor() {
+			super(), this.value = "", this.label = "", this.disabled = !1, this.headingLevel = 3, new Cr(this, () => this.model.view.get());
+		}
+		get open() {
+			return this.model.open.get();
+		}
+		set open(e) {
+			this.authorRevision += 1;
+			let t = this.presentedOpen;
+			this.model.setOpen(!!e), this.presentedOpen = this.open, this.requestUpdate("open", t);
+		}
+		setOwner(e) {
+			this.owner = e;
+		}
+		focus(e) {
+			this.renderRoot.querySelector("button")?.focus(e);
+		}
+		toggle() {
+			if (!this.disabled) {
+				if (this.owner) {
+					this.owner.toggleItem(this);
+					return;
+				}
+				W(this, {
+					previous: this.open,
+					proposed: !this.open,
+					reason: "toggle",
+					getRevision: () => this.authorRevision,
+					stage: (e) => {
+						this.model.setOpen(e);
+					},
+					rollback: (e) => {
+						this.model.setOpen(e);
+					},
+					commit: () => {
+						let e = this.presentedOpen;
+						this.presentedOpen = this.open, this.requestUpdate("open", e);
+					}
+				});
+			}
+		}
+		updated(e) {
+			if (e.has("open") && !this.presentedOpen) {
+				let e = this.renderRoot.querySelector("#panel"), t = this.ownerDocument.activeElement;
+				(t && e?.contains(t) || t && this.contains(t) && t.slot !== "heading" && t.slot !== "label") && this.focus();
+			}
+		}
+		render() {
+			let e = Math.max(1, Math.min(6, Math.trunc(this.headingLevel) || 3));
+			return di({
+				open: this.presentedOpen,
+				disabled: this.disabled,
+				label: this.label,
+				headingLevel: e
+			}, () => this.toggle());
+		}
+	}
+});
+//#endregion
+//#region ../design-system/packages/elements/dist/alert/template.js
+var pi = (e) => S`
+  <div class="en-alert" part="base" data-variant=${e.variant} ?hidden=${!e.open}>
+    <span class="en-alert__icon" part="icon" aria-hidden="true" ?hidden=${!e.hasIcon}><slot name="icon" @slotchange=${e.onIconChange}></slot></span>
+    <div class="en-alert__content" part="content" role="status" aria-atomic="true"><slot></slot></div>
+    ${e.dismissible ? S`
+      <button
+        class="en-button en-icon-button en-alert__close"
+        data-variant="ghost"
+        part="close"
+        type="button"
+        aria-label=${e.dismissLabel}
+        @click=${e.onDismiss}
+      ><svg class="en-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" /></svg></button>
+    ` : null}
+  </div>
+`;
+//#endregion
+//#region ../design-system/packages/elements/dist/define/alert.js
+H(customElements, {
+	tagName: "en-alert",
+	elementClass: class extends A {
+		static properties = {
+			variant: { reflect: !0 },
+			dismissible: {
+				type: Boolean,
+				reflect: !0
+			},
+			dismissLabel: { attribute: "dismiss-label" },
+			open: {
+				type: Boolean,
+				reflect: !0,
+				noAccessor: !0
+			},
+			hasIcon: { state: !0 }
+		};
+		static styles = [
+			z,
+			R,
+			on,
+			At,
+			jt
+		];
+		openValue = !0;
+		revision = 0;
+		constructor() {
+			super(), this.variant = "info", this.dismissible = !1, this.dismissLabel = "Dismiss notification", this.hasIcon = !1;
+		}
+		get open() {
+			return this.openValue;
+		}
+		set open(e) {
+			let t = this.openValue;
+			this.openValue = !!e, this.revision += 1, this.requestUpdate("open", t);
+		}
+		dismiss() {
+			if (!this.open) return;
+			let e = this.open;
+			try {
+				W(this, {
+					previous: e,
+					proposed: !1,
+					reason: "dismiss",
+					getRevision: () => this.revision,
+					stage: (e) => {
+						this.openValue = e;
+					},
+					rollback: (e) => {
+						this.openValue = e, this.requestUpdate("open", !1);
+					}
+				});
+			} finally {
+				this.requestUpdate("open", e);
+			}
+		}
+		onDismiss = () => this.dismiss();
+		willUpdate() {
+			if (this.hasUpdated) return;
+			let e = ai(this, ["icon"]);
+			e && (this.hasIcon = e.icon);
+		}
+		firstUpdated() {
+			this.removeAttribute(ii);
+			let e = this.renderRoot.querySelector("slot[name=\"icon\"]");
+			e && this.syncIconPresence(e);
+		}
+		syncIconPresence(e) {
+			this.hasIcon = e.assignedNodes({ flatten: !0 }).some((e) => e.nodeType === 1 || !!e.textContent?.trim());
+		}
+		onIconChange = (e) => {
+			this.syncIconPresence(e.currentTarget);
+		};
+		render() {
+			return pi({
+				open: this.open,
+				variant: this.variant,
+				dismissible: this.dismissible,
+				dismissLabel: this.dismissLabel || "Dismiss notification",
+				onDismiss: this.onDismiss,
+				hasIcon: this.hasIcon,
+				onIconChange: this.onIconChange
+			});
 		}
 	}
 });
