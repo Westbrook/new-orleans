@@ -33,7 +33,7 @@ See [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pa
 3. Reopen the page in airplane mode and check the itinerary and map.
 4. Optionally add it to the home screen using the browser's Share/menu action.
 
-The generated service worker caches every local file, including all 45 venue entries, six days, source notes, original list, photo and vector map. It verifies the saved files before claiming success. Saved places and checklist ticks are local to each browser; they are not shared among the group. No booking or purchase is performed by this app.
+The generated service worker caches every local file, including all 46 venue entries, six days, source notes, original list, photo and vector map. It verifies the saved files before claiming success. Saved places and checklist ticks are local to each browser; they are not shared among the group. No booking or purchase is performed by this app.
 
 External directions, reservations, tickets, ride requests, weather and updated concert calendars require internet. Save tour and flight confirmations separately. Browser storage is subject to browser clearing/eviction; physical iOS and Android device behavior should be tested before travel.
 
@@ -41,14 +41,14 @@ On an updated build, reconnect, open **Saved offline → Check saved guide**, th
 
 ## Content and sources
 
-- `site/data/venues.json`: 40 distinct original places, the hotel and four additional options. Each entry has source URLs, a checked date, operating status, hours, advice, address and original note.
+- `site/data/venues.json`: 40 distinct original places, the hotel, Sunday’s tour meeting point and four additional options. Each entry has source URLs, a checked date, operating status, hours, advice, address and original note.
 - `site/itinerary.js`: six day plans with explicit travel origins/modes and optional alternatives.
 - `site/data/original-list.txt`: the unedited supplied list. Duplicate Jacques-Imo's and Maple Leaf mentions are combined in the directory.
 - `site/data/map.json`: a local OSM extract with 4,091 road segments and 51 water shapes. Coordinates are `[longitude, latitude]`. Riverbank polygons include optional holes. Map pins are approximate; directions use venue addresses.
 
 Research was checked September 14, 2026. Hours and prices are snapshots. Visit times and transport durations are recommendations/estimates. Future shows are unconfirmed unless explicitly marked as published. Retained historical recommendations are clearly flagged where closed, renamed, relocated or unverified.
 
-Arrival/departure flight times and Sunday's operator/pickup are not provided. Those itinerary sections remain flexible and the app does not invent bookings.
+Sunday, October 18 follows the supplied booking: Gray Line at 400 Toulouse St, 9am departure, 7 hours 45 minutes, Whitney Plantation and a swamp visit with a lunch stop. The operator requests check-in 15 minutes early (8:45am). The roughly 4:45pm finish is calculated, not a guaranteed return time. Arrival/departure flight times remain flexible.
 
 ## Design System and licenses
 
