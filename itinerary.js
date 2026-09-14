@@ -269,39 +269,51 @@ export const days = [
   {
     "dow": "SUN",
     "date": 18,
-    "title": "Plantation & swamps",
-    "area": "Your plantation & swamp outing",
+    "title": "Whitney & the swamp",
+    "area": "Whitney Plantation · swamp tour",
     "short": "The bayou",
     "mood": "One day, one big adventure",
-    "intro": "Your existing tour has the whole day. Keep the evening flexible.",
-    "walking": "Depends on your operator and plantation grounds.",
-    "reserve": "Use your existing tour booking. Confirm the operator, pickup point, pickup time, transport and expected return.",
+    "intro": "Your booked tour, with a lunch stop. Keep the evening easy.",
+    "walking": "Hotel → meeting point: allow 25–30 minutes walking, or take a taxi. Tour travel is by coach and boat.",
+    "reserve": "Save your barcoded voucher. Check in by 8:45am at Gray Line, 400 Toulouse St, for the 9am departure.",
     "rain": "Follow the operator’s weather and cancellation guidance; use the hotel as your flexible fallback.",
     "route": [
       "fontenot",
+      "gray-line",
       "willie-maes"
     ],
     "stops": [
       {
-        "time": "BEFORE PICKUP · TIME TO CONFIRM",
-        "title": "Confirm your pickup",
-        "text": "Save the tour confirmation. Confirm pickup, transport, lunch and expected return time.",
-        "venue": "fontenot",
-        "tag": "Your existing plan",
-        "originId": "",
-        "mode": "driving"
+        "time": "8:00 AM · SUGGESTED HOTEL DEPARTURE",
+        "title": "Head to Gray Line",
+        "text": "Check in by 8:45am at the Lighthouse Ticket Office, 400 Toulouse St, behind JAX Brewery by the Natchez dock.",
+        "venue": "gray-line",
+        "tag": "8:45am check-in",
+        "travel": "From Fontenot, allow 25–30 minutes on foot. Leave around 8am for an easy pace and a buffer; a taxi is also an option.",
+        "originId": "fontenot",
+        "mode": "walking"
       },
       {
-        "time": "ALL DAY · PROTECTED",
+        "time": "9:00 AM · BOOKED DEPARTURE",
         "title": "Plantation & swamp tour",
-        "text": "Follow your booked itinerary. Allow time for the plantation’s history of slavery and the lives of enslaved people.",
-        "tag": "Plantation + swamps",
-        "travel": "Pack closed-toe comfortable shoes, water, a light rain layer, sun protection and insect repellent. Confirm the actual duration with your operator."
+        "text": "Whitney Plantation and a swamp visit, with a lunch stop in between. Scheduled duration: 7 hours 45 minutes.",
+        "tag": "Your Sunday booking"
       },
       {
-        "time": "AFTER RETURN · OPTIONAL",
+        "time": "MIDDAY · WITH THE TOUR",
+        "title": "Lunch stop",
+        "text": "The tour includes time for lunch. Follow the guide’s timing and check your voucher for meal costs."
+      },
+      {
+        "time": "ABOUT 4:45 PM · ESTIMATED FINISH",
+        "title": "Back to the city, then a break",
+        "text": "This estimate comes from the 9am start and 7-hour-45-minute duration. Confirm the drop-off point with your guide, then head back to Fontenot.",
+        "tag": "Keep this gap"
+      },
+      {
+        "time": "6:00 PM OR LATER · OPTIONAL",
         "title": "An easy dinner near the hotel",
-        "text": "If back in time, try Willie Mae’s current CBD restaurant at 898 Baronne. Confirm the kitchen is serving; the hotel is the easy fallback.",
+        "text": "After a rest, try Willie Mae’s at 898 Baronne if the kitchen is serving. Dinner at the hotel is the easy fallback.",
         "venue": "willie-maes",
         "tag": "An easy landing",
         "travel": "Fontenot → Willie Mae’s CBD at 898 Baronne: roughly 15–20 minutes walking or a short car ride. The original Tremé address is not the current dinner destination.",
@@ -309,7 +321,8 @@ export const days = [
         "mode": "walking"
       }
     ],
-    "alternatives": []
+    "alternatives": [],
+    "timeNote": "9am departure is booked · Travel and finish times are estimates · Local time (CDT)"
   },
   {
     "dow": "MON",

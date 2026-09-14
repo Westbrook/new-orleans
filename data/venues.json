@@ -1389,5 +1389,38 @@
     ],
     "checkedOn": "2026-09-14",
     "routeAddress": "Audubon Aquarium Riverfront Park, 1 Canal Street, New Orleans, LA"
+  },
+  {
+    "id": "gray-line",
+    "name": "Gray Line · Sunday tour meeting point",
+    "category": "sights",
+    "area": "French Quarter",
+    "address": "Lighthouse Ticket Office, 400 Toulouse St, New Orleans, LA 70130",
+    "lat": 29.9552617,
+    "lng": -90.0627217,
+    "url": "https://www.graylineneworleans.com/plantation-tours/swamp-boat-cruise-whitney-plantation-tour-from-new-orleans/",
+    "hoursLabel": "Your tour schedule",
+    "hours": "Sunday, October 18: 8:45am check-in; 9am departure. Scheduled duration: 7 hours 45 minutes.",
+    "bestTimeLabel": "Arrival plan",
+    "bestTime": "Leave Fontenot around 8am. Allow 25–30 minutes walking and check in by 8:45am.",
+    "order": "Have your barcoded voucher ready. Whitney Plantation, a swamp visit and a lunch stop are on your booked itinerary.",
+    "tip": "Meet behind JAX Brewery by the Steamboat NATCHEZ dock. Bring water, comfortable closed-toe shoes, a rain layer and insect repellent. Save the voucher and download Whitney’s audio-tour app before leaving.",
+    "status": "open",
+    "statusLabel": "Your tour booking",
+    "statusNote": "The date, 9am departure, duration, Whitney Plantation, swamp visit and lunch stop were supplied by you. Gray Line’s official page confirms the meeting point, duration and check-in 15 minutes before departure.",
+    "schedule": "Estimated finish: about 4:45pm, calculated from your start time and duration. Confirm the drop-off point and any lunch costs with your voucher or guide.",
+    "originalNote": "Added from your Sunday tour details; this is your booked outing’s meeting point.",
+    "sources": [
+      {
+        "title": "Gray Line · Whitney & swamp tour",
+        "url": "https://www.graylineneworleans.com/plantation-tours/swamp-boat-cruise-whitney-plantation-tour-from-new-orleans/"
+      },
+      {
+        "title": "Operator-linked meeting-point map",
+        "url": "https://maps.app.goo.gl/iFM1XJAorxbYsxTJ6"
+      }
+    ],
+    "checkedOn": "2026-09-14",
+    "routeAddress": "Gray Line Lighthouse Ticket Office, 400 Toulouse St, New Orleans, LA 70130"
   }
 ]
