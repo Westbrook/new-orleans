@@ -4,7 +4,7 @@ A static, offline-capable New Orleans guide for a family of four, October 14–1
 
 ## Preview and build
 
-Requires Node 22+ (Node 24 is used in the Pages workflow). No package installation is needed; the actual En Rêve controls and all runtime assets are checked in.
+Requires Node 22+. No package installation is needed; the actual En Rêve controls and all runtime assets are checked in.
 
 ```sh
 npm run build
@@ -18,13 +18,15 @@ Open http://localhost:4173/. The preview server also exposes the same build at h
 
 Repository: [Westbrook/new-orleans](https://github.com/Westbrook/new-orleans). `main` contains the editable source; `gh-pages` contains the built contents of `dist/` at the branch root.
 
-For branch-based publishing, choose **Settings → Pages → Build and deployment → Deploy from a branch**, then **gh-pages / (root)**. Future source changes need a fresh build committed to `gh-pages`.
+The live site is [westbrook.github.io/new-orleans](https://westbrook.github.io/new-orleans/). Pages is configured to **Deploy from a branch**, using **gh-pages / (root)**.
 
-Alternatively choose **GitHub Actions** as the Pages source. The included `.github/workflows/pages.yml` builds, checks and deploys `dist/` on pushes to `main`, or when started manually. It does not update the `gh-pages` branch. Choose one publishing method in repository settings.
+To publish an update, run `npm run build` and `npm run check` locally, commit the source to `main`, then copy the contents of `dist/` into the `gh-pages` branch root and commit and push that branch. Include `.nojekyll` and all generated files. Pushing `main` alone does not update the website.
+
+There is no custom GitHub Actions workflow. GitHub still uses its own internal “pages build and deployment” job to serve branch updates; that entry may appear in the Actions tab.
 
 All application links and assets are relative. Hash routes work on repository paths without a server rewrite or custom 404 page. The service worker and manifest are scoped to that path. No API keys, backend, runtime CDN, external fonts or tile server are required.
 
-See [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+See [GitHub's branch publishing documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## Offline use
 
