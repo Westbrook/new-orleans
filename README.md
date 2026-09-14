@@ -46,7 +46,7 @@ On an updated build, reconnect, open **Saved offline → Check saved guide**, th
 
 The phone navigation remains available at the bottom of every page. Itinerary shortcuts open the hotel, Sunday tour and saved places. Each day puts booking notes before the stops and links to its places and map.
 
-Places can be filtered by day, neighborhood, category and saved state. Search accepts accents, apostrophes and multiple words. Map numbers match the list; saved places have their own map view. Exact showtimes and practical notes remain in each venue's disclosures. The checklist progress reflects only boxes checked on this device.
+Places can be filtered by day, neighborhood, category and saved state. Sort by guide order, name, neighborhood or approximate distance from Hotel Fontenot. Sorting works offline and the choice stays on this device. Search accepts accents, apostrophes and multiple words. Map numbers match the list; saved places have their own map view. Exact showtimes and practical notes remain in each venue's disclosures. The checklist progress reflects only boxes checked on this device.
 
 See [the visual review](docs/visual-review.md) for the design decisions and validation coverage.
 

@@ -1,5 +1,5 @@
 import {days} from './itinerary.js';
-import {dayVenueIds, filterPlaces, markerScale} from './guide-utils.js';
+import {dayVenueIds, filterPlaces, sortPlaces, placeSortOptions, markerScale} from './guide-utils.js';
 const $=(q,root=document)=>root.querySelector(q);
 const esc=(s='')=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon=(name,cls='',slot='')=>`<en-icon name="${name}" class="ui-icon ${cls}" aria-hidden="true"${slot?` slot="${slot}"`:''}></en-icon>`;
@@ -18,6 +18,7 @@ const categories={all:'All places',food:'Food & coffee',music:'Live music',bars:
 const colors={food:'#ab6335',music:'#695584',bars:'#3b7162',sights:'#547486',stay:'#193c35'};
 let venues=[],mapData=null,currentView='plan',selectedDay=0,search='',category='all',area='all',onlySaved=false,placeDay='all',mapScope='all',mapRegion='quarter',mapZoom=1,toastTimer,activeOpener;
 let saved=new Set(),checks={};try{saved=new Set(JSON.parse(localStorage.getItem('nola-saved')||'[]'));checks=JSON.parse(localStorage.getItem('nola-checks')||'{}')}catch{}
+let placeSort='guide';try{const stored=localStorage.getItem('nola-place-sort');if(Object.hasOwn(placeSortOptions,stored))placeSort=stored}catch{}
 const byId=id=>venues.find(v=>v.id===id);
 const directions=(v,origin='',mode='walking')=>'https://www.google.com/maps/dir/?'+new URLSearchParams({api:'1',...(origin?{origin}:{}),destination:v.routeAddress||v.address,travelmode:mode});
 function toast(text){
@@ -100,9 +101,10 @@ function filteredVenues(){return filterPlaces(venues,{search,category,area,onlyS
 function renderPlaces(){
   const areas=[...new Set(venues.map(v=>v.area))].sort();
   $('#view').innerHTML=`<section class="section-heading"><div><p class="eyebrow">THE FULL COLLECTION</p><h2>Find a good place.</h2><p>Your 40 original places, hotel, tour meeting point and a few extras.</p></div><span class="small-note">Saved places stay on this device.</span></section>
-  <div class="search-bar"><en-search-input id="venue-search" label="Search places" placeholder="A place, neighborhood, or food…" value="${esc(search)}"></en-search-input></div><div class="place-filters"><en-select class="select-field" id="area-filter" label="Neighborhood" value="${esc(area)}"><en-select-option value="all">All neighborhoods</en-select-option>${areas.map(a=>`<en-select-option value="${esc(a)}">${esc(a)}</en-select-option>`).join('')}</en-select><en-select class="select-field" id="place-day" label="Trip day" value="${placeDay}"><en-select-option value="all">All six days</en-select-option>${days.map((d,i)=>`<en-select-option value="${i}">${d.dow}, Oct ${d.date}</en-select-option>`).join('')}</en-select><en-checkbox id="saved-filter" ${onlySaved?'checked':''}><span slot="label">Saved only</span></en-checkbox></div>
+  <div class="search-bar"><en-search-input id="venue-search" label="Search places" placeholder="A place, neighborhood, or food…" value="${esc(search)}"></en-search-input></div><div class="place-filters"><en-select class="select-field" id="area-filter" label="Neighborhood" value="${esc(area)}"><en-select-option value="all">All neighborhoods</en-select-option>${areas.map(a=>`<en-select-option value="${esc(a)}">${esc(a)}</en-select-option>`).join('')}</en-select><en-select class="select-field" id="place-day" label="Trip day" value="${placeDay}"><en-select-option value="all">All six days</en-select-option>${days.map((d,i)=>`<en-select-option value="${i}">${d.dow}, Oct ${d.date}</en-select-option>`).join('')}</en-select><en-select class="select-field" id="place-sort" label="Sort by" value="${placeSort}">${Object.entries(placeSortOptions).map(([value,label])=>`<en-select-option value="${value}">${label}</en-select-option>`).join('')}</en-select><en-checkbox id="saved-filter" ${onlySaved?'checked':''}><span slot="label">Saved only</span></en-checkbox></div>
   <en-segmented-control class="filter-row" id="category-filter" label="Type of place" value="${category}">${Object.entries(categories).map(([key,label])=>`<en-segmented-item value="${key}">${label}</en-segmented-item>`).join('')}</en-segmented-control><div id="places-results"></div>`;
   $('#venue-search').addEventListener('en-input',event=>{search=event.detail.value;renderPlacesList()});
+  onAccepted($('#place-sort'),control=>{placeSort=control.value;try{localStorage.setItem('nola-place-sort',placeSort)}catch{}renderPlacesList()});
   onAccepted($('#area-filter'),control=>{area=control.value;renderPlacesList()});
   onAccepted($('#place-day'),control=>{placeDay=control.value;syncPlaceScope();renderPlacesList()});
   onAccepted($('#saved-filter'),control=>{onlySaved=control.checked;syncPlaceScope();renderPlacesList()});
@@ -113,9 +115,9 @@ function syncPlaceScope(){history.replaceState(null,'',onlySaved?'#places/saved'
 function resetPlaceFilters(){search='';category='all';area='all';placeDay='all';onlySaved=false;syncPlaceScope();renderPlaces();focusControl('#venue-search')}
 function renderPlacesList(){
   const target=$('#places-results');if(!target)return;
-  const list=filteredVenues(),filtered=search.trim()||category!=='all'||area!=='all'||placeDay!=='all'||onlySaved;
+  const list=sortPlaces(filteredVenues(),placeSort,byId('fontenot')),filtered=search.trim()||category!=='all'||area!=='all'||placeDay!=='all'||onlySaved;
   const count=`${list.length} ${list.length===1?'place':'places'}${onlySaved?' saved':''}${placeDay!=='all'?` · ${days[+placeDay].dow}, Oct ${days[+placeDay].date}`:''}`;
-  target.innerHTML=`<div class="results-toolbar"><p class="results-count" role="status">${count}</p>${filtered?'<en-button variant="ghost" class="text-button" id="reset-filters">Reset filters</en-button>':''}${onlySaved&&list.length?'<en-link class="text-button" href="#map/saved">Map saved places</en-link>':''}</div>${list.length?`<div class="venue-grid">${list.map(venueCard).join('')}</div>`:`<en-card class="empty-state"><h3>${onlySaved?'No saved places here.':'No places found.'}</h3><p>${onlySaved?'Use Save on any place card, or clear your filters.':'Try a place, a neighborhood, or a food such as beignets.'}</p><en-button variant="primary" id="clear-filters">Clear filters</en-button></en-card>`}`;
+  target.innerHTML=`<div class="results-toolbar"><p class="results-count" role="status">${count}<span class="sr-only"> · Sorted by ${placeSortOptions[placeSort]}</span></p>${filtered?'<en-button variant="ghost" class="text-button" id="reset-filters">Reset filters</en-button>':''}${onlySaved&&list.length?'<en-link class="text-button" href="#map/saved">Map saved places</en-link>':''}</div>${placeSort==='distance'?'<p class="sort-note">Approximate distance from Hotel Fontenot, not walking distance.</p>':''}${list.length?`<div class="venue-grid">${list.map(venueCard).join('')}</div>`:`<en-card class="empty-state"><h3>${onlySaved?'No saved places here.':'No places found.'}</h3><p>${onlySaved?'Use Save on any place card, or clear your filters.':'Try a place, a neighborhood, or a food such as beignets.'}</p><en-button variant="primary" id="clear-filters">Clear filters</en-button></en-card>`}`;
   if($('#clear-filters'))$('#clear-filters').onclick=resetPlaceFilters;
   if($('#reset-filters'))$('#reset-filters').onclick=resetPlaceFilters;
   bindActions(target);

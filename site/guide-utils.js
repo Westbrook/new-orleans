@@ -19,6 +19,28 @@ export function filterPlaces(venues, {search = '', category = 'all', area = 'all
   });
 }
 
+export const placeSortOptions = {guide:'Guide order', name:'Name A–Z', area:'Neighborhood A–Z', distance:'Nearest hotel'};
+const alphabetical = new Intl.Collator('en', {sensitivity:'base', ignorePunctuation:true});
+
+// Great-circle distance uses the saved pins, not walking routes or live location.
+function distanceFrom(venue, origin) {
+  if (![venue.lat, venue.lng, origin?.lat, origin?.lng].every(Number.isFinite)) return Infinity;
+  const radians = degrees => degrees * Math.PI / 180;
+  const latitude = Math.sin(radians(venue.lat - origin.lat) / 2);
+  const longitude = Math.sin(radians(venue.lng - origin.lng) / 2);
+  return latitude ** 2 + Math.cos(radians(origin.lat)) * Math.cos(radians(venue.lat)) * longitude ** 2;
+}
+
+export function sortPlaces(venues, order = 'guide', origin) {
+  const byName = (a, b) => alphabetical.compare(a.name, b.name);
+  const compare = {
+    name: byName,
+    area: (a, b) => alphabetical.compare(a.area, b.area) || byName(a, b),
+    distance: (a, b) => (distanceFrom(a, origin) - distanceFrom(b, origin)) || byName(a, b),
+  }[order];
+  return compare ? [...venues].sort(compare) : [...venues];
+}
+
 // SVG meet scaling must account for letterboxing in both dimensions.
 export function markerScale(viewWidth, viewHeight, cssWidth, cssHeight) {
   return Math.max(viewWidth / Math.max(cssWidth, 1), viewHeight / Math.max(cssHeight, 1));
