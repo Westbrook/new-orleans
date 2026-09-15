@@ -1,6 +1,6 @@
 {
-  "version": "4f80e2ebaba0",
-  "cacheName": "nola-4f80e2ebaba0",
+  "version": "044687027905",
+  "cacheName": "nola-044687027905",
   "files": [
     "./",
     "./app.js",
@@ -22,6 +22,7 @@
     "./vendor/SIGNAL-UTILS-LICENSE",
     "./vendor/en-reve.js",
     "./vendor/tokens.css",
+    "./weather.js",
     "./offline-manifest.json"
   ]
 }

@@ -462,3 +462,17 @@ en-dialog::part(close) { margin: 0; }
 @media (max-width: 360px) { .detail-actions .ui-icon { display: none; } }
 
 .sort-note { margin: -4px 0 20px; color: var(--muted); font-size: .85rem; }
+
+/* Weather shares the same quiet, balanced surface as the travel notes. */
+en-card.weather-card { display: block; margin-top: 20px; --en-surface-padding: 20px; --en-surface-background: #f8f5ed; }
+.weather-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.weather-heading h3 { margin: 0; font: 600 .95rem/1.4 var(--en-font-family, system-ui, sans-serif); }
+.weather-heading en-button::part(control) { font-size: .82rem; min-block-size: 44px; }
+.weather-condition { margin: 8px 0 0; font-weight: 600; }
+.weather-metrics { display: flex; flex-wrap: wrap; gap: 12px 28px; margin: 14px 0; }
+.weather-metrics dt { font-size: .78rem; color: var(--muted); }
+.weather-metrics dd { margin: 3px 0 0; font-weight: 600; font-size: 1.1rem; }
+.weather-note, .weather-status { margin: 10px 0; font-size: .82rem; color: var(--muted); }
+.weather-status:empty { display: none; }
+.weather-card > en-link { font-size: .78rem; }
+@media (max-width: 650px) { en-card.weather-card { --en-surface-padding: 16px; } .weather-metrics { gap: 12px 20px; } }
