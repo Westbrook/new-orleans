@@ -72,3 +72,9 @@ Photo: [Jackson Square by APK](https://commons.wikimedia.org/wiki/File:Jackson_S
 ## Progress report
 
 The independent report is outside the shipped app and production bundle. The local, Git-ignored `.progress-report/project.json` locates its canonical state and restart instructions. It is intentionally machine-specific and is not part of either published branch. Local preview: http://localhost:4175/. Entering the app with `?progress-report` shows its trusted return link; ordinary visitors do not see it. The parameter cannot supply a return URL or privileged access.
+
+## Daily weather
+
+Each itinerary day shows the New Orleans forecast from [Open-Meteo](https://open-meteo.com/en/docs): conditions, high/low °F, maximum precipitation probability and maximum wind in mph. Dates use America/Chicago. Forecasts reach up to 16 days ahead; dates beyond that show an explicit unavailable state. Sunday uses the city forecast, with a note that tour conditions may differ.
+
+A separate localStorage record retains only the six trip dates, with per-day fetch timestamps. Cached data renders immediately, followed by a network request on app load and reconnect. Foreground/focus/day navigation refresh after 15 minutes; a visible page also checks every 15 minutes. Automatic retries are limited to once a minute, requests time out after eight seconds, and Refresh allows a manual retry. Errors retain the last usable forecast. Data older than 24 hours is marked old; seven-day-old entries are discarded. The static service worker never caches this external API. No API key, geolocation permission or account is needed. Weather requires an initial connection and is separate from saving the static guide.
