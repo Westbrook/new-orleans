@@ -36,7 +36,7 @@ See [GitHub's branch publishing documentation](https://docs.github.com/en/pages/
 3. Reopen the page in airplane mode and check the itinerary and map.
 4. Optionally add it to the home screen using the browser's Share/menu action.
 
-The generated service worker caches every local file, including all 46 venue entries, six days, source notes, original list, photo and vector map. It verifies the saved files before claiming success. Saved places and checklist ticks are local to each browser; they are not shared among the group. No booking or purchase is performed by this app.
+The generated service worker caches every local file, including all 45 venue entries, six days, source notes, original list, photo and vector map. It verifies the saved files before claiming success. Saved places and checklist ticks are local to each browser; imported lists and your own saves remain separate. Share and load lists with JSON as described below. No booking or purchase is performed by this app.
 
 External directions, reservations, tickets, ride requests, weather and updated concert calendars require internet. Save tour and flight confirmations separately. Browser storage is subject to browser clearing/eviction; physical iOS and Android device behavior should be tested before travel.
 
@@ -44,26 +44,27 @@ On an updated build, reconnect, open **Saved offline → Check saved guide**, th
 
 ## Finding things quickly
 
-The phone navigation remains available at the bottom of every page. Itinerary shortcuts open the hotel, Sunday tour and saved places. Each day puts booking notes before the stops and links to its places and map.
+The phone navigation remains available at the bottom of every page. Places is the default view; Itinerary is last. Five dates are unscheduled. Only Sunday contains the booked tour, lunch stop, check-in and estimated finish.
 
-Places can be filtered by day, neighborhood, category and saved state. Sort by guide order, name, neighborhood or approximate distance from Hotel Fontenot. Sorting works offline and the choice stays on this device. Search accepts accents, apostrophes and multiple words. Map numbers match the list; saved places have their own map view. Exact showtimes and practical notes remain in each venue's disclosures. The checklist progress reflects only boxes checked on this device.
+Places can be filtered by performance date, neighborhood, category and saved person/state. Performance dates select venues with dated or clearly marked weekly listings, not assigned itinerary stops. Sort by guide order, name, neighborhood or approximate distance from Hotel Fontenot. Sorting works offline and the choice stays on this device. Search accepts accents, apostrophes and multiple words. Map numbers match the list; saved places have their own map view. Venue dialogs show performance details, ticket times and listening links, with a maximum height of 70dvh. Card titles link directly to venue websites. The checklist progress reflects only boxes checked on this device.
 
 See [the visual review](docs/visual-review.md) for the design decisions and validation coverage.
 
 ## Content and sources
 
-- `site/data/venues.json`: 40 distinct original places, the hotel, Sunday’s tour meeting point and four additional options. Each entry has source URLs, a checked date, operating status, hours, advice, address and original note.
-- `site/itinerary.js`: six day plans with explicit travel origins/modes and optional alternatives.
+- `site/data/venues.json`: 39 retained original places, the hotel, Sunday’s tour meeting point and four additional options. Each entry has source URLs, a checked date, operating status, hours, advice, address and original note.
+- `site/data/performances.json`: 39 sourced trip-week performance records, artist listening links and coverage notes; see [research evidence](docs/performance-research.md).
+- `site/itinerary.js`: six trip dates, with only the fixed Sunday tour scheduled.
 - `site/data/original-list.txt`: the unedited supplied list. Duplicate Jacques-Imo's and Maple Leaf mentions are combined in the directory.
 - `site/data/map.json`: a local OSM extract with 4,091 road segments and 51 water shapes. Coordinates are `[longitude, latitude]`. Riverbank polygons include optional holes. Map pins are approximate; directions use venue addresses.
 
-Research was checked September 14, 2026. Hours and prices are snapshots. Visit times and transport durations are recommendations/estimates. Future shows are unconfirmed unless explicitly marked as published. Retained historical recommendations are clearly flagged where closed, renamed, relocated or unverified.
+Venue research was checked September 14, with performance research and relevant venue updates checked September 15, 2026. Hours and prices are snapshots. Visit times and transport durations are recommendations/estimates. Dated listings, recurring weekly slots and unpublished schedules are clearly distinguished. Retained historical recommendations are clearly flagged where closed, renamed, relocated or unverified.
 
 Sunday, October 18 follows the supplied booking: Gray Line at 400 Toulouse St, 9am departure, 7 hours 45 minutes, Whitney Plantation and a swamp visit with a lunch stop. The operator requests check-in 15 minutes early (8:45am). The roughly 4:45pm finish is calculated, not a guaranteed return time. Arrival/departure flight times remain flexible.
 
 ## Design System and licenses
 
-The UI uses the actual En Rêve components and tokens from the local Design System repository (source commit `7299c35`). Navigation, buttons, links, cards, day and category selectors, dropdowns, saved-place and checklist checkboxes, accordions, badges, alerts, dialogs, search, map toolbar, checklist progress and icons use the bundled components. `site/vendor/en-reve.js` is a self-contained selected-component build; the normal production build does not depend on a sibling checkout. Build `@en-reve/elements` in the Design System checkout, then run `node scripts/vendor.mjs /absolute/path/to/design-system` to refresh it. `site/components.css` applies the trip theme through public tokens and CSS parts. Source MIT and dependency licenses are in `site/vendor/`.
+The UI uses the actual En Rêve components and tokens from the local Design System repository (source commit `0310b65`). Navigation, buttons, links, cards, day and category selectors, dropdowns, saved-place and checklist checkboxes, accordions, badges, alerts, dialogs, search, map toolbar, checklist progress, text fields, textareas, file selection and icons use the bundled components. `site/vendor/en-reve.js` is a self-contained selected-component build; the normal production build does not depend on a sibling checkout. Build `@en-reve/elements` in the Design System checkout, then run `node scripts/vendor.mjs /absolute/path/to/design-system` to refresh it. `site/components.css` applies the trip theme through public tokens and CSS parts. Source MIT and dependency licenses are in `site/vendor/`.
 
 Native anchors remain inside `en-navigation`, as its API requires, and for the brand/skip link. The SVG street map and its pins remain geographic graphics. Print content keeps simple document markup. Selectors use accepted `en-change` state after dispatch; rebuilding a control waits for `updateComplete` before restoring focus. No app-side CSS reaches into component shadow internals. All content uses uniform borders on all four sides, or no border, and no box shadows. This includes cards, alerts, dialogs, controls and the Developer UI return link. Selection uses fill, text and checkmarks; keyboard focus keeps a visible outline.
 
@@ -78,3 +79,13 @@ The independent report is outside the shipped app and production bundle. The loc
 Each itinerary day shows the New Orleans forecast from [Open-Meteo](https://open-meteo.com/en/docs): conditions, high/low °F, maximum precipitation probability and maximum wind in mph. Dates use America/Chicago. Forecasts reach up to 16 days ahead. The weather card stays hidden until its date enters that window and has usable forecast data. Loading, empty and failed requests show no placeholder; missing rain/wind values are omitted. Sunday uses the city forecast, with a note that tour conditions may differ.
 
 A separate localStorage record retains only the six trip dates, with per-day fetch timestamps. Cached data renders immediately, followed by a network request on app load and reconnect. Foreground/focus/day navigation refresh after 15 minutes; a visible page also checks every 15 minutes. Automatic retries are limited to once a minute, requests time out after eight seconds, and Refresh allows a manual retry. Errors retain the last usable forecast. Data older than 24 hours is marked old; seven-day-old entries are discarded. The static service worker never caches this external API. No API key, geolocation permission or account is needed. Weather requires an initial connection and is separate from saving the static guide.
+
+## Sharing saved locations
+
+**Share Saved Locations** appears on Places when you have saved venues. It opens a dialog with an optional name, JSON preview, **Email saved locations** and **Download JSON**. The email action opens your mail app with a draft addressed to `westbrook.johnson@gmail.com`; sending remains a user action. For mail clients that limit draft length, download and attach the JSON manually. There is no email server, API credential or automatic message sending.
+
+**Load Saved Locations** accepts a local JSON file or pasted JSON and a person/group name. It uses the export’s name if supplied, and you can override it. The format is `{ "version": 1, "trip": "new-orleans-2026", "name": "Alex and Sam", "venueIds": ["dba", "spotted-cat"] }`. Known IDs are deduplicated; removed/unknown IDs are skipped with feedback. Invalid/wrong-trip/oversized files are rejected. Maximum JSON size is 100 KB; names are limited to 80 characters and the device retains up to 20 imported lists. Imported strings are escaped and never supply navigation URLs or markup.
+
+Loading the same name (case-insensitive) replaces that person’s imported list. It never modifies your own saves. Imported lists persist locally; when any exist, **Saved by** offers all places, your own saves, and each named list. It composes with search, neighborhood, performance date, category and sorting. **Remove imported list** removes the selected imported list from this device; it can be loaded again from its JSON. Sharing always exports your own saves, even while another person’s list is selected.
+
+Cake Café & Bakery was removed from the directory at the user’s request. The unedited original-list document retains its historical mention.

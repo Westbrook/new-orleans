@@ -1,4 +1,4 @@
-/* @en-reve/tokens 0.1.0; sha256:a4013453a38566d6aaaedb0168012ed080a1a9eabdee64b895d20cf85e267456; paired full */
+/* @en-reve/tokens 0.1.0; sha256:ce83d9c1ca4feaf19a5fcf6e8adef3465cec7fd094e0068b124bcf5666dbdd9b; paired full */
 @layer en.tokens {
   :where(:root) {
     color-scheme: light dark;
@@ -42,8 +42,18 @@
     --en-color-link: var(--en-color-action-text);
     --en-color-on-action: rgb(255 255 255 / 1);
     --en-color-on-brand: rgb(255 255 255 / 1);
+    --en-color-picker-gap: initial;
+    --en-color-picker-inline-size: 20rem;
+    --en-color-picker-preview-radius: initial;
+    --en-color-picker-preview-size: initial;
     --en-color-scrim: rgb(0 0 0 / 0.45);
     --en-color-selected: var(--en-palette-selected);
+    --en-color-slider-checker-dark: rgb(184 184 184 / 1);
+    --en-color-slider-checker-light: rgb(255 255 255 / 1);
+    --en-color-slider-checker-size: initial;
+    --en-color-slider-radius: initial;
+    --en-color-slider-thumb-size: 1.75rem;
+    --en-color-slider-track-size: initial;
     --en-color-success-text: var(--en-palette-success-text);
     --en-color-surface: var(--en-palette-surface);
     --en-color-surface-raised: var(--en-palette-surface-raised);
@@ -72,6 +82,16 @@
     --en-ease-focus-enter: var(--en-ease-standard);
     --en-ease-focus-exit: var(--en-ease-standard);
     --en-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+    --en-editor-token-background: initial;
+    --en-editor-token-border-color: initial;
+    --en-editor-token-color: initial;
+    --en-editor-token-gap: initial;
+    --en-editor-token-hover-background: initial;
+    --en-editor-token-min-size: initial;
+    --en-editor-token-padding-block: initial;
+    --en-editor-token-padding-inline: initial;
+    --en-editor-token-pressed-background: initial;
+    --en-editor-token-radius: initial;
     --en-field-gap: initial;
     --en-file-list-gap: initial;
     --en-file-list-media-size: initial;
@@ -439,6 +459,34 @@
     --en-table-header-color: initial;
     --en-table-radius: initial;
     --en-table-row-hover-background: initial;
+    --en-toast-background: initial;
+    --en-toast-border-color: initial;
+    --en-toast-color: initial;
+    --en-toast-danger-background: initial;
+    --en-toast-danger-border-color: initial;
+    --en-toast-danger-color: initial;
+    --en-toast-danger-icon-color: initial;
+    --en-toast-icon-color: initial;
+    --en-toast-info-background: initial;
+    --en-toast-info-border-color: initial;
+    --en-toast-info-color: initial;
+    --en-toast-info-icon-color: initial;
+    --en-toast-padding: initial;
+    --en-toast-radius: initial;
+    --en-toast-region-gap: initial;
+    --en-toast-region-layer: initial;
+    --en-toast-region-max-size: initial;
+    --en-toast-region-width: 24rem;
+    --en-toast-shadow: initial;
+    --en-toast-stack-offset: initial;
+    --en-toast-success-background: initial;
+    --en-toast-success-border-color: initial;
+    --en-toast-success-color: initial;
+    --en-toast-success-icon-color: initial;
+    --en-toast-warning-background: initial;
+    --en-toast-warning-border-color: initial;
+    --en-toast-warning-color: initial;
+    --en-toast-warning-icon-color: initial;
   }
   @media (prefers-color-scheme: dark) {
     :where(:root):where(:not([data-en-appearance="light"], [data-en-appearance="dark"])) {

@@ -1,12 +1,20 @@
 import assert from 'node:assert/strict';
 import {readFile,stat} from 'node:fs/promises';
 import {days} from '../site/itinerary.js';
-const v=JSON.parse(await readFile('site/data/venues.json'));const ids=v.map(x=>x.id);assert.equal(new Set(ids).size,ids.length);assert.equal(ids.length,46);
-const originals='bacchanal brothers-food-mart cafe-du-monde cake-cafe central-grocery coops-place dooky-chase elizabeths horns johnnys-po-boys jacques-imos mimis napoleon-house pizza-delicious port-of-call satsuma st-roch-market turkey-and-the-wolf verti-marte willie-maes spotted-cat three-muses dba maison dragons-den royal-street preservation-hall maple-leaf witches-brew frenchmen-art-market french-market euclid-records faulkner-house vaughans lafittes old-absinthe-house cane-table country-club bjs-lounge snake-jakes'.split(' ');assert.equal(originals.length,40);for(const id of originals)assert.ok(ids.includes(id),'Missing original: '+id);
+const v=JSON.parse(await readFile('site/data/venues.json'));const ids=v.map(x=>x.id);assert.equal(new Set(ids).size,ids.length);assert.equal(ids.length,45);
+const originals='bacchanal brothers-food-mart cafe-du-monde central-grocery coops-place dooky-chase elizabeths horns johnnys-po-boys jacques-imos mimis napoleon-house pizza-delicious port-of-call satsuma st-roch-market turkey-and-the-wolf verti-marte willie-maes spotted-cat three-muses dba maison dragons-den royal-street preservation-hall maple-leaf witches-brew frenchmen-art-market french-market euclid-records faulkner-house vaughans lafittes old-absinthe-house cane-table country-club bjs-lounge snake-jakes'.split(' ');assert.equal(originals.length,39);for(const id of originals)assert.ok(ids.includes(id),'Missing original: '+id);
 for(const x of v){for(const field of ['id','name','category','area','address','hours','bestTime','order','tip','status','statusNote','schedule','originalNote','sources','checkedOn'])assert.ok(x[field],x.id+' missing '+field);assert.ok(Number.isFinite(x.lat)&&Number.isFinite(x.lng));assert.ok(x.sources.length);for(const s of x.sources)assert.ok(['http:','https:'].includes(new URL(s.url).protocol));}
 assert.equal(days.length,6);days.forEach((d,i)=>{assert.equal(d.date,14+i);assert.equal(new Date(Date.UTC(2026,9,d.date)).toLocaleDateString('en-US',{weekday:'short',timeZone:'UTC'}).toUpperCase(),d.dow);for(const id of [...d.route,...d.alternatives,...d.stops.flatMap(s=>[s.venue,...(s.extra||[])].filter(Boolean))])assert.ok(ids.includes(id),id);assert.ok(d.stops.every(s=>!s.venue||v.find(x=>x.id===s.venue).status!=='closed'));});
 assert.equal(days[4].stops[1].title,'Plantation & swamp tour');assert.ok(!days[4].route.includes('city-park'));
 const map=JSON.parse(await readFile('site/data/map.json'));assert.ok(map.roads.length>1000);assert.ok(map.water.some(w=>w.kind==='riverbank'));for(const geom of [...map.roads,...map.water])for(const p of geom.points)assert.ok(p.length===2&&p.every(Number.isFinite));
 const m=JSON.parse(await readFile('dist/offline-manifest.json'));for(const f of m.files.filter(f=>f!=='./'))assert.ok((await stat('dist/'+f)).size>0,f);
 const html=await readFile('dist/index.html','utf8');for(const match of html.matchAll(/(?:href|src)="(\.\/[^"]+)"/g))assert.ok((await stat('dist/'+match[1])).isFile(),match[1]);
-console.log('Passed: 46 venue records, all 40 originals, dates/weekdays, day links, Sunday tour, map geometry, offline asset completeness and HTML entry references.');
+console.log('Passed: 45 venue records, 39 retained originals, dates/weekdays, day links, Sunday tour, map geometry, offline asset completeness and HTML entry references.');
+
+assert.ok(!ids.includes('cake-cafe'));
+for(const [index,day] of days.entries())if(index!==4){assert.equal(day.stops.length,0);assert.equal(day.route.length,0);assert.equal(day.alternatives.length,0);}
+const performances=JSON.parse(await readFile('site/data/performances.json'));
+assert.equal(performances.events.length,39);
+for(const event of performances.events){assert.ok(ids.includes(event.venueId));assert.match(event.date,/^2026-10-1[4-9]$/);assert.ok(['dated','weekly'].includes(event.status));assert.ok(event.artist);for(const url of [event.sourceUrl,...event.musicLinks.map(l=>l.url),...event.times.map(t=>t.url).filter(Boolean)])assert.equal(new URL(url).protocol,'https:');}
+assert.equal(performances.events.filter(e=>e.venueId==='preservation-hall').flatMap(e=>e.times).length,27);
+console.log('Passed: only Sunday scheduled, removed Cake Café, 39 sourced performance records and 27 Preservation Hall ticket links.');
