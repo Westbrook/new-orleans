@@ -476,3 +476,33 @@ en-card.weather-card { display: block; margin-top: 20px; --en-surface-padding: 2
 .weather-status:empty { display: none; }
 .weather-card > en-link { font-size: .78rem; }
 @media (max-width: 650px) { en-card.weather-card { --en-surface-padding: 16px; } .weather-metrics { gap: 12px 20px; } }
+
+/* Compact venue dialogs keep context visible on phones and desktop. */
+#venue-dialog { --en-overlay-max-block-size: 70dvh; }
+#venue-dialog::part(surface) { max-height: 70dvh; max-block-size: 70dvh; }
+en-link.venue-website { font: inherit; color: inherit; --en-color-link: var(--ink); }
+en-link.venue-website::part(control) { font: inherit; color: inherit; text-decoration: none; }
+en-link.venue-website:hover::part(control) { text-decoration: underline; text-underline-offset: .15em; }
+.saved-list-actions, .performance-links, .performance-times { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.saved-list-actions { margin-block: 22px 6px; }
+.saved-form { display: grid; gap: 18px; min-width: 0; }
+.saved-form p { margin: 0; }
+en-text-field, en-textarea, en-file-upload { display: block; min-width: 0; max-width: 100%; --en-input-focus-accent-width: 0px; --en-input-focus-halo-width: 0px; }
+en-text-field::part(control), en-textarea::part(control), en-file-upload::part(dropzone) { border: 1px solid var(--line); box-shadow: none; background: #fffcf5; }
+en-textarea::part(control) { width: 100%; resize: vertical; font-size: 14px; }
+en-file-upload::part(file) { border: 1px solid var(--line); box-shadow: none; }
+.venue-performances { margin-block: 20px; }
+.performance-list { display: grid; gap: 12px; margin-block: 14px; }
+en-card.performance-card { --en-surface-padding: 16px; --en-surface-background: #f5efe3; }
+.performance-card h4 { margin: 5px 0 12px; font-size: 1rem; line-height: 1.5; }
+.performance-date { margin: 0; font-size: .8rem; font-weight: 600; }
+.performance-links { margin-top: 10px; font-size: .9rem; }
+.performance-times { font-weight: 600; }
+.performance-card .small-copy { margin-bottom: 0; }
+.performance-count { margin-top: 0; font-size: .85rem; color: #514b68; }
+.performance-lineup { padding-left: 20px; font-size: .9rem; }
+@media (max-width: 650px) {
+  .saved-list-actions { align-items: stretch; }
+  .saved-list-actions > en-button { flex: 1 1 180px; }
+  .saved-list-actions > en-button::part(control) { height: 100%; }
+}

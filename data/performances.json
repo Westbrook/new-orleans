@@ -1,0 +1,844 @@
+{
+  "checkedOn": "2026-09-15",
+  "timezone": "America/Chicago",
+  "events": [
+    {
+      "venueId": "maison",
+      "date": "2026-10-14",
+      "artist": "Gene’s Music Machine",
+      "times": [
+        {
+          "label": "6pm"
+        }
+      ],
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "status": "weekly",
+      "note": "Published weekly slot; reconfirm for this date.",
+      "musicLinks": []
+    },
+    {
+      "venueId": "preservation-hall",
+      "date": "2026-10-14",
+      "artist": "Preservation All-Stars ft. Branden Lewis",
+      "times": [
+        {
+          "label": "5pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81Xt2AJ"
+        },
+        {
+          "label": "6:15pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81ZV2AZ"
+        },
+        {
+          "label": "7:30pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81b72AB"
+        },
+        {
+          "label": "8:45pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81cj2AB"
+        }
+      ],
+      "sourceUrl": "https://www.preservationhall.com/calendar/?month=October+2026",
+      "status": "dated",
+      "note": "Separate ticket for each set. Availability may change.",
+      "musicLinks": [
+        {
+          "label": "Hall performances",
+          "url": "https://www.youtube.com/user/preservationhall"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-14",
+      "artist": "Chris Christy Band",
+      "times": [
+        {
+          "label": "2pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22035",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://chrischristy.bandcamp.com/album/your-only-black-friend"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-14",
+      "artist": "Marty Peters & The Party Meters",
+      "times": [
+        {
+          "label": "9:30pm - 1am"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#21970",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://martypetersandthepartymeters.bandcamp.com/"
+        }
+      ]
+    },
+    {
+      "venueId": "maison",
+      "date": "2026-10-15",
+      "artist": "Single Malt Please",
+      "times": [
+        {
+          "label": "8:30pm"
+        }
+      ],
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "status": "weekly",
+      "note": "Published weekly slot; reconfirm for this date.",
+      "musicLinks": []
+    },
+    {
+      "venueId": "preservation-hall",
+      "date": "2026-10-15",
+      "artist": "Preservation All-Stars ft. Wendell Brunious",
+      "times": [
+        {
+          "label": "5pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81fx2AB"
+        },
+        {
+          "label": "6:15pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81hZ2AR"
+        },
+        {
+          "label": "7:30pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81jB2AR"
+        }
+      ],
+      "sourceUrl": "https://www.preservationhall.com/calendar/?month=October+2026",
+      "status": "dated",
+      "note": "Separate ticket for each set. Availability may change.",
+      "musicLinks": [
+        {
+          "label": "Hall performances",
+          "url": "https://www.youtube.com/user/preservationhall"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-15",
+      "artist": "Chris Christy Band",
+      "times": [
+        {
+          "label": "2pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22049",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://chrischristy.bandcamp.com/album/your-only-black-friend"
+        }
+      ]
+    },
+    {
+      "venueId": "vaughans",
+      "date": "2026-10-15",
+      "artist": "Corey Henry & The Tremé Funktet",
+      "times": [
+        {
+          "label": "10:30pm"
+        }
+      ],
+      "sourceUrl": "https://www.wwoz.org/organizations/vaughans-lounge",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://www.coreyhenrytremefunktet.com/"
+        }
+      ]
+    },
+    {
+      "venueId": "dba",
+      "date": "2026-10-16",
+      "artist": "Michael Watson & The Alchemy",
+      "times": [
+        {
+          "label": "6pm"
+        }
+      ],
+      "sourceUrl": "https://www.dbaneworleans.com/shows#21792",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Artist info",
+          "url": "https://advancementagency.com/michael-watson-the-alchemy"
+        }
+      ]
+    },
+    {
+      "venueId": "dba",
+      "date": "2026-10-16",
+      "artist": "The Original Pinette Brass Band",
+      "times": [
+        {
+          "label": "10pm"
+        }
+      ],
+      "sourceUrl": "https://www.dbaneworleans.com/shows#22078",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Listen · American Routes",
+          "url": "https://www.wwno.org/show/american-routes/2020-06-12/american-routes-shortcuts-original-pinettes-brass-band"
+        }
+      ]
+    },
+    {
+      "venueId": "funk-fest",
+      "date": "2026-10-16",
+      "artist": "NOLA Funk Fest · daily lineup",
+      "times": [],
+      "sourceUrl": "https://www.nolafunkfest.com/lineup",
+      "status": "dated",
+      "note": "Set times not yet published.",
+      "musicLinks": [
+        {
+          "label": "Festival performances",
+          "url": "https://www.youtube.com/@NOLAFunkFest"
+        }
+      ],
+      "lineup": [
+        "Galactic ft. Jelly Joseph, Jojo Hermann & Domingo “Sunny” Ortiz",
+        "Dumpstaphunk",
+        "Marc Broussard",
+        "New Orleans Suspects with Big Sam",
+        "Jourdan Thibodeaux et Les Rôdailleurs",
+        "Robert Mercurio & Craig Klein present Funkstication",
+        "Brass-A-Holics",
+        "New Orleans Legacy Coalition",
+        "Soul Project"
+      ]
+    },
+    {
+      "venueId": "maison",
+      "date": "2026-10-16",
+      "artist": "Nola Sweethearts",
+      "times": [
+        {
+          "label": "3pm"
+        }
+      ],
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "status": "weekly",
+      "note": "Published weekly slot; reconfirm for this date.",
+      "musicLinks": []
+    },
+    {
+      "venueId": "maison",
+      "date": "2026-10-16",
+      "artist": "Shotgun Jazz Band",
+      "times": [
+        {
+          "label": "5pm"
+        }
+      ],
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "status": "weekly",
+      "note": "Published weekly slot; reconfirm for this date.",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://shotgunjazzband.bandcamp.com/album/algiers-strut"
+        }
+      ]
+    },
+    {
+      "venueId": "preservation-hall",
+      "date": "2026-10-16",
+      "artist": "Preservation All-Stars ft. Andrew Baham",
+      "times": [
+        {
+          "label": "5pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81o12AB"
+        },
+        {
+          "label": "6:15pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81pd2AB"
+        },
+        {
+          "label": "7:30pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81rF2AR"
+        },
+        {
+          "label": "8:45pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C81sr2AB"
+        }
+      ],
+      "sourceUrl": "https://www.preservationhall.com/calendar/?month=October+2026",
+      "status": "dated",
+      "note": "Separate ticket for each set. Availability may change.",
+      "musicLinks": [
+        {
+          "label": "Hall performances",
+          "url": "https://www.youtube.com/user/preservationhall"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-16",
+      "artist": "Paradise Jazz Band",
+      "times": [
+        {
+          "label": "2pm - 6pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22057",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Music & video",
+          "url": "https://www.gigsalad.com/paradise_jazz_band_new_orleans1"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-16",
+      "artist": "New Orleans Cottonmouth Kings",
+      "times": [
+        {
+          "label": "6pm - 10pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22065",
+      "status": "dated",
+      "note": "",
+      "musicLinks": []
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-16",
+      "artist": "Dirty Tuba",
+      "times": [
+        {
+          "label": "10pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22097",
+      "status": "dated",
+      "note": "",
+      "musicLinks": []
+    },
+    {
+      "venueId": "dba",
+      "date": "2026-10-17",
+      "artist": "Young Lion Showcase",
+      "times": [
+        {
+          "label": "2pm"
+        }
+      ],
+      "sourceUrl": "https://www.dbaneworleans.com/shows#21923",
+      "status": "dated",
+      "note": "",
+      "musicLinks": []
+    },
+    {
+      "venueId": "dba",
+      "date": "2026-10-17",
+      "artist": "Khris Royal · 40th Birthday Bash w/ Dark Matter & Special Guests",
+      "times": [
+        {
+          "label": "9–11pm · doors 8:30pm"
+        }
+      ],
+      "sourceUrl": "https://www.dbaneworleans.com/shows#22134",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://khrisroyal.band/home"
+        }
+      ]
+    },
+    {
+      "venueId": "funk-fest",
+      "date": "2026-10-17",
+      "artist": "NOLA Funk Fest · daily lineup",
+      "times": [],
+      "sourceUrl": "https://www.nolafunkfest.com/lineup",
+      "status": "dated",
+      "note": "Set times not yet published.",
+      "musicLinks": [
+        {
+          "label": "Festival performances",
+          "url": "https://www.youtube.com/@NOLAFunkFest"
+        }
+      ],
+      "lineup": [
+        "A Tribute to Allen Toussaint · The Allen Toussaint Orchestra and special guests",
+        "Neal Francis",
+        "Lost Bayou Ramblers with the LPO",
+        "Tony Hall Band ft. Mahogany Blue",
+        "Jojo Hermann & Friends",
+        "Bonerama",
+        "CJ Chenier & the Red Hot Louisiana Band",
+        "Neville Sons",
+        "Slugger"
+      ]
+    },
+    {
+      "venueId": "maison",
+      "date": "2026-10-17",
+      "artist": "Nola Axe Men",
+      "times": [
+        {
+          "label": "1pm"
+        }
+      ],
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "status": "weekly",
+      "note": "Published weekly slot; reconfirm for this date.",
+      "musicLinks": []
+    },
+    {
+      "venueId": "maison",
+      "date": "2026-10-17",
+      "artist": "Smoking Time Jazz Club",
+      "times": [
+        {
+          "label": "4pm"
+        }
+      ],
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "status": "weekly",
+      "note": "Published weekly slot; reconfirm for this date.",
+      "musicLinks": []
+    },
+    {
+      "venueId": "preservation-hall",
+      "date": "2026-10-17",
+      "artist": "Wendell Brunious and the Preservation Hall Legacy Band",
+      "times": [
+        {
+          "label": "2:30pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C85QD2AZ"
+        },
+        {
+          "label": "3:45pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C85Rp2AJ"
+        }
+      ],
+      "sourceUrl": "https://www.preservationhall.com/calendar/?month=October+2026",
+      "status": "dated",
+      "note": "Separate ticket for each set. Availability may change.",
+      "musicLinks": [
+        {
+          "label": "Hall performances",
+          "url": "https://www.youtube.com/user/preservationhall"
+        }
+      ]
+    },
+    {
+      "venueId": "preservation-hall",
+      "date": "2026-10-17",
+      "artist": "Preservation All-Stars",
+      "times": [
+        {
+          "label": "5pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C82H32AJ"
+        },
+        {
+          "label": "6:15pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C82If2AJ"
+        },
+        {
+          "label": "7:30pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C82KH2AZ"
+        },
+        {
+          "label": "8:45pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C82Lt2AJ"
+        }
+      ],
+      "sourceUrl": "https://www.preservationhall.com/calendar/?month=October+2026",
+      "status": "dated",
+      "note": "Separate ticket for each set. Availability may change.",
+      "musicLinks": [
+        {
+          "label": "Hall performances",
+          "url": "https://www.youtube.com/user/preservationhall"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-17",
+      "artist": "Twerk Thomson Band",
+      "times": [
+        {
+          "label": "2pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22071",
+      "status": "dated",
+      "note": "",
+      "musicLinks": []
+    },
+    {
+      "venueId": "funk-fest",
+      "date": "2026-10-18",
+      "artist": "NOLA Funk Fest · daily lineup",
+      "times": [],
+      "sourceUrl": "https://www.nolafunkfest.com/lineup",
+      "status": "dated",
+      "note": "Set times not yet published. Your booked tour overlaps daytime performances.",
+      "musicLinks": [
+        {
+          "label": "Festival performances",
+          "url": "https://www.youtube.com/@NOLAFunkFest"
+        }
+      ],
+      "lineup": [
+        "George Porter Jr. & Runnin’ Pardners Supa’ Set with special guests",
+        "Cimafunk",
+        "Anders Osborne with Jackie Greene",
+        "The Breaks",
+        "Erica Falls with Marcus Machado and Chali 2na",
+        "River Eckert",
+        "CC Adcock & the Lafayette Marquis",
+        "Big Chief Juan Pardo’s Tribal Gold",
+        "Original Pinettes Brass Band"
+      ]
+    },
+    {
+      "venueId": "maison",
+      "date": "2026-10-18",
+      "artist": "Jenavieve and the Winding Boys",
+      "times": [
+        {
+          "label": "6pm"
+        }
+      ],
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "status": "weekly",
+      "note": "Published weekly slot; reconfirm for this date.",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://jenavieveandthewindingboys.bandcamp.com/"
+        }
+      ]
+    },
+    {
+      "venueId": "maison",
+      "date": "2026-10-18",
+      "artist": "Krewe Debauchery",
+      "times": [
+        {
+          "label": "9pm"
+        }
+      ],
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "status": "weekly",
+      "note": "Published weekly slot; reconfirm for this date.",
+      "musicLinks": []
+    },
+    {
+      "venueId": "preservation-hall",
+      "date": "2026-10-18",
+      "artist": "Leroy Jones and the Preservation Jazz Masters",
+      "times": [
+        {
+          "label": "2:30pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C85TR2AZ"
+        },
+        {
+          "label": "3:45pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C85V32AJ"
+        }
+      ],
+      "sourceUrl": "https://www.preservationhall.com/calendar/?month=October+2026",
+      "status": "dated",
+      "note": "Separate ticket for each set. Availability may change. Afternoon sets overlap your booked tour.",
+      "musicLinks": [
+        {
+          "label": "Hall performances",
+          "url": "https://www.youtube.com/user/preservationhall"
+        }
+      ]
+    },
+    {
+      "venueId": "preservation-hall",
+      "date": "2026-10-18",
+      "artist": "Preservation Legacy Band ft. Gregg Stafford",
+      "times": [
+        {
+          "label": "5pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C83GL2AZ"
+        },
+        {
+          "label": "6:15pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C83Hx2AJ"
+        },
+        {
+          "label": "7:30pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C83JZ2AZ"
+        },
+        {
+          "label": "8:45pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C83LB2AZ"
+        }
+      ],
+      "sourceUrl": "https://www.preservationhall.com/calendar/?month=October+2026",
+      "status": "dated",
+      "note": "Separate ticket for each set. Availability may change.",
+      "musicLinks": [
+        {
+          "label": "Hall performances",
+          "url": "https://www.youtube.com/user/preservationhall"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-18",
+      "artist": "Jacky Blaire & The Hot Biscuits",
+      "times": [
+        {
+          "label": "2pm - 6pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22018",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://thehotbiscuitsmusic.bandcamp.com/"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-18",
+      "artist": "Treme Brass Band",
+      "times": [
+        {
+          "label": "6pm - 9pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22012",
+      "status": "dated",
+      "note": "",
+      "musicLinks": []
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-18",
+      "artist": "Pat Casey & The New Sound",
+      "times": [
+        {
+          "label": "9pm - 1am"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22024",
+      "status": "dated",
+      "note": "",
+      "musicLinks": []
+    },
+    {
+      "venueId": "dba",
+      "date": "2026-10-19",
+      "artist": "Secret Six Jazz Band",
+      "times": [
+        {
+          "label": "6pm"
+        }
+      ],
+      "sourceUrl": "https://www.dbaneworleans.com/shows#21858",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://secretsixjazzband.bandcamp.com/music"
+        }
+      ]
+    },
+    {
+      "venueId": "dba",
+      "date": "2026-10-19",
+      "artist": "Corey Henry & the Treme Funktet : Red Beans & Ricely Yours",
+      "times": [
+        {
+          "label": "9:30pm"
+        }
+      ],
+      "sourceUrl": "https://www.dbaneworleans.com/shows#21860",
+      "status": "dated",
+      "note": "Venue calendar: 9:30pm. Artist’s weekly listing says 10pm; confirm with d.b.a.",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://www.coreyhenrytremefunktet.com/"
+        }
+      ]
+    },
+    {
+      "venueId": "maison",
+      "date": "2026-10-19",
+      "artist": "Super Jam with Gene’s Music Machine",
+      "times": [
+        {
+          "label": "8pm"
+        }
+      ],
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "status": "weekly",
+      "note": "Published weekly slot; reconfirm for this date.",
+      "musicLinks": []
+    },
+    {
+      "venueId": "preservation-hall",
+      "date": "2026-10-19",
+      "artist": "Preservation Brass",
+      "times": [
+        {
+          "label": "5pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C83TF2AZ"
+        },
+        {
+          "label": "6:15pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C83Ur2AJ"
+        },
+        {
+          "label": "7:30pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C83WT2AZ"
+        },
+        {
+          "label": "8:45pm",
+          "url": "https://preservationhall.my.salesforce-sites.com/ticket/#/instances/a0FVS00000C83Y52AJ"
+        }
+      ],
+      "sourceUrl": "https://www.preservationhall.com/calendar/?month=October+2026",
+      "status": "dated",
+      "note": "Separate ticket for each set. Availability may change.",
+      "musicLinks": [
+        {
+          "label": "Hall performances",
+          "url": "https://www.youtube.com/user/preservationhall"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-19",
+      "artist": "Jenavieve Cooke & The Winding Boys",
+      "times": [
+        {
+          "label": "2pm-6pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#21997",
+      "status": "dated",
+      "note": "",
+      "musicLinks": [
+        {
+          "label": "Listen",
+          "url": "https://jenavieveandthewindingboys.bandcamp.com/"
+        }
+      ]
+    },
+    {
+      "venueId": "spotted-cat",
+      "date": "2026-10-19",
+      "artist": "Dominick Grillo & The Frenchmen Street All-Stars",
+      "times": [
+        {
+          "label": "6pm - 9:30pm"
+        }
+      ],
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar#22003",
+      "status": "dated",
+      "note": "",
+      "musicLinks": []
+    }
+  ],
+  "coverage": [
+    {
+      "venueId": "dba",
+      "sourceUrl": "https://www.dbaneworleans.com/shows",
+      "note": "Six dated listings found in the venue’s embedded calendar. Unlisted dates and slots remain unconfirmed."
+    },
+    {
+      "venueId": "spotted-cat",
+      "sourceUrl": "https://www.spottedcatmusicclub.com/calendar",
+      "note": "Twelve dated listings found in the venue’s embedded calendar. Some slots are still empty."
+    },
+    {
+      "venueId": "preservation-hall",
+      "sourceUrl": "https://www.preservationhall.com/calendar/?month=October+2026",
+      "note": "October calendar includes eight lineups and 27 ticketed set times during the trip."
+    },
+    {
+      "venueId": "maison",
+      "sourceUrl": "https://maisonfrenchmen.com/music-calendar/",
+      "note": "Named weekly sets are shown below. Rotating jazz, evening bands and DJs are not yet named for these dates."
+    },
+    {
+      "venueId": "vaughans",
+      "sourceUrl": "https://www.wwoz.org/organizations/vaughans-lounge",
+      "note": "October 15 is listed by WWOZ and matches the artist’s Thursday residency."
+    },
+    {
+      "venueId": "funk-fest",
+      "sourceUrl": "https://www.nolafunkfest.com/lineup",
+      "note": "All three daily lineups are published. Individual stage times are not yet listed."
+    },
+    {
+      "venueId": "maple-leaf",
+      "sourceUrl": "https://www.mapleleafbar.com/calendar",
+      "note": "Expanded the full calendar through November. No October 14–19 listings were published at this check."
+    },
+    {
+      "venueId": "bacchanal",
+      "sourceUrl": "https://www.bacchanalwine.com/music",
+      "note": "The embedded calendar did not load at this check; WWOZ had no trip-date listings. The artist roster is not a dated schedule."
+    },
+    {
+      "venueId": "three-muses",
+      "sourceUrl": "https://www.3musesnola.com/",
+      "note": "Checked the venue website and WWOZ calendar. No October 14–19 performers were listed."
+    },
+    {
+      "venueId": "bjs-lounge",
+      "sourceUrl": "https://www.wwoz.org/organizations/bjs-lounge",
+      "note": "Checked WWOZ and James McClaskey’s artist calendar; neither listed October 14–19 performances yet."
+    },
+    {
+      "venueId": "dragons-den",
+      "sourceUrl": "https://www.wwoz.org/organizations/stellar-lounge",
+      "note": "Now Stellar Lounge. No trip-date lineup was listed on its WWOZ page."
+    },
+    {
+      "venueId": "royal-street",
+      "sourceUrl": "https://tubaskinny.com/new-page",
+      "note": "Tuba Skinny’s schedule widget was unavailable. No Royal Street appearance is confirmed for these dates."
+    }
+  ]
+}

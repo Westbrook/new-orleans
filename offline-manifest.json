@@ -1,6 +1,6 @@
 {
-  "version": "a0cb836d1466",
-  "cacheName": "nola-a0cb836d1466",
+  "version": "af2aafa12557",
+  "cacheName": "nola-af2aafa12557",
   "files": [
     "./",
     "./app.js",
@@ -9,11 +9,13 @@
     "./components.css",
     "./data/map.json",
     "./data/original-list.txt",
+    "./data/performances.json",
     "./data/venues.json",
     "./guide-utils.js",
     "./index.html",
     "./itinerary.js",
     "./manifest.webmanifest",
+    "./saved-locations.js",
     "./styles.css",
     "./vendor/EN-REVE-LICENSE",
     "./vendor/LIT-LICENSE",

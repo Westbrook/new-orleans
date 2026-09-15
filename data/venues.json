@@ -38,13 +38,13 @@
     "lat": 29.9598,
     "lng": -90.0333,
     "url": "https://www.bacchanalwine.com/",
-    "hours": "Posted new hours: Sun–Thu 5–10pm; Fri–Sat 5–11pm. Reconfirm October hours; other official page sections contain older/conflicting hours.",
-    "bestTime": "Arrive around the posted 5pm opening, claim a table for four, and leave the evening unhurried.",
+    "hours": "Mon–Thu 5–10pm; Fri–Sun noon–11pm. 21+ only; no reservations.",
+    "bestTime": "Near opening for a table: 5pm Mon–Thu, noon Fri–Sun. Check the music calendar.",
     "order": "Ask the shop team for a bottle to match your taste and choose cheeses to share; check the current food menu and plating charges.",
     "tip": "21+ with valid ID; seating is first come, first served, with no reservations. A taxi or rideshare is a convenient return after a long evening. Map pin is approximate; use the street address for navigation.",
     "status": "check",
-    "statusNote": "Operating, but official hours and FAQ conflict. The original $3 cheese-plating price is not verified. The original blanket neighborhood safety claim is an old personal opinion, not current guidance.",
-    "schedule": "Live music is advertised; October 14–19, 2026 artists and set times were not confirmed. Check the official music calendar before choosing the night.",
+    "statusNote": "The current official music page lists noon opening Friday–Sunday and 5pm Monday–Thursday. Confirm before going.",
+    "schedule": "The embedded calendar did not load at this check; WWOZ had no trip-date listings. The artist roster is not a dated schedule.",
     "originalNote": "BACCHANAL: a wine + cheese shop, with a HUGE backyard with live music. You buy wine, you buy cheese, then you pay the $3 for them to plate the cheese and sit in the backyard and just hang. It gets PACKED on the weekends, so go early if you want to get a spot. www.bacchanalwine.com (BYWATER) (take a cab… it’s at the end of the levy, and walking back at night can be sketch until you’re solidly back in the Marigny). Archived personal recommendation; price and neighborhood characterization are not verified current facts.",
     "sources": [
       {
@@ -58,9 +58,13 @@
       {
         "title": "Bacchanal — official FAQ",
         "url": "https://www.bacchanalwine.com/faq"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.bacchanalwine.com/music"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "routeAddress": "600 Poland Avenue, New Orleans, LA 70117"
   },
   {
@@ -122,32 +126,6 @@
     ],
     "checkedOn": "2026-09-14",
     "routeAddress": "800 Decatur Street, New Orleans, LA 70116"
-  },
-  {
-    "id": "cake-cafe",
-    "name": "Cake Café & Bakery",
-    "category": "food",
-    "area": "Marigny",
-    "address": "Formerly 2440 Chartres Street, New Orleans, LA 70117",
-    "lat": 29.9637,
-    "lng": -90.0529,
-    "url": "https://nolacakes.com/",
-    "hours": "Permanently closed.",
-    "bestTime": "Archive only — do not plan a meal here.",
-    "order": "The original shrimp-and-grits recommendation is preserved as a memory; no current menu.",
-    "tip": "Choose Elizabeth’s for a separately verified Bywater brunch. Map pin is the approximate former premises, not an operating restaurant.",
-    "status": "closed",
-    "statusNote": "Owners’ announcement gives June 28, 2020 as the final day. Preserved from the original list; replace with Elizabeth’s in the itinerary.",
-    "schedule": "Unavailable throughout the October 14–19, 2026 trip.",
-    "originalNote": "Cake Cafe: Really great brunch here too, casual, local place - shrimp/grits are perfect: http://nolacakes.com/ (MARIGNY). Historical recommendation; the business permanently closed in 2020.",
-    "sources": [
-      {
-        "title": "Cake Café — owners’ permanent closure announcement",
-        "url": "https://nolacakes.com/"
-      }
-    ],
-    "checkedOn": "2026-09-14",
-    "routeAddress": "Formerly 2440 Chartres Street, New Orleans, LA 70117"
   },
   {
     "id": "central-grocery",
@@ -631,8 +609,8 @@
     "order": "Settle in for one complete jazz set, buy a drink, and tip the musicians. Leave room for another set only if everyone feels like staying.",
     "tip": "21+ with physical valid ID or foreign passport; one-drink minimum. No reservations or advance tickets. Mostly standing room with very limited tables, so four seats together are not guaranteed.",
     "status": "open",
-    "statusNote": "Current official site confirms operation. Do not assume old cash-only or free-entry advice still applies; confirm any door charge on arrival.",
-    "schedule": "Oct 14–19, 2026 performers and start times not confirmed in accessible official calendar. Live music runs daily; check the weekly calendar close to the visit.",
+    "statusNote": "Trip-week calendar entries are published; see Performances. Empty slots may be added later.",
+    "schedule": "Twelve dated listings found in the venue’s embedded calendar. Some slots are still empty.",
     "originalNote": "One of the recommended Frenchmen Street clubs; follow the music and see what sounds good.",
     "sources": [
       {
@@ -646,9 +624,13 @@
       {
         "title": "Spotted Cat weekly calendar",
         "url": "https://www.spottedcatmusicclub.com/calendar"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.spottedcatmusicclub.com/calendar"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
     "routeAddress": "623 Frenchmen Street, New Orleans, LA 70116"
   },
@@ -661,21 +643,25 @@
     "lat": 29.963,
     "lng": -90.0578,
     "url": "https://www.3musesnola.com/",
-    "hours": "Mon–Fri 7–11pm; Sat 6pm–midnight; Sun 4:30pm–midnight. Special events can alter hours.",
-    "bestTime": "Arrive at opening for the best chance of seating four.",
+    "hours": "Mon–Fri 7–11pm; Sat 6pm–midnight; Sun 4:30pm–midnight. Hours can change for events.",
+    "bestTime": "Near opening for a walk-in table. No reservations; $3 per person music fee.",
     "order": "Share Ms. Moon’s eggrolls and tots, then try beef bulgogi or the Korean fried chicken sandwich. The current menu also offers mocktails and nonalcoholic beer.",
-    "tip": "Walk-in only; no separate checks. Current dine-in music fee is $3 per person, so budget $12 for four before food and drink. Menu is explicitly a sample and can change.",
+    "tip": "No separate checks. Call for parties of 10 or more. For four, walk in.",
     "status": "open",
     "statusNote": "Current official address and website verified; the old thethreemuses.com URL is obsolete.",
-    "schedule": "Oct 14–19, 2026 lineup unconfirmed. Official site advertises local music but does not expose a dated October lineup.",
+    "schedule": "Checked the venue website and WWOZ calendar. No October 14–19 performers were listed.",
     "originalNote": "One of the recommended Frenchmen Street live-music stops.",
     "sources": [
       {
         "title": "Three Muses official menu, hours and policies",
         "url": "https://www.3musesnola.com/"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.3musesnola.com/"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
     "routeAddress": "536 Frenchmen Street, New Orleans, LA 70116"
   },
@@ -693,8 +679,8 @@
     "order": "Ask the bartender for a Louisiana beer or a favorite spirit, then give a full set your attention.",
     "tip": "Use the specific show listing for ticket, cover and age rules. Do not rely on old standing-residency or walk-up-only advice.",
     "status": "open",
-    "statusNote": "Official site confirms current hours and continued operation after the 2023 ownership change.",
-    "schedule": "Oct 14–19, 2026 lineup not confirmed in accessible official calendar. Check the venue’s Shows page shortly before travel.",
+    "statusNote": "Trip-week calendar entries are published; see Performances. Empty slots may be added later.",
+    "schedule": "Six dated listings found in the venue’s embedded calendar. Unlisted dates and slots remain unconfirmed.",
     "originalNote": "Recommended Frenchmen Street music venue, listed as DBA.",
     "sources": [
       {
@@ -708,9 +694,13 @@
       {
         "title": "d.b.a. ownership and venue information",
         "url": "https://www.dbaneworleans.com/about"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.dbaneworleans.com/shows"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
     "routeAddress": "618 Frenchmen Street, New Orleans, LA 70116"
   },
@@ -729,7 +719,7 @@
     "tip": "Reservations last 90 minutes and require pre-purchase; one table supports up to four guests. Most shows have no cover with a one-drink-or-food-item minimum per set. All ages before 10pm, then normally 21+; individual ticketed shows can differ.",
     "status": "open",
     "statusNote": "Official FAQ confirms daily live music. Official pages disagree on upstairs drag-show start time (8 vs 8:30pm), so confirm before planning around it.",
-    "schedule": "Oct 14–19, 2026 artists unconfirmed. Verified general pattern: jazz/swing until about 10pm, then funk/brass; Friday/Saturday upstairs drag shows recur but October details need confirmation.",
+    "schedule": "Named weekly sets are shown below. Rotating jazz, evening bands and DJs are not yet named for these dates.",
     "originalNote": "Recommended Frenchmen Street music venue.",
     "sources": [
       {
@@ -747,9 +737,13 @@
       {
         "title": "The Maison official site",
         "url": "https://maisonfrenchmen.com/"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://maisonfrenchmen.com/music-calendar/"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
     "routeAddress": "508 Frenchmen Street, New Orleans, LA 70116"
   },
@@ -768,7 +762,7 @@
     "tip": "Search and navigate using Stellar Lounge. Do not expect the old Dragon’s Den jazz, Latin or DJ residencies to continue.",
     "status": "closed",
     "statusNote": "Dragon’s Den has been replaced by Stellar Lounge at the same address. The official tourism listing confirms Stellar, and WWOZ explicitly identifies it as previously The Dragon’s Den.",
-    "schedule": "No verified Oct 14–19, 2026 Stellar events. The original Dragon’s Den schedule is retired.",
+    "schedule": "Now Stellar Lounge. No trip-date lineup was listed on its WWOZ page.",
     "originalNote": "Original list included Dragon’s Den among Frenchmen Street clubs.",
     "sources": [
       {
@@ -778,9 +772,13 @@
       {
         "title": "WWOZ: Stellar, previously The Dragon’s Den",
         "url": "https://www.wwoz.org/events/1321596"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.wwoz.org/organizations/stellar-lounge"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "coordinateNote": "Approximate pin for the former venue/current Stellar address.",
     "routeAddress": "435 Esplanade Avenue, New Orleans, LA 70116"
   },
@@ -799,7 +797,7 @@
     "tip": "No guaranteed Royal Street performance by Tuba Skinny. Use the band’s official schedule for announced shows; keep doorways and pedestrian paths clear.",
     "status": "open",
     "statusNote": "Royal Street is an open-ended experience, not a booked event. Current tourism guidance notes construction along parts of Royal Street, while local businesses remain open.",
-    "schedule": "No verified Oct 14–19, 2026 Royal Street/Tuba Skinny appearance. Busking is spontaneous and weather-dependent; never build the day around a promised sighting.",
+    "schedule": "Tuba Skinny’s schedule widget was unavailable. No Royal Street appearance is confirmed for these dates.",
     "originalNote": "Walk Royal Street during the day and look for Tuba Skinny; the original recommender loved the band.",
     "sources": [
       {
@@ -813,9 +811,13 @@
       {
         "title": "Royal Street visitor information",
         "url": "https://www.neworleans.com/plan/streets/royal-street/"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://tubaskinny.com/new-page"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "coordinateNote": "Approximate walking-area pin, not a performance location.",
     "routeAddress": "Royal Street near St. Peter Street, New Orleans, LA 70116"
   },
@@ -833,8 +835,8 @@
     "order": "Buy four tickets for the same show and seating section. For a longer outing, arrive at least 45 minutes early for refreshments at Le Spectacle next door.",
     "tip": "Online booking required; cash is not accepted for tickets or merchandise. All ages. No outside food/drink, photos or recordings. Accessible seating is available; contact the hall ahead if needed.",
     "status": "open",
-    "statusNote": "Important update: check in at 730 St. Peter, not the historic doorway. Advance tickets are nonrefundable and nontransferable.",
-    "schedule": "Oct 14–19, 2026 performers/showtimes unconfirmed in the accessible calendar. The hall says schedules are typically released about two weeks before the performance month; check again in mid/late September.",
+    "statusNote": "October 14–19 performers and ticketed times are published. Choose a specific set and check current availability.",
+    "schedule": "October calendar includes eight lineups and 27 ticketed set times during the trip.",
     "originalNote": "Do not skip Preservation Hall if you have not been.",
     "sources": [
       {
@@ -844,9 +846,13 @@
       {
         "title": "Preservation Hall performance calendar",
         "url": "https://www.preservationhall.com/calendar/"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.preservationhall.com/calendar/?month=October+2026"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "coordinateNote": "Approximate venue pin; navigate to the verified 730 St. Peter check-in address.",
     "routeAddress": "730 Saint Peter Street, New Orleans, LA 70116"
   },
@@ -865,7 +871,7 @@
     "tip": "All shows are 21+ and require valid ID. Tickets are final and nontransferable. It is on Oak Street, distinct from nearby Maple Street.",
     "status": "open",
     "statusNote": "Official venue and current calendar verified. Original list repeated this venue; consolidated into one entry.",
-    "schedule": "Oct 14–19, 2026 lineup not yet verified from the venue. September’s official calendar shows Monday George Porter Jr. Trio and Wednesday organ shows, but those patterns are not promises for October.",
+    "schedule": "Expanded the full calendar through November. No October 14–19 listings were published at this check.",
     "originalNote": "Recommended if going Uptown, alongside Jacques-Imo’s and Snake & Jake’s.",
     "sources": [
       {
@@ -875,9 +881,13 @@
       {
         "title": "Maple Leaf calendar and age/ticket policies",
         "url": "https://www.mapleleafbar.com/calendar"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.mapleleafbar.com/calendar"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "coordinateNote": "Approximate neighborhood-scale pin; use the street address for navigation.",
     "routeAddress": "8316 Oak Street, New Orleans, LA 70118"
   },
@@ -1063,7 +1073,7 @@
     "tip": "Bring cash for cover, drinks and the musicians, as your original list suggests. Cash-only and age policy were not independently confirmed. Take a taxi or rideshare back to Hotel Fontenot after the set.",
     "status": "check",
     "statusNote": "WWOZ lists the venue as active. The operator’s Facebook page was inaccessible; confirm hours, cover and entry rules directly.",
-    "schedule": "Published WWOZ listing: Corey Henry & The Tremé Funktet, Thursday October 15, 2026 at 10:30pm. This is a community music-calendar listing; confirm with the venue on the day, not a purchased ticket or operator guarantee.",
+    "schedule": "October 15 is listed by WWOZ and matches the artist’s Thursday residency.",
     "originalNote": "Vaughns: Super Divy, cash only, but a great hang with live music. (BYWATER)",
     "sources": [
       {
@@ -1077,9 +1087,13 @@
       {
         "title": "Tuba Skinny — artist’s Vaughan’s venue address",
         "url": "https://tubaskinny.squarespace.com/new-events/2026/1/19/vaughans-lounge-new-orleans-la"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.wwoz.org/organizations/vaughans-lounge"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "routeAddress": "4229 Dauphine Street, New Orleans, LA 70117"
   },
   {
@@ -1221,7 +1235,7 @@
     "tip": "Bring cash and photo ID. Cash-only and age rules were not independently confirmed from an accessible operator source. Save a taxi or rideshare home rather than extending the night with a long walk.",
     "status": "check",
     "statusNote": "WWOZ lists BJ’s as active with September/early October shows. The supplied operator Instagram could not be read; direct confirmation remains necessary.",
-    "schedule": "October 14–19, 2026 lineup is unconfirmed. The accessible WWOZ calendar lists shows through October 4 and a November event, not a show during the trip. Do not assume every night has music.",
+    "schedule": "Checked WWOZ and James McClaskey’s artist calendar; neither listed October 14–19 performances yet.",
     "originalNote": "BJ’s https://www.instagram.com/bjslounge/ good music (BYWATER)",
     "sources": [
       {
@@ -1231,9 +1245,13 @@
       {
         "title": "WWOZ — BJ’s active venue, address and music calendar",
         "url": "https://www.wwoz.org/organizations/bjs-lounge"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.wwoz.org/organizations/bjs-lounge"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "routeAddress": "4301 Burgundy Street, New Orleans, LA 70117"
   },
   {
@@ -1370,12 +1388,12 @@
     "lng": -90.0623,
     "url": "https://www.nolafunkfest.com/",
     "hours": "October 16–18, 2026. Consult the official day schedule for gates and set times.",
-    "bestTime": "A Friday or Saturday alternative near the hotel; replace an outing rather than stacking another commitment.",
+    "bestTime": "Choose from the published daily lineups. Sunday daytime overlaps your booked tour.",
     "order": "Choose a day ticket only after comparing the current lineup with your other plans.",
     "tip": "Sunday remains reserved for your plantation and swamp outing. Festival tickets are not booked.",
     "status": "open",
-    "statusNote": "2026 dates and riverfront location published by the organizer.",
-    "schedule": "Confirmed festival dates: Fri Oct 16–Sun Oct 18. Individual set times must be checked on the official lineup.",
+    "statusNote": "October 16–18 daily lineups are published. Individual set times are not yet listed.",
+    "schedule": "All three daily lineups are published. Individual stage times are not yet listed.",
     "originalNote": "Added after checking events during your dates.",
     "sources": [
       {
@@ -1385,9 +1403,13 @@
       {
         "title": "2026 dates and venue",
         "url": "https://www.nolafunkfest.com/funk-for-all"
+      },
+      {
+        "title": "Trip-week music calendar · checked Sep 15",
+        "url": "https://www.nolafunkfest.com/lineup"
       }
     ],
-    "checkedOn": "2026-09-14",
+    "checkedOn": "2026-09-15",
     "routeAddress": "Audubon Aquarium Riverfront Park, 1 Canal Street, New Orleans, LA"
   },
   {
@@ -1402,7 +1424,7 @@
     "hoursLabel": "Your tour schedule",
     "hours": "Sunday, October 18: 8:45am check-in; 9am departure. Scheduled duration: 7 hours 45 minutes.",
     "bestTimeLabel": "Arrival plan",
-    "bestTime": "Leave Fontenot around 8am. Allow 25–30 minutes walking and check in by 8:45am.",
+    "bestTime": "Check in by 8:45am for the 9am tour. Allow 25–30 minutes walking from Fontenot, plus a buffer.",
     "order": "Have your barcoded voucher ready. Whitney Plantation, a swamp visit and a lunch stop are on your booked itinerary.",
     "tip": "Meet behind JAX Brewery by the Steamboat NATCHEZ dock. Bring water, comfortable closed-toe shoes, a rain layer and insect repellent. Save the voucher and download Whitney’s audio-tour app before leaving.",
     "status": "open",
