@@ -1,6 +1,6 @@
 {
-  "version": "6ff58fff84ad",
-  "cacheName": "nola-6ff58fff84ad",
+  "version": "51f3dcad2bd0",
+  "cacheName": "nola-51f3dcad2bd0",
   "files": [
     "./",
     "./app.js",
@@ -15,6 +15,7 @@
     "./index.html",
     "./itinerary.js",
     "./manifest.webmanifest",
+    "./picker-preferences.js",
     "./saved-locations.js",
     "./styles.css",
     "./vendor/EN-REVE-LICENSE",
