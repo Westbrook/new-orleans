@@ -2,6 +2,27 @@
 export const SAVED_LISTS_KEY = 'nola-shared-saves-v1';
 export const MAX_JSON_BYTES = 100_000;
 export const SHARE_RECIPIENT = 'westbrook.johnson@gmail.com';
+
+// Each saved list contributes one vote per known venue, including this device's own saves.
+export function savedVenueCounts(venues, saved = new Set(), sharedLists = []) {
+  const counts = new Map(venues.map(venue => [venue.id, 0]));
+  for (const ids of [saved, ...sharedLists.map(list => list.venueIds)]) {
+    for (const id of new Set(ids)) {
+      if (counts.has(id)) counts.set(id, counts.get(id) + 1);
+    }
+  }
+  return counts;
+}
+
+export function savedOverlapOptions(venues, saved = new Set(), sharedLists = []) {
+  const counts = savedVenueCounts(venues, saved, sharedLists);
+  const maximum = Math.max(0, ...counts.values());
+  return Array.from({length:Math.max(0, maximum - 1)}, (_, index) => {
+    const minimum = index + 2;
+    return {value:`overlap:${minimum}`, label:`Saved by ${minimum} people`,
+      venueIds:[...counts].filter(([, count]) => count >= minimum).map(([id]) => id)};
+  });
+}
 export function savedPayload(ids, venues, name = '') {
   const known = new Set(venues.map(v => v.id));
   return {version: 1, trip: 'new-orleans-2026', name: name.trim().slice(0,80), venueIds: [...new Set(ids)].filter(id => known.has(id))};
