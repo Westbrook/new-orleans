@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {filterPlaces, sortPlaces, dayVenueIds, markerScale} from '../site/guide-utils.js';
+import {filterPlaces, sortPlaces, dayVenueIds, markerScale, resolveMapScope, filterMapVenues} from '../site/guide-utils.js';
 import {days} from '../site/itinerary.js';
 const venues = JSON.parse(await readFile(new URL('../site/data/venues.json', import.meta.url)));
 
@@ -23,6 +23,44 @@ test('map targets stay 48 CSS pixels through letterboxing and zoom', () => {
     const renderedScale=Math.min(cw/w,ch/h);
     assert.ok(Math.abs(48*markerScale(w,h,cw,ch)*renderedScale-48)<0.001);
   }
+});
+
+test('map filters keep imported saves separate from own saves and preserve venue order', () => {
+  const saved = new Set(['fontenot']);
+  const sharedLists = [{name:'Alex / Sam & "Zoë"',venueIds:['dba','gray-line','unknown','dba']},{name:'Empty',venueIds:[]}];
+  const scope = 'person:' + sharedLists[0].name;
+  const options = {saved,sharedLists,tourIds:days[4].route};
+  const ids = list => list.map(v=>v.id);
+  assert.equal(resolveMapScope(decodeURIComponent(encodeURIComponent(scope)),sharedLists),scope);
+  assert.deepEqual(ids(filterMapVenues(venues,{...options,scope})),ids(venues.filter(v=>['dba','gray-line'].includes(v.id))));
+  assert.deepEqual(ids(filterMapVenues(venues,{...options,scope:'saved'})),['fontenot']);
+  assert.deepEqual(filterMapVenues(venues,{...options,scope:'person:Empty'}),[]);
+  assert.deepEqual(ids(filterMapVenues(venues,{...options,scope:'4'})),days[4].route);
+  assert.deepEqual([...saved],['fontenot']);
+  const replaced = [{name:sharedLists[0].name,venueIds:['spotted-cat']}];
+  assert.deepEqual(ids(filterMapVenues(venues,{scope,sharedLists:replaced})),['spotted-cat']);
+});
+
+test('map safely falls back to current places for removed lists and invalid scopes', () => {
+  const current = filterMapVenues(venues);
+  for (const scope of ['person:Removed','nonsense','99','0','2']) {
+    assert.equal(resolveMapScope(scope), 'all');
+    assert.deepEqual(filterMapVenues(venues,{scope}),current);
+  }
+  assert.ok(current.every(v=>v.status!=='closed'&&!['horns','mimis'].includes(v.id)));
+  assert.deepEqual(filterMapVenues(venues,{scope:'saved'}),[]);
+});
+
+test('Map and Places use the same minimum-person saved membership', () => {
+  const saved=new Set(['dba','fontenot']);
+  const sharedLists=[{name:'A',venueIds:['dba','fontenot']},{name:'B',venueIds:['dba']}];
+  const two=filterMapVenues(venues,{scope:'overlap:2',saved,sharedLists});
+  const three=filterMapVenues(venues,{scope:'overlap:3',saved,sharedLists});
+  assert.deepEqual(new Set(two.map(v=>v.id)),new Set(['dba','fontenot']));
+  assert.deepEqual(three.map(v=>v.id),['dba']);
+  assert.deepEqual(filterPlaces(venues,{onlySaved:true,saved:new Set(two.map(v=>v.id)),category:'music'}).map(v=>v.id),['dba']);
+  assert.deepEqual(filterMapVenues(venues,{scope:'overlap:4',saved,sharedLists}),filterMapVenues(venues));
+  assert.deepEqual(filterMapVenues(venues,{scope:'overlap:2',saved:new Set(),sharedLists:[]}),filterMapVenues(venues));
 });
 
 test('sorting preserves guide order and filters while using names, areas and hotel distance', () => {

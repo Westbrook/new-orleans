@@ -1,7 +1,33 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {savedPayload,parseSavedLocations,upsertSavedList,readSavedLists,shareEmail,MAX_JSON_BYTES} from '../site/saved-locations.js';
+import {savedPayload,parseSavedLocations,upsertSavedList,readSavedLists,shareEmail,MAX_JSON_BYTES,savedVenueCounts,savedOverlapOptions} from '../site/saved-locations.js';
 const venues=[{id:'dba'},{id:'spotted-cat'},{id:'fontenot'}];
+test('overlap options count each person once, include own saves, and require known matches',()=>{
+ const saved=new Set(['dba']);
+ const lists=[{name:'Alex',venueIds:['dba','dba','unknown','spotted-cat']}];
+ assert.deepEqual([...savedVenueCounts(venues,saved,lists)],[['dba',2],['spotted-cat',1],['fontenot',0]]);
+ assert.deepEqual(savedOverlapOptions(venues,saved,lists),[{value:'overlap:2',label:'Saved by 2 people',venueIds:['dba']}]);
+ assert.deepEqual(savedOverlapOptions(venues,new Set(),lists),[]);
+ assert.deepEqual(savedOverlapOptions(venues,new Set(['fontenot']),lists),[]);
+ assert.deepEqual(savedOverlapOptions(venues,new Set(),[{venueIds:['unknown']},{venueIds:['unknown']}]),[]);
+});
+test('four lists expose nonempty minimum-count options and recompute after replacement/removal',()=>{
+ const lists=[
+  {name:'A',venueIds:['dba','spotted-cat','fontenot']},
+  {name:'B',venueIds:['dba','spotted-cat','fontenot']},
+  {name:'C',venueIds:['dba','spotted-cat']},
+  {name:'D',venueIds:['dba']},
+ ];
+ const options=savedOverlapOptions(venues,new Set(),lists);
+ assert.deepEqual(options.map(o=>o.value),['overlap:2','overlap:3','overlap:4']);
+ assert.deepEqual(options.map(o=>o.venueIds),[['dba','spotted-cat','fontenot'],['dba','spotted-cat'],['dba']]);
+ assert.deepEqual(savedOverlapOptions(venues,new Set(),lists.slice(0,2)).map(o=>o.value),['overlap:2']);
+ assert.deepEqual(savedOverlapOptions(venues,new Set(),upsertSavedList(lists,{name:'D',venueIds:[]})).map(o=>o.value),['overlap:2','overlap:3']);
+ // Active location filters narrow the candidate venues, so unavailable count options disappear.
+ assert.deepEqual(savedOverlapOptions([venues[2]],new Set(),lists).map(o=>o.value),['overlap:2']);
+ assert.deepEqual(savedOverlapOptions([],new Set(),lists),[]);
+ assert.equal(lists[3].venueIds[0],'dba');
+});
 test('JSON round trip and email contain only known saved IDs',()=>{
  const payload=savedPayload(['dba','dba','cake-cafe','fontenot'],venues,'Alex & Sam');
  assert.deepEqual(payload.venueIds,['dba','fontenot']);

@@ -1,3 +1,5 @@
+import {savedOverlapOptions} from './saved-locations.js';
+
 // Travel filters share the same venue membership as the itinerary.
 export function dayVenueIds(day) {
   return new Set([...day.route, ...day.stops.flatMap(stop => [stop.venue, ...(stop.extra || [])].filter(Boolean))]);
@@ -17,6 +19,22 @@ export function filterPlaces(venues, {search = '', category = 'all', area = 'all
       && (!onlySaved || saved.has(venue.id))
       && terms.every(term => text.includes(term));
   });
+}
+
+export function resolveMapScope(scope = 'all', sharedLists = [], overlaps = []) {
+  if (scope === 'saved' || scope === '4') return scope;
+  if (overlaps.some(option => option.value === scope)) return scope;
+  return sharedLists.some(list => 'person:' + list.name === scope) ? scope : 'all';
+}
+
+export function filterMapVenues(venues, {scope = 'all', saved = new Set(), sharedLists = [], tourIds = []} = {}) {
+  const overlaps = savedOverlapOptions(venues, saved, sharedLists);
+  scope = resolveMapScope(scope, sharedLists, overlaps);
+  if (scope === '4') return tourIds.map(id => venues.find(v => v.id === id)).filter(Boolean);
+  if (scope === 'all') return venues.filter(v => v.status !== 'closed' && !['horns', 'mimis'].includes(v.id));
+  const overlap = overlaps.find(option => option.value === scope);
+  const ids = scope === 'saved' ? saved : new Set(overlap?.venueIds || sharedLists.find(list => 'person:' + list.name === scope).venueIds);
+  return venues.filter(v => ids.has(v.id));
 }
 
 export const placeSortOptions = {guide:'Guide order', name:'Name A–Z', area:'Neighborhood A–Z', distance:'Nearest hotel'};
